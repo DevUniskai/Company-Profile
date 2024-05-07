@@ -1,6 +1,14 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Services from "@/components/sections/Services";
+import Welcome from "@/components/sections/Welcome";
+import { Box } from "@chakra-ui/react";
 
-export default function Home() {
-  return <main className={styles.main}>Testign</main>;
-}
+const Home = () => {
+  return (
+    <Box w={"100%"} h={"100%"} backgroundColor="white">
+      <Welcome />
+      <Services />
+    </Box>
+  );
+};
+
+export default Home;

@@ -5,4 +5,7 @@ export const theme = extendTheme({
     heading: "CircularStd-Book-Heading, sans-serif",
     body: "CircularStd-Book-Body, sans-serif",
   },
+  colors: {
+    lightBlue: "#6086b5",
+  },
 });
