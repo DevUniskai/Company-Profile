@@ -17,15 +17,14 @@ const ServiceItem = ({ src, title, description }) => {
         justifyContent={"center"}
         display="flex"
         alignItems="center"
-        borderRadius={12}
       >
         <Box position="relative" width={"450px"} height={"450px"}>
           <Image
             src={src}
             alt={title}
-            borderRadius={4}
-            objectFit="center"
+            objectFit="cover"
             fill
+            style={{ borderRadius: "8px" }}
           />
         </Box>
         <Box
@@ -35,6 +34,7 @@ const ServiceItem = ({ src, title, description }) => {
           p={4}
           bgColor={"rgba(0, 0, 0, .5 )"}
           w={"100%"}
+          borderBottomRadius={8}
         >
           <Heading size={{ base: "sm", md: "md" }}>{title}</Heading>
           <Text size={{ base: "sm", md: "md" }}>{description}</Text>

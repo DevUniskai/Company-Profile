@@ -9,7 +9,7 @@ const Tour = () => {
       </Heading>
       <Grid
         templateColumns={{ base: "repeat(1, 1fr)", "2xl": "repeat(3, 1fr)" }}
-        gap={6}
+        gap={9}
       >
         <TourItem
           src={"/static/images/gunung.jpg"}
