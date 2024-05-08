@@ -10,7 +10,7 @@ const Footer = () => {
         <Flex flexDirection="row" alignItems="center" w="50%">
           <Box pos="relative" h="100px" w="50%" textAlign="left">
             <Image
-              src="/./images/uniskai.png"
+              src="/static/images/uniskai.png"
               alt="uniskai"
               fill
               objectFit="contain"
@@ -29,7 +29,7 @@ const Footer = () => {
             target="_blank"
           >
             <Image
-              src={"/./images/tik-tok.png"}
+              src={"/static/images/tik-tok.png"}
               alt="tiktok"
               width={20}
               height={20}
@@ -42,7 +42,7 @@ const Footer = () => {
             target="_blank"
           >
             <Image
-              src={"/./images/instagram.png"}
+              src={"/static/images/instagram.png"}
               alt="instagram"
               width={20}
               height={20}
@@ -50,6 +50,9 @@ const Footer = () => {
           </Link>
         </Flex>
       </Flex>
+      <Box>
+        <Text></Text>
+      </Box>
     </Flex>
   );
 };

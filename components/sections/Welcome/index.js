@@ -4,7 +4,7 @@ const Welcome = () => {
   return (
     <Flex
       height={"100vh"}
-      backgroundImage={"./images/welcome.jpg"}
+      backgroundImage={"/static/images/welcome.jpg"}
       backgroundPosition={"center"}
       flexDirection="column"
       justifyContent="center"

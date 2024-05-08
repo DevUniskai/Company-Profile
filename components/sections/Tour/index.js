@@ -12,22 +12,22 @@ const Tour = () => {
         gap={6}
       >
         <TourItem
-          src={"/./images/gunung.jpg"}
+          src={"/static/images/gunung.jpg"}
           title="Berastagi Trip"
           description="3 Days 2 Night"
         />
         <TourItem
-          src={"/./images/danau-toba.jpg"}
+          src={"/static/images/danau-toba.jpg"}
           title="Berastagi Trip"
           description="3 Days 2 Night"
         />
         <TourItem
-          src={"/./images/air-terjun.jpg"}
+          src={"/static/images/air-terjun.jpg"}
           title="Berastagi Trip"
           description="3 Days 2 Night"
         />
         <TourItem
-          src={"/./images/merdeka-walk.jpg"}
+          src={"/static/images/merdeka-walk.jpg"}
           title="Berastagi Trip"
           description="3 Days 2 Night"
         />

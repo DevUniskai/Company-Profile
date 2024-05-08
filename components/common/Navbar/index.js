@@ -6,7 +6,7 @@ const Navbar = () => {
     <Box backgroundColor="white" zIndex={2} position="fixed" w={"100%"}>
       <Box>
         <Image
-          src={"/./images/uniskai.png"}
+          src={"/static/images/uniskai.png"}
           width={259}
           height={93}
           alt="logo"
