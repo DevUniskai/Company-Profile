@@ -7,5 +7,6 @@ export const theme = extendTheme({
   },
   colors: {
     lightBlue: "#6086b5",
+    secondary: "#828282",
   },
 });

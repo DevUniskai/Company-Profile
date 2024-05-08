@@ -1,12 +1,4 @@
-import {
-  AbsoluteCenter,
-  teCenter,
-  Container,
-  Flex,
-  Heading,
-  Text,
-  Box,
-} from "@chakra-ui/react";
+import { Flex, Heading, Text } from "@chakra-ui/react";
 
 const Welcome = () => {
   return (
@@ -20,7 +12,7 @@ const Welcome = () => {
       color="white"
     >
       <Heading size="3xl">Uniskai</Heading>
-      <Text size="lg" backgroundColor="lightBlue" borderRadius={5}>
+      <Text size="lg" backgroundColor="lightBlue" borderRadius={5} p={1}>
         Your Partner Travel Solution
       </Text>
     </Flex>

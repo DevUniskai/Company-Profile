@@ -1,19 +1,12 @@
 import ServiceItem from "@/components/common/ServiceItem";
-import {
-  Card,
-  CardBody,
-  Flex,
-  Text,
-  Grid,
-  GridItem,
-  Heading,
-  CardHeader,
-} from "@chakra-ui/react";
+import { Flex, Text, Grid, Heading } from "@chakra-ui/react";
 
 const Services = () => {
   return (
     <Flex bgColor="white" flexDirection="column" px={10} my={10}>
-      <Heading mb={10}>Services</Heading>
+      <Heading mb={10} textAlign="center">
+        Services
+      </Heading>
       <Grid templateColumns="repeat(3, 1fr)" gap={6}>
         <ServiceItem title="Fly" description="Booking Flight Ticket" />
         <ServiceItem title="Stay" description="Hotel Booking and Services" />
