@@ -3,7 +3,12 @@ import { Flex, Grid, Heading } from "@chakra-ui/react";
 
 const Tour = () => {
   return (
-    <Flex bgColor="white" flexDirection="column" px={10} my={10}>
+    <Flex
+      bgColor="white"
+      flexDirection="column"
+      px={{ base: 16, "2xl": 10 }}
+      my={10}
+    >
       <Heading mb={10} textAlign="center">
         Tour
       </Heading>
@@ -15,16 +20,19 @@ const Tour = () => {
           src={"/static/images/gunung.jpg"}
           title="Berastagi Trip"
           description="3 Days 2 Night"
+          href="https://www.tiktok.com/@uniskai.id"
         />
         <TourItem
           src={"/static/images/danau-toba.jpg"}
           title="Berastagi Trip"
           description="3 Days 2 Night"
+          href="https://www.tiktok.com/@uniskai.id"
         />
         <TourItem
           src={"/static/images/air-terjun.jpg"}
           title="Berastagi Trip"
           description="3 Days 2 Night"
+          href="https://www.tiktok.com/@uniskai.id"
         />
       </Grid>
     </Flex>

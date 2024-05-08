@@ -16,12 +16,30 @@ const Footer = () => {
               objectFit="contain"
             />
           </Box>
-          <Text fontSize="sm" pl={4}>
-            Kompleks CBD, Jl. Padang Golf Blok. AA No.3, Suka Damai, Kec. Medan
-            Polonia, Kota Medan, Sumatera Utara 20219
-          </Text>
+          <Flex flexDir={"column"}>
+            <Text fontSize="sm" pl={4}>
+              Kompleks CBD, Jl. Padang Golf Blok. AA No.3, Suka Damai, Kec.
+              Medan Polonia, Kota Medan, Sumatera Utara 20219
+            </Text>
+            <Text fontSize="sm" pl={4} mt={2}>
+              +62 821-2992-5066 (Samuel)
+            </Text>
+          </Flex>
         </Flex>
         <Flex w="50%" h="100%" justifyContent="flex-end">
+          <Link
+            as={NextLink}
+            href="https://wa.me/6282129925066"
+            mr={4}
+            target="_blank"
+          >
+            <Image
+              src={"/static/images/whatsapp.png"}
+              alt="whatsapp"
+              width={20}
+              height={20}
+            />
+          </Link>
           <Link
             as={NextLink}
             href="https://www.tiktok.com/@uniskai.id"
@@ -50,9 +68,6 @@ const Footer = () => {
           </Link>
         </Flex>
       </Flex>
-      <Box>
-        <Text></Text>
-      </Box>
     </Flex>
   );
 };
