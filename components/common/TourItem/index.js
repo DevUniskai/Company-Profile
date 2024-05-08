@@ -17,7 +17,7 @@ const TourItem = ({ src, title, description }) => {
   return (
     <GridItem w="100%">
       <Card>
-        <Box h="200px" position={"relative"}>
+        <Box h="250px" position={"relative"}>
           <Image src={src} alt={title} fill objectFit="cover" />
         </Box>
         <CardBody>

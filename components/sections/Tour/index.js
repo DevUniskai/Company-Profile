@@ -8,7 +8,7 @@ const Tour = () => {
         Tour
       </Heading>
       <Grid
-        templateColumns={{ base: "repeat(2, 1fr)", "2xl": "repeat(4, 1fr)" }}
+        templateColumns={{ base: "repeat(1, 1fr)", "2xl": "repeat(3, 1fr)" }}
         gap={6}
       >
         <TourItem
@@ -23,11 +23,6 @@ const Tour = () => {
         />
         <TourItem
           src={"/static/images/air-terjun.jpg"}
-          title="Berastagi Trip"
-          description="3 Days 2 Night"
-        />
-        <TourItem
-          src={"/static/images/merdeka-walk.jpg"}
           title="Berastagi Trip"
           description="3 Days 2 Night"
         />

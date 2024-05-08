@@ -9,7 +9,6 @@ import { useEffect, useState } from "react";
 
 const Home = () => {
   const [show, setShow] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
 
   const handleScroll = () => {
     const scroll = window.scrollY;

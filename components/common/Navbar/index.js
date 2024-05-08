@@ -1,9 +1,19 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Button, Flex, Input, useDisclosure } from "@chakra-ui/react";
 import Image from "next/image";
+import {
+  Drawer,
+  DrawerBody,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+} from "@chakra-ui/react";
+import React from "react";
 
 const Navbar = () => {
   return (
-    <Box backgroundColor="white" zIndex={2} position="fixed" w={"100%"} p={4}>
+    <Flex backgroundColor="white" zIndex={2} position="fixed" w={"100%"} p={4}>
       <Box>
         <Image
           src={"/static/images/uniskai.png"}
@@ -12,7 +22,7 @@ const Navbar = () => {
           alt="logo"
         />
       </Box>
-    </Box>
+    </Flex>
   );
 };
 
