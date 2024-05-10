@@ -3,7 +3,7 @@ import { Flex, Text, Grid, Heading } from "@chakra-ui/react";
 
 const Services = () => {
   return (
-    <Flex bgColor="beige" color="brown" flexDirection="column" p={10}>
+    <Flex bgColor="Beige" color="brown" flexDirection="column" px={16} py={10}>
       <Text fontSize={"4xl"} mb={6} letterSpacing={"5px"}>
         OUR SERVICES
       </Text>

@@ -1,37 +1,39 @@
 import TourItem from "@/components/common/TourItem";
-import { Flex, Grid, Heading } from "@chakra-ui/react";
+import { Flex, Grid, Heading, Text } from "@chakra-ui/react";
 
 const Tour = () => {
   return (
     <Flex
-      bgColor="white"
       flexDirection="column"
-      px={{ base: 16, "2xl": 10 }}
-      my={10}
+      px={16}
+      paddingBottom={10}
+      paddingTop={5}
+      bgColor="Beige"
+      color="brown"
     >
-      <Heading mb={10} textAlign="center">
-        Tour
-      </Heading>
+      <Text fontSize={"4xl"} mb={6} letterSpacing={"5px"}>
+        TOUR
+      </Text>
       <Grid
-        templateColumns={{ base: "repeat(1, 1fr)", "2xl": "repeat(3, 1fr)" }}
+        templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, 1fr)" }}
         gap={9}
       >
         <TourItem
-          src={"/static/images/gunung.jpg"}
-          title="Berastagi Trip"
+          src={"/static/images/Berastagi_1.png"}
+          title="BERASTAGI TRIP"
           description="3 Days 2 Night"
           href="https://www.tiktok.com/@uniskai.id"
         />
         <TourItem
-          src={"/static/images/danau-toba.jpg"}
-          title="Berastagi Trip"
+          src={"/static/images/Berastagi_2.png"}
+          title="MEDAN - SAMOSIR TRIP"
           description="3 Days 2 Night"
           href="https://www.tiktok.com/@uniskai.id"
         />
         <TourItem
-          src={"/static/images/air-terjun.jpg"}
-          title="Berastagi Trip"
-          description="3 Days 2 Night"
+          src={"/static/images/Berastagi_3.png"}
+          title="BERASTAGI - SAMOSIR TRIP"
+          description="4 Days 3 Night"
           href="https://www.tiktok.com/@uniskai.id"
         />
       </Grid>
