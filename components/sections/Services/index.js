@@ -3,16 +3,23 @@ import { Flex, Text, Grid, Heading } from "@chakra-ui/react";
 
 const Services = () => {
   return (
-    <Flex bgColor="Beige" color="brown" flexDirection="column" px={16} py={10}>
+    <Flex
+      bgColor="Beige"
+      color="brown"
+      flexDirection="column"
+      px={{ base: 10, sm: 16 }}
+      py={10}
+    >
       <Text fontSize={"4xl"} mb={6} letterSpacing={"5px"}>
         OUR SERVICES
       </Text>
       <Grid
         templateColumns={{
           base: "repeat(1, 1fr)",
-          md: "repeat(3, 1fr)",
+          md: "repeat(2, 1fr)",
+          lg: "repeat(3, 1fr)",
         }}
-        gap={6}
+        gap={{ base: 3, lg: 6 }}
       >
         <ServiceItem
           src="/static/images/Fly.png"

@@ -5,7 +5,7 @@ const Tour = () => {
   return (
     <Flex
       flexDirection="column"
-      px={16}
+      px={{ base: 10, sm: 16 }}
       paddingBottom={10}
       paddingTop={5}
       bgColor="Beige"
