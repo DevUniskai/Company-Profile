@@ -1,4 +1,10 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Text,
+  useBreakpointValue,
+  useMediaQuery,
+} from "@chakra-ui/react";
 import Image from "next/image";
 import NextLink from "next/link";
 import { Link } from "@chakra-ui/react";
@@ -9,22 +15,26 @@ const Footer = () => {
     <Flex
       bgColor="brown"
       color="Beige"
-      px={16}
+      px={{ base: 6, lg: 16 }}
       py={10}
-      flexDirection={"row"}
+      flexDirection={{ base: "column", lg: "row" }}
       alignItems="center"
       justifyContent={"space-between"}
-      height={320}
+      height={{ base: "auto", lg: 320 }}
     >
-      <Image
-        src="/static/images/uniskai_footer.png"
-        alt="uniskai"
-        width={199}
-        height={100}
-      />
+      <Box
+        // width={{ base: "102px", lg: "153px", xl: "204px" }}
+        // height={{ base: "28px", lg: "42px", xl: "56px" }}
+        width={"204px"}
+        height={"56px"}
+        position="relative"
+        mb={{ base: 10, lg: 0 }}
+      >
+        <Image src="/static/images/uniskai_footer.png" alt="uniskai" fill />
+      </Box>
       <Flex
         flexDir={"column"}
-        w={"30%"}
+        w={{ base: "100%", lg: "30%" }}
         h={"100%"}
         justifyContent={"space-between"}
       >
@@ -43,11 +53,11 @@ const Footer = () => {
       </Flex>
       <Flex
         flexDirection="column"
-        w={"30%"}
+        w={{ base: "100%", lg: "30%" }}
         h={"100%"}
         justifyContent={"space-between"}
       >
-        <Flex flexDir="column">
+        <Flex flexDir="column" mb={{ base: 10, lg: 0 }}>
           <Text fontWeight={600} color={"white"} letterSpacing={3} mb={5}>
             CONTACT US
           </Text>
@@ -78,7 +88,7 @@ const Footer = () => {
             </Link>
           </Flex>
         </Flex>
-        <Flex>
+        <Flex justifyContent={"center"}>
           <Link
             as={NextLink}
             href="https://www.instagram.com/uniskai/"
