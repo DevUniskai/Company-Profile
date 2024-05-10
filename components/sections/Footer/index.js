@@ -51,12 +51,32 @@ const Footer = () => {
           <Text fontWeight={600} color={"white"} letterSpacing={3} mb={5}>
             CONTACT US
           </Text>
-          <Text lineHeight={1.3} color={"Beige"}>
-            Phone : +62 821-2992-5066 (Samuel)
-          </Text>
-          <Text lineHeight={1.3} color={"Beige"}>
-            Email : tour@uniskai.id
-          </Text>
+          <Flex alignItems={"center"}>
+            <Text lineHeight={1.3} color={"Beige"} w={"50px"}>
+              Phone
+            </Text>
+            <Text ml={3} mr={1}>
+              :
+            </Text>
+            <Link
+              as={NextLink}
+              href="https://wa.me/6282129925066"
+              target="_blank"
+            >
+              +62 821-2992-5066 (Samuel)
+            </Link>
+          </Flex>
+          <Flex alignItems={"center"}>
+            <Text lineHeight={1.3} color={"Beige"} w={"50px"}>
+              Email
+            </Text>
+            <Text ml={3} mr={1}>
+              :
+            </Text>
+            <Link as={NextLink} href="mailto:tour@uniskai.id" target="_blank">
+              tour@uniskai.id
+            </Link>
+          </Flex>
         </Flex>
         <Flex>
           <Link
