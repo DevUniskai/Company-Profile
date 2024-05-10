@@ -1,57 +1,18 @@
-import {
-  Box,
-  Card,
-  CardBody,
-  CardHeader,
-  GridItem,
-  Heading,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Flex, GridItem, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 
 const ServiceItem = ({ src, title, description }) => {
   return (
-    <GridItem w="100%" display={"flex"} justifyContent={"center"}>
-      <Box
-        position="relative"
-        justifyContent={"center"}
-        display="flex"
-        alignItems="center"
-      >
-        <Box position="relative" width={"450px"} height={"450px"}>
-          <Image
-            src={src}
-            alt={title}
-            objectFit="cover"
-            fill
-            style={{ borderRadius: "8px" }}
-          />
+    <GridItem w="100%">
+      <Flex flexDir="column">
+        <Image src={src} alt={title} width={376} height={240} />
+        <Box bottom={0} py={4} w={"100%"} width={376} borderBottomRadius={8}>
+          <Heading size={{ base: "lg", md: "lg" }}>{title}</Heading>
+          <Text fontSize={{ base: "sm", md: "sm" }} fontWeight={500}>
+            {description}
+          </Text>
         </Box>
-        <Box
-          position={"absolute"}
-          color={"white"}
-          bottom={0}
-          p={4}
-          bgColor={"rgba(0, 0, 0, .5 )"}
-          w={"100%"}
-          borderBottomRadius={8}
-        >
-          <Heading size={{ base: "sm", md: "md" }}>{title}</Heading>
-          <Text size={{ base: "sm", md: "md" }}>{description}</Text>
-        </Box>
-      </Box>
-
-      {/* <Card variant={"filled"} bgColor="rgba(0,0,0,.2)">
-        <Box h="200px" position={"relative"}>
-          <Image src={src} alt={title} fill objectFit="cover" />
-        </Box>
-        <CardHeader pb={0}>
-          <Heading size="md">{title}</Heading>
-        </CardHeader>
-        <CardBody>
-          <Text>{description}</Text>
-        </CardBody>
-      </Card> */}
+      </Flex>
     </GridItem>
   );
 };

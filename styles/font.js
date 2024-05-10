@@ -20,6 +20,12 @@ const Fonts = () => (
         font-display: swap;
         src: url('./fonts/CircularStd-Book.ttf') format('ttf');
       }
+      @font-face {
+        font-family: 'CircularStd-Medium-Body';
+        font-style: normal;
+        font-display: swap;
+        src: url('./fonts/CircularStd-Medium.ttf') format('ttf');
+      }
       `}
   />
 );
