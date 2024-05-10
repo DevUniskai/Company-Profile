@@ -16,7 +16,7 @@ const Tour = () => {
       </Text>
       <Grid
         templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, 1fr)" }}
-        gap={9}
+        gap={{ base: 3, lg: 6, xl: 9 }}
       >
         <TourItem
           src={"/static/images/Berastagi_1.png"}

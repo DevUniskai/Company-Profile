@@ -15,7 +15,7 @@ const Footer = () => {
     <Flex
       bgColor="brown"
       color="Beige"
-      px={{ base: 6, lg: 16 }}
+      px={{ base: 10, sm: 16 }}
       py={10}
       flexDirection={{ base: "column", lg: "row" }}
       alignItems="center"
@@ -23,8 +23,6 @@ const Footer = () => {
       height={{ base: "auto", lg: 320 }}
     >
       <Box
-        // width={{ base: "102px", lg: "153px", xl: "204px" }}
-        // height={{ base: "28px", lg: "42px", xl: "56px" }}
         width={"204px"}
         height={"56px"}
         position="relative"
@@ -88,11 +86,14 @@ const Footer = () => {
             </Link>
           </Flex>
         </Flex>
-        <Flex justifyContent={"center"}>
+        <Flex
+          justifyContent={{ base: "space-between", md: "center" }}
+          w={{ base: "100%", md: "auto" }}
+        >
           <Link
             as={NextLink}
             href="https://www.instagram.com/uniskai/"
-            mr={10}
+            mr={{ base: 0, md: 10 }}
             target="_blank"
           >
             <Image
@@ -105,7 +106,7 @@ const Footer = () => {
           <Link
             as={NextLink}
             href="https://www.facebook.com/uniskai/"
-            mr={10}
+            mr={{ base: 0, md: 10 }}
             target="_blank"
           >
             <Image
@@ -118,7 +119,7 @@ const Footer = () => {
           <Link
             as={NextLink}
             href="https://www.tiktok.com/@uniskai.id"
-            mr={10}
+            mr={{ base: 0, md: 10 }}
             target="_blank"
           >
             <Image

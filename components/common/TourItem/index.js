@@ -16,7 +16,7 @@ import styles from "./style.module.css";
 
 const TourItem = ({ src, title, description, href }) => {
   return (
-    <GridItem w="100%" className={styles.card}>
+    <GridItem w="100%" className={styles.card} mb={{ base: 10, md: 0 }}>
       <Link
         as={NextLink}
         href={href}
@@ -28,14 +28,25 @@ const TourItem = ({ src, title, description, href }) => {
           variant="unstyles"
           backgroundColor={"transparent"}
           color={"brown"}
-          height={450}
+          width={{ base: "100%", md: "188px", lg: "282px", xl: "376px" }}
+          height={{ base: "100%", md: "300px", lg: "350px", xl: "450px" }}
+          alignItems={"center"}
         >
           <CardHeader p={0}>
-            <Image src={src} alt={title} width={376} height={240} />
+            <Box
+              width={{ base: "100%", md: "188px", lg: "282px", xl: "376px" }}
+              height={{ base: "100%", md: "120px", lg: "180px", xl: "240px" }}
+            >
+              <Image src={src} alt={title} width={376} height={240} />
+            </Box>
           </CardHeader>
           <CardBody p={0}>
-            <Flex flexDir="column" mt={4} width={376}>
-              <Heading size={"lg"} fontWeight="600">
+            <Flex
+              flexDir="column"
+              mt={4}
+              width={{ base: "100%", md: "188px", lg: "282px", xl: "376px" }}
+            >
+              <Heading size={{ base: "md", xl: "lg" }} fontWeight="600">
                 {title}
               </Heading>
               <Text>{description}</Text>
