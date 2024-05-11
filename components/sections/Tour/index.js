@@ -22,19 +22,19 @@ const Tour = () => {
           src={"/static/images/Berastagi_1.png"}
           title="BERASTAGI TRIP"
           description="3 Days 2 Night"
-          href="https://www.tiktok.com/@uniskai.id"
+          href="https://drive.google.com/file/d/1LC-QZej4Dx2524Oo4ukIPmZL4WinBov1/view?usp=sharing"
         />
         <TourItem
           src={"/static/images/Berastagi_2.png"}
           title="MEDAN - SAMOSIR TRIP"
           description="3 Days 2 Night"
-          href="https://www.tiktok.com/@uniskai.id"
+          href="https://drive.google.com/file/d/1wYAHUm-a507yd5fsvavOWog_nbGIsCcS/view?usp=sharing"
         />
         <TourItem
           src={"/static/images/Berastagi_3.png"}
           title="BERASTAGI - SAMOSIR TRIP"
           description="4 Days 3 Night"
-          href="https://www.tiktok.com/@uniskai.id"
+          href="https://drive.google.com/file/d/1x9dWeiJEeszDAmq_40mDjq5OuQD7i-I5/view?usp=sharing"
         />
       </Grid>
     </Flex>
