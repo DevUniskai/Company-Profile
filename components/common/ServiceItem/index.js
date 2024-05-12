@@ -6,7 +6,7 @@ import { Link } from "@chakra-ui/react";
 const ServiceItem = ({ src, title, description }) => {
   return (
     <GridItem w="100%">
-      <Link as={NextLink} href={"/contact"} mr={4} target="_blank">
+      <Link as={NextLink} href={"/contact"} mr={4}>
         <Flex flexDir="column" alignItems={{ sm: "center", md: "flex-start" }}>
           <Flex
             width={{ base: "100%", md: "282px", xl: "376px" }}

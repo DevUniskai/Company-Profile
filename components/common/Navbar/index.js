@@ -16,7 +16,7 @@ const Navbar = () => {
     <Flex backgroundColor="white" zIndex={2} position="fixed" w={"100%"} p={4}>
       <Box>
         <Image
-          src={"/static/images/uniskai.png"}
+          src={"/static/images/uniskai_header.png"}
           width={192}
           height={68}
           alt="logo"
