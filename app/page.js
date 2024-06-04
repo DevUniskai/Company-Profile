@@ -1,4 +1,5 @@
 import Navbar from "@/components/common/Navbar";
+import Experience from "@/components/sections/Experience";
 import Footer from "@/components/sections/Footer";
 import Services from "@/components/sections/Services";
 import Tour from "@/components/sections/Tour";
@@ -34,9 +35,7 @@ const Home = () => {
       <Welcome />
       <Services />
       <Tour />
-      <Box px={10}>
-        <Divider />
-      </Box>
+      <Experience />
       <Footer />
     </Box>
   );

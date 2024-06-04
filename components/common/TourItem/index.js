@@ -14,7 +14,7 @@ import NextLink from "next/link";
 import { Link } from "@chakra-ui/react";
 import styles from "./style.module.css";
 
-const TourItem = ({ src, title, description, href }) => {
+const TourItem = ({ src, title, description, href, size = "" }) => {
   return (
     <GridItem w="100%" className={styles.card} mb={{ base: 10, md: 0 }}>
       <Link
@@ -36,8 +36,15 @@ const TourItem = ({ src, title, description, href }) => {
             <Box
               width={{ base: "100%", md: "188px", lg: "282px", xl: "376px" }}
               height={{ base: "100%", md: "120px", lg: "180px", xl: "240px" }}
+              position={size == "fill" ? "relative" : "inherit"}
+              borderRadius={size == "fill" && 14}
+              overflow={size === "fill" && "hidden"}
             >
-              <Image src={src} alt={title} width={376} height={240} />
+              {size.length > 0 ? (
+                <Image src={src} alt={title} fill objectFit="cover" />
+              ) : (
+                <Image src={src} alt={title} width={376} height={240} />
+              )}
             </Box>
           </CardHeader>
           <CardBody p={0}>
@@ -49,7 +56,7 @@ const TourItem = ({ src, title, description, href }) => {
               <Heading size={{ base: "md", xl: "lg" }} fontWeight="600">
                 {title}
               </Heading>
-              <Text>{description}</Text>
+              {description.length > 0 && <Text>{description}</Text>}
             </Flex>
           </CardBody>
           <CardFooter justifyContent={"center"} p={0}>
