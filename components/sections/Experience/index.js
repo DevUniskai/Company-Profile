@@ -1,6 +1,11 @@
-import BuyNow from "@/components/common/BuyButton";
 import TourItem from "@/components/common/TourItem";
 import { Flex, Grid, Heading, Text } from "@chakra-ui/react";
+import dynamic from "next/dynamic";
+
+const DynamicBuyNow = dynamic(() => import("@/components/common/BuyButton"), {
+  ssr: false,
+});
+
 const Experience = () => {
   return (
     <Flex
@@ -67,7 +72,7 @@ const Experience = () => {
           href="https://drive.google.com/file/d/1x9dWeiJEeszDAmq_40mDjq5OuQD7i-I5/view?usp=sharing"
         />
       </Grid>
-      <BuyNow />
+      <DynamicBuyNow />
     </Flex>
   );
 };
