@@ -33,9 +33,9 @@ const Home = () => {
     <Box w={"100%"} h={"100%"} backgroundColor="white">
       {/* {!show && <Navbar />} */}
       <Welcome />
-      <Services />
       <Tour />
-      <Experience />
+      <Services />
+      {/* <Experience /> */}
       <Footer />
     </Box>
   );
