@@ -1,0 +1,224 @@
+{
+    "tours": [
+        {
+          "id" : 1,
+          "src" : "/static/images/Berastagi_1.png",
+          "title" : "2D1N BERASTAGI TRIP",
+          "description" : "2 Days 1 Night",
+          "href" : "/detailtour",
+          "destination_img" : [
+            "/static/images/Berastagi_1.png", 
+            "/static/images/Berastagi_1.png",
+            "/static/images/Berastagi_1.png"],
+          "days" : [
+            {
+              "dayTitle" : "Day 1: Medan - Berastagi - Medan",
+              "activities" : [
+                "Pick up from Hotel at Medan (1.00pm): The group will be picked up from the hotel in Medan. The driver and guide assigned to accompany the group throughout the journey will meet you.",
+                "Transfer to Berastagi: The group will depart immediately for Berastagi, embarking on a journey of approximately 2 hours.",
+                "Gundaling Farmstead: Upon arrival in Berastagi, the group will head directly to Gundaling Farmstead, an agro-tourism destination that offers a range of engaging activities. Here, you will experience the serene rural atmosphere and have the opportunity to interact with farm animals.",
+                "Dinner at Gundaling Farmstead: Towards night, you will enjoy dinner at Gundaling Farmstead before continuing to your hotel in Berastagi for check-in.",
+                "Check-in Hotel at Berastagi: After dinner, the group will proceed to the designated hotel in Berastagi for check-in, allowing everyone to rest and prepare for the following day’s adventures."
+              ]
+            },
+            {
+              "dayTitle" : "Day 2: Berastagi - Medan - KNO (B/L/-)",
+              "activities" : [
+                "Breakfast at Hotel before Check-out: In the morning, the group will enjoy breakfast at the hotel before checking out.",
+                "Fruit Market Berastagi (5mnt): A brief stop at the Berastagi Fruit Market will allow the group to see and purchase a variety of fresh, local fruits. Additionally, there will be opportunities to sample local products such as chips and coffee, and to shop for regional souvenirs.",
+                "Sikulikap Waterfall (20mnt): The waterfall is about 30 meters high and offers spectacular views with water falling heavily into the pool below. Visitors can enjoy the fresh air, natural beauty, and soothing gurgling sound of water.",
+                "Lunch at Local Restaurant: Lunch will be enjoyed at a local restaurant, chosen for its soothing natural ambiance, offering a delightful dining experience.",
+                "Transfer to Medan (2hrs 30mnt): After lunch, the group will continue their journey back to Medan, which will take about 2 hours and 30 minutes.",
+                "Transfer to Kualanamu International Airport (KNO) (1hrs): Upon arrival in Medan, the group will be transferred immediately to Kualanamu International Airport, a trip of about 1 hour, to continue to their next destination."
+              ]
+            }
+          ],
+          "tourPrice" : [
+            {"pax" : "4 Paxs", "price" : "USD 111 / Paxs", "vehicle" : "Innova Reborn"},
+            {"pax" : "8 Paxs", "price": "USD 89 / Paxs", "vehicle": "HIACE COMMUTER 15 SEAT" } 
+          ],
+          "hotel" : "Berastagi: Sinabung Hills Berastagi",
+          "includes" : [
+            "Transportation during the tour",
+            "Entrance Ticket",
+            "Mineral Water 1 Bottle/Day",
+            "Meals as per itinerary",
+            "English Speaking Local Guide",
+            "Hotel Stay",
+            "Inclusive Mandatory Tipping"
+          ],
+          "excludes" : [
+            "Domestic Flight Ticket",
+            "Personal Expenses",
+            "Hotel Laundry Services",
+            "Voluntary Tips",
+            "Any other unspecified fees"
+          ] 
+        },
+        {
+          "id" : 2,
+          "src" : "/static/images/Berastagi_1.png",
+          "title" :  "3D2N BERASTAGI TRIP",
+          "description" : "3 Days 2 Night",
+          "href" : "/detailtour",
+          "destination_img" : [
+            "/static/images/Berastagi_1.png", 
+            "/static/images/Berastagi_1.png",
+            "/static/images/Berastagi_1.png"],
+          "days" : [
+            {
+              "dayTitle" : "Day 1: Medan - Berastagi - Medan",
+              "activities" : [
+                "Pick up from Hotel at Medan (1.00pm): The group will be picked up from the hotel in Medan. The driver and guide assigned to accompany the group throughout the journey will meet you.",
+                "Transfer to Berastagi: The group will depart immediately for Berastagi, embarking on a journey of approximately 2 hours.",
+                "Gundaling Farmstead: Upon arrival in Berastagi, the group will head directly to Gundaling Farmstead, an agro-tourism destination that offers a range of engaging activities. Here, you will experience the serene rural atmosphere and have the opportunity to interact with farm animals.",
+                "Dinner at Gundaling Farmstead: Towards night, you will enjoy dinner at Gundaling Farmstead before continuing to your hotel in Berastagi for check-in.",
+                "Check-in Hotel at Berastagi: After dinner, the group will proceed to the designated hotel in Berastagi for check-in, allowing everyone to rest and prepare for the following day’s adventures."
+              ]
+            },
+            {
+              "dayTitle" : "Day 2: Berastagi - Medan - KNO (B/L/-)",
+              "activities" : [
+                "Breakfast at Hotel before Check-out: In the morning, the group will enjoy breakfast at the hotel before checking out.",
+                "Fruit Market Berastagi (5mnt): A brief stop at the Berastagi Fruit Market will allow the group to see and purchase a variety of fresh, local fruits. Additionally, there will be opportunities to sample local products such as chips and coffee, and to shop for regional souvenirs.",
+                "Sikulikap Waterfall (20mnt): The waterfall is about 30 meters high and offers spectacular views with water falling heavily into the pool below. Visitors can enjoy the fresh air, natural beauty, and soothing gurgling sound of water.",
+                "Lunch at Local Restaurant: Lunch will be enjoyed at a local restaurant, chosen for its soothing natural ambiance, offering a delightful dining experience.",
+                "Transfer to Medan (2hrs 30mnt): After lunch, the group will continue their journey back to Medan, which will take about 2 hours and 30 minutes.",
+                "Transfer to Kualanamu International Airport (KNO) (1hrs): Upon arrival in Medan, the group will be transferred immediately to Kualanamu International Airport, a trip of about 1 hour, to continue to their next destination."
+              ]
+            }
+          ],
+          "tourPrice" : [
+            {"pax" : "4 Paxs", "price" : "USD 111 / Paxs", "vehicle" : "Innova Reborn"},
+            {"pax" : "8 Paxs", "price": "USD 89 / Paxs", "vehicle": "HIACE COMMUTER 15 SEAT" } 
+          ],
+          "hotel" : "Berastagi: Sinabung Hills Berastagi",
+          "includes" : [
+            "Transportation during the tour",
+            "Entrance Ticket",
+            "Mineral Water 1 Bottle/Day",
+            "Meals as per itinerary",
+            "English Speaking Local Guide",
+            "Hotel Stay",
+            "Inclusive Mandatory Tipping"
+          ],
+          "excludes" : [
+            "Domestic Flight Ticket",
+            "Personal Expenses",
+            "Hotel Laundry Services",
+            "Voluntary Tips",
+            "Any other unspecified fees"
+          ] 
+        },
+        {
+          "id" : 3,
+          "src" : "/static/images/Berastagi_2.png",
+          "title" : "MEDAN - SAMOSIR TRIP",
+          "description" : "3 Days 2 Night",
+          "href" : "https://drive.google.com/file/d/1wYAHUm-a507yd5fsvavOWog_nbGIsCcS/view?usp=sharing",
+          "destination_img" : [
+            "/static/images/Berastagi_1.png", 
+            "/static/images/Berastagi_1.png",
+            "/static/images/Berastagi_1.png"],
+          "days" : [
+            {
+              "dayTitle" : "Day 1: Medan - Berastagi - Medan",
+              "activities" : [
+                "Pick up from Hotel at Medan (1.00pm): The group will be picked up from the hotel in Medan. The driver and guide assigned to accompany the group throughout the journey will meet you.",
+                "Transfer to Berastagi: The group will depart immediately for Berastagi, embarking on a journey of approximately 2 hours.",
+                "Gundaling Farmstead: Upon arrival in Berastagi, the group will head directly to Gundaling Farmstead, an agro-tourism destination that offers a range of engaging activities. Here, you will experience the serene rural atmosphere and have the opportunity to interact with farm animals.",
+                "Dinner at Gundaling Farmstead: Towards night, you will enjoy dinner at Gundaling Farmstead before continuing to your hotel in Berastagi for check-in.",
+                "Check-in Hotel at Berastagi: After dinner, the group will proceed to the designated hotel in Berastagi for check-in, allowing everyone to rest and prepare for the following day’s adventures."
+              ]
+            },
+            {
+              "dayTitle" : "Day 2: Berastagi - Medan - KNO (B/L/-)",
+              "activities" : [
+                "Breakfast at Hotel before Check-out: In the morning, the group will enjoy breakfast at the hotel before checking out.",
+                "Fruit Market Berastagi (5mnt): A brief stop at the Berastagi Fruit Market will allow the group to see and purchase a variety of fresh, local fruits. Additionally, there will be opportunities to sample local products such as chips and coffee, and to shop for regional souvenirs.",
+                "Sikulikap Waterfall (20mnt): The waterfall is about 30 meters high and offers spectacular views with water falling heavily into the pool below. Visitors can enjoy the fresh air, natural beauty, and soothing gurgling sound of water.",
+                "Lunch at Local Restaurant: Lunch will be enjoyed at a local restaurant, chosen for its soothing natural ambiance, offering a delightful dining experience.",
+                "Transfer to Medan (2hrs 30mnt): After lunch, the group will continue their journey back to Medan, which will take about 2 hours and 30 minutes.",
+                "Transfer to Kualanamu International Airport (KNO) (1hrs): Upon arrival in Medan, the group will be transferred immediately to Kualanamu International Airport, a trip of about 1 hour, to continue to their next destination."
+              ]
+            }
+          ],
+          "tourPrice" : [
+            {"pax" : "4 Paxs", "price" : "USD 111 / Paxs", "vehicle" : "Innova Reborn"},
+            {"pax" : "8 Paxs", "price": "USD 89 / Paxs", "vehicle": "HIACE COMMUTER 15 SEAT" } 
+          ],
+          "hotel" : "Berastagi: Sinabung Hills Berastagi",
+          "includes" : [
+            "Transportation during the tour",
+            "Entrance Ticket",
+            "Mineral Water 1 Bottle/Day",
+            "Meals as per itinerary",
+            "English Speaking Local Guide",
+            "Hotel Stay",
+            "Inclusive Mandatory Tipping"
+          ],
+          "excludes" : [
+            "Domestic Flight Ticket",
+            "Personal Expenses",
+            "Hotel Laundry Services",
+            "Voluntary Tips",
+            "Any other unspecified fees"
+          ] 
+        },
+        {
+          "id" : 4,
+          "src" : "/static/images/Berastagi_3.png",
+          "title" : "BERASTAGI - SAMOSIR TRIP",
+          "description" : "4 Days 3 Night",
+          "href" : "https://drive.google.com/file/d/1x9dWeiJEeszDAmq_40mDjq5OuQD7i-I5/view?usp=sharing",
+          "destination_img" : [
+            "/static/images/Berastagi_1.png", 
+            "/static/images/Berastagi_1.png",
+            "/static/images/Berastagi_1.png"],
+          "days" : [
+            {
+              "dayTitle" : "Day 1: Medan - Berastagi - Medan",
+              "activities" : [
+                "Pick up from Hotel at Medan (1.00pm): The group will be picked up from the hotel in Medan. The driver and guide assigned to accompany the group throughout the journey will meet you.",
+                "Transfer to Berastagi: The group will depart immediately for Berastagi, embarking on a journey of approximately 2 hours.",
+                "Gundaling Farmstead: Upon arrival in Berastagi, the group will head directly to Gundaling Farmstead, an agro-tourism destination that offers a range of engaging activities. Here, you will experience the serene rural atmosphere and have the opportunity to interact with farm animals.",
+                "Dinner at Gundaling Farmstead: Towards night, you will enjoy dinner at Gundaling Farmstead before continuing to your hotel in Berastagi for check-in.",
+                "Check-in Hotel at Berastagi: After dinner, the group will proceed to the designated hotel in Berastagi for check-in, allowing everyone to rest and prepare for the following day’s adventures."
+              ]
+            },
+            {
+              "dayTitle" : "Day 2: Berastagi - Medan - KNO (B/L/-)",
+              "activities" : [
+                "Breakfast at Hotel before Check-out: In the morning, the group will enjoy breakfast at the hotel before checking out.",
+                "Fruit Market Berastagi (5mnt): A brief stop at the Berastagi Fruit Market will allow the group to see and purchase a variety of fresh, local fruits. Additionally, there will be opportunities to sample local products such as chips and coffee, and to shop for regional souvenirs.",
+                "Sikulikap Waterfall (20mnt): The waterfall is about 30 meters high and offers spectacular views with water falling heavily into the pool below. Visitors can enjoy the fresh air, natural beauty, and soothing gurgling sound of water.",
+                "Lunch at Local Restaurant: Lunch will be enjoyed at a local restaurant, chosen for its soothing natural ambiance, offering a delightful dining experience.",
+                "Transfer to Medan (2hrs 30mnt): After lunch, the group will continue their journey back to Medan, which will take about 2 hours and 30 minutes.",
+                "Transfer to Kualanamu International Airport (KNO) (1hrs): Upon arrival in Medan, the group will be transferred immediately to Kualanamu International Airport, a trip of about 1 hour, to continue to their next destination."
+              ]
+            }
+          ],
+          "tourPrice" : [
+            {"pax" : "4 Paxs", "price" : "USD 111 / Paxs", "vehicle" : "Innova Reborn"},
+            {"pax" : "8 Paxs", "price": "USD 89 / Paxs", "vehicle": "HIACE COMMUTER 15 SEAT" } 
+          ],
+          "hotel" : "Berastagi: Sinabung Hills Berastagi",
+          "includes" : [
+            "Transportation during the tour",
+            "Entrance Ticket",
+            "Mineral Water 1 Bottle/Day",
+            "Meals as per itinerary",
+            "English Speaking Local Guide",
+            "Hotel Stay",
+            "Inclusive Mandatory Tipping"
+          ],
+          "excludes" : [
+            "Domestic Flight Ticket",
+            "Personal Expenses",
+            "Hotel Laundry Services",
+            "Voluntary Tips",
+            "Any other unspecified fees"
+          ] 
+        }
+    ]
+}

@@ -13,15 +13,20 @@ import Image from "next/image";
 import NextLink from "next/link";
 import { Link } from "@chakra-ui/react";
 import styles from "./style.module.css";
+import data from "@/components/sections/Tour/tour_list.json";
 
-const TourItem = ({ src, title, description, href, size = "" }) => {
+const TourItem = ({id, src, title, description, href, size = "" }) => {
+  // const newTitle =  title.split(" ").join("").toLowerCase();
+  // const newId = data.id;
+  // console.log(id);
   return (
+
     <GridItem w="100%" className={styles.card} mb={{ base: 10, md: 0 }}>
       <Link
         as={NextLink}
-        href={href}
+        href={`/detailtour/${id}`}
         mr={4}
-        target="_blank"
+        // target="_blank"
         _hover={{ textDecoration: "none" }}
       >
         <Card
@@ -54,6 +59,7 @@ const TourItem = ({ src, title, description, href, size = "" }) => {
               width={{ base: "100%", md: "188px", lg: "282px", xl: "376px" }}
             >
               <Heading size={{ base: "md", xl: "lg" }} fontWeight="600">
+                {/* {id} */}
                 {title}
               </Heading>
               {description.length > 0 && <Text>{description}</Text>}

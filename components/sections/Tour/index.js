@@ -1,5 +1,6 @@
 import TourItem from "@/components/common/TourItem";
 import { Flex, Grid, Heading, Text } from "@chakra-ui/react";
+import data from "./tour_list.json";
 
 const Tour = () => {
   return (
@@ -18,11 +19,17 @@ const Tour = () => {
         templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, 1fr)" }}
         gap={{ base: 3, lg: 6, xl: 9 }}
       >
-        <TourItem
+        {data.tours && data.tours.map((data, key) => {
+        // console.log(data.tour);
+        return (
+          <TourItem id={data.id} src={data.src} title={data.title} description={data.description} href={data.href}  key={key} />
+        );
+      })}
+        {/* <TourItem
           src={"/static/images/Berastagi_1.png"}
           title="BERASTAGI TRIP"
           description="3 Days 2 Night"
-          href="https://drive.google.com/file/d/1LC-QZej4Dx2524Oo4ukIPmZL4WinBov1/view?usp=sharing"
+          href="/detailtour"
         />
         <TourItem
           src={"/static/images/Berastagi_2.png"}
@@ -35,7 +42,7 @@ const Tour = () => {
           title="BERASTAGI - SAMOSIR TRIP"
           description="4 Days 3 Night"
           href="https://drive.google.com/file/d/1x9dWeiJEeszDAmq_40mDjq5OuQD7i-I5/view?usp=sharing"
-        />
+        /> */}
       </Grid>
     </Flex>
   );
