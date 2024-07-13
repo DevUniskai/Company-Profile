@@ -8,8 +8,8 @@
           "href" : "/detailtour",
           "destination_img" : [
             "/static/images/Berastagi_1.png", 
-            "/static/images/air-terjun.jpg",
-            "/static/images/atv_ride.jpg"],
+            "/static/images/Berastagi_1.png",
+            "/static/images/Berastagi_1.png"],
           "days" : [
             {
               "dayTitle" : "Day 1 | Medan - Berastagi - Medan",

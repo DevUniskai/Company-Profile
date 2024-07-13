@@ -60,8 +60,8 @@ const DetailTourById = (size) => {
                 {tour.destination_img.map((destination_img, index) => (
                     
                     <Box
-                        width={{ base: "100%", md: "188px", lg: "282px", xl: "376px" }}
-                        height={{ base: "100%", md: "120px", lg: "180px", xl: "240px" }}
+                        width={{ base: "50%", md: "188px", lg: "282px", xl: "376px" }}
+                        height={{ base: "50%", md: "120px", lg: "180px", xl: "240px" }}
                         position={size == "fill" ? "relative" : "inherit"}
                         borderRadius={size == "fill" && 14}
                         overflow={size === "fill" && "hidden"}
