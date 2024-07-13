@@ -11,7 +11,6 @@ const DetailTourById = () => {
     const useRoute = useParams();
     const id = useRoute.id;
     const [tour, setTour] = useState(null);
-    
 
     // console.log(id);
     useEffect(() => {
