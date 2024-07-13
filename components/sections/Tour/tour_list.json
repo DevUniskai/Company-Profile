@@ -8,11 +8,11 @@
           "href" : "/detailtour",
           "destination_img" : [
             "/static/images/Berastagi_1.png", 
-            "/static/images/Berastagi_1.png",
-            "/static/images/Berastagi_1.png"],
+            "/static/images/air-terjun.jpg",
+            "/static/images/atv_ride.jpg"],
           "days" : [
             {
-              "dayTitle" : "Day 1: Medan - Berastagi - Medan",
+              "dayTitle" : "Day 1 | Medan - Berastagi - Medan",
               "activities" : [
                 "Pick up from Hotel at Medan (1.00pm): The group will be picked up from the hotel in Medan. The driver and guide assigned to accompany the group throughout the journey will meet you.",
                 "Transfer to Berastagi: The group will depart immediately for Berastagi, embarking on a journey of approximately 2 hours.",
@@ -34,8 +34,8 @@
             }
           ],
           "tourPrice" : [
-            {"pax" : "4 Paxs", "price" : "USD 111 / Paxs", "vehicle" : "Innova Reborn"},
-            {"pax" : "8 Paxs", "price": "USD 89 / Paxs", "vehicle": "HIACE COMMUTER 15 SEAT" } 
+            {"pax" : "4 Paxs", "price" : 111, "vehicle" : "Innova Reborn"},
+            {"pax" : "8 Paxs", "price": 89, "vehicle": "HIACE COMMUTER 15 SEAT" } 
           ],
           "hotel" : "Berastagi: Sinabung Hills Berastagi",
           "includes" : [
@@ -132,7 +132,7 @@
               ]
             },
             {
-              "dayTitle" : "Day 2: Berastagi - Medan - KNO (B/L/-)",
+              "dayTitle" : "Day 2 | Berastagi - Medan - KNO (B/L/-)",
               "activities" : [
                 "Breakfast at Hotel before Check-out: In the morning, the group will enjoy breakfast at the hotel before checking out.",
                 "Fruit Market Berastagi (5mnt): A brief stop at the Berastagi Fruit Market will allow the group to see and purchase a variety of fresh, local fruits. Additionally, there will be opportunities to sample local products such as chips and coffee, and to shop for regional souvenirs.",
