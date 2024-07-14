@@ -100,39 +100,31 @@ const DetailTourById = (size) => {
                 >
                     ITINERARY PERJALANAN
                 </Text>
-                {/* {tour.days.map((dayDetail, index) =>
-                    <Text
-                        fontWeight={700}
-                        fontSize="xl"
-                        color="brown"
-                        mb={4} 
-                        key={index}         
-                    >
-                        {dayDetail.dayTitle}
-                    </Text>
-                )} */}
-                
                 
                 <Divider borderColor="brown" borderWidth="2px" mb={6} />
 
-                {/* <VStack align="start" spacing={4}>
-                    {tour?.activities?.map((activity, index) => {
-                        const parts = activity.split(":");
-                        if (parts.length < 2) {
-                            // Handle case where activity doesn't contain a colon or has invalid format
-                            return null;
-                        }
-                        const [title, description] = parts;
-                        return (
+                <VStack align="start" spacing={4}>
+                    {tour?.days.map(({dayDetail, activities}, index) => (
+                        
                             <Box key={index} mb={4}>
-                                <Heading as="h3" size="sm" color="teal.500">
-                                    {title}
+                                <Heading key={index} as="h3" size="sm" color="teal.500">
+                                    {dayDetail}
                                 </Heading>
-                                <Text mt={2}>{description.trim()}</Text>
+                                {activities.map((activity, index) => {
+                                     const [title, description] = activity.split(': ', 2);
+
+                                    return(
+                                        <>
+                                            <Text key={index}>{title.trim()}</Text>
+                                            <Text key={index}>{description.trim()}</Text>
+                                        </>
+                                    );
+                                    
+                                })}
                             </Box>
-                        );
-                    })}
-                </VStack> */}
+                        
+                    ))}
+                </VStack>
             </Box>
 
             {/* Tour Details Section */}
