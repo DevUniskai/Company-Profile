@@ -7,12 +7,13 @@
           "description" : "2 Days 1 Night",
           "href" : "/detailtour",
           "destination_img" : [
-            "/static/images/Berastagi_1.png", 
-            "/static/images/Berastagi_1.png",
-            "/static/images/Berastagi_1.png"],
+            "/static/images/danau-toba.jpg", 
+            "/static/images/danau-toba.jpg",
+            "/static/images/danau-toba.jpg"
+          ],
           "days" : [
             {
-              "dayTitle" : "Day 1 | Medan - Berastagi - Medan",
+              "dayTitle" : "DAY 1 | MEDAN - BERASTAGI - MEDAN",
               "activities" : [
                 "Pick up from Hotel at Medan (1.00pm): The group will be picked up from the hotel in Medan. The driver and guide assigned to accompany the group throughout the journey will meet you.",
                 "Transfer to Berastagi: The group will depart immediately for Berastagi, embarking on a journey of approximately 2 hours.",
@@ -22,7 +23,7 @@
               ]
             },
             {
-              "dayTitle" : "Day 2: Berastagi - Medan - KNO (B/L/-)",
+              "dayTitle" : "DAY 2 | BERASTAGI - MEDAN - KNO (B/L/-)",
               "activities" : [
                 "Breakfast at Hotel before Check-out: In the morning, the group will enjoy breakfast at the hotel before checking out.",
                 "Fruit Market Berastagi (5mnt): A brief stop at the Berastagi Fruit Market will allow the group to see and purchase a variety of fresh, local fruits. Additionally, there will be opportunities to sample local products such as chips and coffee, and to shop for regional souvenirs.",
@@ -34,7 +35,7 @@
             }
           ],
           "tourPrice" : [
-            {"pax" : "4 Paxs", "price" : 111, "vehicle" : "Innova Reborn"},
+            {"pax" : "4 Paxs", "price" : 111, "vehicle" : "INNOVA REBORN"},
             {"pax" : "8 Paxs", "price": 89, "vehicle": "HIACE COMMUTER 15 SEAT" } 
           ],
           "hotel" : "Berastagi: Sinabung Hills Berastagi",
@@ -67,32 +68,47 @@
             "/static/images/Berastagi_1.png"],
           "days" : [
             {
-              "dayTitle" : "Day 1: Medan - Berastagi - Medan",
+              "dayTitle" : "DAY 1 | MEDAN - BERASTAGI - SIMALEM (-/-/D)",
               "activities" : [
-                "Pick up from Hotel at Medan (1.00pm): The group will be picked up from the hotel in Medan. The driver and guide assigned to accompany the group throughout the journey will meet you.",
-                "Transfer to Berastagi: The group will depart immediately for Berastagi, embarking on a journey of approximately 2 hours.",
-                "Gundaling Farmstead: Upon arrival in Berastagi, the group will head directly to Gundaling Farmstead, an agro-tourism destination that offers a range of engaging activities. Here, you will experience the serene rural atmosphere and have the opportunity to interact with farm animals.",
-                "Dinner at Gundaling Farmstead: Towards night, you will enjoy dinner at Gundaling Farmstead before continuing to your hotel in Berastagi for check-in.",
-                "Check-in Hotel at Berastagi: After dinner, the group will proceed to the designated hotel in Berastagi for check-in, allowing everyone to rest and prepare for the following day’s adventures."
+                "Pick up from Hotel at Medan (1.00pm): The group will be picked up from the hotel in Medan at 1:00 pm. Upon arrival, the guide and driver will meet the group to begin the journey.",
+                "Transfer to Berastagi: The group will depart for Berastagi, with the transfer expected to take approximately 2 hours.",
+                "Gundaling Hill: Upon arrival in Berastagi, the group will visit Gundaling Hill. Here, you will experience the breathtaking Gundaling Sky Hill Panorama, offering stunning views of the surrounding landscapes.",
+                "Transfer to Simalem Resort: Following the visit to Gundaling Hill, the group will transfer to Taman Simalem Resort, an exclusive resort set amidst picturesque surroundings.",
+                "Dinner at Local Restaurant: En route to Hotel, the group will stop for dinner in Berastagi, enjoying local cuisine in a charming setting.",
+                "Check-in Hotel at Taman Simalem Resort: Upon arrival at Taman Simalem Resort, the group will check-in to the hotel, providing a restful end to the day's travels."
               ]
             },
             {
-              "dayTitle" : "Day 2: Berastagi - Medan - KNO (B/L/-)",
+              "dayTitle" : "DAY 2 | BERASTAGI - MEDAN (B/-/D)",
+              "activities" : [
+                "Breakfast at Hotel before Check-out: Start the day with a delicious breakfast at the hotel. Enjoy a variety of options to fuel up for today's adventures.",
+                "Sipiso - Piso Waterfall: Next, the group will visit Sipiso-Piso Waterfall, a magnificent natural attraction known for its impressive height and stunning scenery.",
+                "Berastagi Fruit Market: Immerse ourself in the vibrant atmosphere of Berastagi's fruit market. Sample fresh local produce, including tropical fruits and vegetables.",
+                "Lunch at Berastagi: Enjoy a delicious lunch at a local restaurant in Berastagi. Savor traditional Indonesian flavors and regional specialties at Gundaling Farmstead Berastagi. ",
+                "Gundaling Farmstead Berastagi: Discover the Berastagi Farmstead, where you can experience an agro-tourism site where they can interact with farm animals and enjoy the rural atmosphere.",
+                "Sikulikap Waterfall: Continue your adventure by visiting Sikulikap Waterfall. Take in the natural beauty and relax in this serene setting.",
+                "Transfer to Medan: Depart from Berastagi and head back to Medan. Enjoy the scenic drive through the lush landscapes of North Sumatra",
+                "Dinner at Medan: Arrive in Medan and treat yourself to a delightful dinner at a recommended restaurant. Sample Medan's culinary delights.",
+                "Check-in Hotel at Medan: End your day by checking in at your chosen hotel in Medan. Rest and recharge more for exciting experiences ahead."
+
+              ]
+            },
+            {
+              "dayTitle" : "DAY 3 | BERASTAGI - MEDAN (B/-/-)",
               "activities" : [
                 "Breakfast at Hotel before Check-out: In the morning, the group will enjoy breakfast at the hotel before checking out.",
-                "Fruit Market Berastagi (5mnt): A brief stop at the Berastagi Fruit Market will allow the group to see and purchase a variety of fresh, local fruits. Additionally, there will be opportunities to sample local products such as chips and coffee, and to shop for regional souvenirs.",
-                "Sikulikap Waterfall (20mnt): The waterfall is about 30 meters high and offers spectacular views with water falling heavily into the pool below. Visitors can enjoy the fresh air, natural beauty, and soothing gurgling sound of water.",
-                "Lunch at Local Restaurant: Lunch will be enjoyed at a local restaurant, chosen for its soothing natural ambiance, offering a delightful dining experience.",
-                "Transfer to Medan (2hrs 30mnt): After lunch, the group will continue their journey back to Medan, which will take about 2 hours and 30 minutes.",
-                "Transfer to Kualanamu International Airport (KNO) (1hrs): Upon arrival in Medan, the group will be transferred immediately to Kualanamu International Airport, a trip of about 1 hour, to continue to their next destination."
+                "Transfer to Kualanamu International Airport (KNO): The group will then be transferred to Kualanamu International Airport for their onwaed journey, marking the end of the tour services"
               ]
             }
           ],
           "tourPrice" : [
-            {"pax" : "4 Paxs", "price" : "USD 111 / Paxs", "vehicle" : "Innova Reborn"},
-            {"pax" : "8 Paxs", "price": "USD 89 / Paxs", "vehicle": "HIACE COMMUTER 15 SEAT" } 
+            {"pax" : "ADULT (Based on 4 Paxs)", "price" : 190, "vehicle" : "INNOVA REBORN"},
+            {"pax" : "ADULT (Based on 8 Paxs)", "price" : 159, "vehicle" : "HIACE COMMUTER 15 SEAT" } 
           ],
-          "hotel" : "Berastagi: Sinabung Hills Berastagi",
+          "hotel" : [
+            "Berastagi: Taman Simalem Resort",
+            "Medan: Grand Central Premier"
+          ],
           "includes" : [
             "Transportation during the tour",
             "Entrance Ticket",
@@ -100,6 +116,7 @@
             "Meals as per itinerary",
             "English Speaking Local Guide",
             "Hotel Stay",
+            "Travel Insurance",
             "Inclusive Mandatory Tipping"
           ],
           "excludes" : [
@@ -122,32 +139,44 @@
             "/static/images/Berastagi_1.png"],
           "days" : [
             {
-              "dayTitle" : "Day 1: Medan - Berastagi - Medan",
+              "dayTitle" : "DAY 1 | MEDAN - PARAPAT - SAMOSIR (-/-/D)",
               "activities" : [
-                "Pick up from Hotel at Medan (1.00pm): The group will be picked up from the hotel in Medan. The driver and guide assigned to accompany the group throughout the journey will meet you.",
-                "Transfer to Berastagi: The group will depart immediately for Berastagi, embarking on a journey of approximately 2 hours.",
-                "Gundaling Farmstead: Upon arrival in Berastagi, the group will head directly to Gundaling Farmstead, an agro-tourism destination that offers a range of engaging activities. Here, you will experience the serene rural atmosphere and have the opportunity to interact with farm animals.",
-                "Dinner at Gundaling Farmstead: Towards night, you will enjoy dinner at Gundaling Farmstead before continuing to your hotel in Berastagi for check-in.",
-                "Check-in Hotel at Berastagi: After dinner, the group will proceed to the designated hotel in Berastagi for check-in, allowing everyone to rest and prepare for the following day’s adventures."
+                "Pick up from Hotel at Medan (1.30pm): Guests will meet our friendly and experienced guide and driver, who will accompany them throughout this journey.",
+                "Transfer to Parapat: The road trip to Parapat will take approximately 4-5 hours. Enjoy the scenic views of the lush and green countryside of North Sumatra along the way.",
+                "Transfer to Samosir (by ferry): Upon arrival in Parapat, guests will continue the journey by ferry to Samosir Island, located in the middle of Lake Toba, renowned for its stunning natural beauty.",
+                "Dinner at Samosir: Upon arrival in Samosir, dinner will be served at a local restaurant offering traditional Batak cuisine",
+                "Check-in Hotel at Samosir: After dinner, guests will check in at a hotel in Samosir and rest for the nextday's adventures."
               ]
             },
             {
-              "dayTitle" : "Day 2 | Berastagi - Medan - KNO (B/L/-)",
+              "dayTitle" : "DAY 2 | SAMOSIR (B/L/D)",
               "activities" : [
-                "Breakfast at Hotel before Check-out: In the morning, the group will enjoy breakfast at the hotel before checking out.",
-                "Fruit Market Berastagi (5mnt): A brief stop at the Berastagi Fruit Market will allow the group to see and purchase a variety of fresh, local fruits. Additionally, there will be opportunities to sample local products such as chips and coffee, and to shop for regional souvenirs.",
-                "Sikulikap Waterfall (20mnt): The waterfall is about 30 meters high and offers spectacular views with water falling heavily into the pool below. Visitors can enjoy the fresh air, natural beauty, and soothing gurgling sound of water.",
-                "Lunch at Local Restaurant: Lunch will be enjoyed at a local restaurant, chosen for its soothing natural ambiance, offering a delightful dining experience.",
-                "Transfer to Medan (2hrs 30mnt): After lunch, the group will continue their journey back to Medan, which will take about 2 hours and 30 minutes.",
-                "Transfer to Kualanamu International Airport (KNO) (1hrs): Upon arrival in Medan, the group will be transferred immediately to Kualanamu International Airport, a trip of about 1 hour, to continue to their next destination."
+                "Breakfast at Hotel: Breakfast will be served at the hotel. Enjoy the meal before starting today's exploration.",
+                "Transfer to Pangururan: After breakfast, the group will depart for Pangururan, a small town in Samosir known as the administrative center of the island.",
+                "Sibea - bea Hills: The first stop on Samosir Island will be Sibea - bea Hill, offering panoramic views of Lake Toba and its surroundings. this hillside is also host to one of the tallest statues of Jesus Christ in all of the world.",
+                "Ulos Village: Visit Ulos Village to see how traditional Batak cloth, Ulos, is made. Observe the weaving process and possibly purchase some as souvenirs.",
+                "Lunch at Pangururan: Enjoy lunch in Pangururan with delicious local dishes.",
+                "Siallagan Village: After lunch, the group will visit Siallagan Village, famous for the Stone Chairs of King Siallagan, where ancient Batak kings used to hold court.",
+                "Tomok Village: Visit Tomok Village, known for the Tomb of King Sidabutar and the unique Sigale - gale dance performance.",
+                "Sipira Nauli: Take a stroll in Sipira Nauli to enjoy the stunning natural scenery and the fresh mountain air.",
+                "Dinner at Samosir: Conclude the day's exploration with a delicious dinner at a local restaurant in Samosir.",
+                "Back to Hotel at Samosir: After dinner, guests will return to the hotel to rest and prepare for the next day's journey."
+              ]
+            },
+            {
+              "dayTitle" : "DAY 3 | SAMOSIR - KUALANAMU AIRPORT (B/-/-)",
+              "activities" : [
+                "Breakfast at Horel before Check-out: Enjoy the final breakfast at the hotel before checking out. Make sure all belongings are ready.",
+                "Travel to Parapat: Travel back to Parapat by ferry.",
+                "Transfer to Kualanamu International Airport (KNO): Upon arrival in Parapat, the group will continue the road trip to Kualanamu International Airport. Ensure arrival is on time for the next flight."
               ]
             }
           ],
           "tourPrice" : [
-            {"pax" : "4 Paxs", "price" : "USD 111 / Paxs", "vehicle" : "Innova Reborn"},
-            {"pax" : "8 Paxs", "price": "USD 89 / Paxs", "vehicle": "HIACE COMMUTER 15 SEAT" } 
+            {"pax" : "Minimum 4 Paxs", "price" : 187, "vehicle" : "INNOVA REBORN"},
+            {"pax" : "Minimum 9 Paxs", "price" : 152, "vehicle" : "HIACE COMMUTER" } 
           ],
-          "hotel" : "Berastagi: Sinabung Hills Berastagi",
+          "hotel" : "Samosir: Samosir Cottage Resort",
           "includes" : [
             "Transportation during the tour",
             "Entrance Ticket",
@@ -177,32 +206,57 @@
             "/static/images/Berastagi_1.png"],
           "days" : [
             {
-              "dayTitle" : "Day 1: Medan - Berastagi - Medan",
+              "dayTitle" : "DAY 1 | MEDAN - BERASTAGI - SIMALEM (-/-/D)",
               "activities" : [
-                "Pick up from Hotel at Medan (1.00pm): The group will be picked up from the hotel in Medan. The driver and guide assigned to accompany the group throughout the journey will meet you.",
-                "Transfer to Berastagi: The group will depart immediately for Berastagi, embarking on a journey of approximately 2 hours.",
-                "Gundaling Farmstead: Upon arrival in Berastagi, the group will head directly to Gundaling Farmstead, an agro-tourism destination that offers a range of engaging activities. Here, you will experience the serene rural atmosphere and have the opportunity to interact with farm animals.",
-                "Dinner at Gundaling Farmstead: Towards night, you will enjoy dinner at Gundaling Farmstead before continuing to your hotel in Berastagi for check-in.",
-                "Check-in Hotel at Berastagi: After dinner, the group will proceed to the designated hotel in Berastagi for check-in, allowing everyone to rest and prepare for the following day’s adventures."
+                "Pick up from Hotel at Medan (1.00pm): The group will be picked up from their hotel in Medan. The assigned guide and driver will meet the group at the hotel to commence the journey.",
+                "Transfer to Berastagi: The group will depart for Berastagi, with the transfer expected to take approximately 2 hours.",
+                "Sikulikap Waterfall: Next, the group will visit Sikulikap Waterfall, a stunning 30-meter high waterfall. The site offers breathtaking views and a refreshing experience with the sound of cascading water.",
+                "Dinner at Local Restaurant: After a day of exploring, the group will have dinner at another local restaurant in Berastagi, sampling more of the local flavors.",
+                "Check-in Hotel at Taman Simalem Resort: Upon arrival, the group will check-in to the resort, providing a restful end to the day's activities."
               ]
             },
             {
-              "dayTitle" : "Day 2: Berastagi - Medan - KNO (B/L/-)",
+              "dayTitle" : "DAY 2 | SIMALEM - SAMOSIR (B/L/D)",
               "activities" : [
                 "Breakfast at Hotel before Check-out: In the morning, the group will enjoy breakfast at the hotel before checking out.",
-                "Fruit Market Berastagi (5mnt): A brief stop at the Berastagi Fruit Market will allow the group to see and purchase a variety of fresh, local fruits. Additionally, there will be opportunities to sample local products such as chips and coffee, and to shop for regional souvenirs.",
-                "Sikulikap Waterfall (20mnt): The waterfall is about 30 meters high and offers spectacular views with water falling heavily into the pool below. Visitors can enjoy the fresh air, natural beauty, and soothing gurgling sound of water.",
-                "Lunch at Local Restaurant: Lunch will be enjoyed at a local restaurant, chosen for its soothing natural ambiance, offering a delightful dining experience.",
-                "Transfer to Medan (2hrs 30mnt): After lunch, the group will continue their journey back to Medan, which will take about 2 hours and 30 minutes.",
-                "Transfer to Kualanamu International Airport (KNO) (1hrs): Upon arrival in Medan, the group will be transferred immediately to Kualanamu International Airport, a trip of about 1 hour, to continue to their next destination."
+                "Transfer to Samosir: The journey continues with a transfer to Samosir Island, known for its cultural heritage and natural beauty.",
+                "Sibea - bea Hill: The first stop on Samosir Island will be Sibea-bea Hill, offering panoramic views of Lake Toba and its surroundings. this hillside is also host to one of the tallest statues of Jesus Christ in all of the world.",
+                "Lunch at Pangururan: Lunch will be provided at a local restaurant in Pangururan, the largest town on Samosir Island.",
+                "Ulos Village: The group will visit Ulos Village, renowned for its traditional Batak textiles and weaving techniques.",
+                "Siallagan Village: Next, the group will explore Siallagan Village, famous for its ancient stone chairs and traditional Batak houses.",
+                "Sipira Nauli: The final cultural stop will be Sipira Nauli, providing scenic view of Lake Toba.",
+                "Dinner at Samosir: Dinner will be served at a local resaturant on a Samosir Island, offering more local culinary delights.",
+                "Check-in Hotel at Samosir: After dinner, the group will check-in to their hotel on Samosir Island, concluding the day's travels."
+              ]
+            },
+            {
+              "dayTitle" : "DAY 3 | SAMOSIR - PARAPAT - SIANTAR - MEDAN (B/L/D)",
+              "activities" : [
+                "Breakfast at Hotel before Check-out: In the morning, the group will enjoy breakfast at the hotel before checking out.",
+                "Transfer to Parapat (by Ferry): The group will transfer to Parapat via ferry, crossing the scenic Lake Toba.",
+                "Toba Caldera Nomadic Escape: Upon arrival in Parapat, the group will visit the Toba Caldera Nomadic Escape, a national park with unique and picturesque views of the majestic Lake Toba in one of its best viewpoint.",
+                "Lunch at Parapat: Lunch will be provided at a local restaurant in Parapat.",
+                "Transfer to Medan (4hrs): After lunch, the group will transfer back to Medan, with journey expected to take several hours.",
+                "Check-in Hotel at Medan: Upon arrival in Medan, the group will check-in to their hotel. This marks the end of the guide's services for the tour. (End of Services for Guide)."
+              ]
+            },
+            {
+              "dayTitle" : "DAY 4 | MEDAN - KUALANAMU (B)",
+              "activities" : [
+                "Breakfast at Hotel before Check-out: In the morning, the group will enjoy breakfast at the hotel before checking out.",
+                "Transfer to Kualanamu International Airport (KNO): The group will be transferred to Kualanamu International Airport by the driver, concluding the tour services."
               ]
             }
           ],
           "tourPrice" : [
-            {"pax" : "4 Paxs", "price" : "USD 111 / Paxs", "vehicle" : "Innova Reborn"},
-            {"pax" : "8 Paxs", "price": "USD 89 / Paxs", "vehicle": "HIACE COMMUTER 15 SEAT" } 
+            {"pax" : "ADULT (Based on 4 Paxs)", "price" : 253, "vehicle" : "INNOVA REBORN"},
+            {"pax" : "ADULT (Based on 8 Paxs)", "price" : 222, "vehicle": "HIACE COMMUTER"} 
           ],
-          "hotel" : "Berastagi: Sinabung Hills Berastagi",
+          "hotel" : [
+            "Berastagi : Taman Simalem Resort",
+            "Samosir : Samosir Cottage",
+            "Medan : Grand Central Premier"
+          ],
           "includes" : [
             "Transportation during the tour",
             "Entrance Ticket",
@@ -210,6 +264,7 @@
             "Meals as per itinerary",
             "English Speaking Local Guide",
             "Hotel Stay",
+            "Travel Insurance",
             "Inclusive Mandatory Tipping"
           ],
           "excludes" : [
