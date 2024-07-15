@@ -69,7 +69,6 @@ const DetailTourById = (size) => {
                 gap={3}
                 p={2}
                 flex="justify-center"
-                bgColor={"cyan"}
                 width={"100%"}
             >
                 {tour.destination_img.map((destination_img, index) => {  
