@@ -1,3 +1,4 @@
+import BackButton from "@/components/common/BackButtonItem";
 import SalesContactList from "@/components/sections/SalesContactList";
 import { Box, Flex, Text } from "@chakra-ui/react";
 import Image from "next/image";
@@ -5,7 +6,9 @@ import Image from "next/image";
 const ContactSales = () => {
   return (
     <Box w={"100%"} h={"auto"} backgroundColor={"brown"}>
+      
       <Flex pt={10} justifyContent={"center"}>
+        {/* <BackButton /> */}
         <Image
           src={"/static/images/uniskai_header.png"}
           width={192}
