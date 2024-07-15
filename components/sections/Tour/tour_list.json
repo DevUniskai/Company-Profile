@@ -38,7 +38,9 @@
             {"pax" : "4 Paxs", "price" : 111, "vehicle" : "INNOVA REBORN"},
             {"pax" : "8 Paxs", "price": 89, "vehicle": "HIACE COMMUTER 15 SEAT" } 
           ],
-          "hotel" : "Berastagi: Sinabung Hills Berastagi",
+          "hotel" : [
+            "Berastagi: Sinabung Hills Berastagi"
+          ],
           "includes" : [
             "Transportation during the tour",
             "Entrance Ticket",
@@ -176,7 +178,9 @@
             {"pax" : "Minimum 4 Paxs", "price" : 187, "vehicle" : "INNOVA REBORN"},
             {"pax" : "Minimum 9 Paxs", "price" : 152, "vehicle" : "HIACE COMMUTER" } 
           ],
-          "hotel" : "Samosir: Samosir Cottage Resort",
+          "hotel" : [
+            "Samosir: Samosir Cottage Resort"
+          ],
           "includes" : [
             "Transportation during the tour",
             "Entrance Ticket",

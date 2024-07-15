@@ -4,7 +4,7 @@ import Image from "next/image";
 const Welcome = () => {
   return (
     <Flex
-      height={"100vh"}
+      height={"50vh"}
       backgroundImage={"/static/images/main.jpg"}
       backgroundPosition={"center"}
       backgroundSize="cover"
