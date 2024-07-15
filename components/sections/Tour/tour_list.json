@@ -7,9 +7,9 @@
           "description" : "2 Days 1 Night",
           "href" : "/detailtour",
           "destination_img" : [
-            "/static/images/danau-toba.jpg", 
-            "/static/images/danau-toba.jpg",
-            "/static/images/danau-toba.jpg"
+            "/static/images/sikulikap-waterfall.jpg", 
+            "/static/images/fruit-market.jpg",
+            "/static/images/gundaling-farmstead.jpg"
           ],
           "days" : [
             {
