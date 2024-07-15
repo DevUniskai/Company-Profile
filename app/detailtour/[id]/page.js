@@ -7,6 +7,8 @@ import {
   Text,
   Heading,
   VStack,
+  ListItem,
+  UnorderedList,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import { useParams } from "next/navigation";
