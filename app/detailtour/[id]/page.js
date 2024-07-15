@@ -68,26 +68,32 @@ const DetailTourById = (size) => {
       {/* Images Section */}
       <Grid
         templateColumns={{
-          base: "repeat(1, 1fr)",
-          md: "repeat(2, 1fr)",
+          base: "repeat(3, 1fr)",
+          md: "repeat(3, 1fr)",
           lg: "repeat(3, 1fr)",
         }}
-        m={5}
+        mt={5}
         ml={{ base: 5, md: 20 }}
         mr={{ base: 5, md: 20 }}
         gap={3}
-        p={2}
+        p={5}
+        // bgColor={"yellow"}
+        height={"fit-content"}
+        
       >
         {tour.destination_img.map((destination_img, index) => {
           return (
             <Box
               key={index}
               width={{ base: "100%", md: "188px", lg: "282px", xl: "376px" }}
-              height={{ base: "200px", md: "240px", lg: "300px", xl: "360px" }}
+            //   height={{ base: "fit-content", md: "240px", lg: "300px", xl: "360px" }}
               position={size == "fill" ? "relative" : "inherit"}
               borderRadius={size == "fill" && 14}
               overflow={size === "fill" && "hidden"}
               alignItems={"center"}
+              height="fit-content"
+            //   width="fit-content"
+              bgColor={"green"}
             >
               {size?.length > 0 ? (
                 <Image
@@ -167,8 +173,8 @@ const DetailTourById = (size) => {
       <Box p={6}>
         <Grid
           templateColumns={{
-            base: "repeat(1, 1fr)",
-            md: "repeat(2, 1fr)",
+            base: "repeat(3, 1fr)",
+            md: "repeat(3, 1fr)",
             lg: "repeat(3, 1fr)",
           }}
           gap={2}

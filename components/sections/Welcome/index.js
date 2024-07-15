@@ -7,7 +7,7 @@ const Welcome = () => {
   return (
     <Box bgColor={"Beige"}>
       <Flex
-        height={"55vh"}
+        height={"60vh"}
         backgroundImage={"/static/images/main.jpg"}
         backgroundPosition={"center"}
         backgroundSize="cover"
@@ -29,7 +29,7 @@ const Welcome = () => {
         </Text> */}
       </Flex>
 
-      <Box display="flex" justifyContent="center" height={"50hv"} mt={4}>
+      <Box display="flex" justifyContent="center" height={"50hv"} mt={0.8}>
         <Link
           as={NextLink}
           href={"/contact"}
