@@ -37,7 +37,7 @@ const DetailTourById = ({ size }) => {
   }, [id]);
 
   if (!tour) {
-    return <div>Loading...</div>;
+    return <Box>Loading...</Box>;
   }
 
   const handleBuyButtonClick = () => {

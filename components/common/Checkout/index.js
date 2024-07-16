@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Box, Button, FormControl, FormLabel, Input, VStack, Text, HStack, IconButton } from "@chakra-ui/react";
-import { AddIcon, MinusIcon } from "@chakra-ui/icons";
+import Image from 'next/image'; // Import Image component from next/image
 
 const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
   const [name, setName] = useState("");
@@ -39,27 +39,33 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
   const totalPrice = price * quantity;
 
   return (
-    <Box p={5} borderWidth="1px" borderRadius="lg" bgColor="Beige" borderColor="brown">
-      <Text fontWeight="600" fontSize="2xl" textColor="brown" mb={5}>
-        {productName}
+    <Box p={5} borderWidth="1px" borderRadius="lg">
+      <Text fontSize="2xl" mb={5}>
+        Checkout
       </Text>
-      <Text mb={4}>
+      <Box mb={4}>
         <strong>Product:</strong> {productName}
-      </Text>
-      <Text mb={4}>
+      </Box>
+      <Box mb={4}>
         <strong>Price:</strong> USD {price.toFixed(2)}
-      </Text>
-      <Text mb={4}>
+      </Box>
+      <Box mb={4}>
         <strong>Quantity:</strong>
         <HStack>
-          <IconButton icon={<MinusIcon color="brown" />} onClick={decreaseQuantity} />
+          <IconButton 
+            icon={<Image src="/static/images/Enter.png" alt="Minus" width={24} height={24} />} 
+            onClick={decreaseQuantity} 
+          />
           <Text>{quantity}</Text>
-          <IconButton icon={<AddIcon color="brown"/>} onClick={increaseQuantity} />
+          <IconButton 
+            icon={<Image src="/static/images/Enter.png" alt="Plus" width={24} height={24} />} 
+            onClick={increaseQuantity} 
+          />
         </HStack>
-      </Text>
-      <Text mb={4}>
+      </Box>
+      <Box mb={4}>
         <strong>Total Price:</strong> USD {totalPrice.toFixed(2)}
-      </Text>
+      </Box>
       <form onSubmit={handleCheckout}>
         <VStack spacing={4}>
           <FormControl id="name" isRequired>
@@ -68,8 +74,6 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
               type="text" 
               value={name} 
               onChange={(e) => setName(e.target.value)} 
-              borderColor= "brown"
-              _hover={{ color: "blue", stroke: "blue" }}
             />
           </FormControl>
           <FormControl id="email" isRequired>
@@ -77,8 +81,7 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
             <Input 
               type="email" 
               value={email} 
-              onChange={(e) => setEmail(e.target.value)}
-              borderColor= "brown" 
+              onChange={(e) => setEmail(e.target.value)} 
             />
           </FormControl>
           <FormControl id="phone" isRequired>
@@ -87,10 +90,9 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
               type="tel" 
               value={phone} 
               onChange={(e) => setPhone(e.target.value)} 
-              borderColor= "brown"
             />
           </FormControl>
-          <Button type="submit" colorScheme="brown" bgColor="brown" color="white" size="md">
+          <Button type="submit" colorScheme="teal" size="md">
             Submit
           </Button>
         </VStack>
