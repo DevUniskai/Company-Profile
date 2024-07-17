@@ -29,6 +29,23 @@ const DetailTourById = ({ size }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   useEffect(() => {
+    // render midtrans snap token (snapscript)
+    const snapScript = "https://app.sandbox.midtrans.com/snap/snap.js";
+    const clientKey = process.env.NEXT_PUBLIC_CLIENT;
+    
+    const script = document.createElement('script')
+    script.src = snapScript
+    script.setAttribute('data-client-key', clientKey)
+    script.async = true
+
+    document.body.appendChild(script)
+
+    return () => {
+      document.body.removeChild(script)
+    };
+  }, []);
+
+  useEffect(() => {
     if (id) {
       const tourId = parseInt(id, 10);
       const filteredTour = data.tours.find((tour) => tour.id === tourId);
@@ -94,7 +111,6 @@ const DetailTourById = ({ size }) => {
             overflow={size === "fill" && "hidden"}
             alignItems="center"
             height="fit-content"
-            
           >
             {size?.length > 0 ? (
               <Image

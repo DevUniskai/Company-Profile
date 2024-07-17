@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import { Box, Button, FormControl, FormLabel, Input, VStack, Text, HStack, IconButton } from "@chakra-ui/react";
 import Image from 'next/image'; // Import Image component from next/image
-import data from "@/components/sections/Tour/tour_list.json";
 
-const Checkout = ({ id, productName, initialQuantity = 1, tourPrice }) => {
+const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -32,13 +31,14 @@ const Checkout = ({ id, productName, initialQuantity = 1, tourPrice }) => {
   };
 
   const totalPrice = price * quantity;
+  const orderId = ~~(Math.random() * 100) + 1;
 
   const handleCheckout = async (e) => {
     e.preventDefault();
 
     // Passing data dari backend (route.js)
     const data = {
-            id: id,
+            id: orderId,
             productName: productName,
             price: price,
             quantity: quantity,
@@ -49,13 +49,16 @@ const Checkout = ({ id, productName, initialQuantity = 1, tourPrice }) => {
             phoneNumber: phone
     }
 
-    const response = await fetch("/api/tokenizer", {
-        method: "POST",
-        body: JSON.stringify(data)
-    })
+   const response = await fetch("/api/tokenizer", {
+    method: "POST",
+    body: JSON. stringify(data)
+   })
 
     const requestData = await response.json()
     console.log({requestData})
+
+    window.snap.pay(requestData.token)
+
     // console.log({ id, firstName, lastName, email, phone, productName, quantity, price, totalPrice: price * quantity });
     // alert("Checkout completed! Details submitted.");
   };
