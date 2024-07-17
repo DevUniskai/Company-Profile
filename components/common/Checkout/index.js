@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { Box, Button, FormControl, FormLabel, Input, VStack, Text, HStack, IconButton } from "@chakra-ui/react";
 import Image from 'next/image'; // Import Image component from next/image
+import data from "@/components/sections/Tour/tour_list.json";
 
-const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
-  const [name, setName] = useState("");
+const Checkout = ({ id, productName, initialQuantity = 1, tourPrice }) => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [quantity, setQuantity] = useState(initialQuantity);
@@ -19,13 +21,6 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
     }
   }, [quantity, tourPrice]);
 
-  const handleCheckout = (e) => {
-    e.preventDefault();
-    // Handle the checkout process here
-    console.log({ name, email, phone, productName, quantity, price, totalPrice: price * quantity });
-    alert("Checkout completed! Details submitted.");
-  };
-
   const increaseQuantity = () => {
     setQuantity(quantity + 1);
   };
@@ -38,8 +33,36 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
 
   const totalPrice = price * quantity;
 
+  const handleCheckout = async (e) => {
+    e.preventDefault();
+
+    // Passing data dari backend (route.js)
+    const data = {
+            id: id,
+            productName: productName,
+            price: price,
+            quantity: quantity,
+            totalPrice: totalPrice, 
+            firstName: firstName,
+            lastName: lastName,
+            email: email,
+            phoneNumber: phone
+    }
+
+    const response = await fetch("/api/tokenizer", {
+        method: "POST",
+        body: JSON.stringify(data)
+    })
+
+    const requestData = await response.json()
+    console.log({requestData})
+    // console.log({ id, firstName, lastName, email, phone, productName, quantity, price, totalPrice: price * quantity });
+    // alert("Checkout completed! Details submitted.");
+  };
+
+  
   return (
-    <Box p={5} borderWidth="1px" borderRadius="lg">
+    <Box p={5} borderWidth="1px" borderRadius="lg" borderColor="brown">
       <Text fontSize="2xl" mb={5}>
         Checkout
       </Text>
@@ -68,20 +91,36 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
       </Box>
       <form onSubmit={handleCheckout}>
         <VStack spacing={4}>
-          <FormControl id="name" isRequired>
-            <FormLabel>Name</FormLabel>
-            <Input 
-              type="text" 
-              value={name} 
-              onChange={(e) => setName(e.target.value)} 
-            />
-          </FormControl>
+          <HStack spacing={4} w="100%">
+            <FormControl id="first-name" isRequired>
+              <FormLabel>First Name</FormLabel>
+              <Input 
+                type="text" 
+                value={firstName} 
+                onChange={(e) => setFirstName(e.target.value)} 
+                borderColor="brown"
+                _hover={{ color: "brown", stroke: "brown" }}
+              />
+            </FormControl>
+            <FormControl id="last-name" isRequired>
+              <FormLabel>Last Name</FormLabel>
+              <Input 
+                type="text" 
+                value={lastName} 
+                onChange={(e) => setLastName(e.target.value)} 
+                borderColor="brown"
+                _hover={{ color: "brown", stroke: "brown" }}
+              />
+            </FormControl>
+          </HStack>
           <FormControl id="email" isRequired>
             <FormLabel>Email</FormLabel>
             <Input 
               type="email" 
               value={email} 
               onChange={(e) => setEmail(e.target.value)} 
+              borderColor="brown"
+              _hover={{ color: "brown", stroke: "brown" }}
             />
           </FormControl>
           <FormControl id="phone" isRequired>
@@ -90,9 +129,11 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
               type="tel" 
               value={phone} 
               onChange={(e) => setPhone(e.target.value)} 
+              borderColor="brown"
+              _hover={{ color: "brown", stroke: "brown" }}
             />
           </FormControl>
-          <Button type="submit" colorScheme="teal" size="md">
+          <Button type="submit" bgColor="brown" colorScheme="brown" size="md">
             Submit
           </Button>
         </VStack>
