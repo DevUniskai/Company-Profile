@@ -93,7 +93,7 @@ const DetailTourById = (size) => {
               alignItems={"center"}
               height="fit-content"
             //   width="fit-content"
-              bgColor={"green"}
+              // bgColor={"green"}
             >
               {size?.length > 0 ? (
                 <Image

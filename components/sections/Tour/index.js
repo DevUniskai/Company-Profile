@@ -13,7 +13,7 @@ const Tour = () => {
       color="brown"
     >
       <Text fontSize={"4xl"} mb={6} letterSpacing={"5px"}>
-        TOUR
+        DOMESTIC TOUR
       </Text>
       <Grid
         templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, 1fr)" }}

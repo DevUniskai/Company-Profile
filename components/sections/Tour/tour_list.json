@@ -2,7 +2,7 @@
     "tours": [
         {
           "id" : 1,
-          "src" : "/static/images/Berastagi_1.png",
+          "src" : "/static/images/2d1n_berastagi.jpg",
           "title" : "2D1N BERASTAGI TRIP",
           "description" : "2 Days 1 Night",
           "href" : "https://drive.google.com/file/d/1NpVT5irIYDbE5cB6LkVmSofERS_UvlgY/view?usp=sharing",
@@ -60,14 +60,14 @@
         },
         {
           "id" : 2,
-          "src" : "/static/images/Berastagi_1.png",
+          "src" : "/static/images/3d2n_berastagi.jpg",
           "title" :  "3D2N BERASTAGI TRIP",
           "description" : "3 Days 2 Night",
           "href" : "/detailtour",
           "destination_img" : [
-            "/static/images/Berastagi_1.png", 
-            "/static/images/Berastagi_1.png",
-            "/static/images/Berastagi_1.png"],
+            "/static/images/berastagi1.jpg", 
+            "/static/images/berastagi2.jpg",
+            "/static/images/berastagi3.jpg"],
           "days" : [
             {
               "dayTitle" : "DAY 1 | MEDAN - BERASTAGI - SIMALEM (-/-/D)",
@@ -131,14 +131,14 @@
         },
         {
           "id" : 3,
-          "src" : "/static/images/Berastagi_2.png",
+          "src" : "/static/images/medan-samosir_trip.jpg",
           "title" : "MEDAN - SAMOSIR TRIP",
           "description" : "3 Days 2 Night",
           "href" : "https://drive.google.com/file/d/1wYAHUm-a507yd5fsvavOWog_nbGIsCcS/view?usp=sharing",
           "destination_img" : [
-            "/static/images/Berastagi_1.png", 
-            "/static/images/Berastagi_1.png",
-            "/static/images/Berastagi_1.png"],
+            "/static/images/medan_samosir1.jpg", 
+            "/static/images/medan_samosir2.jpg",
+            "/static/images/medan_samosir3.jpg"],
           "days" : [
             {
               "dayTitle" : "DAY 1 | MEDAN - PARAPAT - SAMOSIR (-/-/D)",
@@ -200,14 +200,14 @@
         },
         {
           "id" : 4,
-          "src" : "/static/images/Berastagi_3.png",
+          "src" : "/static/images/berastagi-samosir_trip.jpg",
           "title" : "BERASTAGI - SAMOSIR TRIP",
           "description" : "4 Days 3 Night",
           "href" : "https://drive.google.com/file/d/1x9dWeiJEeszDAmq_40mDjq5OuQD7i-I5/view?usp=sharing",
           "destination_img" : [
-            "/static/images/Berastagi_1.png", 
-            "/static/images/Berastagi_1.png",
-            "/static/images/Berastagi_1.png"],
+            "/static/images/berastagi_samosir1.jpg", 
+            "/static/images/berastagi_samosir2.jpg",
+            "/static/images/berastagi_samosir3.jpg"],
           "days" : [
             {
               "dayTitle" : "DAY 1 | MEDAN - BERASTAGI - SIMALEM (-/-/D)",
