@@ -1,4 +1,5 @@
-"use client";
+// app/detailtour/[id]/page.js
+
 import {
   Divider,
   Grid,
@@ -11,24 +12,20 @@ import {
   UnorderedList,
 } from "@chakra-ui/react";
 import Image from "next/image";
-import { useParams } from "next/navigation";
-import { useEffect, useState } from "react";
-import data from "@/components/sections/Tour/tour_list.json";
 import Footer from "@/components/sections/Footer";
+import data from "@/components/sections/Tour/tour_list.json";
 import styles from "./style.module.css";
 
-const DetailTourById = (size) => {
-  const useRoute = useParams();
-  const id = useRoute.id;
-  const [tour, setTour] = useState(null);
+export async function generateStaticParams() {
+  return data.tours.map((tour) => ({
+    id: tour.id.toString(),
+  }));
+}
 
-  useEffect(() => {
-    if (id) {
-      const tourId = parseInt(id, 10);
-      const filteredTour = data.tours.find((tour) => tour.id === tourId);
-      setTour(filteredTour);
-    }
-  }, [id]);
+export default function DetailTourById({ params }) {
+  const { id } = params;
+  const tourId = parseInt(id, 10);
+  const tour = data.tours.find((tour) => tour.id === tourId);
 
   if (!tour) {
     return <div>Loading...</div>;
@@ -77,39 +74,23 @@ const DetailTourById = (size) => {
         mr={{ base: 5, md: 20 }}
         gap={3}
         p={5}
-        // bgColor={"yellow"}
-        height={"fit-content"}
-        
       >
         {tour.destination_img.map((destination_img, index) => {
           return (
             <Box
               key={index}
               width={{ base: "100%", md: "188px", lg: "282px", xl: "376px" }}
-            //   height={{ base: "fit-content", md: "240px", lg: "300px", xl: "360px" }}
-              position={size == "fill" ? "relative" : "inherit"}
-              borderRadius={size == "fill" && 14}
-              overflow={size === "fill" && "hidden"}
-              alignItems={"center"}
+              position="inherit"
               height="fit-content"
-            //   width="fit-content"
-              // bgColor={"green"}
+              overflow="hidden"
+              alignItems={"center"}
             >
-              {size?.length > 0 ? (
-                <Image
-                  src={destination_img}
-                  alt={`destination ${index + 1}`}
-                  layout="fill"
-                  objectFit="cover"
-                />
-              ) : (
-                <Image
-                  src={destination_img}
-                  alt={`destination ${index + 1}`}
-                  width={376}
-                  height={240}
-                />
-              )}
+              <Image
+                src={destination_img}
+                alt={`destination ${index + 1}`}
+                width={376}
+                height={240}
+              />
             </Box>
           );
         })}
@@ -279,6 +260,4 @@ const DetailTourById = (size) => {
       <Footer />
     </Box>
   );
-};
-
-export default DetailTourById;
+}
