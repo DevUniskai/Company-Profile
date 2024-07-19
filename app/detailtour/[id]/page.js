@@ -16,7 +16,7 @@ import Footer from "@/components/sections/Footer";
 import data from "@/components/sections/Tour/tour_list.json";
 import styles from "./style.module.css";
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return data.tours.map((tour) => ({
     id: tour.id.toString(),
   }));
@@ -177,7 +177,7 @@ export default function DetailTourById({ params }) {
               PRICE
             </Heading>
             {tour.tourPrice.map((priceDetail, index) => {
-              return <Text key={index}>USD {priceDetail.price} / PAXS</Text>;
+              return <Text key={index}>USD {priceDetail.price} / Paxs</Text>;
             })}
           </Box>
           <Box>
@@ -193,7 +193,7 @@ export default function DetailTourById({ params }) {
         <Box ml={{ base: 5, md: 20 }} mr={{ base: 5, md: 20 }} mb={6}>
           <Divider borderColor="brown" borderWidth="1px" mb={6} />
 
-          <Heading fontWeight={700} fontSize="sm" color="brown" mb={4}>
+          <Heading as="h4" size="sm" mb={2} color="brown">
             HOTEL
           </Heading>
           {tour.hotel.map((hotelDetail, index) => {

@@ -5,7 +5,7 @@
           "src" : "/static/images/2d1n_berastagi.jpg",
           "title" : "2D1N BERASTAGI TRIP",
           "description" : "2 Days 1 Night",
-          "href" : "https://drive.google.com/file/d/1NpVT5irIYDbE5cB6LkVmSofERS_UvlgY/view?usp=sharing",
+          "href" : "https://drive.google.com/file/d/1NpVT5irIYDbE5cB6LkVmSofERS_UvlgY/view?usp=drive_link",
           "destination_img" : [
             "/static/images/sikulikap-waterfall.jpg", 
             "/static/images/fruit-market.jpg",
@@ -35,8 +35,8 @@
             }
           ],
           "tourPrice" : [
-            {"pax" : "4 Paxs", "price" : 111, "vehicle" : "INNOVA REBORN"},
-            {"pax" : "8 Paxs", "price": 89, "vehicle": "HIACE COMMUTER 15 SEAT" } 
+            {"pax" : "4 Paxs", "price" : 111, "vehicle" : "Innova Reborn"},
+            {"pax" : "8 Paxs", "price": 89, "vehicle": "Hiace Commuter 15 Seat" } 
           ],
           "hotel" : [
             "Berastagi: Sinabung Hills Berastagi"
@@ -63,7 +63,7 @@
           "src" : "/static/images/3d2n_berastagi.jpg",
           "title" :  "3D2N BERASTAGI TRIP",
           "description" : "3 Days 2 Night",
-          "href" : "/detailtour",
+          "href" : "https://drive.google.com/file/d/19Qcm4SKrCBKpS9P7Ozd1dMgLKujTGqkp/view?usp=drive_link",
           "destination_img" : [
             "/static/images/berastagi1.jpg", 
             "/static/images/berastagi2.jpg",
@@ -104,8 +104,8 @@
             }
           ],
           "tourPrice" : [
-            {"pax" : "ADULT (Based on 4 Paxs)", "price" : 190, "vehicle" : "INNOVA REBORN"},
-            {"pax" : "ADULT (Based on 8 Paxs)", "price" : 159, "vehicle" : "HIACE COMMUTER 15 SEAT" } 
+            {"pax" : "Adult (Based on 4 Paxs)", "price" : 190, "vehicle" : "Innova Reborn"},
+            {"pax" : "Adult (Based on 8 Paxs)", "price" : 159, "vehicle" : "Hiace Commuter 15 Seat" } 
           ],
           "hotel" : [
             "Berastagi: Taman Simalem Resort",
@@ -134,7 +134,7 @@
           "src" : "/static/images/medan-samosir_trip.jpg",
           "title" : "MEDAN - SAMOSIR TRIP",
           "description" : "3 Days 2 Night",
-          "href" : "https://drive.google.com/file/d/1wYAHUm-a507yd5fsvavOWog_nbGIsCcS/view?usp=sharing",
+          "href" : "https://drive.google.com/file/d/115eIfh3g3Hy1NtxEKrsA85q1Ah-VEjxC/view?usp=drive_link",
           "destination_img" : [
             "/static/images/medan_samosir1.jpg", 
             "/static/images/medan_samosir2.jpg",
@@ -175,8 +175,8 @@
             }
           ],
           "tourPrice" : [
-            {"pax" : "Minimum 4 Paxs", "price" : 187, "vehicle" : "INNOVA REBORN"},
-            {"pax" : "Minimum 9 Paxs", "price" : 152, "vehicle" : "HIACE COMMUTER" } 
+            {"pax" : "Minimum 4 Paxs", "price" : 187, "vehicle" : "Innova Reborn"},
+            {"pax" : "Minimum 9 Paxs", "price" : 152, "vehicle" : "Hiace Commuter" } 
           ],
           "hotel" : [
             "Samosir: Samosir Cottage Resort"
@@ -203,7 +203,7 @@
           "src" : "/static/images/berastagi-samosir_trip.jpg",
           "title" : "BERASTAGI - SAMOSIR TRIP",
           "description" : "4 Days 3 Night",
-          "href" : "https://drive.google.com/file/d/1x9dWeiJEeszDAmq_40mDjq5OuQD7i-I5/view?usp=sharing",
+          "href" : "https://drive.google.com/file/d/1AX7YoJ6GGDREEadRjiGZ6bfbbpG3DrtQ/view?usp=drive_link",
           "destination_img" : [
             "/static/images/berastagi_samosir1.jpg", 
             "/static/images/berastagi_samosir2.jpg",
@@ -253,8 +253,8 @@
             }
           ],
           "tourPrice" : [
-            {"pax" : "ADULT (Based on 4 Paxs)", "price" : 253, "vehicle" : "INNOVA REBORN"},
-            {"pax" : "ADULT (Based on 8 Paxs)", "price" : 222, "vehicle": "HIACE COMMUTER"} 
+            {"pax" : "Adult (Based on 4 Paxs)", "price" : 253, "vehicle" : "Innova Reborn"},
+            {"pax" : "Adult (Based on 8 Paxs)", "price" : 222, "vehicle": "Hiace Commuter"} 
           ],
           "hotel" : [
             "Berastagi : Taman Simalem Resort",
