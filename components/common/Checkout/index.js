@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import { Box, Button, FormControl, FormLabel, Input, VStack, Text, HStack, IconButton } from "@chakra-ui/react";
+import { Box, Button, FormControl, FormLabel, Input, VStack, Text, HStack, IconButton, RadioGroup, Radio, Textarea } from "@chakra-ui/react";
 import Image from 'next/image'; // Import Image component from next/image
+import CheckoutButton from "@/components/checkout_form/CheckoutButton";
 
 const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
   const [firstName, setFirstName] = useState("");
@@ -9,6 +10,15 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
   const [phone, setPhone] = useState("");
   const [quantity, setQuantity] = useState(initialQuantity);
   const [price, setPrice] = useState(tourPrice[0].price);
+
+  // Food preference states
+  const [halal, setHalal] = useState("");
+  const [halalOther, setHalalOther] = useState("");
+  const [vegetarian, setVegetarian] = useState("");
+  const [vegetarianOther, setVegetarianOther] = useState("");
+  const [beef, setBeef] = useState("");
+  const [beefOther, setBeefOther] = useState("");
+  const [additionalNotes, setAdditionalNotes] = useState("");
 
   useEffect(() => {
     if (quantity < 4) {
@@ -36,34 +46,26 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
   const handleCheckout = async (e) => {
     e.preventDefault();
 
-    // Passing data dari backend (route.js)
-    const data = {
-            id: orderId,
-            productName: productName,
-            price: price,
-            quantity: quantity,
-            totalPrice: totalPrice, 
-            firstName: firstName,
-            lastName: lastName,
-            email: email,
-            phoneNumber: phone
-    }
-
-   const response = await fetch("/api/tokenizer", {
-    method: "POST",
-    body: JSON. stringify(data)
-   })
-
-    const requestData = await response.json()
-    console.log({requestData})
-
-    window.snap.pay(requestData.token)
-
-    // console.log({ id, firstName, lastName, email, phone, productName, quantity, price, totalPrice: price * quantity });
-    // alert("Checkout completed! Details submitted.");
+    console.log({
+      orderId,
+      firstName,
+      lastName,
+      email,
+      phone,
+      productName,
+      quantity,
+      price,
+      totalPrice: price * quantity,
+      foodPreferences: {
+        halal: halal === "other" ? halalOther : halal,
+        vegetarian: vegetarian === "other" ? vegetarianOther : vegetarian,
+        beef: beef === "other" ? beefOther : beef,
+        additionalNotes,
+      },
+    });
+    alert("Checkout completed! Details submitted.");
   };
 
-  
   return (
     <Box p={5} borderWidth="1px" borderRadius="lg" borderColor="brown">
       <Text fontSize="2xl" mb={5}>
@@ -136,9 +138,90 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
               _hover={{ color: "brown", stroke: "brown" }}
             />
           </FormControl>
+          <FormControl id="halal" isRequired>
+            <FormLabel>Halal/Non Halal/Other</FormLabel>
+            <RadioGroup onChange={setHalal} value={halal}>
+              <HStack spacing={4}>
+                <Radio value="halal">Halal</Radio>
+                <Radio value="non-halal">Non Halal</Radio>
+                <Radio value="other">Other</Radio>
+              </HStack>
+            </RadioGroup>
+            {halal === "other" && (
+              <Input 
+                mt={2} 
+                placeholder="Please specify" 
+                value={halalOther} 
+                onChange={(e) => setHalalOther(e.target.value)} 
+                borderColor="brown"
+                _hover={{ color: "brown", stroke: "brown" }}
+              />
+            )}
+          </FormControl>
+          <FormControl id="vegetarian" isRequired>
+            <FormLabel>Vegetarian/Vegan/Other</FormLabel>
+            <RadioGroup onChange={setVegetarian} value={vegetarian}>
+              <HStack spacing={4}>
+                <Radio value="vegetarian">Vegetarian</Radio>
+                <Radio value="vegan">Vegan</Radio>
+                <Radio value="other">Other</Radio>
+              </HStack>
+            </RadioGroup>
+            {vegetarian === "other" && (
+              <Input 
+                mt={2} 
+                placeholder="Please specify" 
+                value={vegetarianOther} 
+                onChange={(e) => setVegetarianOther(e.target.value)} 
+                borderColor="brown"
+                _hover={{ color: "brown", stroke: "brown" }}
+              />
+            )}
+          </FormControl>
+          <FormControl id="beef" isRequired>
+            <FormLabel>Beef/No Beef/Other</FormLabel>
+            <RadioGroup onChange={setBeef} value={beef}>
+              <HStack spacing={4}>
+                <Radio value="beef">Beef</Radio>
+                <Radio value="no-beef">No Beef</Radio>
+                <Radio value="other">Other</Radio>
+              </HStack>
+            </RadioGroup>
+            {beef === "other" && (
+              <Input 
+                mt={2} 
+                placeholder="Please specify" 
+                value={beefOther} 
+                onChange={(e) => setBeefOther(e.target.value)} 
+                borderColor="brown"
+                _hover={{ color: "brown", stroke: "brown" }}
+              />
+            )}
+          </FormControl>
+          <FormControl id="additional-notes">
+            <FormLabel>Additional Notes</FormLabel>
+            <Textarea 
+              value={additionalNotes} 
+              onChange={(e) => setAdditionalNotes(e.target.value)} 
+              borderColor="brown"
+              _hover={{ color: "brown", stroke: "brown" }}
+            />
+          </FormControl>
           <Button type="submit" bgColor="brown" colorScheme="brown" size="md">
             Submit
           </Button>
+          <CheckoutButton 
+            order_id={orderId} 
+            product_name={productName} 
+            first_name={firstName} 
+            last_name={lastName} 
+            user_email={email} 
+            user_phoneNumber={phone} 
+            food_halal_non={halal === "other" ? halalOther : halal }
+            food_vegan={vegetarian === "other" ? vegetarianOther : vegetarian}
+            food_beef={beef === "other" ? beefOther : beef}
+            add_notes={additionalNotes}
+          />
         </VStack>
       </form>
     </Box>
@@ -146,3 +229,4 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
 };
 
 export default Checkout;
+
