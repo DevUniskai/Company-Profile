@@ -12,8 +12,6 @@ import {
 import Image from "next/image";
 import data from "@/components/sections/Tour/tour_list.json";
 import Footer from "@/components/sections/Footer";
-import BuyButton from "@/components/common/BuyButton";
-import ReusableModal from "@/components/common/Modal"; // Correct import
 import DetailTourClient from "@/components/sections/DetailTourClient";
 
 export function generateStaticParams() {

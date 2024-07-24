@@ -1,4 +1,3 @@
-import BackButton from "@/components/common/BackButtonItem";
 import SalesContactList from "@/components/sections/SalesContactList";
 import { Box, Flex, Text } from "@chakra-ui/react";
 import Image from "next/image";
