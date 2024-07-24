@@ -41,7 +41,7 @@ export async function POST(request) {
               "price": convertedFirstPrice
             }
           ],
-        "successRedirectUrl": "http://localhost:3000/",
+        "successRedirectUrl": "https://uniskai.id/",
         "failureRedirectUrl": "http://localhost:3000/failed"
     }
     const xenditInvoiceClient = new InvoiceClient({secretKey: process.env.XENDIT_TOKEN})
