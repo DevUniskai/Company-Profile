@@ -1,3 +1,4 @@
+"use client"
 import Navbar from "@/components/common/Navbar";
 import Experience from "@/components/sections/Experience";
 import Footer from "@/components/sections/Footer";
@@ -5,8 +6,24 @@ import Services from "@/components/sections/Services";
 import Tour from "@/components/sections/Tour";
 import Welcome from "@/components/sections/Welcome";
 import { Box, Divider } from "@chakra-ui/react";
+import { useToast } from '@chakra-ui/react'
+import { useEffect } from "react";
+import { useSearchParams } from 'next/navigation';
 
 const Home = () => {
+  const toast = useToast()
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    const status = searchParams.get('status');
+    if(status == "VERIFIED") toast({
+      title: 'Payment Success',
+      description: `Payment ${searchParams.get('authentication_id')} success`,
+      status: 'success',
+      duration: 9000,
+      isClosable: true,
+    })
+  }, [])
   // const [show, setShow] = useState(true);
 
   // const handleScroll = () => {
