@@ -175,7 +175,7 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
               _hover={{ color: "brown", stroke: "brown" }}
             />
           </FormControl>
-          <FormControl id="description" isRequired>
+          <FormControl id="description">
             <FormLabel>Additional Notes (e.g: food preference, etc)</FormLabel>
             <Textarea 
               // type="text" 
