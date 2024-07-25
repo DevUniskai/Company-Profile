@@ -28,13 +28,20 @@ const Footer = () => {
         position="relative"
         mb={{ base: 10, lg: 0 }}
       >
-        <Image src="/static/images/uniskai_footer.png" alt="uniskai" fill />
+        <Link
+            as={NextLink}
+            href="/"
+            mr={{ base: 0, md: 10 }}
+          >
+            <Image src="/static/images/uniskai_footer.png" alt="uniskai" fill />
+          </Link>
       </Box>
       <Flex
         flexDir={"column"}
         w={{ base: "100%", lg: "30%" }}
         h={"100%"}
         justifyContent={"space-between"}
+        // bgColor={"orange"}
       >
         <FooterItem
           title={"MEDAN"}
@@ -51,9 +58,10 @@ const Footer = () => {
       </Flex>
       <Flex
         flexDirection="column"
-        w={{ base: "100%", lg: "30%" }}
+        w={{ base: "100%", lg: "20%" }}
         h={"100%"}
         justifyContent={"space-between"}
+        // bgColor={"green"}
       >
         <Flex flexDir="column" mb={{ base: 10, lg: 0 }}>
           <Text fontWeight={600} color={"white"} letterSpacing={3} mb={5}>
@@ -131,6 +139,35 @@ const Footer = () => {
           </Link>
         </Flex>
       </Flex>
+      
+      <Flex
+        flexDir={"column"}
+        w={{ base: "100%", lg: "15%" }}
+        h={"100%"}
+        // justifyContent={"space-between"}
+        // bgColor={"orange"}
+      >
+        <Text fontWeight={600} color={"white"} letterSpacing={3} mb={5}>
+          POLICY
+        </Text>
+        <Link
+          as={NextLink}
+          href="/terms/termsofservice"
+          mr={{ base: 0, md: 10 }}
+          mb={2}
+        >
+            Terms of Service
+        </Link>
+        <Link
+          as={NextLink}
+          href="/terms/returnandrefundpolicy"
+          mr={{ base: 0, md: 10 }}
+        >
+            Refund Policy
+        </Link>
+        
+      </Flex>
+      
     </Flex>
   );
 };

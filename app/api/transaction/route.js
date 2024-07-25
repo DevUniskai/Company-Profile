@@ -20,7 +20,7 @@ export async function POST(request) {
     const xenditClient = new Xendit({secretKey: process.env.XENDIT_TOKEN})
     const { PaymentRequest, Invoice } = xenditClient
     console.log(`${totalPrice} ${convertedPrice}`)
-
+  
     const dataInvoice = {
         "amount" : convertedPrice,
         "invoiceDuration" : 172800,
