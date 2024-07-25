@@ -41,8 +41,8 @@ export async function POST(request) {
               "price": convertedFirstPrice
             }
           ],
-        "successRedirectUrl": "https://uniskai.id/",
-        "failureRedirectUrl": "http://localhost:3000/failed"
+        "successRedirectUrl": "https://uniskai.vercel.app/",
+        "failureRedirectUrl": "https://uniskai.vercel.app/failed"
     }
     const xenditInvoiceClient = new InvoiceClient({secretKey: process.env.XENDIT_TOKEN})
     const invoice = await xenditInvoiceClient.createInvoice({
