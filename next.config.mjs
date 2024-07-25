@@ -1,8 +1,12 @@
 const nextConfig = {
+  experimental: {
+    missingSuspenseWithCSRBailout: false,
+  },
   images: {
     unoptimized: true,
   },
-  output: 'export',
+  trailingSlash: true,
+  // output: 'export',
 
 };
 
