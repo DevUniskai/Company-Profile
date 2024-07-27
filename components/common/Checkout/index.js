@@ -3,6 +3,7 @@ import { Box, Button, FormControl, FormLabel, Input, VStack, Text, HStack, IconB
 import Image from 'next/image';
 import fx from '@m00nbyte/currency-converter';
 import CurrencySelect from "../CurrencySelect"; // Import the custom dropdown component
+import { POST } from "@/app/transaction/route";
 
 const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
   const [firstName, setFirstName] = useState("");
@@ -20,6 +21,7 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
   const [currency, setCurrency] = useState('USD');
   const [convertedPrice, setConvertedPrice] = useState(price);
 
+  
   useEffect(() => {
     if (quantity < 4) {
       setQuantity(4); // Minimum quantity is 4
@@ -87,14 +89,13 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
   }
 };
 
-  const handleCheckout = async (e) => {
-    e.preventDefault();
-    if(cardError !== "") return;
+const handleCheckout = async (e) => {
+  e.preventDefault();
+  if (cardError !== "") return;
 
-    // Determine the total price to send based on currency
-    const totalPrice = currency === 'USD' ? convertedPrice * quantity : price * quantity;
+  const totalPrice = currency === 'USD' ? convertedPrice * quantity : price * quantity;
 
-    const data = {
+  const data = {
       id: ~~(Math.random() * 100) + 1,
       productName: productName,
       price: price,
@@ -108,19 +109,30 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
       cardNumber: cardNumber,
       cardExp: cardExp,
       cardCvv: cardCvv,
-      currency: currency // Send currency type to the back end
-    }
-
-    const response = await fetch("/api/transaction", {
-      method: "POST",
-      body: JSON.stringify(data)
-    })
-
-    const requestData = await response.json();
-    console.log(data);
-    console.log(requestData);
-    window.location.href = requestData.url;
+      currency: currency
   };
+
+  try {
+      const response = fetch("/api/transaction", {
+          method: "POST",
+          body: JSON.stringify(data)
+      });
+
+      if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const requestData = response.json();
+      if (requestData.error) {
+          console.error("Error from backend:", requestData.details);
+          return;
+      }
+
+      window.location.href = requestData.url;
+  } catch (error) {
+      console.error("Fetch error:", error);
+  }
+};
 
   const formatPrice = (value, currency) => {
     let formattedValue = new Intl.NumberFormat('en-US', {

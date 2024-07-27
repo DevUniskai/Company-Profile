@@ -3,6 +3,7 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 import Image from "next/image";
 
 const ContactSales = () => {
+
   return (
     <Box w={"100%"} h={"auto"} backgroundColor={"brown"}>
       
