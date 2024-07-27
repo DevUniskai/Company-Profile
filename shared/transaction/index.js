@@ -15,7 +15,6 @@ export async function createTransaction(data) {
         const paymentId = generateUUID();
         const convertedPrice = await fx(data.totalPrice, 'usd', 'idr');
         const convertedFirstPrice = await fx(data.price, 'usd', 'idr');
-
         const xenditClient = new Xendit({ secretKey: process.env.XENDIT_TOKEN });
         const { Invoice } = xenditClient;
 

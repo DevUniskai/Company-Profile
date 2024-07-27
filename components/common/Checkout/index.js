@@ -158,13 +158,12 @@ const handleCheckout = async (e) => {
     currency: currency // Send currency type to the back end
   };
 
-  const mockRequest = new Request('/api/transaction', {
-    method: 'POST',
-    body: JSON.stringify(data)
-  });
+  const mockRequest = Object.fromEntries(
+    Object.entries(data).map(([key, value]) => [key, String(value)])
+  );
 
   try {
-    const response = await POST(mockRequest);
+    const response =  POST(mockRequest);
     const requestData = await response.json();
     console.log(data);
     console.log(requestData);
