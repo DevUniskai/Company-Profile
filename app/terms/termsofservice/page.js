@@ -106,8 +106,7 @@ const TermsOfServices = () => {
         </Heading>
         <Text mb={4}>
           We reserve the right to refuse any order you place with us. We may, in our sole discretion, limit or cancel quantities purchased per person, per household or per order. These restrictions may include orders placed by or under the same customer account, the same credit card, and/or orders that use the same billing and/or shipping address. In the event that we make a change to or cancel an order, we may attempt to notify you by contacting the e‑mail and/or billing address/phone number provided at the time the order was made. We reserve the right to limit or prohibit orders that, in our sole judgment, appear to be placed by dealers, resellers or distributors.
-          You agree to provide current, complete and accurate purchase and account information for all purchases made at our store. You agree to promptly update your account and other information, including your email address and credit card numbers and expiration dates, so that we can complete your transactions and contact you as needed.
-          For more details, please review our Refund Policy: [LINK TO REFUND POLICY]
+          You agree to provide current, complete and accurate purchase and account information for all purchases made at our store.
         </Text>
 
         <Heading as="h2" fontSize="2xl" mt={8} mb={4}>
@@ -142,7 +141,7 @@ const TermsOfServices = () => {
           SECTION 10 - PERSONAL INFORMATION
         </Heading>
         <Text mb={4}>
-          Your submission of personal information through the store is governed by our Privacy Policy, which can be viewed here: [LINK TO PRIVACY POLICY]
+          Your submission of personal information through the store is governed by our Privacy Policy.
         </Text>
 
         <Heading as="h2" fontSize="2xl" mt={8} mb={4}>

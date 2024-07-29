@@ -228,7 +228,7 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
               _hover={{ color: "brown", stroke: "brown" }}
             />
           </FormControl>
-          <Button type="submit" bgColor="brown" colorScheme="brown" size="md">
+          <Button type="submit" bgColor="brown" colorScheme="yellow" textColor="white" size="md">
             Submit
           </Button>
         </VStack>

@@ -10,8 +10,8 @@ const CurrencySelect = ({ currency, setCurrency }) => {
         borderColor="brown" 
         width="120px" 
         bg="Beige" 
-        _hover={{ bg: "Beige"}} 
-        _active={{ bg: "Beige" }}
+        _hover={{ bg: "beige"}} 
+        _active={{ bg: "beige" }}
       >
         <HStack justifyContent="space-between">
           <HStack>

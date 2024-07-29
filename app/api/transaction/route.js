@@ -23,7 +23,7 @@ export async function POST(request) {
   
     const dataInvoice = {
         "amount" : convertedPrice,
-        "invoiceDuration" : 172800,
+        "invoiceDuration" : 900,
         "externalId" : paymentId,
         "description" : descriptionText + ` || Pembelian ${productName} atas nama ${firstName} ${lastName}`,
         "currency" : "IDR",
@@ -41,8 +41,8 @@ export async function POST(request) {
               "price": convertedFirstPrice
             }
           ],
-        "successRedirectUrl": "https://uniskai.vercel.app/",
-        "failureRedirectUrl": "https://uniskai.vercel.app/failed"
+        "successRedirectUrl": "https://www.uniskai.id/",
+        // "failureRedirectUrl": "https://www.uniskai.id/failed"
     }
     const xenditInvoiceClient = new InvoiceClient({secretKey: process.env.XENDIT_TOKEN})
     const invoice = await xenditInvoiceClient.createInvoice({
