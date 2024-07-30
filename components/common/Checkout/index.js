@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import { Box, Button, FormControl, FormLabel, Input, VStack, Text, HStack, IconButton, Textarea } from "@chakra-ui/react";
+import { Flex, Link, Box, Button, FormControl, FormLabel, Input, VStack, Text, HStack, IconButton, Textarea } from "@chakra-ui/react";
 import Image from 'next/image';
+import NextLink from "next/link"
 import fx from '@m00nbyte/currency-converter';
 import CurrencySelect from "../CurrencySelect"; // Import the custom dropdown component
 
@@ -138,21 +139,20 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
   };
 
   return (
-    <Box p={5} borderWidth="1px" borderRadius="lg" borderColor="brown">
-      <HStack justifyContent="space-between" mb={2}>
+    <Box p={5} pb={2} borderWidth="1px" borderRadius="lg" borderColor="brown">
+      <HStack justifyContent="space-between" mb={4}>
         <Text fontSize="2xl">
           {isPayment ? "Payment" : "Checkout"}
         </Text>
         <CurrencySelect currency={currency} setCurrency={setCurrency} />
       </HStack>
-      
-      <Box mb={4}>
+      <Box mb={2}>
         <strong>Product:</strong> {productName}
       </Box>
-      <Box>
+      <Box mb={2}>
         <strong>Price:</strong> {formatPrice(convertedPrice, currency)}
       </Box>
-      <Box mb={4}>
+      <Box mb={2}>
         <strong>Quantity:</strong>
         <HStack>
           <IconButton
@@ -233,6 +233,20 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
           </Button>
         </VStack>
       </form>
+      <Flex flexDir="column" alignItems={"center"} mt={2}>
+            <Text lineHeight={1} color={"brown"} fontSize={10}>
+              If you have any difficulties in making payments, contact us at :
+            </Text>
+            <Link
+              as={NextLink}
+              href="https://wa.me/6282129925066"
+              target="_blank"
+              fontSize={10}
+              color={"brown"}
+            >
+              +62 821-2992-5066 (Samuel)
+            </Link>
+      </Flex>
     </Box>
   );
 };
