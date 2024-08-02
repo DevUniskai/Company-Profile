@@ -31,7 +31,7 @@ const SalesContactItem = ({ title, items }) => {
               as={NextLink}
               key={key}
               target="_blank"
-              href={`https://wa.me/${item.phone}?text=sqtf%20I%20want%20to%20know%20more%20about%20your%20product`}
+              href={`https://wa.me/${item.phone}`}
               borderRadius={"8px"}
               p={2}
               textDecor={"none"}
