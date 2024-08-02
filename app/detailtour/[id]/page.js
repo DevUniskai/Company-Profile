@@ -281,7 +281,7 @@ const DetailTourById = ({ size }) => {
 
         {/* Reusable Modal for Checkout */}
         <ReusableModal isOpen={isOpen} onClose={onClose} title="Checkout Details">
-          <Checkout id={tour.id} productName={tour.title} tourPrice={tour.tourPrice} />
+          <Checkout id={tour.id} product_name={tour.title} tourPrice={tour.tourPrice} />
         </ReusableModal>
       </Box>
 

@@ -4,12 +4,12 @@ import { Box, Button, FormControl, FormLabel, Input, VStack, Text, HStack, IconB
 import Image from 'next/image'; // Import Image component from next/image
 import { useRouter } from "next/navigation";
 
-const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
+const Checkout = ({ product_name, initialQuantity = 1, tourPrice }) => {
   // console.log("hello")
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
+  const [first_name, setFirstName] = useState("");
+  const [last_name, setLastName] = useState("");
+  const [user_email, setEmail] = useState("");
+  const [user_phoneNumber, setPhone] = useState("");
   const [quantity, setQuantity] = useState(initialQuantity);
   const [price, setPrice] = useState(tourPrice[0].price);
 
@@ -21,7 +21,7 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
   const [vegetarianOther, setVegetarianOther] = useState("");
   const [beef, setBeef] = useState("");
   const [beefOther, setBeefOther] = useState("");
-  const [additionalNotes, setAdditionalNotes] = useState("");
+  const [add_notes, setAdditionalNotes] = useState("");
 
   useEffect(() => {
     if (quantity < 4) {
@@ -49,12 +49,12 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
   const handleCheckout = async (e) => {
     e.preventDefault();
 
-    if(!firstName || !lastName) {
+    if(!first_name || !last_name) {
       alert("Isi data dulu ya!S");
     }
 
     try {
-      const res = await fetch('api/user', {
+      const res = await fetch('/api/user', {
         method: "POST",
         headers: {
           "Content-type" : "application/json"
@@ -85,7 +85,7 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
         Checkout
       </Text>
       <Box mb={4}>
-        <strong>Product:</strong> {productName}
+        <strong>Product:</strong> {product_name}
       </Box>
       <Box mb={4}>
         <strong>Price:</strong> USD {price.toFixed(2)}
@@ -114,7 +114,7 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
               <FormLabel>First Name</FormLabel>
               <Input 
                 type="text" 
-                value={firstName} 
+                value={first_name} 
                 onChange={(e) => setFirstName(e.target.value)} 
                 borderColor="brown"
                 _hover={{ color: "brown", stroke: "brown" }}
@@ -124,7 +124,7 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
               <FormLabel>Last Name</FormLabel>
               <Input 
                 type="text" 
-                value={lastName} 
+                value={last_name} 
                 onChange={(e) => setLastName(e.target.value)} 
                 borderColor="brown"
                 _hover={{ color: "brown", stroke: "brown" }}
@@ -135,7 +135,7 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
             <FormLabel>Email</FormLabel>
             <Input 
               type="email" 
-              value={email} 
+              value={user_email} 
               onChange={(e) => setEmail(e.target.value)} 
               borderColor="brown"
               _hover={{ color: "brown", stroke: "brown" }}
@@ -145,7 +145,7 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
             <FormLabel>Phone Number</FormLabel>
             <Input 
               type="tel" 
-              value={phone} 
+              value={user_phoneNumber} 
               onChange={(e) => setPhone(e.target.value)} 
               borderColor="brown"
               _hover={{ color: "brown", stroke: "brown" }}
@@ -214,7 +214,7 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
           <FormControl id="additional-notes">
             <FormLabel>Additional Notes</FormLabel>
             <Textarea 
-              value={additionalNotes} 
+              value={add_notes} 
               onChange={(e) => setAdditionalNotes(e.target.value)} 
               borderColor="brown"
               _hover={{ color: "brown", stroke: "brown" }}
@@ -225,15 +225,15 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
           </Button>
           {/* <CheckoutButton 
             order_id={orderId} 
-            product_name={productName} 
-            first_name={firstName} 
-            last_name={lastName} 
-            user_email={email} 
-            user_phoneNumber={phone} 
+            product_name={product_name} 
+            first_name={first_name} 
+            last_name={last_name} 
+            user_email={user_email} 
+            user_phoneNumber={user_phoneNumber} 
             food_halal_non={halal === "other" ? halalOther : halal }
             food_vegan={vegetarian === "other" ? vegetarianOther : vegetarian}
             food_beef={beef === "other" ? beefOther : beef}
-            add_notes={additionalNotes}
+            add_notes={add_notes}
           /> */}
         </VStack>
       </form>
