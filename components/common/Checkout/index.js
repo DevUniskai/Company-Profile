@@ -1,9 +1,11 @@
+"use client"
 import { useState, useEffect } from "react";
 import { Box, Button, FormControl, FormLabel, Input, VStack, Text, HStack, IconButton, RadioGroup, Radio, Textarea } from "@chakra-ui/react";
 import Image from 'next/image'; // Import Image component from next/image
-import CheckoutButton from "@/components/checkout_form/CheckoutButton";
+import { useRouter } from "next/navigation";
 
 const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
+  // console.log("hello")
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -11,6 +13,7 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
   const [quantity, setQuantity] = useState(initialQuantity);
   const [price, setPrice] = useState(tourPrice[0].price);
 
+  const router = useRouter();
   // Food preference states
   const [halal, setHalal] = useState("");
   const [halalOther, setHalalOther] = useState("");
@@ -46,24 +49,34 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
   const handleCheckout = async (e) => {
     e.preventDefault();
 
-    console.log({
-      orderId,
-      firstName,
-      lastName,
-      email,
-      phone,
-      productName,
-      quantity,
-      price,
-      totalPrice: price * quantity,
-      foodPreferences: {
-        halal: halal === "other" ? halalOther : halal,
-        vegetarian: vegetarian === "other" ? vegetarianOther : vegetarian,
-        beef: beef === "other" ? beefOther : beef,
-        additionalNotes,
-      },
-    });
-    alert("Checkout completed! Details submitted.");
+    if(!firstName || !lastName) {
+      alert("Isi data dulu ya!S");
+    }
+
+    try {
+      const res = await fetch('api/user', {
+        method: "POST",
+        headers: {
+          "Content-type" : "application/json"
+        },
+        body: JSON.stringify({product_name,
+          quantity,       
+          first_name,         
+          last_name,         
+          user_email,         
+          user_phoneNumber,          
+          add_notes})
+      })
+
+      if (res.ok) {
+        router.push('/')
+      } else {
+        throw new Error("Failed to create topic")
+      }
+    } catch (error) {
+      console.log(error)
+    }
+    
   };
 
   return (
@@ -210,7 +223,7 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
           <Button type="submit" bgColor="brown" colorScheme="brown" size="md">
             Submit
           </Button>
-          <CheckoutButton 
+          {/* <CheckoutButton 
             order_id={orderId} 
             product_name={productName} 
             first_name={firstName} 
@@ -221,7 +234,7 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
             food_vegan={vegetarian === "other" ? vegetarianOther : vegetarian}
             food_beef={beef === "other" ? beefOther : beef}
             add_notes={additionalNotes}
-          />
+          /> */}
         </VStack>
       </form>
     </Box>
