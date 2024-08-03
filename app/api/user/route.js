@@ -24,16 +24,18 @@ export async function POST(request) {
     return NextResponse.json({ message: "User Created" }, { status: 201 })
 }
 
-export async function GET() {
-    await connectMongoDB()
-    const users = await User.find()
-    return NextResponse.json({users})
+// // GET data from database
+// export async function GET() {
+//     await connectMongoDB()
+//     const users = await User.find()
+//     return NextResponse.json({users})
 
-}
+// }
 
-export async function DELETE(request) {
-    const id = request.nextUrl.searchParams.get("id")
-    await connectMongoDB()
-    await User.findByIdAndDelete(id)
-    return NextResponse.json({ message: "User Deleted"}, {status: 200})
-}
+// // DELETE data from database
+// export async function DELETE(request) {
+//     const id = request.nextUrl.searchParams.get("id")
+//     await connectMongoDB()
+//     await User.findByIdAndDelete(id)
+//     return NextResponse.json({ message: "User Deleted"}, {status: 200})
+// }
