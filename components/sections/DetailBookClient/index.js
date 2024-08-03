@@ -7,11 +7,11 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import BuyButton from "@/components/common/BuyButton";
-import Checkout from "@/components/common/Checkout";
+import Booking from "@/components/common/Booking"
 import ReusableModal from "@/components/common/Modal";
 import { useEffect } from "react";
 
-const DetailTourClient = ({ tour }) => {
+const DetailBookClient = ({ tour }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   // useEffect(() => {
@@ -38,14 +38,14 @@ const DetailTourClient = ({ tour }) => {
   return (
     <>
       <Box textAlign="center" mt={8}>
-        <BuyButton label="Buy Now"onClick={handleBuyButtonClick} />
+        <BuyButton label="Book Now" onClick={handleBuyButtonClick} />
       </Box>
 
-      <ReusableModal isOpen={isOpen} onClose={onClose} title="Checkout Details">
-        <Checkout id={tour.id} product_name={tour.title} tourPrice={tour.tourPrice} />
+      <ReusableModal isOpen={isOpen} onClose={onClose} title="Book Details">
+        <Booking id={tour.id} product_name={tour.title} tourPrice={tour.tourPrice} />
       </ReusableModal>
     </>
   );
 };
 
-export default DetailTourClient;
+export default DetailBookClient;

@@ -13,6 +13,7 @@ import Image from "next/image";
 import data from "@/components/sections/Tour/tour_list.json";
 import Footer from "@/components/sections/Footer";
 import DetailTourClient from "@/components/sections/DetailTourClient";
+import DetailBookClient from "@/components/sections/DetailBookClient"
 
 export function generateStaticParams() {
   return data.tours.map((tour) => ({
@@ -235,6 +236,7 @@ export default function DetailTourById({ params }) {
 
         {/* Client-specific logic moved to client component */}
         <DetailTourClient tour={tour} />
+        <DetailBookClient tour={tour}/>
       </Box>
 
       {/* Footer Section */}
