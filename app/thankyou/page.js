@@ -13,16 +13,17 @@ const ThankYouPage = () => {
       alignItems="center"
       height="100vh"
       textAlign="center"
-      bg="gray.100"
+      bg="Beige"
     >
-      <Heading as="h1" mb={4}>
-        Thank You!
+      <Heading as="h1" mb={4} color={"brown"}>
+        Thank You for Booking Domestic Tour with Us!
       </Heading>
-      <Text fontSize="lg" mb={8}>
-        Your submission has been received.
+      <Text fontSize="lg" mb={8} color={"brown"}>
+        Thank you for your reservation. 
+        Our Staff will contact you shortly.
       </Text>
       <Link href="/" passHref>
-        <Button colorScheme="teal">Go to Homepage</Button>
+        <Button color="white" bgColor="brown" colorScheme="yellow">Go to Homepage</Button>
       </Link>
     </Box>
   );

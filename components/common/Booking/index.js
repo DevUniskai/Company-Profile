@@ -115,7 +115,7 @@ const Checkout = ({ product_name, initialQuantity = 1, tourPrice }) => {
         })
   
         if (res.ok) {
-          router.push('/')
+          router.push('/thankyou')
         } else {
           throw new Error("Failed to add user")
         }
