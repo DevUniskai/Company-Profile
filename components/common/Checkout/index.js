@@ -229,7 +229,7 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
             />
           </FormControl>
           <Button type="submit" bgColor="brown" colorScheme="yellow" textColor="white" size="md">
-            Submit
+            Checkout
           </Button>
         </VStack>
       </form>
