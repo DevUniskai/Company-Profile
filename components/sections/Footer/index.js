@@ -79,7 +79,7 @@ const Footer = () => {
               href="https://wa.me/6282129925066"
               target="_blank"
             >
-              +62 821-2992-5066 (Samuel)
+              +62 821-2992-5066
             </Link>
           </Flex>
           <Flex alignItems={"center"}>

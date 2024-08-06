@@ -245,7 +245,7 @@ const Checkout = ({ product_name, initialQuantity = 1, tourPrice }) => {
               fontSize={10}
               color={"brown"}
             >
-              +62 821-2992-5066 (Samuel)
+              +62 821-2992-5066
             </Link>
       </Flex>
     </Box>

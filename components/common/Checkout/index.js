@@ -118,8 +118,8 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
     })
 
     const requestData = await response.json();
-    console.log(data);
-    console.log(requestData);
+    // console.log(data);
+    // console.log(requestData);
     window.location.href = requestData.url;
   };
 
@@ -244,7 +244,7 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
               fontSize={10}
               color={"brown"}
             >
-              +62 821-2992-5066 (Samuel)
+              +62 821-2992-5066
             </Link>
       </Flex>
     </Box>

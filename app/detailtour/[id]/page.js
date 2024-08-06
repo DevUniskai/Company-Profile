@@ -181,7 +181,7 @@ export default function DetailTourById({ params }) {
         <Box ml={{ base: 5, md: 20 }} mr={{ base: 5, md: 20 }} mb={6}>
           <Divider borderColor="brown" borderWidth="1px" mb={6} />
 
-          <Heading fontWeight={700} fontSize="sm" color="brown" mb={4}>
+          <Heading as="h4" size="sm" mb={2} color="brown">
             HOTEL
           </Heading>
           {tour.hotel.map((hotelDetail, index) => (
