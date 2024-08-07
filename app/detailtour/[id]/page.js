@@ -232,6 +232,9 @@ export default function DetailTourById({ params }) {
           <Text color="black">
             No booking has been made within this offer. Availability and ticket prices are subject to change depending on applicable stock.
           </Text>
+          <Text color="black" fontWeight="bold" mt={3}>
+            Price valid until <Text as="span" color="red.500">10 October 2024</Text>
+          </Text>
         </Box>
 
         {/* Client-specific logic moved to client component */}
