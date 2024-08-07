@@ -36,7 +36,7 @@ const Welcome = () => {
           _hover={{ textDecoration: "none" }}
         >
           <Image
-            src="/static/images/sqtf_gif_compressed.gif"
+            src="/static/images/sqtf_gif.gif"
             alt="example gif"
             width="2000"
             height="500"
