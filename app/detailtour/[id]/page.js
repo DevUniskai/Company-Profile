@@ -233,7 +233,7 @@ export default function DetailTourById({ params }) {
             No booking has been made within this offer. Availability and ticket prices are subject to change depending on applicable stock.
           </Text>
           <Text color="black" fontWeight="bold" mt={3}>
-            Price valid until <Text as="span" color="red.500">10 October 2024</Text>
+            Price valid until <Text as="span" color="red.500">10 October 2024</Text>. Afterward, prices may change based on availability 
           </Text>
         </Box>
 

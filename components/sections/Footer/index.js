@@ -97,6 +97,7 @@ const Footer = () => {
         <Flex
           justifyContent={{ base: "space-between", md: "center" }}
           w={{ base: "100%", md: "auto" }}
+          mb={{ base: 10, lg: 0 }}
         >
           <Link
             as={NextLink}
