@@ -54,7 +54,7 @@ export default function DetailTourById({ params }) {
             fontWeight={600}
             color="Beige"
             mt={1}
-            mb={{ base: 5, md: -55 }}
+            mb={{ base: 5, md: 55 }}
           >
             {tour.title}
           </Heading>
