@@ -41,7 +41,7 @@ const ReturnRefundPolicy = () => {
           Tidak Ada Penjaminan
         </Heading>
         <Text mb={4}>
-            If you wish to complain and refund, please send an e-mail to tour@uniskai.com or text us via WhatsApp +62 821-2992-5066 (Samuel) and tell
+            If you wish to complain and refund, please send an e-mail to tour@uniskai.com or text us via WhatsApp +62 821-2992-5066 and tell
             us your order number, reason for refund and the evidence.
         </Text>
         <Text mb={4}>
@@ -58,7 +58,7 @@ const ReturnRefundPolicy = () => {
         </UnorderedList>
 
         <Text mt={8} mb={4}>
-            In case you need any other information, please contact our staff via WhatsApp +62 821-2992-5066 (Samuel) or send an e-mail to tour@uniskai.com
+            In case you need any other information, please contact our staff via WhatsApp +62 821-2992-5066 or send an e-mail to tour@uniskai.com
         </Text>
 
       </Flex>
