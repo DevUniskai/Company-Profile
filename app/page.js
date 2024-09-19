@@ -9,6 +9,7 @@ import { Box, Divider } from "@chakra-ui/react";
 import { useToast } from '@chakra-ui/react'
 import { useEffect } from "react";
 import { useSearchParams } from 'next/navigation';
+import { Analytics } from "@vercel/analytics/react"
 
 const Home = () => {
   const toast = useToast()
@@ -54,6 +55,7 @@ const Home = () => {
       <Services />
       {/* <Experience /> */}
       <Footer />
+      <Analytics />
     </Box>
   );
 };
