@@ -22,7 +22,7 @@ const ReturnRefundPolicy = () => {
         py={10}
     >
         <Text mb={6} letterSpacing={"5px"} fontSize={{ base: "3xl", sm: "4xl" }} textAlign="center">
-            COMPLAINT AND REFUND POLICY
+            REFUND POLICY
         </Text>
       </Flex>
 
