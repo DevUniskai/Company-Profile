@@ -7,7 +7,7 @@ const Welcome = () => {
   return (
     <Box bgColor={"Beige"}>
       <Flex
-        height={"60vh"}
+        height={"100vh"}
         backgroundImage={"/static/images/main.jpg"}
         backgroundPosition={"center"}
         backgroundSize="cover"
@@ -29,7 +29,9 @@ const Welcome = () => {
         </Text> */}
       </Flex>
 
-      <Box display="flex" justifyContent="center" height={"50hv"} mt={0.8}>
+      {/* SQTF HEADER */}
+
+      {/* <Box display="flex" justifyContent="center" height={"50hv"} mt={0.8}>
         <Link
           as={NextLink}
           href={"/contact"}
@@ -42,7 +44,7 @@ const Welcome = () => {
             height="500"
           />
         </Link>
-      </Box>
+      </Box> */}
     </Box>
   );
 };
