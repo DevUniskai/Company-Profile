@@ -51,7 +51,7 @@ const Home = () => {
     <Box w={"100%"} h={"100%"} backgroundColor="white">
       {/* {!show && <Navbar />} */}
       <Welcome />
-      {/* <Tour /> */}
+      <Tour />
       <Services />
       {/* <Experience /> */}
       <Footer />
