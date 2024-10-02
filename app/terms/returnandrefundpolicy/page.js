@@ -38,7 +38,7 @@ const ReturnRefundPolicy = () => {
       >
 
         <Heading as="h2" fontSize="2xl" mt={8} mb={4}>
-          Tidak Ada Penjaminan
+          There is No Guarantee
         </Heading>
         <Text mb={4}>
             If you wish to complain and refund, please send an e-mail to tour@uniskai.com or text us via WhatsApp +62 821-2992-5066 and tell
