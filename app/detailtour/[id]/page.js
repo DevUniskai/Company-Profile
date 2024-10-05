@@ -8,6 +8,7 @@ import {
   VStack,
   ListItem,
   UnorderedList,
+  
 } from "@chakra-ui/react";
 import Image from "next/image";
 import data from "@/components/sections/Tour/tour_list.json";
