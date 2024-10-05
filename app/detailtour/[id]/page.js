@@ -8,7 +8,7 @@ import {
   VStack,
   ListItem,
   UnorderedList,
-  
+
 } from "@chakra-ui/react";
 import Image from "next/image";
 import data from "@/components/sections/Tour/tour_list.json";
@@ -240,7 +240,7 @@ export default function DetailTourById({ params }) {
 
         {/* Client-specific logic moved to client component */}
         <DetailTourClient tour={tour} />
-        <DetailBookClient tour={tour}/>
+        {/* <DetailBookClient tour={tour}/> */}
       </Box>
 
       {/* Footer Section */}
