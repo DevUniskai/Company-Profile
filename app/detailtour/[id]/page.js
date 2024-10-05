@@ -8,6 +8,7 @@ import {
   VStack,
   ListItem,
   UnorderedList,
+
 } from "@chakra-ui/react";
 import Image from "next/image";
 import data from "@/components/sections/Tour/tour_list.json";
@@ -233,13 +234,13 @@ export default function DetailTourById({ params }) {
             No booking has been made within this offer. Availability and ticket prices are subject to change depending on applicable stock.
           </Text>
           <Text color="black" fontWeight="bold" mt={3}>
-            Price valid until <Text as="span" color="red.500">10 October 2024</Text>. Afterward, prices may change based on availability 
+            Price valid until <Text as="span" color="red.500">14 October 2024</Text>. Afterward, prices may change based on availability 
           </Text>
         </Box>
 
         {/* Client-specific logic moved to client component */}
         <DetailTourClient tour={tour} />
-        <DetailBookClient tour={tour}/>
+        {/* <DetailBookClient tour={tour}/> */}
       </Box>
 
       {/* Footer Section */}

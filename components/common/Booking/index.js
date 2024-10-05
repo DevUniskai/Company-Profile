@@ -26,12 +26,14 @@ const Checkout = ({ product_name, initialQuantity = 1, tourPrice }) => {
   const router = useRouter();
 
   useEffect(() => {
-    if (quantity < 4) {
-      setQuantity(4); // Minimum quantity is 4
-    } else if (quantity >= 4 && quantity <= 8) {
+    if (quantity < 2) {
+      setQuantity(2); // Minimum quantity is 2
+    } else if (quantity >= 2 && quantity < 4) {
       setPrice(tourPrice[0].price);
-    } else {
+    } else if (quantity >= 4 && quantity < 8) {
       setPrice(tourPrice[1].price);
+    } else {
+      setPrice(tourPrice[2].price);
     }
   }, [quantity, tourPrice]);
 
@@ -57,7 +59,7 @@ const Checkout = ({ product_name, initialQuantity = 1, tourPrice }) => {
   };
 
   const decreaseQuantity = () => {
-    if (quantity > 4) {
+    if (quantity > 2) {
       setQuantity(quantity - 1);
     }
   };
@@ -221,7 +223,7 @@ const Checkout = ({ product_name, initialQuantity = 1, tourPrice }) => {
             />
           </FormControl>
           <FormControl id="description">
-            <FormLabel>Additional Notes (e.g: food preference, etc)</FormLabel>
+            <FormLabel>Additional Notes (e.g: pick up location, allergic food, etc)</FormLabel>
             <Textarea 
               value={add_notes} 
               onChange={(e) => setDescription(e.target.value)} 
