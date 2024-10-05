@@ -43,7 +43,7 @@
             {"pax" : "Adult (Based on 8 Paxs)", "price" : 175, "vehicle" : "Hiace Commuter"} 
           ],
           "hotel" : [
-            "Berastagi: Mikie Holiday Hotel & Resort (4*)"
+            "Berastagi ( 1N ): Mikie Holiday Hotel & Resort (4*)"
           ],
           "includes" : [
             "Hotel Stay",
@@ -118,7 +118,7 @@
             {"pax" : "Minimum 8 Paxs", "price" : 375, "vehicle" : "Hiace Commuter" } 
           ],
           "hotel" : [
-            "Samosir: Marianna Resort & Convention (5*)"
+            "Samosir ( 2N ): Marianna Resort & Convention (5*)"
           ],
           "includes" : [
             "Hotel Stay",
@@ -200,8 +200,8 @@
             {"pax" : "Adult (Based on 8 Paxs)", "price" : 475, "vehicle" : "Hiace Commuter"} 
           ],
           "hotel" : [
-            "Samosir : Marianna Resort and Convention (5*)",
-            "Parapat: KHAS Parapat (4*)"
+            "Samosir ( 2N ): Marianna Resort and Convention (5*)",
+            "Parapat ( 1N ) : KHAS Parapat (4*)"
           ],
           "includes" : [
             "Hotel Stay",
@@ -298,10 +298,10 @@
             {"pax" : "Adult (Based on 8 Paxs)", "price" : 515, "vehicle" : "Hiace Commuter"} 
           ],
           "hotel" : [
-            "Berastagi: Mikie Holiday Hotel & Resort (4*)",
-            "Samosir: Marianna Resort & Convention (5*)",
-            "Parapat: KHAS Parapat (4*)",
-            "Medan: Cambridge Hotel (4*)"
+            "Berastagi ( 1N ): Mikie Holiday Hotel & Resort (4*)",
+            "Samosir ( 1N ): Marianna Resort & Convention (5*)",
+            "Parapat ( 1N ): KHAS Parapat (4*)",
+            "Medan ( 1N ): Cambridge Hotel (4*)"
           ],
           "includes" : [
             "Hotel Stay",
