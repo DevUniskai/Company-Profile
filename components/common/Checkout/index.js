@@ -55,7 +55,7 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
   };
 
   const decreaseQuantity = () => {
-    if (quantity > 4) {
+    if (quantity > 2) {
       setQuantity(quantity - 1);
     }
   };
@@ -222,7 +222,7 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
             />
           </FormControl>
           <FormControl id="description">
-            <FormLabel>Additional Notes (e.g: food preference, etc)</FormLabel>
+            <FormLabel>Additional Notes (e.g: pick up location, allergic food, etc)</FormLabel>
             <Textarea 
               value={descriptionText} 
               onChange={(e) => setDescription(e.target.value)} 
