@@ -22,12 +22,14 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
   const [convertedPrice, setConvertedPrice] = useState(price);
 
   useEffect(() => {
-    if (quantity < 4) {
-      setQuantity(4); // Minimum quantity is 4
-    } else if (quantity >= 4 && quantity <= 8) {
+    if (quantity < 2) {
+      setQuantity(2); // Minimum quantity is 2
+    } else if (quantity >= 2 && quantity < 4) {
       setPrice(tourPrice[0].price);
-    } else {
+    } else if (quantity >= 4 && quantity < 8) {
       setPrice(tourPrice[1].price);
+    } else {
+      setPrice(tourPrice[2].price);
     }
   }, [quantity, tourPrice]);
 
