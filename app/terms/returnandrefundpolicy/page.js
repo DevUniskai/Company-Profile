@@ -40,29 +40,30 @@ const ReturnRefundPolicy = () => {
         <Heading as="h2" fontSize="2xl" mt={8} mb={4}>
         Terms and Conditions
         </Heading>
-        <Text>
-          There is no guarantee that the refund will be accepted, as it is subject to the terms and conditions of the refund policy.
+        <Text mb={4}>
+          Please note that refunds are not guaranteed and are subject to our refund policy and management's discretion. However, in exceptional cases with valid reasons, your request may be considered.
         </Text>
         <Text mb={4}>
-          If you wish to refund, please send an e-mail to tour@uniskai.com or text us via WhatsApp +62 821-2992-5066 and tell
-          us your order number and reason for refund.
+          To submit a refund request, please email us at tour@uniskai.com or message us via WhatsApp at +62 821-2992-5066, providing your order number and the reason for your request.
         </Text>
         <Text mb={4}>
-            Once confirmed and we have received the request, our staff will contact you to discuss the next steps regarding this matter.
+          Once your request has been received, our team will carefully review the information and contact you to discuss on the appropriate next steps.
         </Text>
+        {/* <Text mb={4}>
+          Importand information:
+        </Text> */}
 
-        {/* <Heading as="h2" fontSize="2xl" mt={8} mb={4}>
-          
-        </Heading> */}
+        <Heading as="h2" fontSize="2xl" mt={8} mb={4}>
+          Important information
+        </Heading>
         <UnorderedList>
-            <ListItem>Refund request must be submitted two weeks before the tour activity is started.</ListItem>
-            <ListItem>Refund request must be accompanied by clear evidence so that we can process them.</ListItem>
-            <ListItem>Refund policy stated are subjective to management policies and regulations.</ListItem>
-            <ListItem>A full refund will not be provided.</ListItem>
+            <ListItem>Refund requests must be submitted at least two weeks before the scheduled tour date.</ListItem>
+            <ListItem>Your refund request must be supported by a clear explanation or justification to help us assess it.</ListItem>
+            <ListItem>Refunds are processed based on management's policies and regulations, and full refunds will not be issued.</ListItem>
         </UnorderedList>
 
         <Text mt={8} mb={4}>
-            In case you need any other information, please contact our staff via WhatsApp +62 821-2992-5066 or send an e-mail to tour@uniskai.com
+          For any further questions, feel free to contact our team via WhatsApp at +62 821-2992-5066 or email us at tour@uniskai.com.
         </Text>
 
       </Flex>
