@@ -41,21 +41,21 @@ const ReturnRefundPolicy = () => {
         Terms and Conditions
         </Heading>
         <Text>
-          There is no guarantee that the refund will be accepted, as it is subject to the terms and conditions of the return policy.
+          There is no guarantee that the refund will be accepted, as it is subject to the terms and conditions of the refund policy.
         </Text>
         <Text mb={4}>
           If you wish to refund, please send an e-mail to tour@uniskai.com or text us via WhatsApp +62 821-2992-5066 and tell
-          us your order number, reason for refund and the evidence.
+          us your order number and reason for refund.
         </Text>
         <Text mb={4}>
-            Once confirmed and we have received the evidence, our staff will contact you to discuss the next steps regarding this matter.
+            Once confirmed and we have received the request, our staff will contact you to discuss the next steps regarding this matter.
         </Text>
 
         {/* <Heading as="h2" fontSize="2xl" mt={8} mb={4}>
           
         </Heading> */}
         <UnorderedList>
-            <ListItem>Refund request must be submitted one week before the tour activity is started.</ListItem>
+            <ListItem>Refund request must be submitted two weeks before the tour activity is started.</ListItem>
             <ListItem>Refund request must be accompanied by clear evidence so that we can process them.</ListItem>
             <ListItem>Refund policy stated are subjective to management policies and regulations.</ListItem>
             <ListItem>A full refund will not be provided.</ListItem>
