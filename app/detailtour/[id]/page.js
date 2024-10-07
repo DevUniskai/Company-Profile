@@ -103,7 +103,7 @@ export default function DetailTourById({ params }) {
           ml={{ base: 5, md: 20 }}
           mr={{ base: 5, md: 20 }}
         >
-          ITINERARY PERJALANAN
+          ITINERARY
         </Text>
 
         <VStack
