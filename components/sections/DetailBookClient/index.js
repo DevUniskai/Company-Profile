@@ -10,6 +10,8 @@ import BuyButton from "@/components/common/BuyButton";
 import Booking from "@/components/common/Booking"
 import ReusableModal from "@/components/common/Modal";
 import { useEffect } from "react";
+import NextLink from "next/link";
+import { Link } from "@chakra-ui/react";
 
 const DetailBookClient = ({ tour }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -32,18 +34,23 @@ const DetailBookClient = ({ tour }) => {
   // }, []);
 
   const handleBuyButtonClick = () => {
-    onOpen();
+    const phoneNumber = "6282129925066"; // Your phone number in international format
+    const message = `Hello, I would like to book a tour: ${tour.title}`;
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappLink, "_blank");
   };
 
   return (
     <>
       <Box textAlign="center" mt={8}>
-        <BuyButton label="Book Now" onClick={handleBuyButtonClick} />
+        <BuyButton label="Contact Us" onClick={handleBuyButtonClick} />
       </Box>
 
-      <ReusableModal isOpen={isOpen} onClose={onClose} title="Book Details">
+      
+      {/* <ReusableModal isOpen={isOpen} onClose={onClose} title="Book Details">
         <Booking id={tour.id} product_name={tour.title} tourPrice={tour.tourPrice} />
-      </ReusableModal>
+      </ReusableModal> */}
     </>
   );
 };

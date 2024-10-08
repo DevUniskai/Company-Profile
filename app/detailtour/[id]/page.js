@@ -151,7 +151,7 @@ export default function DetailTourById({ params }) {
           textAlign="left"
           mr={{ base: 5, md: 20 }}
           ml={{ base: 5, md: 20 }}
-          mb={6}
+          mb={2}
         >
           <Box>
             <Heading as="h4" size="sm" mb={2} color="brown">
@@ -178,6 +178,12 @@ export default function DetailTourById({ params }) {
             ))}
           </Box>
         </Grid>
+        
+        <Box ml={{ base: 5, md: 20 }} mr={{ base: 5, md: 20 }} mb={6}>
+          <Text color="black" fontWeight="bold">
+            For groups larger than 8, please contact us to discuss custom tour packages.
+          </Text>
+        </Box>
 
         <Box ml={{ base: 5, md: 20 }} mr={{ base: 5, md: 20 }} mb={6}>
           <Divider borderColor="brown" borderWidth="1px" mb={6} />
@@ -243,7 +249,7 @@ export default function DetailTourById({ params }) {
 
         {/* Client-specific logic moved to client component */}
         <DetailTourClient tour={tour} />
-        {/* <DetailBookClient tour={tour}/> */}
+        <DetailBookClient tour={tour}/>
       </Box>
 
       {/* Footer Section */}

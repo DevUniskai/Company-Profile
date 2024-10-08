@@ -51,7 +51,9 @@ const Checkout = ({ productName, initialQuantity = 1, tourPrice }) => {
   }, [price, currency]);
 
   const increaseQuantity = () => {
-    setQuantity(quantity + 1);
+    if (quantity < 8) {
+      setQuantity(quantity + 1);
+    }
   };
 
   const decreaseQuantity = () => {
