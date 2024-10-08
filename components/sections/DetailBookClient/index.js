@@ -35,7 +35,7 @@ const DetailBookClient = ({ tour }) => {
 
   const handleBuyButtonClick = () => {
     const phoneNumber = "6282129925066"; // Your phone number in international format
-    const message = `Hello, I would like to book a tour: ${tour.title}`;
+    const message = `Hi, I have a group larger than 8. I'd like to discuss more about ${tour.title} packages. `;
     const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
     window.open(whatsappLink, "_blank");
