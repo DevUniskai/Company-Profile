@@ -181,7 +181,7 @@ export default function DetailTourById({ params }) {
         
         <Box ml={{ base: 5, md: 20 }} mr={{ base: 5, md: 20 }} mb={6}>
           <Text color="black" fontWeight="bold">
-            For groups larger than 8, please contact us to discuss custom tour packages.
+            ⭐ For groups larger than 8, please contact us to discuss custom tour packages.
           </Text>
         </Box>
 
