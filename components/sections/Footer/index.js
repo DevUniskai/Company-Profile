@@ -60,10 +60,18 @@ const Footer = () => {
         flexDirection="column"
         w={{ base: "100%", lg: "20%" }}
         h={"100%"}
-        justifyContent={"space-between"}
+        // justifyContent={"space-between"}
         // bgColor={"green"}
       >
-        <Flex flexDir="column" mb={{ base: 10, lg: 0 }}>
+        <Flex 
+          justifyContent={{ base: "space-between", md: "center" }} 
+          mr={{ base: 0, md: 10 }}
+        >
+          <Text fontWeight={600} color={"white"} letterSpacing={3} mb={5}>
+              SOCIAL MEDIA
+          </Text>
+        </Flex>
+        {/* <Flex flexDir="column" mb={{ base: 10, lg: 0 }}>
           <Text fontWeight={600} color={"white"} letterSpacing={3} mb={5}>
             CONTACT US
           </Text>
@@ -93,7 +101,7 @@ const Footer = () => {
               tour@uniskai.id
             </Link>
           </Flex>
-        </Flex>
+        </Flex> */}
         <Flex
           justifyContent={{ base: "space-between", md: "center" }}
           w={{ base: "100%", md: "auto" }}
@@ -141,7 +149,7 @@ const Footer = () => {
         </Flex>
       </Flex>
       
-      <Flex
+      {/* <Flex
         flexDir={"column"}
         w={{ base: "100%", lg: "15%" }}
         h={"100%"}
@@ -166,8 +174,7 @@ const Footer = () => {
         >
             Refund Policy
         </Link>
-        
-      </Flex>
+      </Flex> */}
       
     </Flex>
   );
