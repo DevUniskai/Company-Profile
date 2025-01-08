@@ -32,7 +32,7 @@ const Services = () => {
           description="Hotel Booking and Services"
         />
         <ServiceItem
-          src="/static/images/Docs.png"
+          src="/static/images/passport.jpg"
           title="DOCS"
           description="Passport, Visa and Travel Document"
         />
@@ -50,6 +50,11 @@ const Services = () => {
           src="/static/images/Play.png"
           title="PLAY"
           description="Book your attractions, concert, and rent cars"
+        />
+        <ServiceItem
+          src="/static/images/Docs.png"
+          title="B2B & Corporate"
+          description="Partner with us or enjoy exclusive perks for corporate customers"
         />
       </Grid>
     </Flex>
