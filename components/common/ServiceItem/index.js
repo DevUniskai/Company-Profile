@@ -9,11 +9,11 @@ const ServiceItem = ({ src, title, description, size = "" }) => {
       <Link as={NextLink} href={"/contact"} mr={4}>
         <Flex flexDir="column" alignItems={{ sm: "center", md: "flex-start" }} >
           <Flex
-            width={{ base: "100%", md: "282px", xl: "376px" }}
-            height={{ base: "100%", md: "180px", xl: "240px" }}
+            width={{ base: "90%", sm: "100%", md: "250px", lg: "282px", xl: "320px" }}
+            height={{ base: "90%", md: "160px", lg: "180px", xl: "200px" }}
             justifyContent={"center"}
           >
-            <Image src={src} alt={title} width={376} height={240} style={{ borderRadius: "14px" }} />
+            <Image src={src} alt={title} width={320} height={200} style={{ borderRadius: "14px" }} />
           </Flex>
           <Flex
             flexDir={"column"}
@@ -21,10 +21,10 @@ const ServiceItem = ({ src, title, description, size = "" }) => {
             py={4}
             width={{
               base: "100%",
-              sm: "376px",
-              md: "188px",
+              sm: "320px",
+              md: "250px",
               lg: "282px",
-              xl: "376px",
+              xl: "320px",
             }}
             borderBottomRadius={8}
           >

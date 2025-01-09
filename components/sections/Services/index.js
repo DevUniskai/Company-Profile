@@ -17,7 +17,7 @@ const Services = () => {
         templateColumns={{
           base: "repeat(1, 1fr)",
           md: "repeat(2, 1fr)",
-          lg: "repeat(3, 1fr)",
+          lg: "repeat(4, 1fr)",
         }}
         gap={{ base: 3, lg: 6 }}
       >
@@ -53,7 +53,12 @@ const Services = () => {
         />
         <ServiceItem
           src="/static/images/Docs.png"
-          title="B2B & Corporate"
+          title="B2B & CORPORATE"
+          description="Partner with us or enjoy exclusive perks for corporate customers"
+        />
+        <ServiceItem
+          src="/static/images/cruise.png"
+          title="CRUISE"
           description="Partner with us or enjoy exclusive perks for corporate customers"
         />
       </Grid>

@@ -4,18 +4,6 @@
       "title": "fly",
       "items": [
         {
-          "name": "Dewi",
-          "phone": "6281283215788"
-        },
-        {
-          "name": "Ferdi",
-          "phone": "6282317188008"
-        },
-        {
-          "name": "Tami",
-          "phone": "6285365200800"
-        },
-        {
           "name": "Jennifer",
           "phone": "6282365558008"
         },
@@ -24,21 +12,21 @@
           "phone": "6285207888008"
         },
         {
-          "name": "Desi",
-          "phone": "6285297488822"
+          "name": "Tami",
+          "phone": "6285365200800"
+        },
+        {
+          "name": "Ferdi",
+          "phone": "6282317188008"
         },
         {
           "name": "Dini",
           "phone": "6282129904869"
         },
         {
-          "name": "Adnan",
-          "phone": "6281228886940"
-        },
-        {
-          "name": "Ronav",
-          "phone": "6282295675189"
-        } 
+          "name": "Dewi",
+          "phone": "6281283215788"
+        }
       ]
     },
     {
@@ -104,12 +92,12 @@
           "phone": "628811906396"
         },
         {
-          "name": "Marvin",
-          "phone": "6285827879667"
+          "name": "Michelle",
+          "phone": "6282295998016"
         },
         {
-          "name": "Nicholas",
-          "phone": "6285207888877"
+          "name": "Jekson (Domestik)",
+          "phone": "6282129925066"
         }
       ]
     },
@@ -123,6 +111,10 @@
         {
           "name": "Sendy",
           "phone": "6282315139543"
+        },
+        {
+          "name": "Alya",
+          "phone": "6282230025460"        
         }
       ]
     },
@@ -130,8 +122,12 @@
       "title": "B2B & Corporate",
       "items": [
         {
-          "name": "Denny Kurniawan",
-          "phone": "628818128661"
+          "name": "Marvin",
+          "phone": "6285827879667"
+        },
+        {
+          "name": "Nicholas",
+          "phone": "6285207888877"
         }
       ]
     }
