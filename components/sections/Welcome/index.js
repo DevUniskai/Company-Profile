@@ -9,7 +9,7 @@ const Welcome = () => {
       <Flex
         height={{ base: "100vh", md: "100vh" }}
         backgroundImage={"/static/images/main_sqtf.jpg"}
-        backgroundPosition={"center"}
+        backgroundPosition={{ base: "top", md: "center" }}
         backgroundSize={{ base: "cover", md: "contain" }}
         flexDirection="column"
         justifyContent="center"
@@ -22,6 +22,11 @@ const Welcome = () => {
           alt="logo_uniskai_header"
           width={188}
           height={52}
+          style={{
+            maxWidth: "100%",
+            height: "auto",
+            zIndex: 2, // Ensure it sits above the background
+          }}
         />
 
         {/* <Heading size="3xl">Uniskai</Heading>
