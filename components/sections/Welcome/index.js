@@ -7,14 +7,15 @@ const Welcome = () => {
   return (
     <Box bgColor={"Beige"}>
       <Flex
-        height={"100vh"}
+        height={{ base: "100vh", md: "100vh" }}
         backgroundImage={"/static/images/main_sqtf.jpg"}
         backgroundPosition={"center"}
-        backgroundSize="cover"
+        backgroundSize={{ base: "cover", md: "contain" }}
         flexDirection="column"
         justifyContent="center"
         alignItems="center"
         color="Beige"
+        px={{ base: 4, md: 8 }}
       >
         <Image
           src="/static/images/uniskai_header.png"
