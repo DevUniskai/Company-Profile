@@ -8,7 +8,7 @@ const Welcome = () => {
     <Box bgColor={"Beige"}>
       <Flex
         height={"100vh"}
-        backgroundImage={"/static/images/main.jpg"}
+        backgroundImage={"/static/images/main_sqtf.jpg"}
         backgroundPosition={"center"}
         backgroundSize="cover"
         flexDirection="column"
