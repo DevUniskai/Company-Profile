@@ -7,26 +7,20 @@ const Welcome = () => {
   return (
     <Box bgColor={"Beige"}>
       <Flex
-        height={{ base: "100vh", md: "100vh" }}
-        backgroundImage={"/static/images/main_sqtf.jpg"}
-        backgroundPosition={{ base: "top", md: "center" }}
-        backgroundSize={{ base: "cover", md: "contain" }}
+        height={"110vh"}
+        backgroundImage={"/static/images/bg.jpg"}
+        backgroundPosition={"center"}
+        backgroundSize="cover"
         flexDirection="column"
         justifyContent="center"
         alignItems="center"
         color="Beige"
-        px={{ base: 4, md: 8 }}
       >
         <Image
-          src="/static/images/uniskai_header.png"
+          src="/static/images/all-text.png"
           alt="logo_uniskai_header"
-          width={188}
-          height={52}
-          style={{
-            maxWidth: "100%",
-            height: "auto",
-            zIndex: 2, // Ensure it sits above the background
-          }}
+          width={1400}
+          height={100}
         />
 
         {/* <Heading size="3xl">Uniskai</Heading>
@@ -34,20 +28,21 @@ const Welcome = () => {
           Your Partner Travel Solution
         </Text> */}
       </Flex>
+     
 
       {/* SQTF HEADER */}
 
-      {/* <Box display="flex" justifyContent="center" height={"50hv"} mt={0.8}>
+      {/* <Box display="flex" justifyContent="center" height={"50hv"}>
         <Link
           as={NextLink}
           href={"/contact"}
           _hover={{ textDecoration: "none" }}
         >
           <Image
-            src="/static/images/sqtf_gif.gif"
-            alt="example gif"
-            width="2000"
-            height="500"
+            src="/static/images/preebook-web.jpg"
+            alt="uniskai_sqtf"
+            width="1600"
+            height="100"
           />
         </Link>
       </Box> */}
