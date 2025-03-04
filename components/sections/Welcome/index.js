@@ -15,7 +15,7 @@ const Welcome = () => {
         left="0"
         width="100%"
         height="100%"
-        backgroundImage="url('/static/images/waspada_bg.png')"
+        backgroundImage="/static/images/waspada_bg.png"
         backgroundPosition="center"
         backgroundSize="cover"
         backgroundRepeat="no-repeat"
@@ -32,7 +32,6 @@ const Welcome = () => {
         gap={8}
         maxW="100%"
         mx="auto"
-        // px={4}
       >
         {/* Phone image container */}
         <Box position="relative" flex="1" height="100%" maxH="100%">
@@ -40,7 +39,8 @@ const Welcome = () => {
             src="/static/images/waspada_phone-1.png"
             alt="Waspada phone"
             layout="fill"
-            objectFit="cover"
+            objectFit="contain"
+            objectPosition="left"
           />
         </Box>
 
