@@ -29,7 +29,7 @@ const Welcome = () => {
         height="100%"
         align="center"
         justify="center"
-        gap={8}
+        // gap={4}
         maxW="100%"
         mx="auto"
       >
@@ -51,6 +51,7 @@ const Welcome = () => {
             alt="Waspada note"
             layout="fill"
             objectFit="contain"
+            objectPosition="left"
           />
         </Box>
       </Flex>
