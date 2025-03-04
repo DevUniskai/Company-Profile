@@ -30,7 +30,7 @@ const Welcome = () => {
         align="center"
         justify="center"
         gap={8}
-        maxW="1600px"
+        maxW="100%"
         mx="auto"
         // px={4}
       >
