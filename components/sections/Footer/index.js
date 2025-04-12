@@ -157,7 +157,7 @@ const Footer = () => {
             WARNING !
           </Text>
           <Text fontSize="xs" lineHeight={1.3} color={"Beige"}>
-            Kami hanya mengumumkan rekrutmen resmi melalui <b>jobstreet.com</b> dan akun media sosial resmi <b>@uniskai</b>.
+            We only announce official recruitment through <b>jobstreet.com</b> and our official social media account <b>@uniskai</b>.
           </Text>
         </Flex>
 
