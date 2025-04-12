@@ -15,6 +15,7 @@ import data from "@/components/sections/Tour/tour_list.json";
 import Footer from "@/components/sections/Footer";
 import DetailTourClient from "@/components/sections/DetailTourClient";
 import DetailBookClient from "@/components/sections/DetailBookClient"
+import { notFound } from "next/navigation";
 
 export function generateStaticParams() {
   return data.tours.map((tour) => ({
@@ -27,8 +28,8 @@ export default function DetailTourById({ params }) {
   const tourId = parseInt(id, 10);
   const tour = data.tours.find((tour) => tour.id === tourId);
 
-  if (!tour) {
-    return <Box>Loading...</Box>;
+  if (!tour || !tour.isVisible) {
+    notFound();
   }
 
   return (

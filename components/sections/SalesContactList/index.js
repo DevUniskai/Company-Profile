@@ -14,7 +14,7 @@ const SalesContactList = () => {
     >
       {data.contact.map((data, key) => {
         return (
-          <SalesContactItem title={data.title} items={data.items} key={key} />
+          <SalesContactItem title={data.title} description={data.description} items={data.items} key={key} />
         );
       })}
     </Grid>

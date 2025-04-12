@@ -2,6 +2,7 @@
   "contact": [
     {
       "title": "fly",
+      "description":"Need help booking flights? Our Fly team is ready to assist you in finding the best routes and deals for your journey.",
       "items": [
         {
           "name": "Jennifer",
@@ -31,6 +32,7 @@
     },
     {
       "title": "stay",
+      "description": "Looking for the perfect place to stay? Our Stay team will help you find comfortable accommodations that match your travel style.",
       "items": [
         {
           "name": "Catherine",
@@ -56,6 +58,7 @@
     },
     {
       "title": "docs",
+      "description": "From passport applications to visa and travel insurance, our Docs team is here to guide you through every step with ease.",
       "items": [
         {
           "name": "Hengki",
@@ -82,6 +85,7 @@
     },
     {
       "title": "tour",
+      "description": "Plan your dream trip with our Tour team — whether it's a private getaway or a custom itinerary, we've got you covered.",
       "items": [
         {
           "name": "Dennis",
@@ -103,6 +107,7 @@
     },
     {
       "title": "play",
+      "description":"Make the most of your adventure with our Play team. We’re here to help you book tickets, transport, and activities for a fun and hassle-free trip.",
       "items": [
         {
           "name": "Felix",
@@ -120,6 +125,7 @@
     },
     {
       "title": "Cruise",
+      "description": "Set sail for unforgettable experiences. Our Cruise team will help you explore the open seas with ease and excitement.",
       "items": [
         {
           "name": "Marvin",
@@ -133,6 +139,7 @@
     },
     {
       "title": "B2B & Corporate",
+      "description": "We’re here for business collaborations and dedicated travel support for corporate clients.",
       "items": [
         {
           "name": "Denny",

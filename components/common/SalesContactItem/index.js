@@ -1,8 +1,8 @@
-import { Flex, Heading } from "@chakra-ui/react";
+import { Flex, Heading, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { Link } from "@chakra-ui/react";
 
-const SalesContactItem = ({ title, items }) => {
+const SalesContactItem = ({ title, description, items }) => {
   const newTitle = title.charAt(0).toUpperCase() + title.slice(1) + " Team";
   return (
     <Flex
@@ -15,6 +15,17 @@ const SalesContactItem = ({ title, items }) => {
       <Heading color={"brown"} fontSize={"24px"} textAlign={"center"} mb={3}>
         {newTitle}
       </Heading>
+      {description && (
+        <Text
+          fontSize={"xs"}
+          color={"brown"}
+          textAlign={"center"}
+          px={4}
+          mb={2}
+        >
+          {description}
+        </Text>
+      )}
       <Flex
         mt={0}
         flexDir={"column"}

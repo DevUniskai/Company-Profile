@@ -5,6 +5,7 @@
           "src" : "/static/images/2d1n_berastagi.jpg",
           "title" : "BERASTAGI TRIP",
           "description" : "2 Days 1 Night",
+          "isVisible" : false,
           "href" : "https://drive.google.com/file/d/1NpVT5irIYDbE5cB6LkVmSofERS_UvlgY/view?usp=drive_link",
           "destination_img" : [
             "/static/images/2d1n-berastagi_trip-sikulikap.png", 
@@ -70,6 +71,7 @@
           "src" : "/static/images/medan-samosir_trip.jpg",
           "title" : "LAKE TOBA TRIP",
           "description" : "3 Days 2 Night",
+          "isVisible" : false,
           "href" : "https://drive.google.com/file/d/115eIfh3g3Hy1NtxEKrsA85q1Ah-VEjxC/view?usp=drive_link",
           "destination_img" : [
             "/static/images/3d2n-toba_trip-kaldera.png",
@@ -145,6 +147,7 @@
           "src" : "/static/images/berastagi-samosir_trip.jpg",
           "title" : "TOBA - PARAPAT TRIP",
           "description" : "4 Days 3 Night",
+          "isVisible" : false,
           "href" : "https://drive.google.com/file/d/1AX7YoJ6GGDREEadRjiGZ6bfbbpG3DrtQ/view?usp=drive_link",
           "destination_img" : [
             "/static/images/marianna_resort.jpg", 
@@ -229,6 +232,7 @@
           "src" : "/static/images/3d2n_berastagi.jpg",
           "title" :  "BERASTAGI - SAMOSIR TRIP",
           "description" : "5 Days 4 Night",
+          "isVisible" : false,
           "href" : "https://drive.google.com/file/d/19Qcm4SKrCBKpS9P7Ozd1dMgLKujTGqkp/view?usp=drive_link",
           "destination_img" : [
             "/static/images/5d4n-berastasgi_samosir_trip-lumbini.png", 
