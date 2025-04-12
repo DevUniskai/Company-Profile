@@ -2,7 +2,7 @@
   "contact": [
     {
       "title": "fly",
-      "description":"Need help booking flights? Our Fly team is ready to assist you in finding the best routes and deals for your journey.",
+      "description":"We assist in booking domestic and international flight tickets smoothly.",
       "items": [
         {
           "name": "Jennifer",
@@ -32,7 +32,7 @@
     },
     {
       "title": "stay",
-      "description": "Looking for the perfect place to stay? Our Stay team will help you find comfortable accommodations that match your travel style.",
+      "description": "Helping you find and book hotels for every travel need.",
       "items": [
         {
           "name": "Catherine",
@@ -58,7 +58,7 @@
     },
     {
       "title": "docs",
-      "description": "From passport applications to visa and travel insurance, our Docs team is here to guide you through every step with ease.",
+      "description": "Passport, visa, and insurance — your travel documents, handled with care",
       "items": [
         {
           "name": "Hengki",
@@ -85,7 +85,7 @@
     },
     {
       "title": "tour",
-      "description": "Plan your dream trip with our Tour team — whether it's a private getaway or a custom itinerary, we've got you covered.",
+      "description": "We arrange private tours based on your desired travel experience.",
       "items": [
         {
           "name": "Dennis",
@@ -107,7 +107,7 @@
     },
     {
       "title": "play",
-      "description":"Make the most of your adventure with our Play team. We’re here to help you book tickets, transport, and activities for a fun and hassle-free trip.",
+      "description":"Book attractions, transport, and tickets to complete your travel experience.",
       "items": [
         {
           "name": "Felix",
@@ -125,7 +125,7 @@
     },
     {
       "title": "Cruise",
-      "description": "Set sail for unforgettable experiences. Our Cruise team will help you explore the open seas with ease and excitement.",
+      "description": "Cruise trip planning and booking support for unforgettable sea journeys.",
       "items": [
         {
           "name": "Marvin",
@@ -139,7 +139,7 @@
     },
     {
       "title": "B2B & Corporate",
-      "description": "We’re here for business collaborations and dedicated travel support for corporate clients.",
+      "description": "Supporting business and corporate clients with tailored travel services",
       "items": [
         {
           "name": "Denny",
