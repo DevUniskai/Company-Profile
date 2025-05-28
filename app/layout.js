@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta name="agd-partner-manual-verification" /> {/* ✅ Manually added meta tag */}
+        <meta name="agd-partner-manual-verification" />
         <title>Uniskai</title>
         <meta name="description" content="Giving you the Best Travel Solution" />
       </head>
