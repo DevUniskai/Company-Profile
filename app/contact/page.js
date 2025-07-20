@@ -25,6 +25,7 @@ const ContactSales = () => {
           fontSize={{ base: "3xl", sm: "4xl" }}
           mb={6}
           letterSpacing={"5px"}
+          textAlign={"center"}
         >
           CONTACT US
         </Text>
