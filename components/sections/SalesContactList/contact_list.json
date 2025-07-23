@@ -2,6 +2,7 @@
   "contact": [
     {
       "title": "fly",
+      "slug": "fly",
       "description":"We assist in booking domestic and international flight tickets smoothly.",
       "items": [
         {
@@ -36,6 +37,7 @@
     },
     {
       "title": "stay",
+      "slug": "stay",
       "description": "Helping you find and book hotels for every travel need.",
       "items": [
         {
@@ -62,6 +64,7 @@
     },
     {
       "title": "docs",
+      "slug": "docs",
       "description": "Passport, visa, and insurance — your travel documents, handled with care",
       "items": [
         {
@@ -93,6 +96,7 @@
     },
     {
       "title": "tour",
+      "slug": "tour",
       "description": "We arrange private tours based on your desired travel experience.",
       "items": [
         {
@@ -115,6 +119,7 @@
     },
     {
       "title": "play",
+      "slug": "play",
       "description":"Book attractions, transport, and tickets to complete your travel experience.",
       "items": [
         {
@@ -133,6 +138,7 @@
     },
     {
       "title": "Cruise",
+      "slug": "cruise",
       "description": "Cruise trip planning and booking support for unforgettable sea journeys.",
       "items": [
         {
@@ -147,6 +153,7 @@
     },
     {
       "title": "B2B & Corporate",
+      "slug": "b2b-&-corporate",
       "description": "Supporting business and corporate clients with tailored travel services",
       "items": [
         {

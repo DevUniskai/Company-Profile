@@ -1,8 +1,27 @@
-import { Grid } from "@chakra-ui/react";
-import data from "./contact_list.json";
+"use client";
+import { Flex, Grid } from "@chakra-ui/react";
 import SalesContactItem from "@/components/common/SalesContactItem";
+import allData from "./contact_list.json";
 
-const SalesContactList = () => {
+const SalesContactList = ({ results = null }) => {
+  const isSingle = results && results.length === 1;
+  const dataToShow = results || allData.contact;
+
+  if (dataToShow.length === 0) return null;
+
+  if (isSingle) {
+    return (
+      <Flex justify="center">
+        <SalesContactItem
+          title={dataToShow[0].title}
+          description={dataToShow[0].description}
+          items={dataToShow[0].items}
+          variant="single"
+        />
+      </Flex>
+    );
+  }
+
   return (
     <Grid
       templateColumns={{
@@ -11,12 +30,17 @@ const SalesContactList = () => {
         xl: "repeat(3, 1fr)",
       }}
       gap={{ base: 3, lg: 6, xl: 9 }}
+      justifyContent="center"
     >
-      {data.contact.map((data, key) => {
-        return (
-          <SalesContactItem title={data.title} description={data.description} items={data.items} key={key} />
-        );
-      })}
+      {dataToShow.map((item, key) => (
+        <SalesContactItem
+          key={key}
+          title={item.title}
+          description={item.description}
+          items={item.items}
+          variant="all"
+        />
+      ))}
     </Grid>
   );
 };

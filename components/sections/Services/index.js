@@ -24,47 +24,55 @@ const Services = () => {
         <ServiceItem
           src="/static/images/Fly.png"
           title="FLY"
+          slug="fly"
           // description="Booking Flight Ticket"
           description="Elevate your journey with seamless flight bookings."
         />
         <ServiceItem
           src="/static/images/Stay.png"
           title="STAY"
+          slug="stay"
           // description="Hotel Booking and Services"
           description="Indulge in exquisite stays at premier destinations."
         />
         <ServiceItem
           src="/static/images/passport.jpg"
           title="DOCS"
+          slug="docs"
           // description="Passport, Visa and Travel Document"
           description="Streamline your travel with effortless travel document services."
         />
         <ServiceItem
           src="/static/images/Tour.png"
           title="TOUR"
+          slug="tour"
           // description="Tour Planning tailored to your needs giving the best travel experience"
           description="Curated journeys crafted just for you."
         />
         <ServiceItem
           src="/static/images/SGX.png"
           title="SGX"
+          slug="sgx"
           // description="Self Travel with a brand new guided experience"
           description="Travel reimagined, with itineraries tailored to your preferences and our expertise."
         />
         <ServiceItem
           src="/static/images/Play.png"
           title="PLAY"
+          slug="play"
           // description="Book your attractions, concert, and rent cars"
           description="Unlock extraordinary adventures and exclusive attractions."
         />
         <ServiceItem
           src="/static/images/cruise.png"
           title="CRUISE"
+          slug="cruise"
           description="Set sail in ultimate luxury to unforgettable horizons."
         />
         <ServiceItem
           src="/static/images/Docs.png"
           title="B2B & CORPORATE"
+          slug="b2b-&-corporate"
           // description="Partner with us or enjoy exclusive perks for corporate customers"
           description="Partner in prestige, benefit from tailored corporate privileges."
         />

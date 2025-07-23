@@ -57,53 +57,42 @@ const Footer = () => {
         />
       </Flex>
       <Flex
-        flexDirection="column"
+        flexDir={"column"}
         w={{ base: "100%", lg: "20%" }}
         h={"100%"}
+        justifyContent={"space-between"}
         // justifyContent={"space-between"}
         // bgColor={"green"}
       >
+        <Flex flexDir="column" mb={{ base: 10, lg: 0 }}>
+          <Text fontWeight={600} color={"white"} letterSpacing={3} mb={3}>
+            CONTACT US
+          </Text>
+          <Flex alignItems={"center"} mb={1}>
+            {/* <Link
+              as={NextLink}
+              href="https://wa.me/6281286338088"
+              target="_blank"
+            >
+              Chat with Us
+            </Link> */}
+          </Flex>
+          <Flex alignItems={"center"} mb={10}>
+            <Link as={NextLink} href="/contact" target="_blank">
+              Contact Sales
+            </Link>
+          </Flex>
+        </Flex>
         <Flex 
-          justifyContent="space-between"
-          mr={{ base: 0, md: 10 }}
+          // justifyContent={{ base: "space-between", md: "flex-start" }} 
+          mr={{ base: 0, md: 10 }} 
         >
-          <Text fontWeight={600} color={"white"} letterSpacing={3} mb={5}>
+          <Text fontWeight={600} color={"white"} letterSpacing={3} mb={1}>
               SOCIAL MEDIA
           </Text>
         </Flex>
-        {/* <Flex flexDir="column" mb={{ base: 10, lg: 0 }}>
-          <Text fontWeight={600} color={"white"} letterSpacing={3} mb={5}>
-            CONTACT US
-          </Text>
-          <Flex alignItems={"center"}>
-            <Text lineHeight={1.3} color={"Beige"} w={"50px"}>
-              Phone
-            </Text>
-            <Text ml={3} mr={1}>
-              :
-            </Text>
-            <Link
-              as={NextLink}
-              href="https://wa.me/6282129925066"
-              target="_blank"
-            >
-              +62 821-2992-5066
-            </Link>
-          </Flex>
-          <Flex alignItems={"center"}>
-            <Text lineHeight={1.3} color={"Beige"} w={"50px"}>
-              Email
-            </Text>
-            <Text ml={3} mr={1}>
-              :
-            </Text>
-            <Link as={NextLink} href="mailto:tour@uniskai.id" target="_blank">
-              tour@uniskai.id
-            </Link>
-          </Flex>
-        </Flex> */}
         <Flex
-          justifyContent={{ base: "space-between", md: "left" }} 
+          justifyContent={{ base: "space-between", md: "flex-start"}}
           w={{ base: "100%", md: "auto" }}
           mb={{ base: 10, lg: 0 }}
         >
@@ -147,7 +136,8 @@ const Footer = () => {
             />
           </Link>
         </Flex>
-        <Flex 
+
+        {/* <Flex 
           flexDir="column" 
           mb={{ base: 10, lg: 0 }} 
           mt={10} 
@@ -159,10 +149,9 @@ const Footer = () => {
           <Text fontSize="xs" lineHeight={1.3} color={"Beige"}>
             We only announce official recruitment through <b>jobstreet.com</b> and our official social media account <b>@uniskai</b>.
           </Text>
-        </Flex>
-
+        </Flex> */}        
       </Flex>
-
+      
       {/* <Flex
         flexDir={"column"}
         w={{ base: "100%", lg: "15%" }}
@@ -195,4 +184,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

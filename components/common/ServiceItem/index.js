@@ -3,10 +3,12 @@ import Image from "next/image";
 import NextLink from "next/link";
 import { Link } from "@chakra-ui/react";
 
-const ServiceItem = ({ src, title, description, size = "" }) => {
+const ServiceItem = ({ src, title, slug, description, size = "" }) => {
+  const newTitle = title.toLowerCase();
+
   return (
     <GridItem w="100%">
-      <Link as={NextLink} href={"/contact"} mr={4}>
+      <Link as={NextLink} href={`/sales/${slug}/`} mr={4}>
         <Flex flexDir="column" alignItems={{ sm: "center", md: "flex-start" }} >
           <Flex
             width={{ base: "90%", sm: "100%", md: "250px", lg: "282px", xl: "320px" }}
