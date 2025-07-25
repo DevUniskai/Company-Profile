@@ -1,7 +1,61 @@
 {
   "contact": [
     {
-      "title": "fly",
+      "title": "SQTF Pre-booking",
+      "slug": "prebook",
+      "description": "Pre-book your SQTF",
+      "items": [
+        {
+          "name": "Sri",
+          "phone": "6285880573095"
+        },
+        {
+          "name": "Yasmine",
+          "phone": "6285207888388 "
+        },
+        {
+          "name": "Duden",
+          "phone": "6285297488822"
+        },
+        {
+          "name": "Catherine",
+          "phone": "6287869010988"
+        },
+        {
+          "name": "Dewi",
+          "phone": "6281283215788"
+        },
+        {
+          "name": "Jovanda",
+          "phone": "6282365558008"
+        }
+      ]
+    },
+    {
+      "title": "sail (Cruise)",
+      "slug": "cruise",
+      "description": "Cruise trip planning and booking support for unforgettable sea journeys.",
+      "items": [
+        {
+          "name": "Marvin",
+          "phone": "6285827879667"
+        },
+        {
+          "name": "Audrey",
+          "phone": "6285207888877 "
+        },
+        {
+          "name": "Daniel",
+          "phone": "6282287840788"
+        },
+        {
+          "name": "Rosinta",
+          "phone": "6282287840788"
+        }
+      ]
+    },
+    {
+      "title": "fly (Ticketing)",
       "slug": "fly",
       "description":"We assist in booking domestic and international flight tickets smoothly.",
       "items": [
@@ -18,32 +72,16 @@
           "phone": "6282129904869"
         },
         {
-          "name": "Dewi",
-          "phone": "6281283215788"
-        },
-        {
-          "name": "Duden",
-          "phone": "6285297488822"
-        },
-        {
-          "name": "Jovanda",
-          "phone": "6282365558008"
-        },
-        {
           "name": "Ingrid (Domestik)",
           "phone": "6285365200800"
         }
       ]
     },
     {
-      "title": "stay",
+      "title": "stay (Hotel)",
       "slug": "stay",
       "description": "Helping you find and book hotels for every travel need.",
       "items": [
-        {
-          "name": "Catherine",
-          "phone": "6287869010988"
-        },
         {
           "name": "Yuni",
           "phone": "6282137103774"
@@ -63,7 +101,7 @@
       ]
     },
     {
-      "title": "docs",
+      "title": "docs (Visa)",
       "slug": "docs",
       "description": "Passport, visa, and insurance — your travel documents, handled with care",
       "items": [
@@ -118,7 +156,22 @@
       ]
     },
     {
-      "title": "play",
+      "title": "sgx (Itinerary Consultant)",
+      "slug": "sgx",
+      "description": "We arrange private tours based on your desired travel experience.",
+      "items": [
+        {
+          "name": "Nabila",
+          "phone": "6282171669005"
+        },
+        {
+          "name": "Aditya",
+          "phone": "6281370655790"
+        }
+      ]
+    },
+    {
+      "title": "play (Attraction)",
       "slug": "play",
       "description":"Book attractions, transport, and tickets to complete your travel experience.",
       "items": [
@@ -133,21 +186,6 @@
         {
           "name": "Alya",
           "phone": "6282230025460"        
-        }
-      ]
-    },
-    {
-      "title": "Cruise",
-      "slug": "cruise",
-      "description": "Cruise trip planning and booking support for unforgettable sea journeys.",
-      "items": [
-        {
-          "name": "Marvin",
-          "phone": "6285827879667"
-        },
-        {
-          "name": "Audrey",
-          "phone": "6285207888877 "
         }
       ]
     },
