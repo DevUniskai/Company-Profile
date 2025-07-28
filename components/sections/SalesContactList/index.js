@@ -36,7 +36,7 @@ const SalesContactList = ({ results = null }) => {
         <SalesContactItem
           key={key}
           title={item.title}
-          description={item.description}
+          // description={item.description}
           items={item.items}
           variant="all"
         />

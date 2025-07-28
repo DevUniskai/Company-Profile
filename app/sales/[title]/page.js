@@ -17,16 +17,22 @@ const ContactByTitle = () => {
 
     const [results, setResults] = useState([]);;
     
-    useEffect(() => {
-    //   console.log(slug);
-      const filteredData = data.contact.filter(items => items.slug === slug);
-    //   console.log(filteredData);
+    // useEffect(() => {
+    // //   console.log(slug);
+    //   const filteredData = data.contact.filter(items => items.slug === slug);
+    // //   console.log(filteredData);
 
-      setResults(filteredData);
-    }, [slug]);
+    //   setResults(filteredData);
+    // }, [slug]);
+
+    // tampilkan semua data
+    useEffect(() => {
+      setResults(data.contact); // tampilkan semua data, tidak peduli slug apa
+    }, []);
+    
   
     return (
-        <Box w={"100%"} minH={"100vh"} backgroundColor={"brown"}>
+        <Box w={"100%"} minH={"100vh"} backgroundColor={"brown"} backgroundImage={"/static/images/backg.jpg"}>
           <Flex pt={10} justifyContent={"center"}>
             <Image
               src={"/static/images/uniskai_header.png"}
@@ -50,14 +56,14 @@ const ContactByTitle = () => {
             py={10}
             mt={15}
           >
-            {/* <Text
-              fontSize={{ base: "3xl", sm: "4xl" }}
+            <Text
+              fontSize={{ base: "2xl", sm: "3xl" }}
               mb={6}
               letterSpacing={"5px"}
               textAlign={"center"}
             >
               CONTACT US
-            </Text> */}
+            </Text>
             {results.length > 0 && <SalesContactList results={results} />}
             {/* <Footer /> */}
           </Flex>
