@@ -1,37 +1,6 @@
 {
   "contact": [
     {
-      "title": "SQTF Pre-booking",
-      "slug": "prebook",
-      "description": "Pre-book your SQTF",
-      "items": [
-        {
-          "name": "Sri",
-          "phone": "6285880573095"
-        },
-        {
-          "name": "Yasmine",
-          "phone": "6285207888388 "
-        },
-        {
-          "name": "Duden",
-          "phone": "6285297488822"
-        },
-        {
-          "name": "Catherine",
-          "phone": "6287869010988"
-        },
-        {
-          "name": "Dewi",
-          "phone": "6281283215788"
-        },
-        {
-          "name": "Jovanda",
-          "phone": "6282365558008"
-        }
-      ]
-    },
-    {
       "title": "sail (Cruise)",
       "slug": "cruise",
       "description": "Cruise trip planning and booking support for unforgettable sea journeys.",
@@ -72,6 +41,18 @@
           "phone": "6282129904869"
         },
         {
+          "name": "Dewi",
+          "phone": "6281283215788"
+        },
+        {
+          "name": "Jovanda",
+          "phone": "6282365558008"
+        },
+        {
+          "name": "Duden",
+          "phone": "6285297488822"
+        },
+        {
           "name": "Ingrid (Domestik)",
           "phone": "6282261863549"
         }
@@ -97,6 +78,10 @@
         {
           "name": "Richard",
           "phone": "6282298877800"
+        },
+        {
+          "name": "Catherine",
+          "phone": "6287869010988"
         }
       ]
     },
@@ -160,6 +145,14 @@
       "slug": "sgx",
       "description": "We arrange private tours based on your desired travel experience.",
       "items": [
+        {
+          "name": "Sri",
+          "phone": "6285880573095"
+        },
+        {
+          "name": "Yasmine",
+          "phone": "6285207888388 "
+        },
         {
           "name": "Nabila",
           "phone": "6282171669005"
