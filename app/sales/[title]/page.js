@@ -17,18 +17,18 @@ const ContactByTitle = () => {
 
     const [results, setResults] = useState([]);;
     
-    // useEffect(() => {
-    // //   console.log(slug);
-    //   const filteredData = data.contact.filter(items => items.slug === slug);
-    // //   console.log(filteredData);
+    useEffect(() => {
+    //   console.log(slug);
+      const filteredData = data.contact.filter(items => items.slug === slug);
+    //   console.log(filteredData);
 
-    //   setResults(filteredData);
-    // }, [slug]);
+      setResults(filteredData);
+    }, [slug]);
 
     // tampilkan semua data
-    useEffect(() => {
-      setResults(data.contact); // tampilkan semua data, tidak peduli slug apa
-    }, []);
+    // useEffect(() => {
+    //   setResults(data.contact); // tampilkan semua data, tidak peduli slug apa
+    // }, []);
     
   
     return (
