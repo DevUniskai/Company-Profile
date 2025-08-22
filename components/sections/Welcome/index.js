@@ -8,7 +8,7 @@ const Welcome = () => {
     <Box bgColor={"Beige"}>
       <Flex
         height={"100vh"}
-        backgroundImage={"/static/images/backg.jpg"}
+        backgroundImage={"/static/images/main.jpg"}
         backgroundPosition={"center"}
         backgroundSize="cover"
         flexDirection="column"
@@ -17,9 +17,9 @@ const Welcome = () => {
         color="Beige"
       >
         <Image
-          src="/static/images/tulisan.png"
+          src="/static/images/uniskai_header.png"
           alt="logo_uniskai_header"
-          width={1300}
+          width={156}
           height={52}
         />
 
