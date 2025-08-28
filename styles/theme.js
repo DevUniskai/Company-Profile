@@ -10,5 +10,6 @@ export const theme = extendTheme({
     secondary: "#828282",
     Beige: "#fdf9ed",
     brown: "#846353",
+    black: "rgb(50, 48, 44)"
   },
 });
