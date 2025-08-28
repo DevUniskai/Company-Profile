@@ -473,14 +473,14 @@ const TermsOfServices = () => {
 
         <Divider borderColor="grey" mt={6}/>
 
-        <Text mt={6}>✨ Unpack once. Explore endlessly. The Mediterranean is calling. Will you answer?</Text>
+        <Text mt={6} mb={4}>✨ Unpack once. Explore endlessly. The Mediterranean is calling. Will you answer?</Text>
 
-
-
-
-
-
-
+        <Text >
+          with love,
+        </Text>
+        <Text >
+          Audrey – Sail Team
+        </Text>
       </Flex>
 
     </Box>
