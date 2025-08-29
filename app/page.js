@@ -55,7 +55,7 @@ const Home = () => {
       <Services />
       {/* <Experience /> */}
       <Footer />
-      {/* <Analytics /> */}
+      <Analytics />
     </Box>
   );
 };

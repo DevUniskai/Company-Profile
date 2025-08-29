@@ -233,7 +233,7 @@ const TermsOfServices = () => {
           A city that feels straight out of a fantasy saga.
         </Text>
         <Flex gap={6} justify="center">
-          <Box position="relative" w="300px" h="200px">
+          <Box position="relative" w="375px" h="200px">
             <Image 
               src="/static/images/valleta1.png"
               alt="cruise"
@@ -242,7 +242,7 @@ const TermsOfServices = () => {
             />
           </Box>
 
-          <Box position="relative" w="300px" h="200px">
+          <Box position="relative" w="375px" h="200px">
             <Image 
               src="/static/images/valleta2.png"
               alt="cruise"
