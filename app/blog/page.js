@@ -129,6 +129,9 @@ const TermsOfServices = () => {
             style={{ objectFit: "cover" }}
           />
         </Flex>
+        <Text as="span" fontSize={11} textColor={"black"} textAlign={"right"} fontStyle={"italic"} mt={1}>
+          Source: NCL Youtube
+        </Text>
 
         <Heading as="h2" fontSize="2xl" mt={8} mb={4} textColor={"black"}>
           9 Ports in 9 Nights: Cruise Itinerary Highlights
