@@ -31,7 +31,7 @@ const TermsOfServices = () => {
         flexDirection="column"
         px={{ base: 10, sm: 16 }}
         py={10}
-        maxW="750px"
+        maxW="800px"
         mx="auto"
         lineHeight="1.5"
         bgColor={"Beige"}
@@ -43,7 +43,7 @@ const TermsOfServices = () => {
         <Heading as="h1" fontSize="40" mb={2} textColor={"black"}>
           9 Nights, 9 Ports, 1 Unforgettable Cruise aboard Norwegian Viva
         </Heading>
-        <Text mb={4} textColor="black">
+        <Text mb={4} textColor="black" textAlign={"justify"}>
             Imagine sipping Turkish coffee at sunrise in Istanbul… and just days later, raising a glass to the Santorini sunset. That’s the rhythm of this 9-night Greek Isles & Mediterranean cruise aboard Norwegian Viva. And the best part? You only unpack once. 
         </Text>
         <Flex
@@ -82,17 +82,51 @@ const TermsOfServices = () => {
           alignItems="center"
           color="Beige"
         >
-          <Image 
-            src="/static/images/map.png" 
-            alt="cruise" 
-            width={750}
-            height={200}
-          />
-          <Image 
-            src="/static/images/list.jpeg" 
-            alt="cruise" 
-            width={750}
-            height={200}
+          <Stack spacing={4} align="center">
+            <Image 
+              src="/static/images/map.png" 
+              alt="cruise" 
+              width={750}
+              height={200}
+            />
+            <Image 
+              src="/static/images/list.jpeg" 
+              alt="cruise" 
+              width={750}
+              height={200}
+            />
+          </Stack>
+        </Flex>
+
+        <Heading as="h2" fontSize="35" textColor={"black"} mt={8} mb={4}>
+          Race the Waves: The Only Go-Kart Track at Sea
+        </Heading>
+        <Text mb={2} textColor={"black"}>
+          Only Norwegian Cruise Line brings the thrill of go-kart racing onto the ocean. 
+          Onboard Norwegian Viva, you’ll find the Viva Speedway, a three-level racetrack that twists and turns high above the sea.
+        </Text>
+        <Text mb={4} textColor={"black"}>
+          Imagine strapping into an electric kart, the ocean breeze on your face, as you speed past other racers with nothing but endless blue water as your backdrop. 
+          It’s not just a ride. It’s an adrenaline-pumping experience you won’t find on any other cruise line.
+        </Text>
+        <Flex
+          backgroundPosition="center"
+          backgroundSize="cover"
+          flexDirection="column"
+          justifyContent="center"
+          alignItems="center"
+          color="Beige"
+        >
+          <video 
+            src="/static/images/ncl-gocart.mp4" 
+            width="750" 
+            height="200" 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            controls
+            style={{ objectFit: "cover" }}
           />
         </Flex>
 
@@ -347,6 +381,12 @@ const TermsOfServices = () => {
           (Tap to call or message on WhatsApp. Fast replies!)
         </Text>
 
+        <Divider borderColor="grey" mt={4}/>
+
+
+        <Heading as="h2" fontSize="2xl" textColor={"black"} mt={6} mb={2}>
+          Life Onboard Norwegian Viva: Where Luxury Meets Adventure
+        </Heading>
         <Flex
           flexDirection="column"
           justifyContent="center"
@@ -361,12 +401,6 @@ const TermsOfServices = () => {
             height={50}
           />
         </Flex>
-
-        <Divider borderColor="grey" mt={6}/>
-
-        <Heading as="h2" fontSize="2xl" textColor={"black"} mt={6} mb={2}>
-          Life Onboard Norwegian Viva: Where Luxury Meets Adventure
-        </Heading>
         <Text textColor={"black"} mb={2}>
           Step aboard Norwegian Viva, the newest ship in NCL’s Prima Class, and discover modern luxury at sea with endless dining, entertainment, and relaxation options.
         </Text>
@@ -381,6 +415,7 @@ const TermsOfServices = () => {
             <Text fontStyle={"italic"}>“It’s not just a ship, it’s a floating resort. Everything feels new, spacious, and thoughtfully designed.” – Passenger Review on Cruise Critic</Text>
           </Stack>
         </Box>
+
 
         <Text fontSize="20" mb={1} fontWeight="bold" textColor={"black"}>
           Premium Accommodations
