@@ -63,6 +63,7 @@ const TermsOfServices = () => {
             muted 
             playsInline
             controls
+            preload="auto"
             style={{ objectFit: "cover" }}
           />
         </Flex>
@@ -129,6 +130,7 @@ const TermsOfServices = () => {
             muted 
             playsInline
             controls
+            preload="auto"
             style={{ objectFit: "cover" }}
           />
         </Flex>
