@@ -41,10 +41,10 @@ const TermsOfServices = () => {
           Mediterranean Magic:
         </Heading>
         <Heading as="h1" fontSize="40" mb={2} textColor={"black"}>
-          9 Days, 9 Ports, 1 Unforgettable Cruise aboard Norwegian Viva
+          9 Nights, 9 Ports, 1 Unforgettable Cruise aboard Norwegian Viva
         </Heading>
         <Text mb={4} textColor="black">
-            Imagine sipping Turkish coffee at sunrise in Istanbul… and just days later, raising a glass to the Santorini sunset. That’s the rhythm of this 9-day Greek Isles & Mediterranean cruise aboard Norwegian Viva. And the best part? You only unpack once. 
+            Imagine sipping Turkish coffee at sunrise in Istanbul… and just days later, raising a glass to the Santorini sunset. That’s the rhythm of this 9-night Greek Isles & Mediterranean cruise aboard Norwegian Viva. And the best part? You only unpack once. 
         </Text>
         <Flex
           backgroundPosition="center"
@@ -97,7 +97,7 @@ const TermsOfServices = () => {
         </Flex>
 
         <Heading as="h2" fontSize="2xl" mt={8} mb={4} textColor={"black"}>
-          9 Ports in 9 Days: Cruise Itinerary Highlights
+          9 Ports in 9 Nights: Cruise Itinerary Highlights
         </Heading>
         <Text fontSize="20" fontWeight="bold" textColor={"black"} mb={1}>
           Istanbul, Turkey
@@ -292,7 +292,7 @@ const TermsOfServices = () => {
 
         <Text textColor={"black"} mb={4}>
           Cabins are limited, and promotional offers change fast. Most guests are surprised by how approachable this kind of dream can be. 
-          A 9-day journey through 9 ports often starts around <Text as={"span"} fontWeight={"bold"} >USD 2,700 per person</Text>, depending on the cabin and season.
+          A 9-night journey through 9 ports often starts around <Text as={"span"} fontWeight={"bold"} >USD 2,700 per person</Text>, depending on the cabin and season.
         </Text>
 
         <Text textColor={"black"} mb={4}>
