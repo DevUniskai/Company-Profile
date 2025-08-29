@@ -74,12 +74,17 @@ const Footer = () => {
               href="https://wa.me/6281286338088"
               target="_blank"
             >
-              Chat with Us
+              Chat with U2
             </Link> */}
           </Flex>
-          <Flex alignItems={"center"} mb={10}>
+          <Flex alignItems={"center"} mb={1}>
             <Link as={NextLink} href="/contact" target="_blank">
               Contact Sales
+            </Link>
+          </Flex>
+          <Flex alignItems={"center"} mb={10}>
+            <Link as={NextLink} href="/blog" target="_blank">
+              Blog
             </Link>
           </Flex>
         </Flex>
