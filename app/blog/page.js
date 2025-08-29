@@ -66,6 +66,9 @@ const TermsOfServices = () => {
             style={{ objectFit: "cover" }}
           />
         </Flex>
+        <Text as="span" fontSize={11} textColor={"black"} textAlign={"right"} fontStyle={"italic"} mt={1}>
+          Source: NCL Youtube
+        </Text>
 
         <Heading as="h2" fontSize="2xl" textColor={"black"} mt={8} mb={4}>
           Why a Mediterranean Cruise with Norwegian Viva Is Special
