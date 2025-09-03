@@ -52,9 +52,9 @@ const Home = () => {
       {/* {!show && <Navbar />} */}
       <Welcome />
       {/* <Tour /> */}
-      <Services />
+      {/* <Services /> */}
       {/* <Experience /> */}
-      <Footer />
+      {/* <Footer /> */}
       <Analytics />
     </Box>
   );

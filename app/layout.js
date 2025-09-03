@@ -63,7 +63,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <Providers>
-          {/* <Navbar /> */}
+          <Navbar />
           {children}
         </Providers>
       </body>
