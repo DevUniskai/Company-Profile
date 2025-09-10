@@ -30,7 +30,7 @@ const HPage = () => {
               bgColor={"white"}
             >
               <Image
-                src="/static/images/black.png"
+                src="/static/images/logo-black.png"
                 alt="Profile Photo"
                 w="100%"
                 h="100%"

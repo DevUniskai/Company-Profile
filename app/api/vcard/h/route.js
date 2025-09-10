@@ -14,7 +14,7 @@ function foldLine(input, width = 76) {
 
 export async function GET() {
   // 1) Baca foto
-  const imgPath = join(process.cwd(), "public", "static", "images", "black.png");
+  const imgPath = join(process.cwd(), "public", "static", "images", "logo-black.png");
   const img = await readFile(imgPath);
   const base64 = img.toString("base64");
 
