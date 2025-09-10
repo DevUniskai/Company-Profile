@@ -107,8 +107,19 @@ const HPage = () => {
 
           {/* CTA vCard */}
           <VStack pt={2}>
-            {/* Untuk sekarang tombol ini menuju placeholder; nanti kita ganti ke route vCard */}
-            <Link href="/contact/h.vcf" passHref>
+            <Button
+                as="a"
+                href="/contact/h.vcf"
+                download
+                size="lg"
+                w="fit-content"
+                bg="white"
+                color="black"
+                _hover={{ bg: "whiteAlpha.800" }}
+            >
+                Add to Contact
+            </Button>
+            {/* <Link href="/contact/h.vcf" passHref>
               <Button
                 size="lg"
                 w="full"
@@ -118,7 +129,7 @@ const HPage = () => {
               >
                 Add to Contact
               </Button>
-            </Link>
+            </Link> */}
             {/* <Text fontSize="xs" color="whiteAlpha.600" textAlign="center">
               iOS & Android supported • vCard akan kita aktifkan setelah route siap
             </Text> */}

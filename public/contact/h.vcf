@@ -7,4 +7,5 @@ ORG:Uniskai
 EMAIL;TYPE=INTERNET,PREF:herbert@uniskai.id
 TEL;TYPE=CELL:+6281234567890
 URL:https://instagram.com/herbert
+PHOTO;TYPE=PNG:http://localhost:3000/static/images/black.png
 END:VCARD
