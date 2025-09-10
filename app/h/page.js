@@ -109,7 +109,7 @@ const HPage = () => {
           <VStack pt={2}>
             <Button
                 as="a"
-                href="/contact/h.vcf"
+                href="/api/vcard/h"
                 download
                 size="lg"
                 w="fit-content"
