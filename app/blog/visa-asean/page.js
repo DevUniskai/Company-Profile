@@ -50,7 +50,7 @@ const VisaAsean = () => {
         <Heading as="h1" fontSize="40" mb={2} textColor={"black"}>
           Fasilitas Baru untuk Pebisnis Indonesia dan Keluarganya
         </Heading>
-        <Text mb={4} textColor="black" textAlign={"justify"}>
+        <Text mb={4} textColor="black">
             Kabar baik buat para pebisnis Indonesia yang sering menjalankan aktivitas bisnis di China. Sejak 9 Juni 2025, Pemerintah China resmi meluncurkan Visa ASEAN 5 Tahun Multiple Entry, visa khusus yang dirancang untuk memperkuat konektivitas bisnis dan mobilitas keluarga lintas Asia Tenggara.
         </Text>
         <Flex
@@ -355,7 +355,7 @@ const VisaAsean = () => {
         </Box>
 
         <Text >
-          with love,
+          warm regards,
         </Text>
         <Text >
           Wendy – Docs Team

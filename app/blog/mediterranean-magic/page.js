@@ -43,7 +43,7 @@ const TermsOfServices = () => {
         <Heading as="h1" fontSize="40" mb={2} textColor={"black"}>
           9 Nights, 9 Ports, 1 Unforgettable Cruise aboard Norwegian Viva
         </Heading>
-        <Text mb={4} textColor="black" textAlign={"justify"}>
+        <Text mb={4} textColor="black">
             Imagine sipping Turkish coffee at sunrise in Istanbul… and just days later, raising a glass to the Santorini sunset. That’s the rhythm of this 9-night Greek Isles & Mediterranean cruise aboard Norwegian Viva. And the best part? You only unpack once. 
         </Text>
         <Flex

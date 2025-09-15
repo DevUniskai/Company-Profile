@@ -50,7 +50,7 @@ const VisaSchengen = () => {
         <Heading as="h1" fontSize="35" mb={2} textColor={"black"}>
           Peluang Baru lewat Skema Visa Cascade
         </Heading>
-        <Text mb={4} textColor="black" textAlign={"justify"}>
+        <Text mb={4} textColor="black">
           Buat kamu warga negara Indonesia (WNI) yang sering bepergian ke Eropa, ada kabar gembira,
           <Text as="span" fontWeight="bold"> kini kamu berkesempatan mendapatkan visa Schengen multiple entry dengan masa berlaku hingga 5 tahun!</Text> Kebijakan baru ini hadir melalui skema <Text as="span" fontWeight="bold">Schengen Visa Cascade</Text>
         </Text>
@@ -294,7 +294,7 @@ const VisaSchengen = () => {
         </Flex>
 
         <Text >
-          with love,
+          warm regards,
         </Text>
         <Text >
           Wendy – Docs Team
