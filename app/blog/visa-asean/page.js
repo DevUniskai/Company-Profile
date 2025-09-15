@@ -204,68 +204,85 @@ const VisaAsean = () => {
 
         <Divider borderColor="grey" mt={6}/>
 
-        <Heading as="h2" fontSize="2xl" mt={6} mb={4} textColor={"black"}>
+        <Heading as="h2" fontSize="2xl" mt={6} mb={2} textColor={"black"}>
           Detail Teknis Visa ASEAN
         </Heading>
         <Box maxW="850px" mx="auto" px={{ base: 2, md: 4 }}>
-            <TableContainer>
-                <Table variant="unstyled" size="md">
-                <Thead>
-                    <Tr>
-                    <Th fontSize="lg" fontWeight="bold">
-                        Aspek
-                    </Th>
-                    <Th fontSize="lg" fontWeight="bold">
-                        Keterangan
-                    </Th>
-                    </Tr>
-                </Thead>
 
-                <Tbody>
-                    <Tr>
-                    <Td fontWeight="bold">
-                        Masa Berlaku
-                    </Td>
-                    <Td>
-                        Hingga 5 tahun
-                    </Td>
-                    </Tr>
-
-                    <Tr>
-                    <Td fontWeight="bold">Jenis Entri</Td>
-                    <Td>Multiple-entry</Td>
-                    </Tr>
-
-                    <Tr>
-                    <Td fontWeight="bold">
-                        Durasi Tinggal per Kunjungan
-                    </Td>
-                    <Td>
-                        Maksimal 180 hari
-                    </Td>
-                    </Tr>
-
-                    <Tr>
-                    <Td fontWeight="bold">Berlaku untuk</Td>
-                    <Td>
-                        Pebisnis Suami/Istri + Anak-anak
-                    </Td>
-                    </Tr>
-
-                    <Tr>
-                    <Td fontWeight="bold">Ketersediaan</Td>
-                    <Td>
-                        Resmi berlaku mulai 9 Juni 2025
-                    </Td>
-                    </Tr>
-                    <Tr>
-                    <Td fontWeight="bold">Lokasi Pengajuan</Td>
-                    <Td>CVASC Jakarta, Surabaya, Denpasar</Td>
-                    </Tr>
-                </Tbody>
-                </Table>
-            </TableContainer>
+        {/* Mobile view: stacked clean list */}
+        <Stack spacing={3} display={{ base: "flex", md: "none" }}>
+        <Box>
+            <Text fontWeight="bold">Masa Berlaku</Text>
+            <Text>Hingga 5 tahun</Text>
         </Box>
+
+        <Box>
+            <Text fontWeight="bold">Jenis Entri</Text>
+            <Text>Multiple-entry</Text>
+        </Box>
+
+        <Box>
+            <Text fontWeight="bold">Durasi Tinggal per Kunjungan</Text>
+            <Text>Maksimal 180 hari</Text>
+        </Box>
+
+        <Box>
+            <Text fontWeight="bold">Berlaku untuk</Text>
+            <Text>Pebisnis + Suami/Istri + Anak-anak</Text>
+        </Box>
+
+        <Box>
+            <Text fontWeight="bold">Ketersediaan</Text>
+            <Text>Resmi berlaku mulai 9 Juni 2025</Text>
+        </Box>
+
+        <Box>
+            <Text fontWeight="bold">Lokasi Pengajuan</Text>
+            <Text>CVASC Jakarta, Surabaya, Denpasar</Text>
+        </Box>
+        </Stack>
+
+
+        {/* Desktop / tablet: regular table */}
+        <TableContainer overflowX="auto" display={{ base: "none", md: "block" }}>
+            <Table variant="unstyled" size="md">
+            <Thead>
+                <Tr>
+                <Th fontSize="lg" fontWeight="bold" whiteSpace="nowrap">Aspek</Th>
+                <Th fontSize="lg" fontWeight="bold" whiteSpace="nowrap">Keterangan</Th>
+                </Tr>
+            </Thead>
+            <Tbody>
+                <Tr>
+                <Td fontWeight="bold" whiteSpace="nowrap">Masa Berlaku</Td>
+                <Td>Hingga 5 tahun</Td>
+                </Tr>
+                <Tr>
+                <Td fontWeight="bold" whiteSpace="nowrap">Jenis Entri</Td>
+                <Td>Multiple-entry</Td>
+                </Tr>
+                <Tr>
+                <Td fontWeight="bold" whiteSpace="nowrap">Durasi Tinggal per Kunjungan</Td>
+                <Td>Maksimal 180 hari</Td>
+                </Tr>
+                <Tr>
+                <Td fontWeight="bold">Berlaku untuk</Td>
+                <Td>Pebisnis + Suami/Istri + Anak-anak</Td>
+                </Tr>
+                <Tr>
+                <Td fontWeight="bold">Ketersediaan</Td>
+                <Td>Resmi berlaku mulai 9 Juni 2025</Td>
+                </Tr>
+                <Tr>
+                <Td fontWeight="bold">Lokasi Pengajuan</Td>
+                <Td>CVASC Jakarta, Surabaya, Denpasar</Td>
+                </Tr>
+            </Tbody>
+            </Table>
+        </TableContainer>
+        </Box>
+
+
 
         <Divider borderColor="grey" mt={4}/>
 

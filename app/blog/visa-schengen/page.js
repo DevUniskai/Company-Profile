@@ -10,6 +10,16 @@ import { Box, Flex, Text, Heading, Link, Divider, Stack, List, ListItem, Unorder
 import Image from "next/image";
 import NextLink from "next/link";
 
+// Tambah di atas (sebelum return) atau di luar component:
+const contacts = [
+  { name: "Tubagus (Jakarta)", wa: "6287761706656", display: "+62 877-6170-6656" },
+  { name: "Ima",                wa: "6281283210688", display: "+62 812-8321-0688" },
+  { name: "Wisda",              wa: "6281257571231", display: "+62 812-5757-1231" },
+  { name: "Hengki",             wa: "6285218418647", display: "+62 852-1841-8647" },
+  { name: "Wendy",              wa: "6282320008886", display: "+62 823-2000-8886" },
+  { name: "Steven",             wa: "6282276384763", display: "+62 822-7638-4763" },
+];
+
 const VisaSchengen = () => {
   return (
     <Box w={"100%"} h={"auto"} backgroundColor={"Beige"} color={"black"}>
@@ -237,63 +247,48 @@ const VisaSchengen = () => {
             height={200}
           />
         </Flex>
-        
+
         <Text mb={2} textColor="black" textAlign={"justify"}>
             Ayo, hubungi team Uniskai untuk konsultasi lebih lanjut!
         </Text>
-        <Box 
-            borderLeft="4px solid" 
-            borderColor="black" 
-            pl={4} 
-            py={2}
-            mb={4}
-         >
-            <Stack spacing={1}>
-                <Stack spacing={1}>
-                <Flex>
-                    <Box w="140px">Tubagus (Jakarta)</Box>
-                    <Link as={NextLink} href="https://wa.me/6287761706656" target="_blank">
-                    +62 877-6170-6656
-                    </Link>
-                </Flex>
+        <Box
+        borderLeft="4px solid"
+        borderColor="black"
+        pl={{ base: 3, sm: 4 }}
+        py={2}
+        mb={4}
+        fontSize={{ base: "xs", sm: "sm", md: "md" }}   // makin kecil di layar kecil
+        lineHeight={{ base: "short", sm: "shorter", md: "base" }}
+        >
+        <Stack spacing={{ base: 1, sm: 2 }}>
+            {contacts.map((c) => (
+            <Flex
+                key={c.wa}
+                direction={{ base: "column", sm: "row" }}
+                align={{ base: "flex-start", sm: "center" }}
+                gap={{ base: 0.5, sm: 3 }}
+            >
+                <Box
+                w={{ base: "auto", sm: "120px", md: "160px" }}
+                flexShrink={0}
+                >
+                {c.name}
+                </Box>
 
-                <Flex>
-                    <Box w="140px">Ima</Box>
-                    <Link as={NextLink} href="https://wa.me/6281283210688" target="_blank">
-                    +62 812-8321-0688
-                    </Link>
-                </Flex>
-
-                <Flex>
-                    <Box w="140px">Wisda</Box>
-                    <Link as={NextLink} href="https://wa.me/6281257571231" target="_blank">
-                    +62 812-5757-1231
-                    </Link>
-                </Flex>
-
-                <Flex>
-                    <Box w="140px">Hengki</Box>
-                    <Link as={NextLink} href="https://wa.me/6285218418647" target="_blank">
-                    +62 852-1841-8647
-                    </Link>
-                </Flex>
-
-                <Flex>
-                    <Box w="140px">Wendy</Box>
-                    <Link as={NextLink} href="https://wa.me/6282320008886" target="_blank">
-                    +62 823-2000-8886
-                    </Link>
-                </Flex>
-
-                <Flex>
-                    <Box w="140px">Steven</Box>
-                    <Link as={NextLink} href="https://wa.me/6282276384763" target="_blank">
-                    +62 822-7638-4763
-                    </Link>
-                </Flex>
-                </Stack>
-            </Stack>
+                <Link
+                as={NextLink}
+                href={`https://wa.me/${c.wa}`}
+                target="_blank"
+                // whiteSpace={{ base: "normal", sm: "nowrap" }}
+                whiteSpace="nowrap" 
+                >
+                {c.display}
+                </Link>
+            </Flex>
+            ))}
+        </Stack>
         </Box>
+
 
         <Text >
           Warm regards,
