@@ -80,7 +80,7 @@ const VisaAsean = () => {
             <ListItem>
             <Text>
                 <Text as="span" fontWeight="bold">
-                Masa berlaku hingga 5 tahun
+                Masa berlaku hingga 5 tahun.
                 </Text>
             </Text>
             </ListItem>
@@ -88,7 +88,7 @@ const VisaAsean = () => {
             <ListItem>
             <Text>
                 <Text as="span" fontWeight="bold">
-                Durasi tinggal hingga 180 hari per kunjungan
+                Durasi tinggal hingga 180 hari per kunjungan.
                 </Text>
             </Text>
             </ListItem>
@@ -98,7 +98,7 @@ const VisaAsean = () => {
                 <Text as="span" fontWeight="bold">
                 Berlaku untuk pebisnis dan profesional Indonesia
                 </Text> 
-                serta anggota keluarga langsung (suami/istri dan anak-anak)
+                {" "}serta anggota keluarga langsung (suami/istri dan anak-anak).
             </Text>
             </ListItem>
         </UnorderedList>
@@ -130,7 +130,7 @@ const VisaAsean = () => {
             <ListItem>
             <Text>
                 <Text as="span" fontWeight="bold">
-                Pasangan (suami/istri)
+                Pasangan (suami/istri).
                 </Text>
             </Text>
             </ListItem>
@@ -139,7 +139,7 @@ const VisaAsean = () => {
             <Text>
                 <Text as="span" fontWeight="bold">
                 Anak-anak 
-                </Text> dari pemegang visa utama
+                </Text> dari pemegang visa utama.
             </Text>
             </ListItem>
         </UnorderedList>
@@ -160,7 +160,7 @@ const VisaAsean = () => {
                 <Text fontWeight="normal" mt={1} lineHeight={1.8}>
                     Kamu harus memiliki minimal{" "}
                     <Text as="span" fontWeight="bold">
-                    satu-dua kali visa China sebelumnya
+                    satu sampai dua kali visa China sebelumnya
                     </Text>
                     , baik visa turis ataupun bisnis.
                 </Text>
@@ -174,7 +174,7 @@ const VisaAsean = () => {
                     <Text as="span" fontWeight="bold">
                     surat undangan resmi dari perusahaan di China
                     </Text>{" "}
-                    yang menjelaskan tujuan kunjungan dan durasi yang diinginkan.
+                    yang menjelaskan tujuan kunjungan serta durasi yang diinginkan.
                 </Text>
                 </ListItem>
 
@@ -292,13 +292,13 @@ const VisaAsean = () => {
         </Heading>
         <Text mb={4} textColor="black" textAlign={"justify"}>
             Visa ASEAN 5 Tahun ini adalah peluang emas bagi para pelaku bisnis Indonesia yang ingin memperkuat relasi dengan mitra di China, tanpa harus repot mengurus visa berkali-kali. 
-            Tambahan menariknya: <Text as="span" fontWeight="bold">keluarga bisa ikut serta dengan proses yang lebih mudah!</Text>
+            Tambahan menariknya, <Text as="span" fontWeight="bold">keluarga bisa ikut serta dengan proses yang lebih mudah!</Text>
         </Text>
         <Text mb={6} textColor="black" textAlign={"justify"}>
-            Kalau kamu tertarik untuk apply atau butuh template surat undangan bisnis, itinerart, aray konsultasi visa, tinggalkan komentar atau hubungi Uniskai langsung.
+            Kalau kamu tertarik untuk apply atau butuh template surat undangan bisnis, itinerary, atau konsultasi visa, tinggalkan komentar atau hubungi tim Uniskai langsung.
         </Text>
         <Text mb={2} textColor="black" textAlign={"justify"}>
-            Ayo, hubungi team Uniskai untuk konsultasi lebih lanjut!
+            Ayo, hubungi tim Uniskai untuk konsultasi lebih lanjut!
         </Text>
         <Box 
             borderLeft="4px solid" 
@@ -355,7 +355,7 @@ const VisaAsean = () => {
         </Box>
 
         <Text >
-          warm regards,
+          Warm regards,
         </Text>
         <Text >
           Wendy – Docs Team

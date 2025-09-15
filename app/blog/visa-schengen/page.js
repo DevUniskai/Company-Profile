@@ -52,7 +52,7 @@ const VisaSchengen = () => {
         </Heading>
         <Text mb={4} textColor="black">
           Buat kamu warga negara Indonesia (WNI) yang sering bepergian ke Eropa, ada kabar gembira,
-          <Text as="span" fontWeight="bold"> kini kamu berkesempatan mendapatkan visa Schengen multiple entry dengan masa berlaku hingga 5 tahun!</Text> Kebijakan baru ini hadir melalui skema <Text as="span" fontWeight="bold">Schengen Visa Cascade</Text>
+          <Text as="span" fontWeight="bold"> kini kamu berkesempatan mendapatkan visa Schengen multiple entry dengan masa berlaku hingga 5 tahun!</Text> Kebijakan baru ini hadir melalui skema <Text as="span" fontWeight="bold">Schengen Visa Cascade.</Text>
         </Text>
         <Flex
           flexDirection="column"
@@ -76,10 +76,10 @@ const VisaSchengen = () => {
         </Heading>
         <Text mb={4} textColor={"black"}>
           Schengen Visa Cascade adalah kebijakan khusus dari Komisi Eropa yang <Text as="span" fontWeight="bold">memberikan kemudahan bagi WNI untuk mendapatkan visa Schengen jangka panjang</Text> (multi-entry hingga 5 tahun),
-          <Text as="span" fontWeight="bold"> jika memiliki rekam jejak perjalanan Schengen yang baik</Text>
+          <Text as="span" fontWeight="bold"> jika memiliki rekam jejak perjalanan Schengen yang baik.</Text>
         </Text>
         <Text mb={4} textColor={"black"}>
-          Tujuannya jelas untuk mempermudah pelancong yang punya catatan baik untuk bolak-balik ke negara-negara Schengen tnapa perlu repot apply visa setiap kali berpergian
+          Tujuannya jelas untuk mempermudah pelancong yang punya catatan baik untuk bolak-balik ke negara-negara Schengen tanpa perlu repot apply visa setiap kali berpergian.
         </Text>
 
         <Flex
@@ -121,7 +121,7 @@ const VisaSchengen = () => {
 
                 {/* Poin 2 */}
                 <ListItem fontWeight="bold">
-                Rejkam Jejak Penggunaan Visa Schengen yang Baik
+                Rekam Jejak Penggunaan Visa Schengen yang Baik
                 <Text fontWeight="normal" mt={1} lineHeight={1.8}>
                     Kamu harus{" "}
                     <Text as="span" fontWeight="bold">
@@ -129,7 +129,7 @@ const VisaSchengen = () => {
                     </Text>{" "}
                     dan 
                     <Text as="span" fontWeight="bold">
-                    telah digunakan dengan benar dalam 3 tahun terakhir.
+                    {" "}telah digunakan dengan benar dalam 3 tahun terakhir.
                     </Text>{" "}
                     Ini artinya:
                     <UnorderedList pl={6} spacing={1} mt={2}>
@@ -148,8 +148,8 @@ const VisaSchengen = () => {
                     <UnorderedList pl={6} spacing={1} mt={2}>
                         <ListItem>Itinerary perjalanan yang jelas dan logis.</ListItem>
                         <ListItem>Bukti keuangan, akomodasi dan transportasi.</ListItem>
-                        <ListItem>Asuransi perjalanan yang valid</ListItem>
-                        <ListItem>Surat Keterangan kerja/usaha atau dokumen pendukung lainnya</ListItem>
+                        <ListItem>Asuransi perjalanan yang valid.</ListItem>
+                        <ListItem>Surat Keterangan kerja/usaha atau dokumen pendukung lainnya.</ListItem>
                     </UnorderedList>
                 </Text>
                 </ListItem>
@@ -158,11 +158,11 @@ const VisaSchengen = () => {
                 <ListItem fontWeight="bold">
                 Masa Berlaku Paspor Masih Panjang
                 <Text fontWeight="normal" mt={1} lineHeight={1.8} mb={2}>
-                    Meski kamu memenuhi syarat di atas, <Text as="span" fontWeight="bold">masa berlaku paspor kamu juga sangat menentukan lamanya visa yang diberikan</Text>
+                    Meski kamu memenuhi syarat di atas, <Text as="span" fontWeight="bold">masa berlaku paspor kamu juga sangat menentukan lamanya visa yang diberikan.</Text>
                 </Text>
                 <Text fontWeight="normal" fontStyle="italic">
                     <Text as="span" fontWeight="bold">Contoh: </Text>Jika paspor kamu akan kadaluwarsa dalam waktu kurang dari 2 tahun, kemungkinan besar kamu hanya akan diberikan visa 1 tahun, 
-                    meskipun kamu eligible untuk visa 5 tahun
+                    meskipun kamu eligible untuk visa 5 tahun.
                 </Text>
                 </ListItem>
             </OrderedList>
@@ -210,17 +210,34 @@ const VisaSchengen = () => {
             Dengan <Text as="span" fontWeight="bold">riwayat perjalanan yang baik, dokumen lengkap, dan paspor yang masih panjang masa berlakunya</Text>, 
             kamu bisa mendapatkan visa yang berlaku hingga 5 tahun.
         </Text>
-        <Stack mt={4}>
+        <Stack mt={4} mb={4}>
             <Text fontStyle="italic">
                 💡 Tips: Simpan semua visa lama, stempel imigrasi, dan bukti perjalanan dengan rapi. Itu semua bisa jadi nilai tambah saat mengajukan visa berikutnya!
             </Text>
         </Stack>
+
 
         <Divider borderColor="grey" mt={4}/>
 
         <Text mt={4} mb={6} textColor="black" textAlign={"justify"}>
             Kalau kamu sedang merencanakan perjalanan ke Eropa atau ingin tahu apakah kamu eligible untuk visa 5 tahun ini, jangan ragu untuk konsultasi lebih lanjut dengan team Uniskai.
         </Text>
+
+        <Flex
+          flexDirection="column"
+          justifyContent="center"
+          alignItems="flex-start"
+          color="Beige"
+          mb={4}
+        >
+          <Image 
+            src="/static/images/country-schengen.jpg" 
+            alt="asean" 
+            width={750}
+            height={200}
+          />
+        </Flex>
+        
         <Text mb={2} textColor="black" textAlign={"justify"}>
             Ayo, hubungi team Uniskai untuk konsultasi lebih lanjut!
         </Text>
@@ -278,23 +295,8 @@ const VisaSchengen = () => {
             </Stack>
         </Box>
 
-        <Flex
-          flexDirection="column"
-          justifyContent="center"
-          alignItems="flex-start"
-          color="Beige"
-          mb={4}
-        >
-          <Image 
-            src="/static/images/country-schengen.jpg" 
-            alt="asean" 
-            width={750}
-            height={200}
-          />
-        </Flex>
-
         <Text >
-          warm regards,
+          Warm regards,
         </Text>
         <Text >
           Wendy – Docs Team
