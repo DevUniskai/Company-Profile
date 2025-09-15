@@ -62,7 +62,7 @@ const VisaSchengen = () => {
           mb={4}
         >
           <Image 
-            src="/static/images/Schengen.jpg" 
+            src="/static/images/schengen.jpg" 
             alt="asean" 
             width={750}
             height={200}
