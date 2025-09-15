@@ -51,8 +51,8 @@ const VisaSchengen = () => {
           Peluang Baru lewat Skema Visa Cascade
         </Heading>
         <Text mb={4} textColor="black" textAlign={"justify"}>
-          Buat kamu warga negara Indonesia (WNI) yang sering bepergian ke Eropa, ada kabar gembira: 
-          <Text as="span" fontWeight="bold">kini kamu berkesempatan mendapatkan vis Schengen multiple netry dengan masa berlaku hingga 5 tahun!</Text> Kebijakan baru ini hadir melalui skema <Text as="span" fontWeight="bold">Schengen Visa Cascade</Text>
+          Buat kamu warga negara Indonesia (WNI) yang sering bepergian ke Eropa, ada kabar gembira,
+          <Text as="span" fontWeight="bold"> kini kamu berkesempatan mendapatkan visa Schengen multiple entry dengan masa berlaku hingga 5 tahun!</Text> Kebijakan baru ini hadir melalui skema <Text as="span" fontWeight="bold">Schengen Visa Cascade</Text>
         </Text>
         <Flex
           flexDirection="column"
@@ -75,11 +75,11 @@ const VisaSchengen = () => {
           Apa Itu Visa Cascade?
         </Heading>
         <Text mb={4} textColor={"black"}>
-          Schengen Visa Cascade adalah kebijakan khusus dari KOmisi Eropa yang <Text as="span" fontWeight="bold">memberikan kemudahan bagi WNI untuk mendapatkan visa Schengen jangka panjang</Text> (multi-entry hingga 5 tahun),
+          Schengen Visa Cascade adalah kebijakan khusus dari Komisi Eropa yang <Text as="span" fontWeight="bold">memberikan kemudahan bagi WNI untuk mendapatkan visa Schengen jangka panjang</Text> (multi-entry hingga 5 tahun),
           <Text as="span" fontWeight="bold"> jika memiliki rekam jejak perjalanan Schengen yang baik</Text>
         </Text>
         <Text mb={4} textColor={"black"}>
-          Tujuannya jelas: mempermudah pelancong yang punya catatan baik untuk bolak-balik ke negara-negara Schengen tnapa perlu repot apply visa setiap kali berpergian
+          Tujuannya jelas untuk mempermudah pelancong yang punya catatan baik untuk bolak-balik ke negara-negara Schengen tnapa perlu repot apply visa setiap kali berpergian
         </Text>
 
         <Flex
@@ -179,7 +179,7 @@ const VisaSchengen = () => {
         </Heading>
         <Text mb={4} textColor={"black"}>
           Pemberian visa Schengen 5 tahun <Text as="span" fontWeight="bold">bukanlah hak otomatis</Text>, melainkan
-          <Text as="span" fontWeight="bold">keputusan sepenuhnya ada di tangan kedutaan </Text> tempat kamu mengajukan visa.
+          <Text as="span" fontWeight="bold"> keputusan sepenuhnya ada di tangan kedutaan </Text> tempat kamu mengajukan visa.
         </Text>
         <Text mb={4} textColor={"black"}>
           ⚠️ Jadi meskipun kamu merasa sudah memenuhi semua kriteria, 

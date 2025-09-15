@@ -51,7 +51,7 @@ const VisaAsean = () => {
           Fasilitas Baru untuk Pebisnis Indonesia dan Keluarganya
         </Heading>
         <Text mb={4} textColor="black" textAlign={"justify"}>
-            Kabar baik buat para pebisnis Indonesia yang sering menjalankan aktivitas bisnis di China: sejak 9 Juni 2025, Pemerintah China resmi meluncurkan Visa ASEAN 5 Tahun Multiple Entry, visa khusus yang dirancang untuk memperkuat konektivitas bisnis dan mobilitas keluarga lintas Asia Tenggara.
+            Kabar baik buat para pebisnis Indonesia yang sering menjalankan aktivitas bisnis di China. Sejak 9 Juni 2025, Pemerintah China resmi meluncurkan Visa ASEAN 5 Tahun Multiple Entry, visa khusus yang dirancang untuk memperkuat konektivitas bisnis dan mobilitas keluarga lintas Asia Tenggara.
         </Text>
         <Flex
           flexDirection="column"
