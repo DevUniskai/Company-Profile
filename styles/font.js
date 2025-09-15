@@ -38,32 +38,32 @@ const Fonts = () => (
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: url('/fonts/SigvarRegular.woff2') format('woff2'),
-             url('/fonts/SigvarRegular.woff') format('woff');
+        src: url('/fonts/Sigvar-Regular.woff2') format('woff2'),
+             url('/fonts/Sigvar-Regular.woff') format('woff');
       }
       @font-face {
         font-family: 'Sigvar';
         font-style: italic;
         font-weight: 400;
         font-display: swap;
-        src: url('/fonts/SigvarItalic.woff2') format('woff2'),
-             url('/fonts/SigvarItalic.woff') format('woff');
+        src: url('/fonts/Sigvar-Italic.woff2') format('woff2'),
+             url('/fonts/Sigvar-Italic.woff') format('woff');
       }
       @font-face {
         font-family: 'Sigvar';
         font-style: normal;
         font-weight: 700;
         font-display: swap;
-        src: url('/fonts/SigvarBold.woff2') format('woff2'),
-             url('/fonts/SigvarBold.woff') format('woff');
+        src: url('/fonts/Sigvar-Bold.woff2') format('woff2'),
+             url('/fonts/Sigvar-Bold.woff') format('woff');
       }
       @font-face {
         font-family: 'Sigvar';
         font-style: italic;
         font-weight: 700;
         font-display: swap;
-        src: url('/fonts/SigvarBoldItalic.woff2') format('woff2'),
-             url('/fonts/SigvarBoldItalic.woff') format('woff');
+        src: url('/fonts/Sigvar-Bold-Italic.woff2') format('woff2'),
+             url('/fonts/Sigvar-Bold-Italic.woff') format('woff');
       }
 
       /* Sinhala */
