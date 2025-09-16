@@ -10,6 +10,15 @@ import { Box, Flex, Text, Heading, Link, Divider, Stack, List, ListItem, Unorder
 import Image from "next/image";
 import NextLink from "next/link";
 
+const contacts = [
+  { name: "Tubagus (Jakarta)", wa: "6287761706656", display: "+62 877-6170-6656" },
+  { name: "Ima",                wa: "6281283210688", display: "+62 812-8321-0688" },
+  { name: "Wisda",              wa: "6281257571231", display: "+62 812-5757-1231" },
+  { name: "Hengki",             wa: "6285218418647", display: "+62 852-1841-8647" },
+  { name: "Wendy",              wa: "6282320008886", display: "+62 823-2000-8886" },
+  { name: "Steven",             wa: "6282276384763", display: "+62 822-7638-4763" },
+];
+
 const VisaAsean = () => {
   return (
     <Box w={"100%"} h={"auto"} backgroundColor={"Beige"} color={"black"}>
@@ -317,7 +326,44 @@ const VisaAsean = () => {
         <Text mb={2} textColor="black" textAlign={"justify"}>
             Ayo, hubungi tim Uniskai untuk konsultasi lebih lanjut!
         </Text>
-        <Box 
+        <Box
+        borderLeft="4px solid"
+        borderColor="black"
+        pl={{ base: 3, sm: 4 }}
+        py={2}
+        mb={4}
+        fontSize={{ base: "sm", md: "md" }}   // makin kecil di layar kecil
+        lineHeight={{ base: "short", sm: "shorter", md: "base" }}
+        >
+        <Stack spacing={{ base: 1, sm: 2 }}>
+            {contacts.map((c) => (
+            <Flex
+                key={c.wa}
+                direction={{ base: "column", sm: "row" }}
+                align={{ base: "flex-start", sm: "center" }}
+                gap={{ base: 0.5, sm: 3 }}
+            >
+                <Box
+                w={{ base: "auto", sm: "120px", md: "160px" }}
+                flexShrink={0}
+                >
+                {c.name}
+                </Box>
+
+                <Link
+                as={NextLink}
+                href={`https://wa.me/${c.wa}`}
+                target="_blank"
+                // whiteSpace={{ base: "normal", sm: "nowrap" }}
+                whiteSpace="nowrap" 
+                >
+                {c.display}
+                </Link>
+            </Flex>
+            ))}
+        </Stack>
+        </Box>
+        {/* <Box 
             borderLeft="4px solid" 
             borderColor="black" 
             pl={4} 
@@ -369,7 +415,7 @@ const VisaAsean = () => {
                 </Flex>
                 </Stack>
             </Stack>
-        </Box>
+        </Box> */}
 
         <Text >
           Warm regards,

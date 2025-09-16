@@ -257,7 +257,8 @@ const VisaSchengen = () => {
         pl={{ base: 3, sm: 4 }}
         py={2}
         mb={4}
-        fontSize={{ base: "xs", sm: "sm", md: "md" }}   // makin kecil di layar kecil
+        fontSize={{ base: "sm", md: "md" }} 
+        // fontSize={{ base: "xs", sm: "sm", md: "md" }}   // makin kecil di layar kecil
         lineHeight={{ base: "short", sm: "shorter", md: "base" }}
         >
         <Stack spacing={{ base: 1, sm: 2 }}>
