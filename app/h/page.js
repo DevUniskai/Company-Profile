@@ -89,7 +89,19 @@ const HPage = () => {
               </ChakraLink>
             </HStack>
 
-            <Grid templateColumns="120px 1fr" gap={4}>
+            <HStack justify="space-between" wrap="wrap">
+              <Text color="whiteAlpha.800">Address</Text>
+              <ChakraLink
+                href="https://maps.app.goo.gl/BvJxGEXAVZ8uzvpi6"
+                isExternal
+                color="white"
+                _hover={{ textDecoration: "underline" }}
+              >
+                Komplek CBD, Jl. Padang Golf Blok. AA No.3
+              </ChakraLink>
+            </HStack>
+            
+            {/* <Grid templateColumns="120px 1fr" gap={4}>
               <Text color="whiteAlpha.800">Address</Text>
               <ChakraLink
                 href="https://maps.app.goo.gl/BvJxGEXAVZ8uzvpi6"
@@ -100,8 +112,7 @@ const HPage = () => {
                 Komplek CBD, Jl. Padang Golf Blok. AA No.3, Suka Damai,  
                 Kec. Medan Polonia, Kota Medan, Sumatera Utara 20219
               </ChakraLink>
-            </Grid>
-
+            </Grid> */}
 
             {/* Tambahkan kontak lain bila perlu */}
             {/* <HStack justify="space-between" wrap="wrap">
