@@ -27,7 +27,7 @@ export async function GET() {
     "TITLE:COO",
     "ORG:Uniskai",
     "EMAIL;TYPE=INTERNET,PREF:herbert@uniskai.id",
-    "TEL;TYPE=CELL:+6281234567890",
+    "TEL;TYPE=CELL:+62819872228",
     "URL:https://instagram.com/uni.bert",
     "PHOTO;ENCODING=b;TYPE=PNG:" + base64, // folding di bawah
     "END:VCARD",
