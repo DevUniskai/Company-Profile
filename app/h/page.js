@@ -1,6 +1,6 @@
 // pages/h.js
 
-import { Box, Container, VStack, HStack, Image, Heading, Text, Button, Link as ChakraLink, Divider } from "@chakra-ui/react";
+import { Box, Container, VStack, HStack, Image, Heading, Text, Button, Link as ChakraLink, Divider, Grid } from "@chakra-ui/react";
 import Link from "next/link";
 
 const HPage = () => {
@@ -88,6 +88,20 @@ const HPage = () => {
                 @uni.bert
               </ChakraLink>
             </HStack>
+
+            <Grid templateColumns="120px 1fr" gap={4}>
+              <Text color="whiteAlpha.800">Address</Text>
+              <ChakraLink
+                href="https://maps.app.goo.gl/BvJxGEXAVZ8uzvpi6"
+                isExternal
+                color="white"
+                _hover={{ textDecoration: "underline" }}
+              >
+                Komplek CBD, Jl. Padang Golf Blok. AA No.3, Suka Damai,  
+                Kec. Medan Polonia, Kota Medan, Sumatera Utara 20219
+              </ChakraLink>
+            </Grid>
+
 
             {/* Tambahkan kontak lain bila perlu */}
             {/* <HStack justify="space-between" wrap="wrap">

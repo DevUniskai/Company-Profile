@@ -29,6 +29,7 @@ export async function GET() {
     "EMAIL;TYPE=INTERNET,PREF:herbert@uniskai.id",
     "TEL;TYPE=CELL:+62819872228",
     "URL:https://instagram.com/uni.bert",
+    "ADR;TYPE=work:;;Komplek CBD, Jl. Padang Golf Blok. AA No.3,;Suka Damai,;Kec. Medan Polonia,;Kota Medan,;Sumatera Utara;20219;Indonesia",
     "PHOTO;ENCODING=b;TYPE=PNG:" + base64, // folding di bawah
     "END:VCARD",
   ];
