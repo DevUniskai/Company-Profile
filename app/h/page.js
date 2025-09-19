@@ -97,7 +97,7 @@ const HPage = () => {
                 color="white"
                 _hover={{ textDecoration: "underline" }}
               >
-                Komplek CBD, Jl. Padang Golf Blok. AA No.3
+                Komplek CBD Blok AA No.3
               </ChakraLink>
             </HStack>
             
