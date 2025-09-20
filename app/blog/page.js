@@ -44,6 +44,15 @@ const posts = [
       "Buat kamu warga negara Indonesia (WNI) yang sering bepergian ke Eropa, ada kabar gembira...",
     cover: "/static/images/schengen-flag.jpg",
   },
+  {
+    slug: "apec-abtc",
+    title:
+      "Apa Itu APEC Business Travel Card?",
+    date: "2025-09-20",
+    excerpt:
+      "Pernah dengar tentang APEC Business Travel Card (ABTC)?...",
+    cover: "/static/images/apec.jpg",
+  }
 ];
 
 // ====== SEO metadata ======
