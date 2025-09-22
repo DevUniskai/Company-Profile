@@ -46,3 +46,16 @@ const SalesContactList = ({ results = null }) => {
 };
 
 export default SalesContactList;
+
+// ,
+// {
+//   "title": "B2B & Corporate",
+//   "slug": "b2b-&-corporate",
+//   "description": "Supporting business and corporate clients with tailored travel services",
+//   "items": [
+//     {
+//       "name": "Denny",
+//       "phone": "628818128661"
+//     }
+//   ]
+// }
