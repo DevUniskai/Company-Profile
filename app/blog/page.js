@@ -51,7 +51,7 @@ const posts = [
     date: "2025-09-20",
     excerpt:
       "Pernah dengar tentang APEC Business Travel Card (ABTC)?...",
-    cover: "/static/images/apec.jpg",
+    cover: "/static/images/apec-card.jpg",
   }
 ];
 
