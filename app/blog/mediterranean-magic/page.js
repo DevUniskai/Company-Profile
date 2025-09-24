@@ -78,6 +78,9 @@ const TermsOfServices = () => {
             This isn’t just a vacation, it’s a voyage where the journey is the destination. Every morning, you’ll wake up in a new land: ancient ruins one day, infinity-blue beaches the next. 
             Think of it as your <Text as="span" fontWeight="bold">floating boutique hotel</Text> that delivers you straight into history, culture, and seaside bliss.
         </Text>
+        <Text as="span" fontSize={18} textColor={"black"} fontStyle={"italic"} textAlign={"center"}>
+          Sailing date: 18 May - 27 May 2026
+        </Text>
         <Flex
           backgroundPosition={"center"}
           backgroundSize="cover"
