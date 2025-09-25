@@ -163,8 +163,7 @@ const ApecAbtc = () => {
           Negara Anggota APEC yang Mendukung ABTC
         </Heading>
         <Text mb={4} textColor={"black"}>
-          Pemberian visa Schengen 5 tahun <Text as="span" fontWeight="bold">bukanlah hak otomatis</Text>, melainkan
-          <Text as="span" fontWeight="bold"> keputusan sepenuhnya ada di tangan kedutaan </Text> tempat kamu mengajukan visa.
+          Berikut 18 negara di APEC yang menerima ABTC:
         </Text>
         <Box maxW="850px" px={{ base: 2, md: 4 }}>
           <OrderedList spacing={4} pl={4}>
@@ -229,7 +228,7 @@ const ApecAbtc = () => {
           Hemat waktu, bebas visa, plus kenyamanan ekstra saat melewati imigrasi.
         </Text>
         <Text mb={4} textColor="black" textAlign={"justify"}>
-          Jadi, kalau kamu sering bepergian untuk urusan bisnis lintas negara, ABTC bisa jadi <Text as="span" fontWeight="bold">“kartu sakti”</Text> yang wajib kamu miliki.
+          Jadi, kalau kamu sering bepergian ke negara APEC, ABTC bisa jadi <Text as="span" fontWeight="bold">“kartu sakti”</Text> yang wajib kamu miliki.
         </Text>
 
         <Text mb={2} textColor="black" textAlign={"justify"}>
