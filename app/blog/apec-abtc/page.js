@@ -165,28 +165,80 @@ const ApecAbtc = () => {
         <Text mb={4} textColor={"black"}>
           Berikut 18 negara di APEC yang menerima ABTC:
         </Text>
-        <Box maxW="850px" px={{ base: 2, md: 4 }}>
+        <Box maxW="850px" px={{ base: 2, md: 4 }} mb={4}>
           <OrderedList spacing={4} pl={4}>
-            <ListItem fontWeight="bold">Australia</ListItem>
-            <ListItem fontWeight="bold">Brunei Darussalam</ListItem>
-            <ListItem fontWeight="bold">Chile</ListItem>
-            <ListItem fontWeight="bold">Malaysia</ListItem>
-            <ListItem fontWeight="bold">Mexico</ListItem>
-            <ListItem fontWeight="bold">New Zealand</ListItem>
-            <ListItem fontWeight="bold">Papua Nugini</ListItem>
-            <ListItem fontWeight="bold">Peru</ListItem>
-            <ListItem fontWeight="bold">Taiwan</ListItem>
-            <ListItem fontWeight="bold">Vietnam</ListItem>
-            <ListItem fontWeight="bold">Indonesia</ListItem>
-            <ListItem fontWeight="bold">Hong Kong</ListItem>
-            <ListItem fontWeight="bold">China</ListItem>
-            <ListItem fontWeight="bold">Japan</ListItem>
-            <ListItem fontWeight="bold">Singapore</ListItem>
-            <ListItem fontWeight="bold">Korea Selatan</ListItem>
-            <ListItem fontWeight="bold">Thailand</ListItem>
-            <ListItem fontWeight="bold">Philippines</ListItem>
+            <ListItem>
+              <Text as="span" fontWeight="bold">Australia</Text> (Maksimal 90 hari per visit)
+            </ListItem>
+            <ListItem>
+              <Text as="span" fontWeight="bold">Brunei Darussalam</Text> (Maksimal 90 hari per visit)
+            </ListItem>
+            <ListItem>
+              <Text as="span" fontWeight="bold">Chile</Text> (Maksimal 90 hari per visit)
+            </ListItem>
+            <ListItem>
+              <Text as="span" fontWeight="bold">Malaysia</Text> (Maksimal 90 hari per visit)
+            </ListItem>
+            <ListItem>
+              <Text as="span" fontWeight="bold">Mexico</Text> (Maksimal 180 hari per visit)
+            </ListItem>
+            <ListItem>
+              <Text as="span" fontWeight="bold">New Zealand</Text> (Maksimal 90 hari per visit)
+            </ListItem>
+            <ListItem>
+              <Text as="span" fontWeight="bold">Papua Nugini</Text> (Maksimal 60 hari per visit)
+            </ListItem>
+            <ListItem>
+              <Text as="span" fontWeight="bold">Peru</Text> (Maksimal 90 hari per visit)
+            </ListItem>
+            <ListItem>
+              <Text as="span" fontWeight="bold">Taiwan</Text> (Maksimal 90 hari per visit)
+            </ListItem>
+            <ListItem>
+              <Text as="span" fontWeight="bold">Vietnam</Text> (Maksimal 90 hari per visit)
+            </ListItem>
+            <ListItem>
+              <Text as="span" fontWeight="bold">Indonesia</Text> (Maksimal 60 hari per visit)
+            </ListItem>
+            <ListItem>
+              <Text as="span" fontWeight="bold">Hong Kong</Text> (Maksimal 60 hari per visit)
+            </ListItem>
+            <ListItem>
+              <Text as="span" fontWeight="bold">China</Text> (Maksimal 60 hari per visit)
+            </ListItem>
+            <ListItem>
+              <Text as="span" fontWeight="bold">Japan</Text> (Maksimal 90 hari per visit)
+            </ListItem>
+            <ListItem>
+              <Text as="span" fontWeight="bold">Singapore</Text> (Maksimal 60 hari per visit)
+            </ListItem>
+            <ListItem>
+              <Text as="span" fontWeight="bold">Korea Selatan</Text> (Maksimal 90 hari per visit)
+            </ListItem>
+            <ListItem>
+              <Text as="span" fontWeight="bold">Thailand</Text> (Maksimal 90 hari per visit)
+            </ListItem>
+            <ListItem>
+              <Text as="span" fontWeight="bold">Philippines</Text> (Maksimal 60 hari per visit)
+            </ListItem>
           </OrderedList>
         </Box>
+        <Flex
+          flexDirection="column"
+          justifyContent="center"
+          alignItems="flex-start"
+          color="Beige"
+          mb={4}
+        >
+          <Image
+            src="/static/images/apec-map.jpeg"
+            alt="asean"
+            width={750}
+            height={200}
+          />
+        </Flex>
+
+
 
         <Divider borderColor="grey" mt={4} />
 
@@ -194,14 +246,12 @@ const ApecAbtc = () => {
           Kenapa ABTC Penting untuk Traveller Bisnis?
         </Heading>
         <Text mb={4} textColor="black" textAlign={"justify"}>
-          Bayangkan kamu harus terbang ke beberapa negara APEC dalam satu bulan.
-          Tanpa ABTC, kamu harus apply visa ke masing-masing negara, menunggu approval, dan menghadapi birokrasi berlapis.
-        </Text>
-        <Text textColor="black" textAlign={"justify"}>
-          Dengan ABTC?
+          Kamu bisa bepergian ke beberapa negara APEC dalam satu bulan dengan mudah. Tanpa harus mengurus visa berulang kali, 
+          menunggu approval, dan menghadapi birokrasi yang panjang.
         </Text>
         <Text mb={4} textColor="black" textAlign={"justify"}>
-          Tinggal tunjukkan kartumu, imigrasi jadi lebih simpel, perjalanan jadi lebih fokus ke <Text as="span" fontWeight="bold">urusan bisnis</Text>, bukan ribet urusan visa.
+          Dengan <Text as="span" fontWeight="bold">APEC Business Travel Card (ABTC)</Text>, cukup tunjukkan kartumu dan nikmati proses imigrasi yang cepat serta praktis. 
+          Perjalanan pun jadi lebih lancar, sehingga kamu bisa sepenuhnya fokus pada trip kamu..
         </Text>
         <Flex
           flexDirection="column"
