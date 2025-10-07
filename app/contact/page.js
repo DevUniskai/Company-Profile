@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const ContactSales = () => {
   return (
-    <Box w={"100%"} h={"auto"} backgroundColor={"brown"} backgroundImage={"/static/images/backg.jpg"}>
+    <Box w={"100%"} minH={"100vh"} backgroundColor={"brown"} backgroundImage={"/static/images/backg.jpg"}>
       
       <Flex pt={10} justifyContent={"center"}>
         {/* <BackButton /> */}

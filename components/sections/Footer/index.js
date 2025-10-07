@@ -43,18 +43,23 @@ const Footer = () => {
         justifyContent={"space-between"}
         // bgColor={"orange"}
       >
-        <FooterItem
-          title={"MEDAN"}
-          description={
-            "Komplek CBD, Jl. Padang Golf Blok. AA No.3, Suka Damai, Kec. Medan Polonia, Kota Medan, Sumatera Utara 20219"
-          }
-        />
-        <FooterItem
-          title={"JAKARTA"}
-          description={
-            "Tokopedia Care Tower Ciputra International Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta"
-          }
-        />
+        <Link as={NextLink} href="https://maps.app.goo.gl/BvJxGEXAVZ8uzvpi6" target="_blank">
+          <FooterItem
+            title={"MEDAN"}
+            description={
+              "Komplek CBD, Jl. Padang Golf Blok. AA No.3, Suka Damai, Kec. Medan Polonia, Kota Medan, Sumatera Utara 20219"
+            }
+          />
+        </Link>
+        <Link as={NextLink} href="https://maps.app.goo.gl/EKYxLW31L74h5Jkv7" target="_blank">
+          <FooterItem
+            title={"JAKARTA"}
+            description={
+              "Tokopedia Care Tower Ciputra International Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta"
+            }
+          />
+        </Link>
+
       </Flex>
       <Flex
         flexDir={"column"}
