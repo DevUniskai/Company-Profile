@@ -1,13 +1,8 @@
+"use client"
+import Header from "@/components/common/BackButtonItem";
 import Footer from "@/components/sections/Footer";
 import {
-  Box, Flex, Text, Heading, Link, Divider, Stack, List, ListItem, UnorderedList, OrderedList,
-  Table,
-  Thead,
-  Tbody,
-  Tr,
-  Th,
-  Td,
-  TableContainer,
+  Box, Flex, Text, Heading, Link, Divider, Stack, List, ListItem, UnorderedList, OrderedList, Button
 } from "@chakra-ui/react";
 import Image from "next/image";
 import NextLink from "next/link";
@@ -22,26 +17,21 @@ const contacts = [
 const ApecAbtc = () => {
   return (
     <Box w={"100%"} h={"auto"} backgroundColor={"Beige"} color={"black"}>
-      <Flex pt={10} justifyContent={"center"} bgColor={"brown"}>
-        <Image
-          src={"/static/images/uniskai_header.png"}
-          width={192}
-          height={68}
-          alt="logo"
-        />
-      </Flex>
+      <Header />
 
-      <Flex justifyContent={"center"}
+      {/* Bagian brown header */}
+      {/* <Flex
+        justifyContent={"center"}
+        alignItems="center"
         bgColor={"brown"}
-        color="Beige"
+        color="beige"
         flexDirection="column"
         px={{ base: 15, sm: 16 }}
         py={10}
+        position="relative"
       >
-        {/* <Text mb={6} letterSpacing={"5px"} fontSize={{ base: "3xl", sm: "4xl" }} textAlign="center">
-          TERMS OF SERVICE
-        </Text> */}
-      </Flex>
+
+      </Flex> */}
 
       <Flex
         flexDirection="column"

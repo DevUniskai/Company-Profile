@@ -1,3 +1,4 @@
+import Header from "@/components/common/BackButtonItem";
 import Footer from "@/components/sections/Footer";
 import { Box, Flex, Text, Heading, Link, Divider, Stack, List, ListItem, UnorderedList, OrderedList,
   Table,
@@ -23,26 +24,7 @@ const contacts = [
 const VisaSchengen = () => {
   return (
     <Box w={"100%"} h={"auto"} backgroundColor={"Beige"} color={"black"}>
-      <Flex pt={10} justifyContent={"center"} bgColor={"brown"}>
-        <Image
-          src={"/static/images/uniskai_header.png"}
-          width={192}
-          height={68}
-          alt="logo"
-        />
-      </Flex>
-      
-      <Flex justifyContent={"center"} 
-        bgColor={"brown"}
-        color="Beige"
-        flexDirection="column"
-        px={{ base: 15, sm: 16 }}
-        py={10}
-        >
-        {/* <Text mb={6} letterSpacing={"5px"} fontSize={{ base: "3xl", sm: "4xl" }} textAlign="center">
-          TERMS OF SERVICE
-        </Text> */}
-      </Flex>
+      <Header/>
 
       <Flex
         flexDirection="column"

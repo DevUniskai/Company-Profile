@@ -1,26 +1,55 @@
 "use client";
-import { Box, Button } from "@chakra-ui/react";
-import { useRouter } from "next/navigation";
-import { ArrowBackIcon } from "@chakra-ui/icons";
+
+import { Flex, Button, Box } from "@chakra-ui/react";
+import Image from "next/image";
 import React from "react";
 
-const BackButton = () => {
-  const router = useRouter();
-
+const Header = () => {
   return (
-    <Box>
+    <Flex
+      alignItems="center"
+      justifyContent="center"
+      bgColor="brown"
+      position="relative"
+      pt={10}
+      py={{ base: 6, md: 7 }}
+    >
       <Button
-        onClick={() => router.back()}
-        leftIcon={<ArrowBackIcon />}
-        variant="ghost"
-        colorScheme="whiteAlpha" // kontras di bg cokelat
-        size="sm"
-        _hover={{ bg: "whiteAlpha.300" }}
+        onClick={() => window.history.back()}
+        position="absolute"
+        left={{ base: "20px", md: "30px", lg: "40px" }}
+        top={{ base: "40%", md: "35%", lg: "35%" }}
+        bg="transparent"
+        _hover={{ bg: "transparent", opacity: 0.8 }}
+        _active={{ bg: "transparent" }}
+        p={0}
+        minW="auto"
       >
-        Kembali
+        <Box
+          position="relative"
+          w={{ base: "30px", md: "50px", lg: "50px" }}
+          h={{ base: "30px", md: "50px", lg: "50px" }}
+        >
+          <Image
+            src="/static/images/back.png"
+            alt="Back"
+            fill
+            style={{ objectFit: "contain" }}
+            sizes="(min-width: 992px) 50px, (min-width: 768px) 40px, 30px"
+          />
+        </Box>
       </Button>
-    </Box>
+
+      {/* Logo di tengah */}
+      <Image
+        src="/static/images/uniskai_header.png"
+        width={192}
+        height={68}
+        h={{ base: "32px", md: "44px", lg: "52px" }}
+        alt="logo"
+      />
+    </Flex>
   );
 };
 
-export default BackButton;
+export default Header;
