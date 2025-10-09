@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Box, Flex, Text, Button, ButtonGroup} from '@chakra-ui/react';
-import Image from "next/image";n
+import Image from "next/image";
 import SalesContactList from "../../../components/sections/SalesContactList";
 import data from "../../../components/sections/SalesContactList/contact_list.json";
 import { usePathname } from 'next/navigation'
