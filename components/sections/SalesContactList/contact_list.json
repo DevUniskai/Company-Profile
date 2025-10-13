@@ -29,12 +29,16 @@
       "description":"We assist in booking domestic and international flight tickets smoothly.",
       "items": [
         {
-          "name": "Egita",
-          "phone": "6285207888008"
+          "name": "Duden",
+          "phone": "6285297488822"
         },
         {
-          "name": "Ferdi",
-          "phone": "6282317188008"
+          "name": "Albert",
+          "phone": "6285365200800"
+        },
+        {
+          "name": "Zepha",
+          "phone": "6285355765776"
         },
         {
           "name": "Dini",
@@ -49,8 +53,12 @@
           "phone": "6282365558008"
         },
         {
-          "name": "Duden",
-          "phone": "6285297488822"
+          "name": "Ferdi",
+          "phone": "6282317188008"
+        },
+        {
+          "name": "Egita",
+          "phone": "6285207888008"
         },
         {
           "name": "Ingrid (Domestik)",
