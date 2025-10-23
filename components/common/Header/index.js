@@ -6,10 +6,12 @@ import React from "react";
 
 const Header = () => {
   return (
+    
     <Flex
       alignItems="center"
       justifyContent="center"
-      bgColor="brown"
+      bgColor="black"
+      color="orange"
       position="relative"
       pt={10}
       py={{ base: 6, md: 7 }}
@@ -42,7 +44,7 @@ const Header = () => {
 
       {/* Logo di tengah */}
       <Image
-        src="/static/images/uniskai_header.png"
+        src="/static/images/halloween_uniskai_header.png"
         width={192}
         height={68}
         h={{ base: "32px", md: "44px", lg: "52px" }}

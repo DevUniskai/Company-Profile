@@ -32,13 +32,36 @@ const ContactByTitle = () => {
     
   
     return (
-        <Box w={"100%"} minH={"100vh"} backgroundColor={"brown"} backgroundImage={"/static/images/backg.jpg"}>
+        <Box 
+          position="relative"
+          height="100vh"
+          backgroundImage="/static/images/halloween-bg.jpg"
+          backgroundPosition="center"
+          backgroundSize="cover" //cover
+          justifyContent="center"
+          alignItems="center"
+          color="beige"
+          _before={{
+            content: '""',
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            bg: "rgba(0, 0, 0, 0.4)",
+            zIndex: 0,
+          }}
+        >
           <Flex pt={10} justifyContent={"center"}>
             <Image
-              src={"/static/images/uniskai_header.png"}
-              width={130}
-              height={68}
+              src={"/static/images/halloween_uniskai_header.png"}
+              width={140} //130
+              height={78} //68
               alt="logo"
+              style={{
+                position: "relative",
+                zIndex: 1,
+              }}
             />
           </Flex>
           {/* <Flex
@@ -55,12 +78,17 @@ const ContactByTitle = () => {
             px={{ base: 10, sm: 16 }}
             py={10}
             mt={15}
+            style={{
+              position: "relative",
+              zIndex: 1,
+            }}
           >
             <Text
               fontSize={{ base: "2xl", sm: "3xl" }}
               mb={6}
               letterSpacing={"5px"}
               textAlign={"center"}
+              textColor={"orange"}
             >
               CONTACT US
             </Text>

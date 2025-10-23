@@ -7,26 +7,35 @@ const Welcome = () => {
   return (
     <Box bgColor={"Beige"}>
       <Flex
-        height={"100vh"}
-        backgroundImage={"/static/images/bg-new.jpg"}
-        backgroundPosition={"center"}
-        backgroundSize="cover"
-        flexDirection="column"
+        position="relative"
+        height="100vh"
+        backgroundImage="/static/images/halloween-bg.jpg"
+        backgroundPosition="center"
+        backgroundSize="cover" //cover
         justifyContent="center"
         alignItems="center"
-        color="Beige"
+        color="beige"
+        _before={{
+          content: '""',
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          bg: "rgba(0, 0, 0, 0.4)",
+          zIndex: 0,
+        }}
       >
         <Image
-          src="/static/images/logo-new.png"
+          src="/static/images/halloween-logo.png"
           alt="logo_uniskai_header"
-          width={156}
-          height={52}
+          width={700}
+          height={350}
+          style={{
+            position: "relative",
+            zIndex: 1,
+          }}
         />
-
-        {/* <Heading size="3xl">Uniskai</Heading>
-        <Text size="lg" backgroundColor="lightBlue" borderRadius={5} p={1}>
-          Your Partner Travel Solution
-        </Text> */}
       </Flex>
 
       {/* SQTF HEADER */}

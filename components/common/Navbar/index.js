@@ -170,7 +170,7 @@ const Navbar = () => {
                   as={Link}
                   _hover={{ textDecoration: "none", opacity: 0.75 }}
                   fontWeight="medium"
-                  color="white"
+                  color="orange"
                   onClick={(e) => e.preventDefault()}
                 >
                   Uniskai Team
@@ -183,6 +183,7 @@ const Navbar = () => {
                 minW="auto"
                 w="fit-content"
                 fontSize={15}
+                // color="orange"
               >
                 <PopoverBody p={0}>
                   <VStack align="flex-start" spacing={1} mt={1}>
@@ -204,7 +205,7 @@ const Navbar = () => {
                         key={m.href}
                         as={Link}
                         href={m.href}
-                        color="white"
+                        color="orange"
                         fontWeight="normal"
                         textTransform="capitalize"
                         _hover={{ textDecoration: "underline" }}
@@ -225,7 +226,7 @@ const Navbar = () => {
                 href={item.href}
                 _hover={{ textDecoration: "none", opacity: 0.75 }}
                 fontWeight="medium"
-                color="white"
+                color="orange"
               >
                 {item.label}
               </ChakraLink>
@@ -252,7 +253,7 @@ const Navbar = () => {
           icon={<HamburgerIcon boxSize={{ base: 9, md: 5 }} />}
           onClick={onOpen}
           variant="ghost"
-          color="white"
+          color="orange"
           mt={3}
         />
       </Flex>
@@ -260,11 +261,12 @@ const Navbar = () => {
       {/* Drawer Mobile */}
       <Drawer placement="right" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
-        <DrawerContent bg="gray.900" color="white">
+        <DrawerContent bg="black" color="beige"> 
+          {/* bg="gray.900" */}
           <DrawerCloseButton />
           <DrawerHeader mb={3}>
             <Image
-              src="/static/images/uniskai_header.png"
+              src="/static/images/halloween_uniskai_header.png"
               width={140}
               height={48}
               alt="Uniskai"

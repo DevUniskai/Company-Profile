@@ -1,5 +1,5 @@
 "use client"
-import Header from "@/components/common/BackButtonItem";
+import Header from "@/components/common/Header";
 import Footer from "@/components/sections/Footer";
 import {
   Box, Flex, Text, Heading, Link, Divider, Stack, List, ListItem, UnorderedList, OrderedList, Button
@@ -16,7 +16,7 @@ const contacts = [
 
 const ApecAbtc = () => {
   return (
-    <Box w={"100%"} h={"auto"} backgroundColor={"Beige"} color={"black"}>
+    <Box w={"100%"} h={"auto"} backgroundColor={"beige"} color={"black"}>
       <Header />
 
       {/* Bagian brown header */}
@@ -40,7 +40,7 @@ const ApecAbtc = () => {
         maxW="800px"
         mx="auto"
         lineHeight="1.5"
-        bgColor={"Beige"}
+        // bgColor={"Beige"}
         color={"black"}
       >
         <Heading as="h1" fontSize="40" mt={4} mb={1} textColor={"black"}>

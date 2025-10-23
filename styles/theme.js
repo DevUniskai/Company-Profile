@@ -10,6 +10,9 @@ export const theme = extendTheme({
     secondary: "#828282",
     Beige: "#fdf9ed",
     brown: "#846353",
-    black: "rgb(50, 48, 44)"
+    // halloween theme
+    black: "#202020",
+    orange: "#EB8923",
+    beige: "#FFF0EA"
   },
 });
