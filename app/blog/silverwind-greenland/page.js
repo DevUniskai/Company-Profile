@@ -1,6 +1,6 @@
 import Header from "@/components/common/Header";
 import Footer from "@/components/sections/Footer";
-import { Box, Flex, Text, Heading, Link, Divider, Stack, List, ListItem} from "@chakra-ui/react";
+import { Box, Flex, Text, Heading, Link, Divider, Stack, List, ListItem, UnorderedList} from "@chakra-ui/react";
 import Image from "next/image";
 import NextLink from "next/link";
 
@@ -23,7 +23,7 @@ const TermsOfServices = () => {
           Into the Heart of Greenland:
         </Heading>
         <Heading as="h1" fontSize="40" mb={4} textColor={"black"}>
-          A 7-Day Silver Wind Expedition
+          A 7-Night Silver Wind Expedition
         </Heading>
         <Heading as="h2" fontSize="2xl" mb={4} textColor={"black"}>
           Sailing 26 July - 2 August 2026 │ Round-trip Nuuk (Godthåb)
@@ -88,7 +88,7 @@ const TermsOfServices = () => {
         >
           {/* <Stack spacing={4} align="center"> */}
             <Image 
-              src="/static/images/silverwind-map.jpg" 
+              src="/static/images/silverwind-map.png" 
               alt="cruise" 
               width={750}
               height={200}
@@ -130,9 +130,12 @@ const TermsOfServices = () => {
         <Text fontSize="20" mb={1} fontWeight="bold" textColor={"black"}>
           Day 2 - Maniitsoq
         </Text>
+        <Text as="span" textColor={"black"} mb={1}>
+          <Text as={"span"} fontStyle={"Italic"}>Included Activity:</Text> Maniitsoq Exploration & Museum
+        </Text>
         <Text as="span" textColor={"black"} mb={2}>
-          Often dubbed the “Venice of Greenland,” Maniitsoq enchants with waterways weaving through rocky islets. 
-          Wander the town and its museum to feel the rhythm of Arctic life.
+          Discover the “Venice of Greenland,” a small town surrounded by waterways and colorful homes. 
+          Visit the local museum for stories of Greenlandic heritage and Arctic life.
         </Text>
         <Flex
           flexDirection="column"
@@ -152,9 +155,15 @@ const TermsOfServices = () => {
         <Text fontSize="20" mb={1} fontWeight="bold" textColor={"black"}>
           Day 3 - Kuannit Point & Disko Island (Aritilleq)
         </Text>
+        <Text as="span" textColor={"black"} mb={1}>
+          <Text as={"span"} fontStyle={"Italic"}>Included Activity:</Text> Expedition Activities with Silversea Expedition Team
+        </Text>
         <Text as="span" textColor={"black"} mb={2}>
-          Led by Silversea’s Expedition Team, guests may land by zodiac at Kuannit Point, 
-          then explore Disko Island’s volcanic terrain and tranquil coves.
+          Embark on guided Zodiac landings led by Silversea’s Expedition Team. 
+          Expect dramatic cliffs, wild seabirds, and striking lava formations shaped by time.
+        </Text>
+        <Text as="span" textColor={"black"} mb={2}>
+          Explore Disko Island’s volcanic coastline and glacial valleys, a pristine corner of Greenland known for its deep natural contrasts.
         </Text>
         <Flex
           flexDirection="column"
@@ -174,9 +183,12 @@ const TermsOfServices = () => {
         <Text fontSize="20" mb={1} fontWeight="bold" textColor={"black"}>
           Day 4 - Eqip Sermia Glacier
         </Text>
+        <Text as="span" textColor={"black"} mb={1}>
+          <Text as={"span"} fontStyle={"Italic"}>Included Activity:</Text> Expedition Activities with Silversea Expedition Team
+        </Text>
         <Text as="span" textColor={"black"} mb={2}>
-          Witness the glacier’s thunderous calvings as towering ice walls break into the fjord, 
-          an unforgettable Arctic spectacle.
+          Stand before one of Greenland's most powerful glaciers and witness ice calving into the fjord, 
+          a moment of raw beauty that defines the Arctic.
         </Text>
         <Flex
           flexDirection="column"
@@ -199,11 +211,34 @@ const TermsOfServices = () => {
         <Text fontSize="20" mb={1} fontWeight="bold" textColor={"black"}>
           Day 5 - Ilulissat
         </Text>
-        <Text as="span" textColor={"black"} mb={2}>
-          A UNESCO World Heritage Site where monumental icebergs dominate the skyline. Sail among them, then stroll through the colorful harbor town. 
+        <Text as="span" textColor={"black"} mb={1}>
+          <Text as={"span"} fontStyle={"Italic"}>Included Activity:</Text> 
+        </Text>
+        <UnorderedList spacing={2.5} pl={6} styleType="disc" mb={4}>
+          <ListItem>
+            <Text>
+              <Text as="span" fontWeight="bold">
+                Ilulissat Iceberg Cruise - 
+              </Text>
+              Sail among towering icebergs at the UNESCO-listed Sermeq Kujalleq glacier.
+            </Text>
+          </ListItem>
+          <ListItem>
+            <Text>
+              <Text as="span" fontWeight="bold">
+                Ilulissat Town Walk - 
+              </Text>
+              Explore vibrant harbor streets and visit the Zion Church and local museum.
+            </Text>
+          </ListItem>
+        </UnorderedList>
+        <Text as="span" textColor={"black"}>
+          <Text as={"span"} fontStyle={"Italic"}>Exclusive for Uniskai Guests: </Text> <Text as={"span"} fontWeight={"bold"}>Air Safari over the Ilulissat Icefjord, </Text> 
+          a breathtaking flight revealing panoramic views of the glacier fields and floating icebergs.
         </Text>
         <Text as="span" textColor={"black"} mb={2}>
-          Special for Uniskai guests only can enjoy a <Text as={"span"} fontWeight={"bold"}>special addition to the ship’s excursions, an exclusive Air Safari </Text> offering a breathtaking flight over the Ilulissat Icefjord.
+          This special experience is curated as part of Uniskai’s enhanced shore programme, 
+          elevating the journey beyond the sea.
         </Text>
         <Flex
           backgroundPosition="center"
@@ -231,7 +266,10 @@ const TermsOfServices = () => {
         </Text>
 
         <Text fontSize="20" mb={1} fontWeight="bold" textColor={"black"}>
-          Day 6 - Sisimiut & Amerlog Fjors
+          Day 6 - Sisimiut & Amerloq Fjord
+        </Text>
+        <Text as="span" textColor={"black"} mb={1}>
+          <Text as={"span"} fontStyle={"Italic"}>Included Activity:</Text> Town Walk with Greenlandic Tasting at Sisimiut 
         </Text>
         <Text as="span" textColor={"black"} mb={2}>
           Discover Greenlandic culture in Sisimiut with its vivid houses, local delicacies, 
@@ -254,6 +292,9 @@ const TermsOfServices = () => {
 
         <Text fontSize="20" mb={1} fontWeight="bold" textColor={"black"}>
           Day 7 - Evighedsfjord
+        </Text>
+        <Text as="span" textColor={"black"} mb={1}>
+          <Text as={"span"} fontStyle={"Italic"}>Included Activity:</Text> Expedition Activities with Silversea Expedition Team
         </Text>
         <Text as="span" textColor={"black"} mb={2}>
           “The Fjord of Eternity” lives up to its name with dramatic cliffs and glass-calm waters, 
@@ -299,22 +340,51 @@ const TermsOfServices = () => {
         <Divider borderColor="grey" mt={6}/>
 
         <Heading as="h2" fontSize="2xl" textColor={"black"} mt={8} mb={4}>
-          The Silversea Experience
+          Shore Excursions & Expedition Activities
         </Heading>
         <Text textColor={"black"}>
-            Unlike any other expedition cruise, Silversea redefines Arctic exploration through <Text as={"span"} fontWeight={"bold"}>its luxury expedition concept</Text> where curiosity meets comfort at sea.
+          Each day of the journey is shaped by Silversea’s <Text as={"span"} fontWeight={"bold"}>luxury expedition programme</Text>, blending discovery with ease.
         </Text>
-        <Text mb={4} textColor={"black"}>
-            Each day brings genuine discovery guided by the <Text as={"span"} fontWeight={"bold"}>Expedition Team</Text>: naturalists, historians, 
-            and destination experts who transform every landing into an unforgettable story.
-        </Text>     
         <Text textColor={"black"}>
-            Onboard, Silver Wind blends small-ship intimacy with refined indulgence. Spacious ocean-view suites, personalized butler service, 
-            and world-class dining elevate the experience far beyond traditional expeditions.
+          Zodiac landings, guided walks, and immersive excursions are <Text as={"span"} fontWeight={"bold"}>already included</Text> in the voyage, led by an expert Expedition Team of naturalists, geologists, and historians.
+        </Text>  
+        <Text mb={4} textColor={"black"} fontStyle={"italic"}>
+          (Landings and Zodiac explorations may vary depending on the weather and sea state of the day)
+        </Text>  
+
+        <Text textColor={"black"}>
+          Guests may also enhance their experience with <Text as={"span"} fontWeight={"bold"}>special additions</Text> curated by Uniskai 
+          such as the <Text as={"span"} fontStyle={"italic"}>exclusive Air Safari in Ilulissat</Text>, offering an extraordinary aerial view of Greenland’s ice kingdom
         </Text>     
         <Text mb={4} textColor={"black"}>
             Between zodiac adventures and glacier landings, guests return to the warmth of fine wines, 
             gourmet cuisine, and serene comfort, a balance few ships in the world can offer.
+        </Text>     
+        <Text mb={4} textColor={"black"}>
+            This is not just a voyage of exploration. It’s <Text as={"span"} fontWeight={"bold"}>expedition travel, perfected.</Text>
+        </Text>         
+
+        <Divider borderColor="grey" mt={6}/>
+
+        <Heading as="h2" fontSize="2xl" textColor={"black"} mt={8} mb={4}>
+          The Silversea Experience
+        </Heading>
+        <Text textColor={"black"}>
+          <Text as={"span"} fontStyle={"italic"}>The Silver Wind</Text> represents the pinnacle of <Text as={"span"} fontWeight={"bold"}>luxury expedition cruising</Text> 
+          where every journey combines adventure with uncompromised elegance.
+        </Text>
+        <Text mb={4} textColor={"black"}>
+          Guests enjoy spacious ocean-view suites, attentive butler service, 
+          and fine dining inspired by both local and international cuisine. 
+        </Text>     
+        <Text textColor={"black"}>
+          Onboard, days of exploration unfold into evenings of warmth and refinement.
+        </Text>     
+        <Text textColor={"black"}>
+          Expert briefings, curated lectures, and exceptional service create an atmosphere of discovery with ease.
+        </Text>     
+        <Text mb={4} textColor={"black"}>
+          It’s an experience designed for travelers who seek meaning, comfort, and connection in the world’s most remote places.
         </Text>     
         <Text mb={4} textColor={"black"}>
             This is not just a voyage of exploration. It’s <Text as={"span"} fontWeight={"bold"}>expedition travel, perfected.</Text>
