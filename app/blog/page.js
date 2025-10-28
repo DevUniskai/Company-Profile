@@ -54,6 +54,15 @@ const posts = [
     excerpt:
       "Pernah dengar tentang APEC Business Travel Card (ABTC)?...",
     cover: "/static/images/apec-card.jpg",
+  },
+  {
+    slug: "silverwind-greenland",
+    title:
+      "Into the Heart of Greenland: A 7-Day Silver Wind Expedition",
+    date: "2025-09-20",
+    excerpt:
+      "Imagine waking each day to a new Arctic panorama jagged fjords, floating icebergs, and quiet coastal villages...",
+    cover: "/static/images/silverwind-nuuk.jpg",
   }
 ];
 
