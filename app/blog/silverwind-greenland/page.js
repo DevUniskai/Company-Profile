@@ -23,7 +23,7 @@ const TermsOfServices = () => {
           Into the Heart of Greenland:
         </Heading>
         <Heading as="h1" fontSize="40" mb={4} textColor={"black"}>
-          A 7-Night Silver Wind Expedition
+          A 7-Night Silver Wind Expedition⚓
         </Heading>
         <Heading as="h2" fontSize="2xl" mb={4} textColor={"black"}>
           Sailing 26 July - 2 August 2026 │ Round-trip Nuuk (Godthåb)
@@ -32,13 +32,16 @@ const TermsOfServices = () => {
           Imagine waking each day to a new Arctic panorama jagged fjords, floating icebergs, and quiet coastal villages while indulging in luxury aboard the elegant Silver Wind.
         </Text>
         <Text mb={4} textColor="black">
-          This seven-day voyage unveils Greenland’s wild west coast in true luxury, where adventure and comfort meet at the edge of the world.
+          These seven-nights voyage unveil Greenland’s wild west coast in true luxury, where adventure and comfort meet at the edge of the world.
         </Text>
         <Text textColor="black">
-          Reaching this remote frontier has never been easier. When travelling with Uniskai, guests can begin their journey with a flight package from Copenhagen to Nuuk, connecting directly to the start of the expedition. 
+          Reaching this remote frontier has never been easier. 
+        </Text>
+        <Text textColor="black">
+          When travelling with Uniskai, guests can begin their journey with a flight package from Copenhagen to Nuuk, connecting directly to the start of the expedition. 
         </Text>
         <Text mb={4} textColor="black">
-          Unlike the standard Silversea departure from Montreal, this route allows travelers to explore Greenland without the need for double visa, making it the ideal choice for guests from Asia seeking a seamless Arctic experience.
+          Unlike the standard Silversea departure from Montreal, this route allows travelers to explore Greenland without the need for Canada Visa, making it the ideal choice for guests from Asia seeking a seamless Arctic experience.
         </Text>
         <Flex
           backgroundPosition="center"
@@ -65,15 +68,16 @@ const TermsOfServices = () => {
           Source: Silversea Website
         </Text>
 
+        <Divider borderColor="grey" mt={6}/>
+
         <Heading as="h2" fontSize="2xl" textColor={"black"} mt={8} mb={4}>
-          The Route: A Journey through Ice and Time
+          The Route: A Journey through Ice and Time🗺️
         </Heading>
         <Text textColor={"black"}>
-            Set against an otherworldly Arctic backdrop, the route winds from Nuuk to Maniitsoq, Kuannit Point, Disko Island (Aritilleq), the majestic Eqip Sermia Glacier, 
-            the UNESCO town of Ilulissat, Sisimiut, Amerloq Fjord, Evighedsfjord, and back to Nuuk.
+          Nuuk → Maniitsoq → Kuannit Point → Disko Island → Eqip Sermia Glacier → Ilulissat → Sisimiut → Amerloq Fjord → Evighedsfjord → Nuuk.
         </Text>
         <Text mb={4} textColor={"black"}>
-            A voyage that unfolds like a nature-film, where each destination is a scene.
+          A voyage that unfolds like a cinematic passage through time, where each day brings a new landscape of ice, light, and silence
         </Text>
         {/* <Text as="span" fontSize={18} textColor={"black"} fontStyle={"italic"} textAlign={"center"}>
           Sailing date: 18 May - 27 May 2026
@@ -101,7 +105,8 @@ const TermsOfServices = () => {
             /> */}
           {/* </Stack> */}
         </Flex>
-
+        
+        <Divider borderColor="grey" mt={6}/>
 
         <Heading as="h2" fontSize="2xl" mt={8} mb={4} textColor={"black"}>
           Day-by-Day Highlights
@@ -153,7 +158,7 @@ const TermsOfServices = () => {
         </Flex>
 
         <Text fontSize="20" mb={1} fontWeight="bold" textColor={"black"}>
-          Day 3 - Kuannit Point & Disko Island (Aritilleq)
+          Day 3 - Kuannit Point & Disko Island (Itilleq)
         </Text>
         <Text as="span" textColor={"black"} mb={1}>
           <Text as={"span"} fontStyle={"Italic"}>Included Activity:</Text> Expedition Activities with Silversea Expedition Team
@@ -339,7 +344,7 @@ const TermsOfServices = () => {
 
         <Divider borderColor="grey" mt={6}/>
 
-        <Heading as="h2" fontSize="2xl" textColor={"black"} mt={8} mb={4}>
+        {/* <Heading as="h2" fontSize="2xl" textColor={"black"} mt={8} mb={4}>
           Shore Excursions & Expedition Activities
         </Heading>
         <Text textColor={"black"}>
@@ -364,28 +369,27 @@ const TermsOfServices = () => {
             This is not just a voyage of exploration. It’s <Text as={"span"} fontWeight={"bold"}>expedition travel, perfected.</Text>
         </Text>         
 
-        <Divider borderColor="grey" mt={6}/>
+        <Divider borderColor="grey" mt={6}/> */}
 
         <Heading as="h2" fontSize="2xl" textColor={"black"} mt={8} mb={4}>
           The Silversea Experience
         </Heading>
         <Text textColor={"black"}>
-          <Text as={"span"} fontStyle={"italic"}>The Silver Wind</Text> represents the pinnacle of <Text as={"span"} fontWeight={"bold"}>luxury expedition cruising</Text> 
-          where every journey combines adventure with uncompromised elegance.
-        </Text>
-        <Text mb={4} textColor={"black"}>
-          Guests enjoy spacious ocean-view suites, attentive butler service, 
-          and fine dining inspired by both local and international cuisine. 
-        </Text>     
+          Silversea’s Silver Wind brings together the essence of <Text as={"span"} fontWeight={"bold"}>luxury and expedition. </Text>
+        </Text> 
         <Text textColor={"black"}>
-          Onboard, days of exploration unfold into evenings of warmth and refinement.
-        </Text>     
+            Guided Zodiac landings, nature walks, 
+            and immersive shore excursions led by expert naturalists and historians reveal Greenland’s wonders in depth.
+        </Text> 
+        <Text mb={4} textColor={"black"} fontStyle={"italic"}>
+          (Activities may vary depending on the weather and sea conditions of the day.)
+        </Text>  
         <Text textColor={"black"}>
-          Expert briefings, curated lectures, and exceptional service create an atmosphere of discovery with ease.
+          After days of Arctic discovery, guests return to refined comfort: ocean-view suites, butler service, and world-class dining.
         </Text>     
         <Text mb={4} textColor={"black"}>
-          It’s an experience designed for travelers who seek meaning, comfort, and connection in the world’s most remote places.
-        </Text>     
+          Uniskai travelers also enjoy special touches such as the exclusive <Text as={"span"} fontWeight={"bold"}>Air Safari over Ilulissat</Text>, offering an unforgettable view of the Icefjord from above. 
+        </Text>        
         <Text mb={4} textColor={"black"}>
             This is not just a voyage of exploration. It’s <Text as={"span"} fontWeight={"bold"}>expedition travel, perfected.</Text>
         </Text>     
@@ -413,6 +417,8 @@ const TermsOfServices = () => {
         <Text as="span" fontSize={11} textColor={"black"} textAlign={"right"} fontStyle={"italic"} mt={1}>
           Source: Silversea Website
         </Text>
+        
+        <Divider borderColor="grey" mt={6}/>
 
         <Heading as="h2" fontSize="2xl" mt={6} mb={4} textColor={"black"}>
           An Invitation to Explore
