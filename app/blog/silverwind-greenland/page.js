@@ -433,11 +433,11 @@ const TermsOfServices = () => {
 
         <Text fontStyle="Italic" mb={4}>
           Interested in learning more about this voyage or how to reserve a suite? 
-          Contact the Uniskai team for more details and upcoming departures.
+          
         </Text>
 
         <Text fontWeight="semibold" textColor={"black"} mb={2}>
-          👉 Check Price & Availability – Contact Our Team
+           Contact Our Team
         </Text>
         <Box 
           borderLeft="4px solid" 
@@ -447,7 +447,14 @@ const TermsOfServices = () => {
         >
           <Stack spacing={1}>
             <Stack spacing={1}>
-              {/* <Flex>
+              <Flex>
+                <Box w="70px">Vetris</Box>
+                <Link as={NextLink} href="https://wa.me+6282230025459" target="_blank">
+                  +62 813-7641-0413
+                </Link>
+              </Flex>
+              
+              <Flex>
                 <Box w="70px">Marvin</Box>
                 <Link as={NextLink} href="https://wa.me/6285827879667" target="_blank">
                   +62 858-2787-9667
@@ -466,14 +473,8 @@ const TermsOfServices = () => {
                 <Link as={NextLink} href="https://wa.me/6282287840788" target="_blank">
                   +62 822-8784-0788
                 </Link>
-              </Flex> */}
-
-              <Flex>
-                <Box w="70px">Vetris</Box>
-                <Link as={NextLink} href="https://wa.me+6282230025459" target="_blank">
-                  +62 813-7641-0413
-                </Link>
               </Flex>
+
             </Stack>
           </Stack>
         </Box>
