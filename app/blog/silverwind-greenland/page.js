@@ -421,7 +421,7 @@ const TermsOfServices = () => {
         <Divider borderColor="grey" mt={6}/>
 
         <Heading as="h2" fontSize="2xl" mt={6} mb={4} textColor={"black"}>
-          An Invitation to Explore
+          An Invitation to Explore📩
         </Heading>
         <Text textColor={"black"}>
           This expedition is more than a cruise, and it’s a rare chance to stand where few travelers ever do, surrounded by ice-sculpted landscapes, lingering daylight, and Arctic calm.
@@ -485,7 +485,7 @@ const TermsOfServices = () => {
         <Divider borderColor="grey" mt={4}/> */}
 
         <Text >
-          with love,
+         In the spirit of discovery, 
         </Text>
         <Text >
           Vetris – Tour Team
