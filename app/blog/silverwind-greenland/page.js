@@ -449,11 +449,11 @@ const TermsOfServices = () => {
             <Stack spacing={1}>
               <Flex>
                 <Box w="70px">Vetris</Box>
-                <Link as={NextLink} href="https://wa.me+6282230025459" target="_blank">
+                <Link as={NextLink} href="https://wa.me/6282230025459" target="_blank">
                   +62 813-7641-0413
                 </Link>
               </Flex>
-              
+
               <Flex>
                 <Box w="70px">Marvin</Box>
                 <Link as={NextLink} href="https://wa.me/6285827879667" target="_blank">
