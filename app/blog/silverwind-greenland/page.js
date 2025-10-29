@@ -344,13 +344,14 @@ const TermsOfServices = () => {
 
         <Divider borderColor="grey" mt={6}/>
 
-        {/* <Heading as="h2" fontSize="2xl" textColor={"black"} mt={8} mb={4}>
-          Shore Excursions & Expedition Activities
+        <Heading as="h2" fontSize="2xl" textColor={"black"} mt={8} mb={4}>
+          All-Inclusive Luxury 🌟
         </Heading>
         <Text textColor={"black"}>
-          Each day of the journey is shaped by Silversea’s <Text as={"span"} fontWeight={"bold"}>luxury expedition programme</Text>, blending discovery with ease.
+          Butler service, gourmet dining, and fine wines all included. Enjoy open-seating restaurants, 24-hour in-suite dining, Wi-Fi, and gratuities covered. 
+          Sail in comfort with Silversea’s personalized service and world-class amenities.
         </Text>
-        <Text textColor={"black"}>
+        {/* <Text textColor={"black"}>
           Zodiac landings, guided walks, and immersive excursions are <Text as={"span"} fontWeight={"bold"}>already included</Text> in the voyage, led by an expert Expedition Team of naturalists, geologists, and historians.
         </Text>  
         <Text mb={4} textColor={"black"} fontStyle={"italic"}>
@@ -367,9 +368,9 @@ const TermsOfServices = () => {
         </Text>     
         <Text mb={4} textColor={"black"}>
             This is not just a voyage of exploration. It’s <Text as={"span"} fontWeight={"bold"}>expedition travel, perfected.</Text>
-        </Text>         
+        </Text>          */}
 
-        <Divider borderColor="grey" mt={6}/> */}
+        <Divider borderColor="grey" mt={6}/>
 
         <Heading as="h2" fontSize="2xl" textColor={"black"} mt={8} mb={4}>
           The Silversea Experience
@@ -435,7 +436,7 @@ const TermsOfServices = () => {
           Contact the Uniskai team for more details and upcoming departures.
         </Text>
 
-        {/* <Text fontWeight="semibold" textColor={"black"} mb={1}>
+        <Text fontWeight="semibold" textColor={"black"} mb={2}>
           👉 Check Price & Availability – Contact Our Team
         </Text>
         <Box 
@@ -446,7 +447,7 @@ const TermsOfServices = () => {
         >
           <Stack spacing={1}>
             <Stack spacing={1}>
-              <Flex>
+              {/* <Flex>
                 <Box w="70px">Marvin</Box>
                 <Link as={NextLink} href="https://wa.me/6285827879667" target="_blank">
                   +62 858-2787-9667
@@ -465,33 +466,31 @@ const TermsOfServices = () => {
                 <Link as={NextLink} href="https://wa.me/6282287840788" target="_blank">
                   +62 822-8784-0788
                 </Link>
-              </Flex>
+              </Flex> */}
 
               <Flex>
-                <Box w="70px">Rosinta</Box>
-                <Link as={NextLink} href="https://wa.me/6281376410413" target="_blank">
+                <Box w="70px">Vetris</Box>
+                <Link as={NextLink} href="https://wa.me+6282230025459" target="_blank">
                   +62 813-7641-0413
                 </Link>
               </Flex>
             </Stack>
-
           </Stack>
         </Box>
         
-        <Text textColor={"black"} mb={4}>
+        {/* <Text textColor={"black"} mb={4}>
           (Tap to call or message on WhatsApp. Fast replies!)
-        </Text>
+        </Text> */}
 
-        <Divider borderColor="grey" mt={4}/> */}
+        <Divider borderColor="grey" mt={4}/>
 
-        <Text >
+        <Text mt={4}>
          In the spirit of discovery, 
         </Text>
         <Text >
           Vetris – Tour Team
         </Text>
       </Flex>
-
     </Box>
   );
 };
