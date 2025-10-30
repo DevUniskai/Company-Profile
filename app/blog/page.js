@@ -58,8 +58,8 @@ const posts = [
   {
     slug: "silverwind-greenland",
     title:
-      "Into the Heart of Greenland: A 7-Day Silver Wind Expedition",
-    date: "2025-09-20",
+      "Into the Heart of Greenland: A 7-NIght Silver Wind Expedition",
+    date: "2025-10-29",
     excerpt:
       "Imagine waking each day to a new Arctic panorama jagged fjords, floating icebergs, and quiet coastal villages...",
     cover: "/static/images/silverwind-nuuk.jpg",
