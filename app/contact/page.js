@@ -4,45 +4,22 @@ import Image from "next/image";
 
 const ContactSales = () => {
   return (
-    <Box 
-      position="relative"
-      minH="100vh"                          // <-- biar ikut memanjang sesuai konten
-      bgImage="url('/static/images/halloween-bg.jpg')" // gunakan url()
-      bgPosition="center"
-      bgSize="cover"
-      bgRepeat="no-repeat"
-      color="beige"
-      _before={{
-        content: '""',
-        position: "absolute",
-        inset: 0,                           // top/left/right/bottom: 0
-        bg: "rgba(0, 0, 0, 0.5)",
-        zIndex: 0,
-        pointerEvents: "none",
-      }}   
-    >
+    <Box w={"100%"} minH={"100vh"} backgroundColor={"brown"} backgroundImage={"/static/images/backg.jpg"}>
+      
       <Flex pt={10} justifyContent={"center"}>
         {/* <BackButton /> */}
         <Image
-          src={"/static/images/halloween_uniskai_header.png"}
+          src={"/static/images/uniskai_header.png"}
           width={192}
           height={68}
           alt="logo"
-          style={{
-            position: "relative",
-            zIndex: 1,
-          }}
         />
       </Flex>
       <Flex
-        color="orange"
+        color="Beige"
         flexDirection="column"
         px={{ base: 10, sm: 16 }}
         py={10}
-        style={{           
-          position: "relative",
-          zIndex: 1,
-        }}
       >
         <Text
           fontSize={{ base: "3xl", sm: "4xl" }}

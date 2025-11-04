@@ -9,7 +9,7 @@ const Welcome = () => {
       <Flex
         position="relative"
         height="100vh"
-        backgroundImage="/static/images/halloween-bg.jpg"
+        backgroundImage="/static/images/bg-new.jpg"
         backgroundPosition="center"
         backgroundSize="cover" //cover
         justifyContent="center"
@@ -27,10 +27,10 @@ const Welcome = () => {
         }}
       >
         <Image
-          src="/static/images/halloween-logo.png"
+          src="/static/images/logo-new.png"
           alt="logo_uniskai_header"
-          width={700}
-          height={350}
+          width={156}
+          height={52}
           style={{
             position: "relative",
             zIndex: 1,

@@ -76,13 +76,24 @@ export default function BlogIndex() {
   const sorted = [...posts].sort((a, b) => (a.date < b.date ? 1 : -1));
 
   return (
-    <Box minH="100svh" bg="beige" color="black" display="flex" flexDir="column">
-      <Header />
-      
+    <Box minH="100svh" bg="Beige" color="black" display="flex" flexDir="column">
+      {/* Header */}
+      <Flex as="header" justify="center" bg="brown" py={6}>
+        <Link href="/" aria-label="Uniskai Home">
+          <Image
+            src="/static/images/uniskai_header.png"
+            width={192}
+            height={68}
+            alt="logo"
+            priority
+          />
+        </Link>
+      </Flex>
+
       {/* Main */}
       <Box as="main" flex="1" py={7}>
         <Box maxW="1000px" mx="auto" py={2} px={4}>
-          <Heading mb={6} color="orange">
+          <Heading mb={6} color="brown">
             Blog
           </Heading>
 
@@ -91,7 +102,7 @@ export default function BlogIndex() {
               <LinkBox
                 key={p.slug}
                 as={Card}
-                bg="black"
+                bg="white"
                 // border="1px solid"
                 borderColor="secondary"
                 transition="all 120ms ease"
@@ -124,13 +135,13 @@ export default function BlogIndex() {
                     </Flex>
                   )}
 
-                  <Heading size="md" mb={2} color="orange">
+                  <Heading size="md" mb={2} color="brown">
                     <LinkOverlay as={Link} href={`/blog/${p.slug}`}>
                       {p.title}
                     </LinkOverlay>
                   </Heading>
 
-                  <Text fontSize="sm" color="beige" mb={2}>
+                  <Text fontSize="sm" color="secondary" mb={2}>
                     {new Date(p.date).toLocaleDateString("id-ID", {
                       day: "2-digit",
                       month: "long",
@@ -138,10 +149,10 @@ export default function BlogIndex() {
                     })}
                   </Text>
 
-                  <Text noOfLines={3} color={"beige"}>{p.excerpt}</Text>
+                  <Text noOfLines={3}>{p.excerpt}</Text>
 
                   {/* hint kecil di bawah */}
-                  <Text mt={3} fontSize="sm" color="orange">
+                  <Text mt={3} fontSize="sm" color="lightBlue">
                     Baca selengkapnya →
                   </Text>
                 </CardBody>
@@ -151,8 +162,8 @@ export default function BlogIndex() {
         </Box>
       </Box>
 
-      {/* <Footer /> */}
-      <FooterHalloween />
+      {/* Footer */}
+      <Footer />
     </Box>
   );
 }

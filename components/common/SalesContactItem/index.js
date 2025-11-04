@@ -6,11 +6,11 @@ const SalesContactItem = ({ title, description, items, variant = "all" }) => {
   const newTitle = title.charAt(0).toUpperCase() + title.slice(1) + " Team";
 
   const isSingle = variant === "single";
-  const bg = isSingle ? "orange" : "black";
-  const textColor = isSingle ? "black" : "orange";
-  const borderColor = isSingle ? "black" : "orange";
-  const hoverBg = isSingle ? "black" : "orange";
-  const hoverText = isSingle ? "orange" : "black";
+  const bg = isSingle ? "brown" : "Beige";
+  const textColor = isSingle ? "Beige" : "brown";
+  const borderColor = isSingle ? "Beige" : "brown";
+  const hoverBg = isSingle ? "Beige" : "brown";
+  const hoverText = isSingle ? "brown" : "Beige";
 
   return (
     <Flex

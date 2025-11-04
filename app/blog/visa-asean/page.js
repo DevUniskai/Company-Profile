@@ -22,7 +22,7 @@ const contacts = [
 
 const VisaAsean = () => {
   return (
-    <Box w={"100%"} h={"auto"} backgroundColor={"beige"} color={"black"}>
+    <Box w={"100%"} h={"auto"} backgroundColor={"Beige"} color={"black"}>
       <Header/>
 
       <Flex
@@ -32,7 +32,7 @@ const VisaAsean = () => {
         maxW="800px"
         mx="auto"
         lineHeight="1.5"
-        // bgColor={"Beige"}
+        bgColor={"Beige"}
         color={"black"}
       >
         <Heading as="h1" fontSize="40" mt={4} mb={1} textColor={"black"}>

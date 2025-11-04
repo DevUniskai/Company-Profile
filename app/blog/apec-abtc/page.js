@@ -16,7 +16,7 @@ const contacts = [
 
 const ApecAbtc = () => {
   return (
-    <Box w={"100%"} h={"auto"} backgroundColor={"beige"} color={"black"}>
+    <Box w={"100%"} h={"auto"} backgroundColor={"Beige"} color={"black"}>
       <Header />
 
       {/* Bagian brown header */}

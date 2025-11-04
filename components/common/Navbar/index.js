@@ -170,7 +170,7 @@ const Navbar = () => {
                   as={Link}
                   _hover={{ textDecoration: "none", opacity: 0.75 }}
                   fontWeight="medium"
-                  color="orange"
+                  color="white"
                   onClick={(e) => e.preventDefault()}
                 >
                   Uniskai Team
@@ -205,7 +205,7 @@ const Navbar = () => {
                         key={m.href}
                         as={Link}
                         href={m.href}
-                        color="orange"
+                        color="white"
                         fontWeight="normal"
                         textTransform="capitalize"
                         _hover={{ textDecoration: "underline" }}
@@ -226,7 +226,7 @@ const Navbar = () => {
                 href={item.href}
                 _hover={{ textDecoration: "none", opacity: 0.75 }}
                 fontWeight="medium"
-                color="orange"
+                color="white"
               >
                 {item.label}
               </ChakraLink>
@@ -253,7 +253,7 @@ const Navbar = () => {
           icon={<HamburgerIcon boxSize={{ base: 9, md: 5 }} />}
           onClick={onOpen}
           variant="ghost"
-          color="orange"
+          color="white"
           mt={3}
         />
       </Flex>
@@ -261,12 +261,12 @@ const Navbar = () => {
       {/* Drawer Mobile */}
       <Drawer placement="right" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
-        <DrawerContent bg="black" color="beige"> 
+        <DrawerContent bg="gray.900" color="beige"> 
           {/* bg="gray.900" */}
           <DrawerCloseButton />
           <DrawerHeader mb={3}>
             <Image
-              src="/static/images/halloween_uniskai_header.png"
+              src="/static/images/uniskai_header.png"
               width={140}
               height={48}
               alt="Uniskai"

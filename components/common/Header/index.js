@@ -10,8 +10,8 @@ const Header = () => {
     <Flex
       alignItems="center"
       justifyContent="center"
-      bgColor="black"
-      color="orange"
+      bgColor="brown"
+      color="Beige"
       position="relative"
       pt={10}
       py={{ base: 6, md: 7 }}
@@ -44,7 +44,7 @@ const Header = () => {
 
       {/* Logo di tengah */}
       <Image
-        src="/static/images/halloween_uniskai_header.png"
+        src="/static/images/uniskai_header.png"
         width={192}
         height={68}
         h={{ base: "32px", md: "44px", lg: "52px" }}
