@@ -1,10 +1,18 @@
 import { Box, Flex, Grid, Stack, Text, Link, Container } from "@chakra-ui/react";
 import Image from "next/image";
 import NextLink from "next/link";
+import { useBreakpointValue } from "@chakra-ui/react";
+
 
 const CONTENT_MAXW = "1200px"; // satu sumber kebenaran
 
 const Welcome = () => {
+  const logoMaxW = useBreakpointValue({
+  base: "100%",
+  md: "640px",
+  xl: "640px", // laptop tetap
+  "2xl": "680px", // layar ekstra gede naik
+}) || "640px";
   return (
     <Box bgColor={"Beige"}>
       <Flex
@@ -32,43 +40,67 @@ const Welcome = () => {
         {/* Satu container untuk semua konten supaya tepi kiri/kanan sejajar */}
         <Container
           zIndex={1}
-          maxW={CONTENT_MAXW}
+          maxW={{ base: "92vw", md: "92vw", lg: "1300px", xl: "1400px" }}
           px={{ base: 4, md: 6 }}     // gutter konsisten
         >
-          <Stack spacing={{ base: 6, md: 10 }} align="stretch">
+          <Stack spacing={{ base: 3, md: 5 }} align="stretch">
             {/* GRID UTAMA */}
             <Grid
-              templateColumns={{ base: "1fr", md: "1.2fr 1fr" }}
-              gap={{ base: 6, md: 10 }}
+              templateColumns={{ base: "1fr", md: "1.1fr 0.9fr" }}
+              gap={{ base: 1, md: 2, lg: 3, xl: 3, "2xl": 10 }}
+              justifyContent="center"
               alignItems="center"
               w="full"
             >
               {/* Kiri: Logo Unisail */}
               <Box>
-                <Box position="relative" w="full" maxW={{ base: "100%", md: "560px" }}
-                     h={{ base: "150px", sm: "180px", md: "220px", lg: "260px" }}>
+                <Box 
+                  position="relative" 
+                  w="auto" 
+                  maxW="clamp(640px, 46vw, 820px)"
+                  h={{ base: "200px", md: "320px", xl: "clamp(320px, 28vw, 380px)" }}
+                >
                   <Image
                     src="/static/images/unisail/unisail-unisail.png"
                     alt="Unisail"
                     fill
                     style={{ objectFit: "contain" }}
-                    sizes="(max-width: 768px) 90vw, (max-width: 1200px) 45vw, 560px"
+                    // Responsive hint untuk Next.js
+                    sizes="
+                      (max-width: 768px) 90vw,
+                      (max-width: 1200px) 45vw,
+                      42vw
+                    "
                   />
                 </Box>
               </Box>
 
-              {/* Kanan: keterangan event jadi satu image */}
-              <Box position="relative" w="full" maxW={{ base: "100%", md: "450px" }}
-                   h={{ base: "220px", md: "280px" }} ml="auto">
-                <Image
-                  src="/static/images/unisail/unisail-keterangan.png"
-                  alt="Unisail Event Info"
-                  fill
-                  style={{ objectFit: "contain" }}
-                  sizes="(max-width: 768px) 90vw, (max-width: 1200px) 45vw, 450px"
-                />
+              {/* Kanan: Keterangan Event */}
+              <Box w="100%">
+                {/* “Rail” kanan: tumbuh halus di layar besar tapi tetap aman di laptop */}
+                <Box
+                  position="relative"
+                  w="auto"
+                  maxW={{ base: "100%", md: "clamp(550px, 38vw, 760px)" }}
+                  ml={{ base: 0, md: "auto" }}
+                  h={{ base: "260px", md: "340px", xl: "clamp(340px, 26vw, 380px)" }}
+                >
+                  <Image
+                    src="/static/images/unisail/unisail-keterangan.png"
+                    alt="Unisail Event Info"
+                    fill
+                    style={{ objectFit: "contain" }}
+                    sizes="
+                      (max-width: 768px) 90vw,
+                      (max-width: 992px) 550px,
+                      (max-width: 1280px) 34vw,
+                      680px
+                    "
+                  />
+                </Box>
               </Box>
             </Grid>
+
 
             {/* BAR KONTAK: ikut alur layout, tepi sejajar karena share Container */}
             <Flex
