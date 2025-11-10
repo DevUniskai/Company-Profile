@@ -20,7 +20,8 @@ const LINKS = [
   { label: "Contact", href: "https://uniskai.id/contact" },
 //   { label: "WhatsApp", href: "https://wa.me/6281234567890", sub: "Chat cepat ke tim" },
 //   { label: "Email", href: "mailto:hello@uniskai.com" },
-  { label: "Maps", href: "https://maps.google.com/?q=Uniskai" },
+  { label: "Uniskai Medan", href: "https://maps.google.com/?q=Uniskai" },
+  { label: "Uniskai Jakarta", href: "https://maps.app.goo.gl/EKYxLW31L74h5Jkv7" },
 ];
 
 export default function LinkInBio() {
