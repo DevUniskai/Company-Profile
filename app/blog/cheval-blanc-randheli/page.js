@@ -97,7 +97,7 @@ const TermsOfServices = () => {
         >
           <Image 
             src="/static/images/cheval/cheval-3.jpg" 
-            alt="cruise" 
+            alt="Cheval Blanc Randheli" 
             width={750}
             height={200}
           />
@@ -118,7 +118,7 @@ const TermsOfServices = () => {
         >
           <Image 
             src="/static/images/cheval/cheval-4.jpg" 
-            alt="cruise" 
+            alt="Cheval Blanc Randheli" 
             width={750}
             height={200}
           />
@@ -151,7 +151,7 @@ const TermsOfServices = () => {
         >
           <Image 
             src="/static/images/cheval/cheval-5.jpg" 
-            alt="cruise" 
+            alt="Cheval Blanc Randheli" 
             width={750}
             height={200}
           />
@@ -172,7 +172,7 @@ const TermsOfServices = () => {
         >
           <Image 
             src="/static/images/cheval/cheval-6.jpg" 
-            alt="cruise" 
+            alt="Cheval Blanc Randheli" 
             width={750}
             height={200}
           />
@@ -202,7 +202,7 @@ const TermsOfServices = () => {
         >
           <Image 
             src="/static/images/cheval/cheval-7.jpg" 
-            alt="cruise" 
+            alt="Cheval Blanc Randheli" 
             width={750}
             height={200}
           />
@@ -219,7 +219,7 @@ const TermsOfServices = () => {
         >
           <Image 
             src="/static/images/cheval/cheval-8.jpg" 
-            alt="cruise" 
+            alt="Cheval Blanc Randheli" 
             width={750}
             height={200}
           />
@@ -248,7 +248,7 @@ const TermsOfServices = () => {
         >
           <Image 
             src="/static/images/cheval/cheval-9.jpg" 
-            alt="cruise" 
+            alt="Cheval Blanc Randheli" 
             width={750}
             height={200}
           />
@@ -270,7 +270,7 @@ const TermsOfServices = () => {
         >
           <Image 
             src="/static/images/cheval/cheval-10.jpg" 
-            alt="cruise" 
+            alt="Cheval Blanc Randheli" 
             width={750}
             height={200}
           />
@@ -300,7 +300,7 @@ const TermsOfServices = () => {
         >
           <Image 
             src="/static/images/cheval/cheval-11.jpg" 
-            alt="cruise" 
+            alt="Cheval Blanc Randheli" 
             width={750}
             height={200}
           />
@@ -325,7 +325,7 @@ const TermsOfServices = () => {
         >
           <Image 
             src="/static/images/cheval/cheval-12.jpg" 
-            alt="cruise" 
+            alt="Cheval Blanc Randheli" 
             width={750}
             height={200}
           />
@@ -384,7 +384,7 @@ const TermsOfServices = () => {
         >
           <Image 
             src="/static/images/cheval/cheval-13.jpg" 
-            alt="cruise" 
+            alt="Cheval Blanc Randheli" 
             width={750}
             height={200}
           />
