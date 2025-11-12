@@ -154,7 +154,7 @@ const Welcome = () => {
                   h={{ base: "260px", md: "340px", xl: "clamp(340px, 26vw, 380px)" }}
                 >
                   <Image
-                    src="/static/images/unisail/unisail-keterangan.png"
+                    src="/static/images/unisail/unisail-keterangan1.png"
                     alt="Unisail Event Info"
                     fill
                     style={{ objectFit: "contain" }}
