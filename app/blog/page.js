@@ -63,17 +63,16 @@ const posts = [
     excerpt:
       "Imagine waking each day to a new Arctic panorama jagged fjords, floating icebergs, and quiet coastal villages...",
     cover: "/static/images/silverwind-nuuk.jpg",
+  },
+  {
+    slug: "cheval-blanc-randheli", // ganti judul file nya lagi jd ini ya biar bisa
+    title:
+      "Beyond the Blue: Discovering the Soul of Cheval Blanc Randheli",
+    date: "2025-11-10",
+    excerpt:
+      "Hidden within the Noonu Atoll of the Maldives, this Maison redefines the meaning of modern luxury through emotion, artistry, and savoir-faire...",
+    cover: "/static/images/cheval/cheval-5.jpg",
   }
-  // ,
-  // {
-  //   slug: "cheval-blanc-randheli", // ganti judul file nya lagi jd ini ya biar bisa
-  //   title:
-  //     "Beyond the Blue: Discovering the Soul of Cheval Blanc Randheli",
-  //   date: "2025-11-10",
-  //   excerpt:
-  //     "Hidden within the Noonu Atoll of the Maldives, this Maison redefines the meaning of modern luxury through emotion, artistry, and savoir-faire...",
-  //   cover: "/static/images/cheval/cheval-5.jpg",
-  // }
 ];
 
 // ====== SEO metadata ======
