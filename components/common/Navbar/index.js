@@ -281,7 +281,7 @@ const Navbar = () => {
           <DrawerCloseButton />
           <DrawerHeader mb={3}>
             <Image
-              src="/static/images/logo-new.png"
+              src="/static/images/uniskai_header.png"
               width={140}
               height={48}
               alt="Uniskai"

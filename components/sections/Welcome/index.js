@@ -60,10 +60,6 @@
 
 // export default Welcome;
 
-
-
-
-
 // UNISAIL
 
 import {
@@ -75,18 +71,22 @@ import {
   Container,
   Button,
   useBreakpointValue,
-  useMediaQuery
+  useMediaQuery,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import NextLink from "next/link";
 import JourneyButton from "@/components/common/journeyButton";
 
 const Welcome = () => {
-  const titleBase = useBreakpointValue({ base: "28px", md: "38px", xl: "42px" });
+  const titleBase = useBreakpointValue({
+    base: "28px",
+    md: "38px",
+    xl: "42px",
+  });
   const [isUltraWide] = useMediaQuery("(min-width: 1900px)");
   const titleSize = isUltraWide ? "65px" : titleBase;
   const btnSize = useBreakpointValue({ base: "md", md: "lg" });
-  
+
   return (
     <Box bgColor="Beige">
       <Flex
@@ -148,22 +148,30 @@ const Welcome = () => {
           zIndex={3}
           maxW={{ base: "92vw", md: "92vw", lg: "1200px", xl: "1300px" }}
           px={{ base: 4, md: 6 }}
-          ml={isUltraWide ? 0 : "auto"}
-          mr="auto"
+          mx="auto"
           mb="35px"
-          // backgroundColor={"red"}
         >
-          <Stack align="center" spacing={{ base: 8, md: 10 }} pt={{ base: 10, md: 0 }} fontFamily="'Sigvar', sans-serif">
+          <Stack
+            align="center"
+            spacing={{ base: 8, md: 10 }}
+            pt={{ base: 10, md: 0 }}
+            fontFamily="'Sigvar', sans-serif"
+          >
             <Flex
               w="full"
               align="center"
               direction={{ base: "column", md: "row" }}
-              justify={{ base: "center", md: "flex-start" }}
-              transform={isUltraWide ? "none" : "translateX(-60px)"}
-              pl={isUltraWide ? { base: 0, md: 12, lg: 16 } : { base: 0, md: 0, lg: 0 }}
+              justify="center"
+              transform="none"
+              pl={0}
               gap={{ base: 10, md: 14, lg: 16, xl: 20 }}
             >
-              <EventCTA title="BCA - SQTF" href="/bcasqtf" titleSize={titleSize} btnSize={btnSize} />
+              <EventCTA
+                title="BCA - SQTF"
+                href="/bcasqtf"
+                titleSize={titleSize}
+                btnSize={btnSize}
+              />
 
               {/* Garis pemisah (asset 5) */}
               <Box
@@ -205,12 +213,13 @@ function EventCTA({ title, href, titleSize, btnSize }) {
         {title}
       </Text>
 
-      <JourneyButton href={href} size={btnSize || "lg"} mt={{ base: 4, md: 5 }} />
+      <JourneyButton
+        href={href}
+        size={btnSize || "lg"}
+        mt={{ base: 4, md: 5 }}
+      />
     </Box>
   );
 }
 
-
 export default Welcome;
-
-
