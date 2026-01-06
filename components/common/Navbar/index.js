@@ -83,15 +83,30 @@ const Navbar = () => {
         boxShadow={scrolled ? "sm" : "none"}
       >
         {/* Logo */}
-        {/* <Box as={Link} href="/" display="inline-flex" alignItems="center">
-          <Image
-            src="/static/images/uniskai_header.png"
-            width={160}
-            height={56}
-            alt="Uniskai"
-            priority
-          />
-        </Box> */}
+        <Box as={Link} href="/" display="inline-flex" alignItems="center">
+          {/* Mobile */}
+          <Box display={{ base: "block", md: "none" }} ml="5" mt="3">
+            <Image
+              src="/static/images/logo-new.png"
+              width={70}
+              height={45}
+              alt="Uniskai"
+              priority
+            />
+          </Box>
+
+          {/* Desktop */}
+          <Box display={{ base: "none", md: "block" }} ml="14">
+            <Image
+              src="/static/images/unisail/unisail-logo.png"
+              width={160}
+              height={56}
+              alt="Uniskai"
+              priority
+            />
+          </Box>
+        </Box>
+
 
         {/* Menu kanan - Desktop */}
           {/* Uniskai Team (Dropdown) */}
@@ -158,7 +173,7 @@ const Navbar = () => {
           <HStack 
             spacing={24} 
             display={{ base: "none", md: "flex" }} 
-            fontSize={25} 
+            fontSize={31} 
             fontFamily="'Sigvar', sans-serif"
             pr={12}
           >
@@ -266,7 +281,7 @@ const Navbar = () => {
           <DrawerCloseButton />
           <DrawerHeader mb={3}>
             <Image
-              src="/static/images/uniskai_header.png"
+              src="/static/images/logo-new.png"
               width={140}
               height={48}
               alt="Uniskai"

@@ -59,7 +59,7 @@ const Fonts = () => (
       }
       @font-face {
         font-family: 'Sigvar';
-        font-style: italic;
+        font-style: bold-italic;
         font-weight: 700;
         font-display: swap;
         src: url('/fonts/Sigvar-Bold-Italic.woff2') format('woff2'),
@@ -75,7 +75,45 @@ const Fonts = () => (
         src: url('/fonts/Sinhala-MN.woff2') format('woff2'),
              url('/fonts/Sinhala-MN.woff') format('woff');
       }
-    `}
+
+     /* Jost */
+      @font-face {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('/fonts/Jost-Regular.woff2') format('woff2'),
+             url('/fonts/Jost-Regular.woff') format('woff');
+      }
+
+      @font-face {
+        font-family: 'Jost';
+        font-style: italic;
+        font-weight: 400;
+        font-display: swap;
+        src: url('/fonts/Jost-Italic.woff2') format('woff2'),
+             url('/fonts/Jost-Italic.woff') format('woff');
+      }
+
+      @font-face {
+        font-family: 'Jost';
+        font-style: bold;
+        font-weight: 700;
+        font-display: swap;
+        src: url('/fonts/Jost-Bold.woff2') format('woff2'),
+             url('/fonts/Jost-Bold.woff') format('woff');
+      }
+
+      @font-face {
+        font-family: 'Jost';
+        font-style: bold-italic;
+        font-weight: 700;
+        font-display: swap;
+        src: url('/fonts/Jost-Bold-Italic.woff2') format('woff2'),
+             url('/fonts/Jost-Bold-Italic.woff') format('woff');
+      }
+
+      `}
   />
 );
 

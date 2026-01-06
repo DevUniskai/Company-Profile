@@ -1,64 +1,64 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
-import Image from "next/image";
-import NextLink from "next/link";
-import { Link } from "@chakra-ui/react";
+// import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+// import Image from "next/image";
+// import NextLink from "next/link";
+// import { Link } from "@chakra-ui/react";
 
-const Welcome = () => {
-  return (
-    <Box bgColor={"Beige"}>
-      <Flex
-        position="relative"
-        height="100vh"
-        backgroundImage="/static/images/bg-new.jpg"
-        backgroundPosition="center"
-        backgroundSize="cover" //cover
-        justifyContent="center"
-        alignItems="center"
-        color="beige"
-        _before={{
-          content: '""',
-          position: "absolute",
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          bg: "rgba(0, 0, 0, 0.4)",
-          zIndex: 0,
-        }}
-      >
-        <Image
-          src="/static/images/logo-new.png"
-          alt="logo_uniskai_header"
-          width={156}
-          height={52}
-          style={{
-            position: "relative",
-            zIndex: 1,
-          }}
-        />
-      </Flex>
+// const Welcome = () => {
+//   return (
+//     <Box bgColor={"Beige"}>
+//       <Flex
+//         position="relative"
+//         height="100vh"
+//         backgroundImage="/static/images/bg-new.jpg"
+//         backgroundPosition="center"
+//         backgroundSize="cover" //cover
+//         justifyContent="center"
+//         alignItems="center"
+//         color="beige"
+//         _before={{
+//           content: '""',
+//           position: "absolute",
+//           top: 0,
+//           left: 0,
+//           right: 0,
+//           bottom: 0,
+//           bg: "rgba(0, 0, 0, 0.4)",
+//           zIndex: 0,
+//         }}
+//       >
+//         <Image
+//           src="/static/images/logo-new.png"
+//           alt="logo_uniskai_header"
+//           width={156}
+//           height={52}
+//           style={{
+//             position: "relative",
+//             zIndex: 1,
+//           }}
+//         />
+//       </Flex>
 
-      {/* SQTF HEADER */}
+//       {/* SQTF HEADER */}
 
-      {/* <Box display="flex" justifyContent="center" height={"50hv"} mt={0.8}>
-        <Link
-          as={NextLink}
-          href={"/contact"}
-          _hover={{ textDecoration: "none" }}
-        >
-          <Image
-            src="/static/images/sqtf_gif.gif"
-            alt="example gif"
-            width="2000"
-            height="500"
-          />
-        </Link>
-      </Box> */}
-    </Box>
-  );
-};
+//       {/* <Box display="flex" justifyContent="center" height={"50hv"} mt={0.8}>
+//         <Link
+//           as={NextLink}
+//           href={"/contact"}
+//           _hover={{ textDecoration: "none" }}
+//         >
+//           <Image
+//             src="/static/images/sqtf_gif.gif"
+//             alt="example gif"
+//             width="2000"
+//             height="500"
+//           />
+//         </Link>
+//       </Box> */}
+//     </Box>
+//   );
+// };
 
-export default Welcome;
+// export default Welcome;
 
 
 
@@ -66,137 +66,151 @@ export default Welcome;
 
 // UNISAIL
 
-// import { Box, Flex, Grid, Stack, Text, Link, Container } from "@chakra-ui/react";
-// import Image from "next/image";
-// import NextLink from "next/link";
-// import { useBreakpointValue } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Stack,
+  Text,
+  Link,
+  Container,
+  Button,
+  useBreakpointValue,
+  useMediaQuery
+} from "@chakra-ui/react";
+import Image from "next/image";
+import NextLink from "next/link";
+import JourneyButton from "@/components/common/journeyButton";
+
+const Welcome = () => {
+  const titleBase = useBreakpointValue({ base: "28px", md: "38px", xl: "42px" });
+  const [isUltraWide] = useMediaQuery("(min-width: 1900px)");
+  const titleSize = isUltraWide ? "65px" : titleBase;
+  const btnSize = useBreakpointValue({ base: "md", md: "lg" });
+  
+  return (
+    <Box bgColor="Beige">
+      <Flex
+        position="relative"
+        minH="100vh"
+        backgroundImage="/static/images/home/background.png"
+        backgroundPosition="center"
+        backgroundSize="cover"
+        justifyContent="center"
+        alignItems="center"
+        color="beige"
+        overflow="hidden"
+        // _before={{
+        //   content: '""',
+        //   position: "absolute",
+        //   inset: 0,
+        //   bg: "rgba(0, 0, 0, 0.45)",
+        //   zIndex: 0,
+        // }}
+      >
+        {/* Header: Logo kiri atas */}
+        {/* <Box
+          position="absolute"
+          top={{ base: 4, md: 8 }}
+          left={{ base: 6, md: 12 }}
+          zIndex={3}
+        >
+          <Image
+            src="/static/images/unisail/unisail-logo.png"
+            alt="logo_uniskai_header"
+            width={156}
+            height={52}
+            priority
+          />
+        </Box> */}
+
+        {/* Gurun (asset 2) */}
+        <Box
+          position="absolute"
+          left={0}
+          right={0}
+          bottom={0}
+          w="100%"
+          zIndex={2}
+          pointerEvents="none"
+        >
+          <Image
+            src="/static/images/home/gurun.png"
+            alt="desert"
+            width={2400}
+            height={600}
+            style={{ width: "100%", height: "auto", objectFit: "cover" }}
+            priority
+          />
+        </Box>
+
+        {/* Content */}
+        <Container
+          zIndex={3}
+          maxW={{ base: "92vw", md: "92vw", lg: "1200px", xl: "1300px" }}
+          px={{ base: 4, md: 6 }}
+          ml={isUltraWide ? 0 : "auto"}
+          mr="auto"
+          mb="35px"
+          // backgroundColor={"red"}
+        >
+          <Stack align="center" spacing={{ base: 8, md: 10 }} pt={{ base: 10, md: 0 }} fontFamily="'Sigvar', sans-serif">
+            <Flex
+              w="full"
+              align="center"
+              direction={{ base: "column", md: "row" }}
+              justify={{ base: "center", md: "flex-start" }}
+              transform={isUltraWide ? "none" : "translateX(-60px)"}
+              pl={isUltraWide ? { base: 0, md: 12, lg: 16 } : { base: 0, md: 0, lg: 0 }}
+              gap={{ base: 10, md: 14, lg: 16, xl: 20 }}
+            >
+              <EventCTA title="BCA - SQTF" href="/bcasqtf" titleSize={titleSize} btnSize={btnSize} />
+
+              {/* Garis pemisah (asset 5) */}
+              <Box
+                display={{ base: "none", md: "block" }}
+                w="3px"
+                h={{ md: "70px", lg: "120px" }}
+                bg="whiteAlpha.900"
+              />
+              <Box
+                display={{ base: "block", md: "none" }}
+                w="160px"
+                h="3px"
+                bg="whiteAlpha.900"
+              />
+
+              <EventCTA
+                title="ETIHAD x MANDIRI"
+                href="/etihadxmandiri"
+                titleSize={titleSize}
+                btnSize={btnSize}
+              />
+            </Flex>
+          </Stack>
+        </Container>
+      </Flex>
+    </Box>
+  );
+};
+
+function EventCTA({ title, href, titleSize, btnSize }) {
+  return (
+    <Box textAlign={{ base: "center", md: "left" }}>
+      <Text
+        fontSize={titleSize || "44px"}
+        letterSpacing="0.04em"
+        color="whiteAlpha.900"
+        fontWeight="500"
+      >
+        {title}
+      </Text>
+
+      <JourneyButton href={href} size={btnSize || "lg"} mt={{ base: 4, md: 5 }} />
+    </Box>
+  );
+}
 
 
-// const CONTENT_MAXW = "1200px"; // satu sumber kebenaran
+export default Welcome;
 
-// const Welcome = () => {
-//   const logoMaxW = useBreakpointValue({
-//   base: "100%",
-//   md: "640px",
-//   xl: "640px", // laptop tetap
-//   "2xl": "680px", // layar ekstra gede naik
-// }) || "640px";
-//   return (
-//     <Box bgColor={"Beige"}>
-//       <Flex
-//         position="relative"
-//         height="100vh"
-//         backgroundImage="/static/images/unisail/unisail-bg.jpg"
-//         backgroundPosition="center"
-//         backgroundSize="cover"
-//         justifyContent="center"
-//         alignItems="center"
-//         color="beige"
-//         _before={{
-//           content: '""',
-//           position: "absolute",
-//           inset: 0,
-//           bg: "rgba(0, 0, 0, 0.45)",
-//           zIndex: 0,
-//         }}
-//       >
-//         {/* Logo Uniskai (atas tengah) */}
-//         <Box position="absolute" mt={5} top={{ base: 4, md: 8 }} left="50%" transform="translateX(-50%)" zIndex={1}>
-//           <Image src="/static/images/unisail/unisail-logo.png" alt="logo_uniskai_header" width={156} height={52} priority />
-//         </Box>
-
-//         {/* Satu container untuk semua konten supaya tepi kiri/kanan sejajar */}
-//         <Container
-//           zIndex={1}
-//           maxW={{ base: "92vw", md: "92vw", lg: "1300px", xl: "1400px" }}
-//           px={{ base: 4, md: 6 }}     // gutter konsisten
-//         >
-//           <Stack spacing={{ base: 3, md: 5 }} align="stretch">
-//             {/* GRID UTAMA */}
-//             <Grid
-//               templateColumns={{ base: "1fr", md: "1.1fr 0.9fr" }}
-//               gap={{ base: 1, md: 2, lg: 3, xl: 3, "2xl": 10 }}
-//               justifyContent="center"
-//               alignItems="center"
-//               w="full"
-//             >
-//               {/* Kiri: Logo Unisail */}
-//               <Box>
-//                 <Box 
-//                   position="relative" 
-//                   w="auto" 
-//                   maxW="clamp(640px, 46vw, 820px)"
-//                   h={{ base: "200px", md: "320px", xl: "clamp(320px, 28vw, 380px)" }}
-//                 >
-//                   <Image
-//                     src="/static/images/unisail/unisail-unisail.png"
-//                     alt="Unisail"
-//                     fill
-//                     style={{ objectFit: "contain" }}
-//                     // Responsive hint untuk Next.js
-//                     sizes="
-//                       (max-width: 768px) 90vw,
-//                       (max-width: 1200px) 45vw,
-//                       42vw
-//                     "
-//                   />
-//                 </Box>
-//               </Box>
-
-//               {/* Kanan: Keterangan Event */}
-//               <Box w="100%">
-//                 {/* “Rail” kanan: tumbuh halus di layar besar tapi tetap aman di laptop */}
-//                 <Box
-//                   position="relative"
-//                   w="auto"
-//                   maxW={{ base: "100%", md: "clamp(550px, 38vw, 760px)" }}
-//                   ml={{ base: 0, md: "auto" }}
-//                   h={{ base: "260px", md: "340px", xl: "clamp(340px, 26vw, 380px)" }}
-//                 >
-//                   <Image
-//                     src="/static/images/unisail/unisail-keterangan1.png"
-//                     alt="Unisail Event Info"
-//                     fill
-//                     style={{ objectFit: "contain" }}
-//                     sizes="
-//                       (max-width: 768px) 90vw,
-//                       (max-width: 992px) 550px,
-//                       (max-width: 1280px) 34vw,
-//                       680px
-//                     "
-//                   />
-//                 </Box>
-//               </Box>
-//             </Grid>
-
-
-//             {/* BAR KONTAK: ikut alur layout, tepi sejajar karena share Container */}
-//             <Flex
-//               w="full"
-//               justify="space-between"
-//               align="center"
-//               fontSize={{ base: "xs", md: "sm" }}
-//               opacity={0.95}
-//               fontFamily="'Sigvar', sans-serif"
-//             >
-//               <Box lineHeight="shorter">
-//                 <Link as={NextLink} href="https://uniskai.id" _hover={{ textDecoration: "none", opacity: 0.8 }} target="_blank">
-//                   <Text>www.uniskai.id</Text>
-//                 </Link>
-//                 <Link as={NextLink} href="https://maps.app.goo.gl/BvJxGEXAVZ8uzvpi6" _hover={{ textDecoration: "none", opacity: 0.8 }} target="_blank">
-//                   <Text>CBD Polonia Blok AA-3 Medan</Text>
-//                 </Link>
-//               </Box>
-//               <Link as={NextLink} href="https://instagram.com/uniskai" _hover={{ textDecoration: "none", opacity: 0.8 }} target="_blank">
-//                 instagram @uniskai
-//               </Link>
-//             </Flex>
-//           </Stack>
-//         </Container>
-//       </Flex>
-//     </Box>
-//   );
-// };
-
-// export default Welcome;
 
