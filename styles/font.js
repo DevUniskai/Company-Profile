@@ -113,6 +113,39 @@ const Fonts = () => (
              url('/fonts/Jost-Bold-Italic.woff') format('woff');
       }
 
+      /* Helvetica-Neu */
+      @font-face {
+        font-family: 'Helvetica-Neu';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('/fonts/HelveticaNeueRoman.woff') format('woff');
+      }
+
+      @font-face {
+        font-family: 'Helvetica-Neu';
+        font-style: italic;
+        font-weight: 400;
+        font-display: swap;
+        src: url('/fonts/HelveticaNeueItalic.woff') format('woff');
+      }
+
+      @font-face {
+        font-family: 'Helvetica-Neu';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url('/fonts/HelveticaNeueBold.woff') format('woff');
+      }
+
+      @font-face {
+        font-family: 'Helvetica-Neu';
+        font-style: normal;
+        font-weight: 200;
+        font-display: swap;
+        src: url('/fonts/HelveticaNeueLight.woff') format('woff');
+      }
+
       `}
   />
 );
