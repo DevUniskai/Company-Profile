@@ -16,6 +16,10 @@
         {
           "name": "Audrey",
           "phone": "6285207888877 "
+        },
+        {
+          "name": "Clarissa",
+          "phone": "6282160024828"
         }
       ]
     },
@@ -27,10 +31,6 @@
         {
           "name": "Duden",
           "phone": "6285297488822"
-        },
-        {
-          "name": "Albert",
-          "phone": "6285365200800"
         },
         {
           "name": "Zepha",
@@ -141,10 +141,6 @@
         {
           "name": "Arwin",
           "phone": "6281361455000"
-        },
-        {
-          "name": "Jekson (Domestik)",
-          "phone": "6282129925066"
         }
       ]
     },

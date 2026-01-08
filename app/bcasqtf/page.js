@@ -2,14 +2,7 @@
 
 import { Box, Stack, SimpleGrid, Button, useMediaQuery } from "@chakra-ui/react";
 import Image from "next/image";
-
-const SALES = [
-  { name: "DEWI", phone: "6281283215788" },
-  { name: "DEVIN", phone: "6282276384852" },
-  { name: "RONAV", phone: "6282295675189" },
-  { name: "JOVANDA", phone: "6282365558008" },
-  { name: "EGITA", phone: "6285207888008" },
-];
+import { salesEvent } from "@/components/sections/SalesContactList/contact";
 
 function waLink(phone, text) {
   const clean = String(phone).replace(/[^\d]/g, "");
@@ -96,12 +89,12 @@ export default function Page() {
             w={{ md: "280px", xl: "320px", "2xl": "360px" }}
         >
           <Stack spacing={5} align="flex-end">
-            {SALES.map((s) => (
+            {salesEvent.map((s) => (
               <SalesButton key={s.name} name={s.name} phone={s.phone} />
             ))}
           </Stack>
         </Box>
-
+ 
         {/* MOBILE: 2 kolom + terakhir center */}
         <Box
           display={{ base: "block", md: "none" }}
