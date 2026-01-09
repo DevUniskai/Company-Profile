@@ -7,21 +7,11 @@ import {
   Text,
   Button,
   useMediaQuery,
-  Center,
+  SimpleGrid,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
-
-/**
- * UBAH NOMOR DI SINI
- */
-const SALES = [
-  { name: "FERDI", phone: "6282317188008x" },
-  { name: "DINI", phone: "6282129904869" },
-  { name: "ZEPHA", phone: "6285355765776" },
-  { name: "EGITA", phone: "6285207888008" },
-  { name: "DUDEN", phone: "6285297488822" },
-];
+import { salesEvent } from "@/components/sections/SalesContactList/contact";
 
 function waLink(phone, text) {
   const clean = String(phone).replace(/[^\d]/g, "");
@@ -31,9 +21,6 @@ function waLink(phone, text) {
   return `https://wa.me/${clean}?text=${msg}`;
 }
 
-/**
- * BUTTON KONTAK (style Etihad: hitam + border putih)
- */
 function EtihadSalesButton({ name, phone }) {
   return (
     <Button
@@ -44,14 +31,14 @@ function EtihadSalesButton({ name, phone }) {
       variant="solid"
       bgColor="rgba(0,0,0,0.5)"
       color="white"
-      borderRadius="18px"
+      borderRadius={{ base: "14px", md: "18px" }}
       borderWidth="2px"
       borderColor="whiteAlpha.900"
       fontWeight="700"
       fontFamily="'Jost', sans-serif"
       letterSpacing="0.45em"
-      w="100%"
-      h={{ base: "48px", sm: "52px", md: "54px" }}
+      w={{ base: "100%", md: "auto" }}
+      h={{ base: "38px", sm: "48px", md: "50px" }}
       fontSize={{ base: "12px", sm: "13px", md: "14px", lg: "16px" }}
       px={{ base: 6, md: 10 }}
       py={0}
@@ -167,7 +154,7 @@ export default function Page() {
         position="absolute"
         zIndex={2}
         top={{ md: "18%", xl: "16%" }} // << EDIT ini kalau mau naik/turun
-        left={{ md: "4%", xl: "5%" }} // << EDIT ini kalau mau lebih kiri/kanan
+        left={{ md: "4%", xl: "2%" }} // << EDIT ini kalau mau lebih kiri/kanan
         w="clamp(520px, 50vw, 980px)"
       >
         <Image
@@ -185,11 +172,11 @@ export default function Page() {
         display={{ base: "none", md: "block", lg: "none" }}
         position="absolute"
         zIndex={2}
-        top="14%" // << EDIT ini kalau kepotong
+        top="18%" // << EDIT ini kalau kepotong
         left="50%"
         transform="translateX(-50%)"
         w="92vw"
-        maxW="400px"
+        maxW="450px"
       >
         <Image
           src="/static/images/etihad/Text.png"
@@ -225,83 +212,39 @@ export default function Page() {
       {/* ===== CONTACT AREA (prebook) ===== */}
       {/* DESKTOP: kanan (seperti contoh) */}
       <Box
-        display={{ base: "none", lg: "block" }}
         position="absolute"
         zIndex={3}
-        top="46%" // << EDIT naik/turun
-        right={isUltraWide ? "9%" : "6%"} // << EDIT kanan/kiri
-        transform="translateY(-50%)"
-        w="clamp(260px, 22vw, 420px)" // lebar box responsif
+        // desktop pakai top, mobile/tab pakai bottom
+        top={{ base: "auto", md: "auto", lg: "46%" }}
+        bottom={{ base: "10%", md: "15%", lg: "auto" }}
+        left={{ base: "50%", md: "50%", lg: "auto" }}
+        right={{ base: "auto", md: "auto", lg: isUltraWide ? "9%" : "6%" }}
+        transform={{
+          base: "translateX(-50%)",
+          md: "translateX(-50%)",
+          lg: "translateY(-50%)",
+        }}
+        w={{ base: "90vw", md: "92vw", lg: "clamp(520px, 34vw, 720px)" }}
+        maxW={{ base: "420px", md: "640px", lg: "none" }}
       >
         <Text
           mb={4}
           color="whiteAlpha.900"
-          fontSize={{ md: "16px", xl: "18px" }}
+          fontSize={{ base: "16px", md: "18px", lg: "16px", xl: "18px" }}
           fontFamily="'Jost', sans-serif"
           textAlign="center"
         >
           Pre-book with Our Team.
         </Text>
 
-        <Stack spacing={4} align="stretch">
-          {SALES.map((s) => (
-            <EtihadSalesButton key={s.name} name={s.name} phone={s.phone} />
-          ))}
-        </Stack>
-      </Box>
-
-      {/* TAB: list vertikal (seperti gambar Contact.png) */}
-      <Box
-        display={{ base: "none", md: "block", lg: "none" }}
-        position="absolute"
-        zIndex={3}
-        left="50%"
-        bottom="10%" // << EDIT ini untuk jarak ke bawah
-        transform="translateX(-50%)"
-        w="60vw"
-        maxW="350px"
-      >
-        <Text
-          mb={4}
-          color="whiteAlpha.900"
-          fontSize={{ md: "18px", xl: "18px" }}
-          fontFamily="'Jost', sans-serif"
-          textAlign="center"
+        <SimpleGrid
+          columns={{ base: 2, md: 2, lg: 2 }}
+          spacing={{ base: 3, md: 4 }}
         >
-          Pre-book with Our Team.
-        </Text>
-        <Stack spacing={4}>
-          {SALES.map((s) => (
+          {salesEvent.map((s) => (
             <EtihadSalesButton key={s.name} name={s.name} phone={s.phone} />
           ))}
-        </Stack>
-      </Box>
-
-      {/* MOBILE: list vertikal (seperti gambar Contact.png) */}
-      <Box
-        display={{ base: "block", md: "none" }}
-        position="absolute"
-        zIndex={3}
-        left="50%"
-        bottom="13%" // << EDIT ini untuk jarak ke bawah
-        transform="translateX(-50%)"
-        w="60vw"
-        maxW="420px"
-      >
-        <Text
-          mb={4}
-          color="whiteAlpha.900"
-          fontSize={{ md: "16px", xl: "18px" }}
-          fontFamily="'Jost', sans-serif"
-          textAlign="center"
-        >
-          Pre-book with Our Team.
-        </Text>
-        <Stack spacing={4}>
-          {SALES.map((s) => (
-            <EtihadSalesButton key={s.name} name={s.name} phone={s.phone} />
-          ))}
-        </Stack>
+        </SimpleGrid>
       </Box>
 
       {/* ===== TEXT BAWAH (asset) ===== */}
@@ -330,23 +273,20 @@ export default function Page() {
         zIndex={10}
         justify="space-between"
         align="center"
-        fontSize={{ base: "xs", md: "sm" }}
+        fontSize={{ base: "7px", md: "sm" }}
         opacity={0.95}
         color="whiteAlpha.900"
-        fontFamily="'Sigvar', sans-serif"
+        // fontFamily="'Helvetica-Neu', sans-serif"
         pointerEvents="auto"
       >
         <Box lineHeight="shorter">
-          <Link href="https://uniskai.id" target="_blank">
-            <Text _hover={{ opacity: 0.8 }}>www.uniskai.id</Text>
-          </Link>
-
-          <Link
-            href="https://maps.app.goo.gl/BvJxGEXAVZ8uzvpi6"
-            target="_blank"
-          >
-            <Text _hover={{ opacity: 0.8 }}>CBD Polonia Blok AA-3 Medan</Text>
-          </Link>
+          <Text _hover={{ opacity: 0.8 }}>
+            Bank Mandiri Berizin dan Diawasi Oleh Otoritas Jasa Keuangan dan
+            Bank Indonesia
+          </Text>
+          <Text _hover={{ opacity: 0.8 }}>
+            Serta Merupakan Peserta Penjamin LPS
+          </Text>
         </Box>
 
         <Link href="https://instagram.com/uniskai" target="_blank">
