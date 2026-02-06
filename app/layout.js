@@ -31,7 +31,10 @@ import { Providers } from "./provider";
 import Script from "next/script";
 
 export const metadata = {
-  title: "Uniskai",
+  title: {
+    default: "Uniskai",
+    template: "%s | Uniskai",
+  },
   description: "Giving you the Best Travel Solution",
 };
 
@@ -40,7 +43,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="agd-partner-manual-verification" />
-        <title>Uniskai</title>
         <meta name="description" content="Giving you the Best Travel Solution" />
         
         {/* Google Analytics */}

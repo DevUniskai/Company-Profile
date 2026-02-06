@@ -1,6 +1,11 @@
 import React from "react";
 import { Box, Heading } from "@chakra-ui/react";
 
+export const metadata = {
+  title: "CNY 2026",
+  description: "Angpao, Folded Into Meaning.",
+};
+
 const CNY2026 = () => {
   return (
     <>
