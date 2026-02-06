@@ -1,0 +1,333 @@
+{
+    "tours": [
+        {
+          "id" : 1,
+          "src" : "/static/images/2d1n_berastagi.jpg",
+          "title" : "BERASTAGI TRIP",
+          "description" : "2 Days 1 Night",
+          "isVisible" : false,
+          "href" : "https://drive.google.com/file/d/1NpVT5irIYDbE5cB6LkVmSofERS_UvlgY/view?usp=drive_link",
+          "destination_img" : [
+            "/static/images/2d1n-berastagi_trip-sikulikap.png", 
+            "/static/images/2d1n-berastagi_trip-mikie.png",
+            "/static/images/2d1n-berastagi_trip-gundaling-hills.png"
+          ],
+          "days" : [
+            {
+              "dayTitle" : "DAY 1 | MEDAN - BERASTAGI ( - / L / D )",
+              "activities" : [
+                "Pick-up from Hotel Medan (08.30 AM): The group will be picked up from the designated location in Medan. The guide and driver will be ready to begin the journey.",
+                "Transfer to Berastagi: Take a scenic drive to the highlands of Berastagi, known for its beautiful and natural landscapes.",
+                "Lunch at Local Restaurant: Enjoy lunch at a local restaurant where you can savor regional flavors.",
+                "Sikulikap Waterfalls: Explore the refreshing sights of Sikulikap Waterfall, a stunning 30-meter cascade surrounded by lush greenery.",
+                "Gundaling Farm: Enjoy the beautiful scenery and learn about local agriculture at Gundaling Farm, famous for its diverse crops and serene atmosphere.",
+                "Check-in at Mikie Holiday Hotel & Resort: Arrive at Mikie Holiday Hotel & Resort, where you can relax and recharge for the evening.",
+                "Dinner at Local Restaurant: End the day with a delightful dinner at a nearby restaurant."
+              ]
+            },
+            {
+              "dayTitle" : "DAY 2 | BERASTAGI - MEDAN ( B / L / - )",
+              "activities" : [
+                "Breakfast at Hotel before Check-out: Start the day with breakfast at the hotel, followed by check-out.",
+                "Berastagi Fruit Market: Explore the colorful Berastagi Fruit Market, known for its wide selection of fresh produce and unique local fruits. Great for picking up a few souvenirs!",
+                "Gundaling Hill: Take in panoramic views of Mount Sinabung and Mount Sibayak from Gundaling Hill, a perfect spot for capturing scenic photos.",
+                "Lunch at Local Restaurant: Stop for a lunch at a local restaurant, where you can savor regional flavors.",
+                "Lumbini Natural Park: Visit the peaceful Lumbini Natural Park, featuring a stunning replica of Myanmar’s Shwedagon Pagoda.",
+                "Drop off to Medan: After that, we make our way back to Medan, with the journey taking several hours.",
+                "End of Service: This marks the end of Uniskai's services (guide/driver/package). Everyone will be taken to their hotel or airport based on their schedule.",
+                "Thanks for adventuring with Uniskai!☁️: "
+              ]
+            }
+          ],
+          "tourPrice" : [
+            {"pax" : "Adult (Based on 2 Paxs)", "price" : 275, "vehicle" : "Innova Reborn"},
+            {"pax" : "Adult (Based on 4 Paxs)", "price" : 210, "vehicle" : "Innova Reborn"},
+            {"pax" : "Adult (Based on 8 Paxs)", "price" : 175, "vehicle" : "Hiace Commuter"} 
+          ],
+          "hotel" : [
+            "Berastagi ( 1N ): Mikie Holiday Hotel & Resort (4*)"
+          ],
+          "includes" : [
+            "Hotel Stay",
+            "Meals according to the itinerary",
+            "Entrance tickets for each activity",
+            "Transportation according to group number",
+            "English-speaking local guide",
+            "Tipping for guide",
+            "Mineral Water 1 Bottle/Day",
+            "Parking & Toll fee"
+
+          ],
+          "excludes" : [
+            "Domestic Flight Ticket",
+            "Personal Expenses",
+            "Hotel Laundry Services",
+            "Voluntary Tipping",
+            "Any other unspecified fees"
+          ] 
+        },
+        {
+          "id" : 2,
+          "src" : "/static/images/medan-samosir_trip.jpg",
+          "title" : "LAKE TOBA TRIP",
+          "description" : "3 Days 2 Night",
+          "isVisible" : false,
+          "href" : "https://drive.google.com/file/d/115eIfh3g3Hy1NtxEKrsA85q1Ah-VEjxC/view?usp=drive_link",
+          "destination_img" : [
+            "/static/images/3d2n-toba_trip-kaldera.png",
+            "/static/images/3d2n-toba_trip-holbung.png", 
+            "/static/images/3d2n-toba_trip-sibea-bea.png"
+          ],
+          "days" : [
+            {
+              "dayTitle" : "DAY 1 | MEDAN - PARAPAT - SAMOSIR ( - / L / D )",
+              "activities" : [
+                "Pick-up from Hotel Medan (08.30 AM): The group will be picked up from their hotel in Medan. The assigned guide and driver will meet the group at the hotel to commence the journey.",
+                "Stop by Pematangsiantar for Lunch: After pick-up, the journey will travel from Medan to Pematangsiantar, enjoying North Sumatra's typical scenery along the way, with a lunch stop to savor authentic local cuisine.",
+                "The Kaldera Toba Nomadic Escape: Next, Visit The kaldera Toba Nomadic Escape, a location with stunning views of Lake Toba, as well as a calming natural atmosphere.",
+                "Transfer to Samosir by Ferry: Continue the journey to Ajibata Port in Parapat to cross to Samosir Island.",
+                "Check-in at Marianna Resort & Convention: Arrive in Samosir and check-in at Marianna Resort & Convention to rest and recharge.",
+                "Dinner at Local Restaurant: End the day with a delightful dinner at a nearby restaurant."
+              ]
+            },
+            {
+              "dayTitle" : "DAY 2 | SAMOSIR ( B / L / D )",
+              "activities" : [
+                "Breakfast at Hotel: Breakfast at the hotel, featuring a selection of variety dishes to start the day.",
+                "Holbung Hill: The journey will continue to Holbung Hill, another picturesque hill known for its stunning vistas of Lake Toba. Guests can explore the area and appreciate the breathtaking scenery.",
+                "Sibea-bea Hill: Sibea-bea Hill, offering panoramic views of Lake Toba and its surroundings. this hillside is also host to one of the tallest statues of Jesus Christ in all of the world.",
+                "Lunch at Local Restaurant: Enjoy lunch at a local restaurant where you can savor regional flavors.",
+                "Efrata Waterfall: After lunch, proceeds to Efrata Waterfall, a beautiful natural attraction. The sound of cascading water and the lush surroundings provide a perfect setting for relaxation and exploration.",
+                "Pangururan Waterfront: The next stop is Pangururan Waterfront, a charming area along the lake. Visitors can stroll along the waterfront, enjoy the scenic views and possibly catch the sunset in this area.",
+                "Dinner at Local Restaurant: End the day with a delightful dinner at a nearby restaurant."
+              ]
+            },
+            {
+              "dayTitle" : "DAY 3 | SAMOSIR - PARAPAT - MEDAN  (B / L / - )",
+              "activities" : [
+                "Breakfast at Hotel before Check-out: Start the day with breakfast at the hotel, followed by check-out.",
+                "Siallagan Village: Explore Siallagan Village, famous for its ancient stone chairs and traditional Batak houses.",
+                "Transfer to Parapat (by Ferry): Continue the journey to Ambarita Port in Samosir to cross to Parapat.",
+                "Lunch at Local Restaurant: Enjoy Lunch at a local restaurant where you can savor regional flavors.",
+                "Stop by Pematangsiantar to buy Souvenirs: Following lunch, we will stop in Pematangsiantar to shop for local specialties and snacks, providing an opportunity to bring home unique items from the region.",
+                "Drop off to Medan: After that, we make our way back to Medan, with the journey taking several hours.",
+                "End of Service: This marks the end of Uniskai's services (guide/driver/package). Everyone will be taken to their hotel or airport based on their schedule.",
+                "Thanks for adventuring with Uniskai!☁️: "
+              ]
+            }
+          ],
+          "tourPrice" : [
+            {"pax" : "Minimum 2 Paxs", "price" : 510, "vehicle" : "Innova Reborn"},
+            {"pax" : "Minimum 4 Paxs", "price" : 415, "vehicle" : "Innova Reborn"},
+            {"pax" : "Minimum 8 Paxs", "price" : 375, "vehicle" : "Hiace Commuter" } 
+          ],
+          "hotel" : [
+            "Samosir ( 2N ): Marianna Resort & Convention (5*)"
+          ],
+          "includes" : [
+            "Hotel Stay",
+            "Meals according to the itinerary",
+            "Entrance tickets for each activity",
+            "Transportation according to group number",
+            "English-speaking local guide",
+            "Tipping for guide",
+            "Mineral Water 1 Bottle/Day",
+            "Parking & Toll fee"
+          ],
+          "excludes" : [
+            "Domestic Flight Ticket",
+            "Personal Expenses",
+            "Hotel Laundry Services",
+            "Voluntary Tipping",
+            "Any other unspecified fees"
+          ]
+        },
+        {
+          "id" : 3,
+          "src" : "/static/images/berastagi-samosir_trip.jpg",
+          "title" : "TOBA - PARAPAT TRIP",
+          "description" : "4 Days 3 Night",
+          "isVisible" : false,
+          "href" : "https://drive.google.com/file/d/1AX7YoJ6GGDREEadRjiGZ6bfbbpG3DrtQ/view?usp=drive_link",
+          "destination_img" : [
+            "/static/images/marianna_resort.jpg", 
+            "/static/images/4d3n-toba_trip-sibea-bea.png",
+            "/static/images/4d3n-toba_trip-aek-nauli.png"],
+          "days" : [
+            {
+              "dayTitle" : "DAY 1 | MEDAN - PARAPAT - SAMOSIR ( - / L / D )",
+              "activities" : [
+                "Pick-up from Hotel Medan (08.30 AM): The group will be picked up from the designated location in Medan. The guide and driver will be ready to begin the journey.",
+                "Stop by Pematangsiantar for lunch: Enjoy lunch at a local restaurant where you can savor regional flavors.",
+                "The Kaldera Toba Nomadic Escape: Next, we will visit The kaldera Toba Nomadic Escape, a location with stunning views of Lake Toba, as well as a calming natural atmosphere.",
+                "Transfer to Samosir by Ferry: Continue the journey to Ajibata Port in Parapat to cross to Samosir Island.",
+                "Check-in at Marianna Resort & Convention: Arrive in Samosir and check-in at Marianna Resort & Convention to rest and recharge."
+              ]
+            },
+            {
+              "dayTitle" : "DAY 2 | SAMOSIR ( B / L / D )",
+              "activities" : [
+                "Breakfast at Hotel: Breakfast at Marianna Resort & Convention, featuring a selection of variety dishes to prepare for the day's activities.",  
+                "Holbung Hill: The journey will continue to Holbung Hill, another picturesque hill known for its stunning vistas of Lake Toba. Guests can explore the area and appreciate the breathtaking scenery.",  
+                "Sibea-bea Hill: Sibea-bea Hill, offering panoramic views of Lake Toba and its surroundings. This hillside is also host to one of the tallest statues of Jesus Christ in all of the world.",  
+                "Lunch at Local Restaurant: Enjoy lunch at a local restaurant where you can savor regional flavors.",  
+                "Efrata Waterfall: After lunch, proceeds to Efrata Waterfall, a beautiful natural attraction. The sound of cascading water and the lush surroundings provide a perfect setting for relaxation and exploration.",  
+                "Pangururan Waterfront: The next stop is Pangururan Waterfront, a charming area along the lake. Visitors can stroll along the waterfront, enjoy the scenic views and possibly catch the sunset in this area.",  
+                "Dinner at Local Restaurant: End the day with a delightful dinner at a nearby restaurant."
+              ]
+            },
+            {
+              "dayTitle" : "DAY 3 | SAMOSIR - PARAPAT ( B / L / D )",
+              "activities" : [
+                "Breakfast at Hotel before Check-out: Start the day with breakfast at the hotel, followed by check-out.",
+                "Siallagan Village: Explore Siallagan Village, famous for its ancient stone chairs and traditional Batak houses.",
+                "Transfer to Parapat by Ferry: Continue the journey to Ambarita Port in Samosir to cross to Parapat.",
+                "Lunch at Local Restaurant: Enjoy lunch at a local restaurant where you can savor regional flavors.",
+                "Taman Eden 100: Proceeds to Taman Eden 100, an ecotourism area that offers natural beauty in the form of natural forests, waterfalls, and plantations.",
+                "Dinner at Local Restaurant: End the day with a delightful dinner at a nearby restaurant.",
+                "Check-in at Hotel KHAS Parapat: Arrive in Parapat and check-in at Hotel KHAS Parapat to rest and recharge."
+              ]
+            },
+            {
+              "dayTitle" : "DAY 4 | PARAPAT - PEMATANGSIANTAR - MEDAN ( B / L / - )",
+              "activities" : [
+                "Breakfast at Hotel before Check-out: Start the day with breakfast at the hotel, followed by check-out.",
+                "Aek Nauli Elephant Camp: The day begins at Aek Nauli Elephant Camp, where the group can observe and learn about animals at there.",
+                "Stop by Pematangsiantar to Buy Souvenirs and Lunch: Discover the local markets and shops, perfect spots to find tasty snacks and regional specialties. Participants can enjoy lunch while tasting the delicious dishes that this vibrant city has to offer.",
+                "Transfer to Medan: After that, we make our way back to Medan, with the journey taking several hours.",
+                "End of Service: This marks the end of Uniskai's services (guide/driver/package). Everyone will be taken to their hotel or airport based on their schedule.",
+                "Thanks for adventuring with Uniskai!☁️: "
+              ]
+            }
+          ],
+          "tourPrice" : [
+            {"pax" : "Adult (Based on 2 Paxs)", "price" : 650, "vehicle" : "Innova Reborn"},
+            {"pax" : "Adult (Based on 4 Paxs)", "price" : 525, "vehicle" : "Innova Reborn"},
+            {"pax" : "Adult (Based on 8 Paxs)", "price" : 475, "vehicle" : "Hiace Commuter"} 
+          ],
+          "hotel" : [
+            "Samosir ( 2N ): Marianna Resort and Convention (5*)",
+            "Parapat ( 1N ) : KHAS Parapat (4*)"
+          ],
+          "includes" : [
+            "Hotel Stay",
+            "Meals according to the itinerary",
+            "Entrance tickets for each activity",
+            "Transportation according to group number",
+            "English-speaking local guide",
+            "Tipping for guide",
+            "Mineral Water 1 Bottle/Day",
+            "Parking & Toll fee"
+          ],
+          "excludes" : [
+            "Domestic Flight Ticket",
+            "Personal Expenses",
+            "Hotel Laundry Services",
+            "Voluntary Tipping",
+            "Any other unspecified fees"
+          ] 
+        },
+        {
+          "id" : 4,
+          "src" : "/static/images/3d2n_berastagi.jpg",
+          "title" :  "BERASTAGI - SAMOSIR TRIP",
+          "description" : "5 Days 4 Night",
+          "isVisible" : false,
+          "href" : "https://drive.google.com/file/d/19Qcm4SKrCBKpS9P7Ozd1dMgLKujTGqkp/view?usp=drive_link",
+          "destination_img" : [
+            "/static/images/5d4n-berastasgi_samosir_trip-lumbini.png", 
+            "/static/images/5d4n-berastasgi_samosir_trip-sibea-bea.png",
+            "/static/images/5d4n-berastasgi_samosir_trip-kaldera.png"],
+          "days" : [
+            {
+              "dayTitle" : "DAY 1 | MEDAN - BERASTAGI ( - / L / D )",
+              "activities" : [
+                "Pick-up from Hotel Medan (08.30 AM): The group will be picked up from their hotel in Medan. The assigned guide and driver will meet the group at the hotel to commence the journey.",
+                "Lunch at Local Restaurant: Enjoy lunch at a local restaurant where you can savor regional flavors.",
+                "Lumbini Natural Park: After lunch, proceed to visit Lumbini Natural Park, a serene Buddhist park featuring a magnificent replica of the iconic Shwedagon Pagoda from Myanmar.",
+                "Gundaling Farm: Enjoy the beautiful scenery and learn about local agriculture at Gundaling Farm, famous for its diverse crops and serene atmosphere.",
+                "Berastagi Fruit Market: Explore the colorful Berastagi Fruit Market, known for its wide selection of fresh produce and unique local fruits. Great for picking up a few souvenirs!",
+                "Dinner at Local Restaurant: Have a delightful dinner at a nearby restaurant.",
+                "Check-in at Mikie Holiday Hotel & Resort: Arrive and check-in at Mikie Holiday Hotel & Resort to rest and recharge."
+              ]
+            },
+            {
+              "dayTitle" : "DAY 2 | BERASTAGI - TONGGING - SAMOSIR ( B / L / D )",
+              "activities" : [
+                "Breakfast at Hotel before Check-out: Begin your morning with breakfast at the hotel, perfect for getting your day off to a great adventure.",
+                "Loken Barn: After breakfast, head to Loken Barn, a beautiful spot in Tongging that features colorful buildings perfect for taking photos.",
+                "Lunch at Local Restaurant: Enjoy lunch at a local restaurant where you can savor regional flavors.",
+                "Holbung Hill: The journey will continue to Holbung Hill, another picturesque hill known for its stunning vistas of Lake Toba. Guests can explore the area and appreciate the breathtaking scenery",
+                "Sibea-bea Hill: Sibea-bea Hill, offering panoramic views of Lake Toba and its surroundings. this hillside is also host to one of the tallest statues of Jesus Christ in all of the world",
+                "Check-in at Marianna Resort & Convention: Arrive in Samosir and check-in at Marianna Resort & Convention to rest and recharge.",
+                "Dinner at Local Restaurant: End the day with a delightful dinner at a nearby restaurant."
+              ]
+            },
+            {
+              "dayTitle" : "DAY 3 | SAMOSIR - PARAPAT ( B / L / D )",
+              "activities" : [
+                "Breakfast at Hotel before Check-out: Breakfast at the hotel, featuring a selection of variety dishes to start the day.",
+                "Siallagan Village: Explore Siallagan Village, famous for its ancient stone chairs and traditional Batak houses.",
+                "Transfer to Parapat (by Ferry): Continue the journey to Ambarita Port in Samosir to cross to Parapat.",
+                "Lunch at Local Restaurant: Stop for a  lunch at a local restaurant, where you can savor regional flavors.",
+                "The Kaldera Toba Nomadic Escape: Next, Visit The kaldera Toba Nomadic Escape, a location with stunning views of Lake Toba, as well as a calming natural atmosphere.",
+                "Dinner at Local Restaurant: Enjoy dinner at nearby local restaurant.",
+                "Check-in at Hotel KHAS Parapat: Arrive in Parapat and check-in at Hotel KHAS Parapat to rest and recharge."
+              ]
+            },
+            {
+              "dayTitle" : "DAY 4 | PARAPAT - SIANTAR - MEDAN ( B / L / D )",
+              "activities" : [
+                "Breakfast at Hotel before Check-out: Enjoy breakfast at Hotel KHAS Parapat, featuring an array of local dishes to energize the day, followed with check-out.",
+                "Stop by Pematangsianhtar for Lunch: After pick-up, we will journey from Parapat to Pematangsiantar, taking in the stunning North Sumatran scenery along the way. We'll stop for lunch to enjoy some local dishes.",
+                "Paten: After lunch, visit Paten, a popular spot in Pematangsiantar known for its local snacks and souvenirs.",
+                "Transfer to Medan: The journey involves transferring from Pematangsiantar back to Medan.",
+                "Sibolang Durian (On Own): Upon arrival in Medan, take some time to visit Sibolang Durian, a famous spot for durian lovers.",
+                "Dinner at Local Restaurant: Enjoy dinner at a local restaurant where you can savor regional flavors.",
+                "Check-in at at Cambridge Hotel: Check in at Hotel Cambridge, where you can settle into your comfortable accommodation,, preparing for the next adventure."
+              ]
+            },
+            {
+              "dayTitle" : "DAY 5 | MEDAN ( B / L / - )",
+              "activities" : [
+                "Breakfast at Hotel before Check-out: Breakfast at the hotel, featuring a selection of local and international dishes to start the day.",
+                "Maimun Palace: Start your day in Medan with a visit to Maimun Palace, a historical landmark rich in Malay heritage.",
+                "Tjong A Fie Mansion: Continue your journey by visiting Tjong A Fie Mansion, a cultural heritage site that once belonged to the influential Chinese businessman, Tjong A Fie.",
+                "Lunch at Local Restaurant: Enjoy lunch at a local restaurant where you can savor regional flavors.",
+                "Shopping for Medan Specialities: After exploring Medan’s historical sites, enjoy some time shopping for local specialties and souvenirs.",
+                "End of Service: This marks the end of Uniskai's services (guide/driver/package). Everyone will be taken to their hotel or airport based on their schedule.",
+                "Thanks for adventuring with Uniskai!☁️: "
+              ]
+            }
+          ],
+          "tourPrice" : [
+            {"pax" : "Adult (Based on 2 Paxs)", "price" : 770, "vehicle" : "Innova Reborn"},
+            {"pax" : "Adult (Based on 4 Paxs)", "price" : 580, "vehicle" : "Innova Reborn"},
+            {"pax" : "Adult (Based on 8 Paxs)", "price" : 515, "vehicle" : "Hiace Commuter"} 
+          ],
+          "hotel" : [
+            "Berastagi ( 1N ): Mikie Holiday Hotel & Resort (4*)",
+            "Samosir ( 1N ): Marianna Resort & Convention (5*)",
+            "Parapat ( 1N ): KHAS Parapat (4*)",
+            "Medan ( 1N ): Cambridge Hotel (4*)"
+          ],
+          "includes" : [
+            "Hotel Stay",
+            "Meals according to the itinerary",
+            "Entrance tickets for each activity",
+            "Transportation according to group number",
+            "English-speaking local guide",
+            "Tipping for guide",
+            "Mineral Water 1 Bottle/Day",
+            "Parking & Toll fee"
+          ],
+          "excludes" : [
+            "Domestic Flight Ticket",
+            "Personal Expenses",
+            "Hotel Laundry Services",
+            "Voluntary Tipping",
+            "Any other unspecified fees"
+          ] 
+        }
+    ]
+}

@@ -1,95 +1,115 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client"
+import Navbar from "@/components/common/Navbar";
+import Experience from "@/components/sections/Experience";
+import Footer from "@/components/sections/Footer";
+import Services from "@/components/sections/Services";
+import Tour from "@/components/sections/Tour";
+import Welcome from "@/components/sections/Welcome";
+import { Box, Divider } from "@chakra-ui/react";
+import { useToast } from '@chakra-ui/react'
+import { useEffect } from "react";
+import { useSearchParams } from 'next/navigation';
+import { Analytics } from "@vercel/analytics/react"
 
-export default function Home() {
+const Home = () => {
+  const toast = useToast()
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    const status = searchParams.get('status');
+    if(status == "VERIFIED") toast({
+      title: 'Payment Success',
+      description: `Payment ${searchParams.get('authentication_id')} success`,
+      status: 'success',
+      duration: 9000,
+      isClosable: true,
+    })
+  }, [])
+  // const [show, setShow] = useState(true);
+
+  // const handleScroll = () => {
+  //   const scroll = window.scrollY;
+
+  //   const shouldBeVisible = scroll >= 20;
+
+  //   if (shouldBeVisible == true) {
+  //     setShow(false);
+  //   } else {
+  //     setShow(true);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    <Box w={"100%"} h={"100%"} backgroundColor="white">
+      {/* {!show && <Navbar />} */}
+      <Welcome />
+      {/* <Tour /> */}
+      {/* <Services /> */}
+      {/* <Experience /> */}
+      {/* <Footer /> */}
+      <Analytics />
+    </Box>
   );
-}
+};
+
+export default Home;
+
+// "use client"
+// import { Suspense } from 'react';
+// import Navbar from "@/components/common/Navbar";
+// import Experience from "@/components/sections/Experience";
+// import Footer from "@/components/sections/Footer";
+// import Services from "@/components/sections/Services";
+// import Tour from "@/components/sections/Tour";
+// import Welcome from "@/components/sections/Welcome";
+// import { Box, Divider } from "@chakra-ui/react";
+// import { useToast } from '@chakra-ui/react'
+// import { useEffect } from "react";
+// import { useSearchParams } from 'next/navigation';
+
+// const HomeContent = () => {
+//   const toast = useToast();
+//   const searchParams = useSearchParams();
+
+//   useEffect(() => {
+//     const status = searchParams.get('status');
+//     if(status === "VERIFIED") {
+//       toast({
+//         title: 'Payment Success',
+//         description: `Payment ${searchParams.get('authentication_id')} success`,
+//         status: 'success',
+//         duration: 9000,
+//         isClosable: true,
+//       });
+//     }
+//   }, [searchParams, toast]);
+
+//   return (
+//     <Box w={"100%"} h={"100%"} backgroundColor="white">
+//       {/* {!show && <Navbar />} */}
+//       <Welcome />
+//       <Tour />
+//       <Services />
+//       {/* <Experience /> */}
+//       <Footer />
+//     </Box>
+//   );
+// };
+
+// const Home = () => {
+//   return (
+//     <Suspense fallback={<div>Loading...</div>}>
+//       <HomeContent />
+//     </Suspense>
+//   );
+// };
+
+// export default Home;

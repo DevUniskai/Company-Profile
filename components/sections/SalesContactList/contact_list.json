@@ -1,0 +1,190 @@
+{
+  "contact": [
+    {
+      "title": "sail (Cruise)",
+      "slug": "cruise",
+      "description": "Cruise trip planning and booking support for unforgettable sea journeys.",
+      "items": [
+        {
+          "name": "Marvin",
+          "phone": "6285827879667"
+        },
+        {
+          "name": "Daniel",
+          "phone": "6282287840788"
+        },
+        {
+          "name": "Audrey",
+          "phone": "6285207888877 "
+        },
+        {
+          "name": "Clarissa",
+          "phone": "6282160024828"
+        }
+      ]
+    },
+    {
+      "title": "fly (Ticketing)",
+      "slug": "fly",
+      "description":"We assist in booking domestic and international flight tickets smoothly.",
+      "items": [
+        {
+          "name": "Duden",
+          "phone": "6285297488822"
+        },
+        {
+          "name": "Zepha",
+          "phone": "6285355765776"
+        },
+        {
+          "name": "Dini",
+          "phone": "6282129904869"
+        },
+        {
+          "name": "Dewi",
+          "phone": "6281283215788"
+        },
+        {
+          "name": "Jovanda",
+          "phone": "6282365558008"
+        },
+        {
+          "name": "Ferdi",
+          "phone": "6282317188008"
+        },
+        {
+          "name": "Ingrid (Domestik)",
+          "phone": "6282261863549"
+        }
+      ]
+    },
+    {
+      "title": "stay (Hotel)",
+      "slug": "stay",
+      "description": "Helping you find and book hotels for every travel need.",
+      "items": [
+        {
+          "name": "Yuni",
+          "phone": "6282137103774"
+        },
+        {
+          "name": "Efendi",
+          "phone": "6285207888833"
+        },
+        {
+          "name": "Ika",
+          "phone": "6282211121231"
+        },
+        {
+          "name": "Richard",
+          "phone": "6282298877800"
+        },
+        {
+          "name": "Catherine",
+          "phone": "6287869010988"
+        }
+      ]
+    },
+    {
+      "title": "docs (Visa)",
+      "slug": "docs",
+      "description": "Passport, visa, and insurance — your travel documents, handled with care",
+      "items": [
+        {
+          "name": "Hengki",
+          "phone": "6285218418647"
+        },
+        {
+          "name": "Ima",
+          "phone": "6281283210688"
+        },        
+        {
+          "name": "Steven",
+          "phone": "6282276384763"
+        },
+        {
+          "name": "Wendy",
+          "phone": "6282320008886"
+        },
+        {
+          "name": "Wisda",
+          "phone": "6281257571231"
+        },
+        {
+          "name": "Tubagus (Jakarta)",
+          "phone": "6287761706656"
+        },
+        {
+          "name": "Rika (Paspor)",
+          "phone": "6282336841445"
+        }
+        
+      ]
+    },
+    {
+      "title": "tour",
+      "slug": "tour",
+      "description": "We arrange private tours based on your desired travel experience.",
+      "items": [
+        {
+          "name": "Dennis",
+          "phone": "6285297580000"
+        },
+        {
+          "name": "Louis",
+          "phone": "628811906396"
+        },
+        {
+          "name": "Shania",
+          "phone": "6282191086920"
+        },
+        {
+          "name": "Vetris",
+          "phone": "6282230025459"
+        },
+        {
+          "name": "Arwin",
+          "phone": "6281361455000"
+        }
+      ]
+    },
+    {
+      "title": "sGX (Itinerary Consultant)",
+      "slug": "sgx",
+      "description": "We arrange private tours based on your desired travel experience.",
+      "items": [
+        {
+          "name": "Sri",
+          "phone": "6285880573095"
+        },
+        {
+          "name": "Nabila",
+          "phone": "6282171669005"
+        },
+        {
+          "name": "Klaudia",
+          "phone": "6285235912069"
+        }
+      ]
+    },
+    {
+      "title": "play (Attraction)",
+      "slug": "play",
+      "description":"Book attractions, transport, and tickets to complete your travel experience.",
+      "items": [
+        {
+          "name": "Felix",
+          "phone": "6285207888188"
+        },
+        {
+          "name": "Sendy",
+          "phone": "6282315139543"
+        },
+        {
+          "name": "Alya",
+          "phone": "6282230025460"        
+        }
+      ]
+    }
+  ]
+}

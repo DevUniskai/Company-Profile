@@ -1,0 +1,18 @@
+import { extendTheme } from "@chakra-ui/react";
+
+export const theme = extendTheme({
+  fonts: {
+    heading: "CircularStd-Book-Heading, sans-serif",
+    body: "CircularStd-Book-Body, sans-serif",
+  },
+  colors: {
+    lightBlue: "#6086b5",
+    secondary: "#828282",
+    Beige: "#fdf9ed",
+    brown: "#846353",
+    // halloween theme
+    black: "#202020",
+    orange: "#EB8923",
+    beige: "#FFF0EA"
+  },
+});

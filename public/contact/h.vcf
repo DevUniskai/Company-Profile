@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Herbert
+N:Johan;Herbert;;;
+TITLE:COO
+ORG:Uniskai
+EMAIL;TYPE=INTERNET,PREF:herbert@uniskai.id
+TEL;TYPE=CELL:+62819872228
+URL:https://instagram.com/herbert
+PHOTO;TYPE=PNG:https://uniskai.id/static/images/logo-black.png
+END:VCARD
