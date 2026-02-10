@@ -4,14 +4,13 @@ import { Flex, Button, Box } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
 
-const Header = () => {
+const Header = ({ bgColor = "brown", color = "Beige" }) => {
   return (
-    
     <Flex
       alignItems="center"
       justifyContent="center"
-      bgColor="brown"
-      color="Beige"
+      bgColor={bgColor}
+      color={color}
       position="relative"
       pt={10}
       py={{ base: 6, md: 7 }}
@@ -42,13 +41,12 @@ const Header = () => {
         </Box>
       </Button>
 
-      {/* Logo di tengah */}
       <Image
         src="/static/images/uniskai_header.png"
         width={192}
         height={68}
-        h={{ base: "32px", md: "44px", lg: "52px" }}
         alt="logo"
+        style={{ height: "auto" }}
       />
     </Flex>
   );

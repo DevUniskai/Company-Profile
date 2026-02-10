@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import Header from "@/components/common/Header";
 
 export const metadata = {
   title: "CNY 2026",
@@ -11,11 +12,12 @@ const CNY2026 = () => {
     <>
       <Box
         minHeight="100dvh"
-        bgColor="#AA381E"
+        bgColor="#BF1E2E"
         // alignContent="center"
         // justifyItems="center"
-        textColor="#ECBD00"
+        textColor="#C4996C"
       >
+        <Header bgColor="#0C0C0C" color="#C4996C" />
         <Flex
           flexDirection="column"
           px={{ base: 10, sm: 16 }}
@@ -53,8 +55,8 @@ const CNY2026 = () => {
             color="Beige"
           >
             <video
-              src="/static/images/angpao-step.mp4"
-              width="750"
+              src="/static/images/cny-2026/angpao-step.mp4"
+              width="750"                                                                                                                                                                                                                  
               height="200"
               autoPlay
               loop
