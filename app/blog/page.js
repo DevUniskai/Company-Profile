@@ -80,7 +80,7 @@ const posts = [
     date: "2025-11-10",
     excerpt:
       "Angpao, Folded Into Meaning. Some objects are meant to be used once. Others are meant to be remembered...",
-    cover: "/static/images/cny-2026/origami-angpao-2026.jpg",
+    cover: "/static/images/cny-2026/angpao-cover.jpg",
   }
 ];
 
