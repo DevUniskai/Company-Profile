@@ -72,6 +72,15 @@ const posts = [
     excerpt:
       "Hidden within the Noonu Atoll of the Maldives, this Maison redefines the meaning of modern luxury through emotion, artistry, and savoir-faire...",
     cover: "/static/images/cheval/cheval-5.jpg",
+  },
+  {
+    slug: "origami-angpao-2026", // ganti judul file nya lagi jd ini ya biar bisa
+    title:
+      "Origami Angpao 2026: A New Chapter in the Art of Giving",
+    date: "2025-11-10",
+    excerpt:
+      "Angpao, Folded Into Meaning. Some objects are meant to be used once. Others are meant to be remembered...",
+    cover: "/static/images/cny-2026/origami-angpao-2026.jpg",
   }
 ];
 
