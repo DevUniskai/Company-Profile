@@ -11,10 +11,10 @@ const CNY2026 = () => {
     <>
       <Box
         minHeight="100dvh"
-        bgColor="#AA381E"
+        bgColor="#CE2029"
         // alignContent="center"
         // justifyItems="center"
-        textColor="#ECBD00"
+        textColor="#FFE17C"
       >
         <Flex
           flexDirection="column"
@@ -54,7 +54,7 @@ const CNY2026 = () => {
           >
             <video
               src="/static/images/angpao-step.mp4"
-              width="750"
+              width="750"                                                                                                                                                                                                                  
               height="200"
               autoPlay
               loop
