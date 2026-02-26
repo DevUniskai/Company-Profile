@@ -48,17 +48,14 @@ const posts = [
   },
   {
     slug: "apec-abtc",
-    title:
-      "Apa Itu APEC Business Travel Card?",
+    title: "Apa Itu APEC Business Travel Card?",
     date: "2025-09-20",
-    excerpt:
-      "Pernah dengar tentang APEC Business Travel Card (ABTC)?...",
+    excerpt: "Pernah dengar tentang APEC Business Travel Card (ABTC)?...",
     cover: "/static/images/apec-card.jpg",
   },
   {
     slug: "silverwind-greenland",
-    title:
-      "Into the Heart of Greenland: A 7-Night Silver Wind Expedition",
+    title: "Into the Heart of Greenland: A 7-Night Silver Wind Expedition",
     date: "2025-10-29",
     excerpt:
       "Imagine waking each day to a new Arctic panorama jagged fjords, floating icebergs, and quiet coastal villages...",
@@ -66,8 +63,7 @@ const posts = [
   },
   {
     slug: "cheval-blanc-randheli", // ganti judul file nya lagi jd ini ya biar bisa
-    title:
-      "Beyond the Blue: Discovering the Soul of Cheval Blanc Randheli",
+    title: "Beyond the Blue: Discovering the Soul of Cheval Blanc Randheli",
     date: "2025-11-10",
     excerpt:
       "Hidden within the Noonu Atoll of the Maldives, this Maison redefines the meaning of modern luxury through emotion, artistry, and savoir-faire...",
@@ -75,13 +71,19 @@ const posts = [
   },
   {
     slug: "origami-angpao-2026", // ganti judul file nya lagi jd ini ya biar bisa
-    title:
-      "Origami Angpao 2026: A New Chapter in the Art of Giving",
-    date: "2025-11-10",
+    title: "Origami Angpao 2026: A New Chapter in the Art of Giving",
+    date: "2026-02-15",
     excerpt:
       "Angpao, Folded Into Meaning. Some objects are meant to be used once. Others are meant to be remembered...",
     cover: "/static/images/cny-2026/angpao-cover.jpg",
-  }
+  },
+  {
+    slug: "silversea-cruises-luxury",
+    title: "Silversea Cruises: Luxury Without the Noise",
+    date: "2026-02-26",
+    excerpt: "Luxury, at its highest expression, is never loud...",
+    cover: "/static/images/silversea/silversea-1.png",
+  },
 ];
 
 // ====== SEO metadata ======
@@ -129,7 +131,12 @@ export default function BlogIndex() {
                 <CardBody>
                   {/* Cover */}
                   {p.cover ? (
-                    <AspectRatio ratio={16 / 9} mb={4} borderRadius="12px" overflow="hidden">
+                    <AspectRatio
+                      ratio={16 / 9}
+                      mb={4}
+                      borderRadius="12px"
+                      overflow="hidden"
+                    >
                       <Image
                         src={p.cover}
                         alt={p.title}
