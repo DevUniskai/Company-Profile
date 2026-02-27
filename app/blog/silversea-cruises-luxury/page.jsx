@@ -110,7 +110,7 @@ const SilverSea = () => {
           Silver Moon
         </Heading>
         <GridPic
-          image1={"/static/images/silversea/silversea-15.png"}
+          image1={"/static/images/silversea/silversea-15.jpeg"}
           image2={"/static/images/silversea/silversea-11.png"}
           image3={"/static/images/silversea/silversea-10.png"}
         />
@@ -141,7 +141,7 @@ const SilverSea = () => {
           Silver Dawn
         </Heading>
         <GridPic
-          image1={"/static/images/silversea/silversea-9.png"}
+          image1={"/static/images/silversea/silversea-9.jpeg"}
           image2={"/static/images/silversea/silversea-8.png"}
           image3={"/static/images/silversea/silversea-7.png"}
         />
@@ -167,7 +167,7 @@ const SilverSea = () => {
           Silver Muse
         </Heading>
         <GridPic
-          image1={"/static/images/silversea/silversea-6.png"}
+          image1={"/static/images/silversea/silversea-6.jpeg"}
           image2={"/static/images/silversea/silversea-5.png"}
           image3={"/static/images/silversea/silversea-4.png"}
         />
