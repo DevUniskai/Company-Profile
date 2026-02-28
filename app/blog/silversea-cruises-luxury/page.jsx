@@ -194,7 +194,7 @@ const SilverSea = () => {
           Silver Nova
         </Heading>
         <GridPic
-          image1={"/static/images/silversea/silversea-16.jpg"}
+          image1={"/static/images/silversea/silversea-16.jpeg"}
           image2={"/static/images/silversea/silversea-3.png"}
           image3={"/static/images/silversea/silversea-2.png"}
         />

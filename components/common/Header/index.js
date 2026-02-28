@@ -16,7 +16,7 @@ const Header = ({ bgColor = "brown", color = "Beige" }) => {
       py={{ base: 6, md: 7 }}
     >
       <Button
-        onClick={() => window.history.back()}
+        onClick={() => window.location.href = "/blog"}
         position="absolute"
         left={{ base: "20px", md: "30px", lg: "40px" }}
         top={{ base: "40%", md: "35%", lg: "35%" }}
