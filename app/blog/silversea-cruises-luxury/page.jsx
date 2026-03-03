@@ -4,18 +4,35 @@ import {
   Flex,
   Text,
   Heading,
-  Grid,
-  GridItem,
-  Link,
   Divider,
-  Stack,
-  List,
-  ListItem,
-  UnorderedList,
 } from "@chakra-ui/react";
 import Header from "@/components/common/Header";
 import GridPic from "@/components/GridPic";
-import NextLink from "next/link";
+
+export const metadata = {
+  title: "Silversea Cruises: Luxury Without the Noise",
+  description: "Luxury, at its highest expression, is never loud.",
+  openGraph: {
+    type: "article",
+    title: "Silversea Cruises: Luxury Without the Noise",
+    description: "Luxury, at its highest expression, is never loud.",
+    url: "https://uniskai.id/blog/silversea-cruises-luxury/",
+    images: [
+      {
+        url: "https://www.uniskai.id/static/images/silversea/silversea-1.png",
+        width: 1200,
+        height: 630,
+        alt: "Silversea Cruises",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Silversea Cruises: Luxury Without the Noise",
+    description: "Luxury, at its highest expression, is never loud.",
+    images: ["https://www.uniskai.id/static/images/silversea/silversea-1.png"],
+  },
+};
 
 const SilverSea = () => {
   return (
