@@ -19,7 +19,7 @@ export const metadata = {
     url: "https://uniskai.id/blog/silversea-cruises-luxury/",
     images: [
       {
-        url: "https://www.uniskai.id/static/images/silversea/silversea-1.png",
+        url: "https://www.uniskai.id/static/images/silversea/silversea-9.jpeg",
         width: 1200,
         height: 630,
         alt: "Silversea Cruises",
