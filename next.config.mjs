@@ -1,3 +1,5 @@
+import { TEMPLATE_SLUGS } from "./libs/templateDocuments.mjs";
+
 const nextConfig = {
   experimental: {
     missingSuspenseWithCSRBailout: false,
@@ -6,6 +8,18 @@ const nextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
+  async rewrites() {
+    return TEMPLATE_SLUGS.flatMap((slug) => ([
+      {
+        source: `/${slug}`,
+        destination: `/templatesurat/${slug}`,
+      },
+      {
+        source: `/${slug}/`,
+        destination: `/templatesurat/${slug}`,
+      },
+    ]));
+  },
   // output: 'export',
 
 };
