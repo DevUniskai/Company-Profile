@@ -7,7 +7,9 @@ export default function robots() {
         userAgent: "*",
         allow: "/",
         disallow: [
-          ...TEMPLATE_SLUGS.map((slug) => `/${slug}`),
+          "/templates",
+          "/templatesurat/",
+          ...TEMPLATE_SLUGS.map((slug) => `/templatesurat/${slug}`),
           "/visa/",
         ],
       },
