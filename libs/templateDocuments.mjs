@@ -19,6 +19,10 @@ export const TEMPLATE_DOCUMENTS = {
     title: "Template Surat Keterangan Sekolah",
     pdfPath: "/visa/surat-keterangan-sekolah.pdf",
   },
+  templateinvitationletter: {
+    title: "Template Invitation Letter",
+    pdfPath: "/visa/template-invitation-letter.pdf",
+  },
 };
 
 export const TEMPLATE_SLUGS = Object.keys(TEMPLATE_DOCUMENTS);
