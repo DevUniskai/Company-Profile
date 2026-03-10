@@ -57,7 +57,7 @@ export default function TemplatesPage() {
               py={3}
             >
               <ChakraLink
-                href={`/templatesurat/${slug}`}
+                href={`/${slug}`}
                 color="brown"
                 fontWeight="semibold"
                 _hover={{ textDecoration: "underline" }}

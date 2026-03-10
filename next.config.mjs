@@ -15,6 +15,14 @@ const nextConfig = {
         destination: `/templatesurat/${slug}`,
       },
       {
+        source: `/templates/${slug}`,
+        destination: `/templatesurat/${slug}`,
+      },
+      {
+        source: `/templates/${slug}/`,
+        destination: `/templatesurat/${slug}`,
+      },
+      {
         source: `/${slug}/`,
         destination: `/templatesurat/${slug}`,
       },
