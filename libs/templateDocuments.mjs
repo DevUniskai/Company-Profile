@@ -23,6 +23,10 @@ export const TEMPLATE_DOCUMENTS = {
     title: "Template Invitation Letter",
     pdfPath: "/visa/template-invitation-letter.pdf",
   },
+  coverletter: {
+    title: "Template Cover Letter",
+    pdfPath: "/visa/cover-letter.pdf",
+  },
 };
 
 export const TEMPLATE_SLUGS = Object.keys(TEMPLATE_DOCUMENTS);
