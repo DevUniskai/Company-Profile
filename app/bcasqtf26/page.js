@@ -21,7 +21,7 @@ function SalesButton({ name, phone, bgColor }) {
       target="_blank"
       rel="noopener noreferrer"
       variant="solid"
-      bgColor={bgColor} // #2d38a9 + 50%
+      bgColor={bgColor}
       color="#d47a5b"
       borderRadius="8px"
       borderWidth="1px"
@@ -29,15 +29,13 @@ function SalesButton({ name, phone, bgColor }) {
       fontWeight="500"
       fontFamily="'Helvetica-Neu', sans-serif"
       letterSpacing="1px"
-      _hover={{
-        transform: "scale(1.02)",
-      }}
+      _hover={{ transform: "scale(1.02)" }}
       transition="transform 150ms ease, background-color 150ms ease"
-      h={{ base: "32px", lg: "36px", xl: "40px", "2xl": "44px" }}
       w="100%"
-      fontSize={{ base: "12px", md: "14px", lg: "16px" }}
-      px={{ base: "10px", md: "30px", lg: "35px", xl: "60px", "2xl": "100px" }}
-      py={{ base: 0 }}
+      h={{ base: "34px", md: "38px", lg: "40px", xl: "46px", "2xl": "52px" }}
+      px={{ base: 2, md: 4 }}
+      py={0}
+      fontSize={{ base: "12px", md: "14px", lg: "15px", xl: "17px", "2xl": "18px" }}
     >
       {name}
     </Button>
@@ -46,60 +44,44 @@ function SalesButton({ name, phone, bgColor }) {
 
 const page = () => {
   return (
-    <Box minH="100vh" overflow="hidden" position="relative">
-      {/* Desktop BG (cross-fade) */}
-      <Box
-        position="absolute"
-        inset={0}
-        zIndex={-1}
-        opacity={{ base: 0, lg: 1 }}
-        transition="opacity 400ms ease"
-        willChange="opacity"
-      >
+    <Box
+      minH="100dvh"
+      display="flex"
+      flexDirection="column"
+      position="relative"
+      overflowX="hidden"
+    >
+      {/* Background */}
+      <Box position="absolute" inset={0} zIndex={-1}>
         <Image
           src="/static/images/sqtf26/assets/BACKGROUND.jpg"
-          alt="BCA SQTF Desktop"
+          alt="BCA SQTF background"
           fill
           priority
-          style={{ objectFit: "cover" }}
-        />
-      </Box>
-
-      {/* Tab-Mobile BG (cross-fade) */}
-      <Box
-        position="absolute"
-        inset={0}
-        zIndex={-1}
-        opacity={{ base: 1, lg: 0 }}
-        transition="opacity 400ms ease"
-        willChange="opacity"
-      >
-        <Image
-          src="/static/images/sqtf26/assets/BACKGROUND.jpg"
-          alt="BCA SQTF Mobile"
-          fill
-          priority
+          sizes="100vw"
           style={{ objectFit: "cover" }}
         />
       </Box>
 
       {/* Navbar */}
       <Box
-        minH={{ base: "50px", md: "65px", lg: "100px" }}
-        px={{ base: "25px", md: "50px", xl: "100px", "2xl": "130px" }}
-        py={{ base: "20px", md: "30px", lg: "60px" }}
+        flexShrink={0}
+        px={{ base: "25px", md: "50px", xl: "80px", "2xl": "130px" }}
+        py={{ base: "20px", md: "24px", lg: "28px", xl: "40px" }}
         display="flex"
         justifyContent="space-between"
         alignItems="center"
+        gap={4}
       >
         <Box
           position="relative"
-          w={{ base: "60px", md: "75px", lg: "120px" }}
-          h={{ base: "25px", lg: "30px" }}
+          flexShrink={0}
+          aspectRatio={167 / 52}
+          w={{ base: "55px", md: "70px", lg: "90px", xl: "110px", "2xl": "130px" }}
         >
           <Image
             src="/static/images/sqtf26/assets/BCA.png"
-            alt="sqtf"
+            alt="BCA"
             fill
             style={{ objectFit: "contain" }}
             priority
@@ -110,14 +92,15 @@ const page = () => {
           as={Link}
           href="/"
           position="relative"
-          w={{ base: "65px", md: "80px", lg: "120px" }}
-          h={{ base: "25px", lg: "30px" }}
+          flexShrink={0}
+          aspectRatio={6660 / 1836}
+          w={{ base: "62px", md: "80px", lg: "100px", xl: "120px", "2xl": "140px" }}
           cursor="pointer"
           pointerEvents="auto"
         >
           <Image
             src="/static/images/sqtf26/assets/Logo-Uniskai.png"
-            alt="uniskai-logo"
+            alt="Uniskai"
             fill
             style={{ objectFit: "contain" }}
             priority
@@ -126,12 +109,13 @@ const page = () => {
 
         <Box
           position="relative"
-          w={{ base: "65px", md: "80px", lg: "120px" }}
-          h={{ base: "25px", lg: "40px" }}
+          flexShrink={0}
+          aspectRatio={4277 / 1573}
+          w={{ base: "64px", md: "82px", lg: "100px", xl: "120px", "2xl": "145px" }}
         >
           <Image
             src="/static/images/sqtf26/assets/SA.png"
-            alt="sqtf-logo"
+            alt="Singapore Airlines"
             fill
             style={{ objectFit: "contain" }}
             priority
@@ -141,114 +125,134 @@ const page = () => {
 
       {/* Main */}
       <Box
-        px={{ lg: "30px", xl: "40px", "2xl": "120px" }}
+        flex="1"
         display="flex"
-        justifyContent="space-between"
         flexDirection={{ base: "column", lg: "row" }}
-        // bgColor="yellow"
+        alignItems="center"
+        justifyContent={{ base: "center", lg: "space-between" }}
+        gap={{ base: 8, lg: 6, xl: 12 }}
+        w="100%"
+        maxW="1500px"
+        mx="auto"
+        px={{ base: "25px", md: "50px", lg: "30px", xl: "50px", "2xl": "40px" }}
+        py={{ base: "10px", lg: "20px" }}
       >
+        {/* Left column: event logo + date/location */}
         <Box
           display="flex"
+          flexDirection="column"
           alignItems="center"
-          flexDirection={{ base: "column" }}
+          textAlign="center"
+          flexShrink={0}
         >
           <Box
-            display={{ base: "block", md: "block", lg: "block" }}
             position="relative"
-            minH={{
-              base: "200px",
-              md: "200px",
+            aspectRatio={846 / 513}
+            w={{
+              base: "250px",
+              sm: "290px",
+              md: "330px",
               lg: "300px",
-              xl: "320px",
-              "2xl": "400px",
-            }}
-            minW={{
-              base: "280px",
-              md: "320px",
-              lg: "380px",
-              xl: "400px",
-              "2xl": "400px",
+              xl: "380px",
+              "2xl": "440px",
             }}
           >
             <Image
               src="/static/images/sqtf26/assets/MAIN-LOGO.png"
-              alt="bca-sqtf"
+              alt="BCA SQTF"
               fill
               style={{ objectFit: "contain" }}
               priority
             />
           </Box>
-          <Box fontFamily="'Helvetica-Neu', sans-serif" color="#d47a5b">
-            <Box display="flex" flexDirection="column" alignItems="center">
-              <Text
-                fontSize={{
-                  base: "20px",
-                  lg: "24px",
-                  xl: "24px",
-                  "2xl": "28px",
-                }}
-                fontWeight="700"
-                letterSpacing="0.5px"
-              >
-                31 JUL - 02 AUG 2026
-              </Text>
-              <Text
-                fontSize={{
-                  base: "12px",
-                  md: "16px",
-                  xl: "24px",
-                  "2xl": "28px",
-                }}
-                fontWeight="500"
-                letterSpacing="1px"
-              >
-                MAIN ATRIUM - CENTRE POINT MALL, MEDAN
-              </Text>
-            </Box>
+
+          <Box
+            fontFamily="'Helvetica-Neu', sans-serif"
+            color="#d47a5b"
+            mt={{ base: "8px", lg: "6px", xl: "12px" }}
+          >
+            <Text
+              fontSize={{
+                base: "22px",
+                md: "26px",
+                lg: "22px",
+                xl: "28px",
+                "2xl": "34px",
+              }}
+              fontWeight="700"
+              letterSpacing="0.5px"
+            >
+              31 JUL - 02 AUG 2026
+            </Text>
+            <Text
+              fontSize={{
+                base: "12px",
+                md: "15px",
+                lg: "12px",
+                xl: "16px",
+                "2xl": "19px",
+              }}
+              fontWeight="500"
+              letterSpacing="1px"
+            >
+              MAIN ATRIUM - CENTRE POINT MALL, MEDAN
+            </Text>
           </Box>
         </Box>
-        <Box mx={{ base: "20px", md: "80px", lg: "none" }}>
+
+        {/* Right column: pre-book + team grid */}
+        <Box
+          w="100%"
+          maxW={{ base: "420px", md: "520px", lg: "540px", xl: "660px", "2xl": "760px" }}
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+        >
           <Box
-            display={{ base: "block", md: "block", lg: "block" }}
             position="relative"
-            mx={{ base: "auto", md: "auto", lg: "none" }}
-            minH={{ base: "100px", md: "120px", xl: "240px", "2xl": "200px" }}
-            minW={{ base: "280px", md: "280px", xl: "400px", "2xl": "800px" }}
+            aspectRatio={1031 / 252}
+            w="100%"
+            maxW={{ base: "360px", md: "460px", lg: "100%" }}
           >
             <Image
               src="/static/images/sqtf26/assets/PREBOOK.png"
-              alt="bca-sqtf"
+              alt="Pre-book"
               fill
               style={{ objectFit: "contain" }}
               priority
             />
           </Box>
+
           <Text
             display="flex"
             justifyContent="center"
-            alignItems="center"
-            gap={{ base: "2", md: "4", lg: "4" }}
+            alignItems="baseline"
+            flexWrap="wrap"
+            gap={{ base: "2", md: "3", lg: "3" }}
             fontSize={{
               base: "16px",
-              md: "20px",
-              xl: "32px",
-              "2xl": "36px",
+              md: "22px",
+              lg: "20px",
+              xl: "26px",
+              "2xl": "30px",
             }}
             color="#d47a5b"
             fontFamily="'Helvetica-Neu', sans-serif"
-            mb={{ base: "15px", lg: "30px", xl: "none" }}
-            mx="-10px"
             fontWeight="700"
+            textAlign="center"
+            my={{ base: "12px", lg: "14px", xl: "20px" }}
           >
             <span>WITH OUR TEAM</span>{" "}
-            <span className="font-light text-[8px] md:text-[12px] lg:text-[16px] ">
+            <span className="font-light text-[9px] md:text-[13px] lg:text-[13px] xl:text-[16px]">
               START FROM
             </span>{" "}
             <span>07 JULY 2026</span>
           </Text>
-          <SimpleGrid columns={2} gap={{ base: 2, lg: 3 }}>
+
+          <SimpleGrid columns={2} gap={{ base: 2, md: 3, lg: 3 }} w="100%">
             {salesEvent.map((sales) => (
               <SalesButton
+                key={sales.phone}
                 name={sales.name}
                 phone={sales.phone}
                 bgColor={sales.bgColor}
@@ -257,92 +261,68 @@ const page = () => {
           </SimpleGrid>
         </Box>
       </Box>
-      {/* footer */}
+
+      {/* Footer */}
       <Box
-        position="absolute"
-        left={0}
-        right={0}
-        bottom={{ base: 10, lg: 0 }}
-        minH={{ base: "60px", lg: "100px" }}
-        px={{ base: "10px", lg: "20px", xl: "90px", "2xl": "120px" }}
-        pb={{ base: "0px", lg: "60px", xl: "70px" }}
+        flexShrink={0}
+        w="100%"
+        maxW="1500px"
+        mx="auto"
+        px={{ base: "25px", md: "50px", lg: "30px", xl: "60px", "2xl": "40px" }}
+        py={{ base: "16px", md: "20px", lg: "24px", xl: "32px" }}
         display="flex"
-        flexDirection={{ base: "column", lg: "column", xl: "row" }}
-        gap={{ lg: 8, xl: 0 }}
+        flexDirection={{ base: "column", xl: "row" }}
+        gap={{ base: 3, xl: 6 }}
         justifyContent="space-between"
-        alignItems={{ base: "center" }}
+        alignItems="center"
       >
         <Text
-          fontSize={{
-            base: "7px",
-            md: "12px",
-            lg: "14px",
-            xl: "16px",
-            "2xl": "18px",
-          }}
-          fontWeight={{ base: "700", lg: "700", xl: "500" }}
+          fontSize={{ base: "8px", sm: "9px", md: "12px", lg: "13px", xl: "15px", "2xl": "17px" }}
+          fontWeight="500"
           color="#d47a5b"
+          textAlign="center"
         >
           BCA berizin dan diawasi oleh Otoritas Jasa Keuangan & Bank Indonesia •
           BCA merupakan peserta penjamin LPS
         </Text>
 
+        {/* Desktop (xl+) inline links */}
         <Text
-          display={{ base: "none", lg: "none", xl: "block" }}
-          fontSize={{
-            base: "8px",
-            md: "12px",
-            lg: "14px",
-            xl: "16px",
-            "2xl": "18px",
-          }}
+          display={{ base: "none", xl: "block" }}
+          flexShrink={0}
+          fontSize={{ xl: "15px", "2xl": "17px" }}
           fontWeight="500"
           color="#d47a5b"
         >
           www.uniskai.id/bcasqtf26
         </Text>
         <Text
-          display={{ base: "none", lg: "none", xl: "block" }}
-          fontSize={{
-            base: "8px",
-            md: "12px",
-            lg: "14px",
-            xl: "16px",
-            "2xl": "18px",
-          }}
-          fontWeight="600"
+          display={{ base: "none", xl: "block" }}
+          flexShrink={0}
+          fontSize={{ xl: "15px", "2xl": "17px" }}
+          fontWeight="500"
           color="#d47a5b"
         >
           instagram.com/uniskai
         </Text>
 
+        {/* Mobile / tablet stacked links */}
         <Box
-          display={{ base: "flex", lg: "flex", xl: "none" }}
-          width="100%"
+          display={{ base: "flex", xl: "none" }}
+          w="100%"
           justifyContent="space-between"
+          gap={2}
         >
           <Text
-            fontSize={{
-              base: "8px",
-              md: "12px",
-              lg: "14px",
-              xl: "16px",
-              "2xl": "18px",
-            }}
-            fontWeight="700"
+            fontSize={{ base: "9px", md: "12px", lg: "13px" }}
+            fontWeight="500"
             color="#d47a5b"
           >
             www.uniskai.id/bcasqtf26
           </Text>
           <Text
-            fontSize={{
-              base: "8px",
-              md: "12px",
-              lg: "14px",
-              xl: "16px",
-              "2xl": "18px",
-            }}
-            fontWeight="700"
+            fontSize={{ base: "9px", md: "12px", lg: "13px" }}
+            fontWeight="500"
             color="#d47a5b"
           >
             instagram.com/uniskai
