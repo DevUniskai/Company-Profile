@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Box, Flex, Text, Container } from "@chakra-ui/react";
+import { Box, Text,} from "@chakra-ui/react";
 
 const BCASQTF26 = () => {
   return (
