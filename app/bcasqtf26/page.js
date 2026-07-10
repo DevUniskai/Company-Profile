@@ -22,10 +22,10 @@ function SalesButton({ name, phone, bgColor }) {
       rel="noopener noreferrer"
       variant="solid"
       bgColor={bgColor}
-      color="#d47a5b"
+      color="#b14824"
       borderRadius="8px"
       borderWidth="1px"
-      borderColor="#d47a5b"
+      borderColor="#b14824"
       fontWeight="500"
       fontFamily="'Helvetica-Neu', sans-serif"
       letterSpacing="1px"
@@ -168,7 +168,7 @@ const page = () => {
 
           <Box
             fontFamily="'Helvetica-Neu', sans-serif"
-            color="#d47a5b"
+            color="#b14824"
             mt={{ base: "8px", lg: "6px", xl: "12px" }}
           >
             <Text
@@ -236,7 +236,7 @@ const page = () => {
               xl: "26px",
               "2xl": "30px",
             }}
-            color="#d47a5b"
+            color="#b14824"
             fontFamily="'Helvetica-Neu', sans-serif"
             fontWeight="700"
             textAlign="center"
@@ -279,7 +279,7 @@ const page = () => {
         <Text
           fontSize={{ base: "8px", sm: "9px", md: "12px", lg: "13px", xl: "15px", "2xl": "17px" }}
           fontWeight="500"
-          color="#d47a5b"
+          color="#b14824"
           textAlign="center"
         >
           BCA berizin dan diawasi oleh Otoritas Jasa Keuangan & Bank Indonesia •
@@ -292,7 +292,7 @@ const page = () => {
           flexShrink={0}
           fontSize={{ xl: "15px", "2xl": "17px" }}
           fontWeight="500"
-          color="#d47a5b"
+          color="#b14824"
         >
           www.uniskai.id/bcasqtf26
         </Text>
@@ -301,7 +301,7 @@ const page = () => {
           flexShrink={0}
           fontSize={{ xl: "15px", "2xl": "17px" }}
           fontWeight="500"
-          color="#d47a5b"
+          color="#b14824"
         >
           instagram.com/uniskai
         </Text>
@@ -316,14 +316,14 @@ const page = () => {
           <Text
             fontSize={{ base: "9px", md: "12px", lg: "13px" }}
             fontWeight="500"
-            color="#d47a5b"
+            color="#b14824"
           >
             www.uniskai.id/bcasqtf26
           </Text>
           <Text
             fontSize={{ base: "9px", md: "12px", lg: "13px" }}
             fontWeight="500"
-            color="#d47a5b"
+            color="#b14824"
           >
             instagram.com/uniskai
           </Text>
