@@ -121,7 +121,7 @@ const BCASQTF26 = () => {
         {/* Date + Location */}
         <Box
           fontFamily="'Helvetica-Neu', sans-serif"
-          color="#d47a5b"
+          color="#b14824"
           mt={{ base: "10px", lg: "14px", xl: "20px" }}
         >
           <Text
@@ -198,7 +198,7 @@ const BCASQTF26 = () => {
         <Text
           fontSize={{ base: "8px", sm: "9px", md: "12px", lg: "13px", xl: "15px", "2xl": "17px" }}
           fontWeight="500"
-          color="#d47a5b"
+          color="#b14824"
           textAlign="center"
         >
           BCA berizin dan diawasi oleh Otoritas Jasa Keuangan & Bank Indonesia •
@@ -211,7 +211,7 @@ const BCASQTF26 = () => {
           flexShrink={0}
           fontSize={{ xl: "15px", "2xl": "17px" }}
           fontWeight="500"
-          color="#d47a5b"
+          color="#b14824"
         >
           www.uniskai.id/bcasqtf26
         </Text>
@@ -220,7 +220,7 @@ const BCASQTF26 = () => {
           flexShrink={0}
           fontSize={{ xl: "15px", "2xl": "17px" }}
           fontWeight="500"
-          color="#d47a5b"
+          color="#b14824"
         >
           instagram.com/uniskai
         </Text>
@@ -235,14 +235,14 @@ const BCASQTF26 = () => {
           <Text
             fontSize={{ base: "9px", md: "12px", lg: "13px" }}
             fontWeight="500"
-            color="#d47a5b"
+            color="#b14824"
           >
             www.uniskai.id/bcasqtf26
           </Text>
           <Text
             fontSize={{ base: "9px", md: "12px", lg: "13px" }}
             fontWeight="500"
-            color="#d47a5b"
+            color="#b14824"
           >
             instagram.com/uniskai
           </Text>
