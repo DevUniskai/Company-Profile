@@ -6,7 +6,8 @@ import dynamic from "next/dynamic";
 import { Box, Button, IconButton, Text } from "@chakra-ui/react";
 import { useSpinAudio } from "./useSpinAudio";
 import { usePrizeStock } from "./usePrizeStock";
-import { merchandise } from "./prizes";
+import PrizeReveal from "./PrizeReveal";
+import { merchandise, MYSTERY_IMAGE, MYSTERY_LABEL } from "./prizes";
 
 // staff-only, so keep the modal out of the bundle customers download
 const StaffPanel = dynamic(() => import("./StaffPanel"), { ssr: false });
@@ -56,6 +57,7 @@ const page = () => {
   const [index, setIndex] = useState(0);
   const [spinning, setSpinning] = useState(false);
   const [hasSpun, setHasSpun] = useState(false);
+  const [revealed, setRevealed] = useState(null);
   const [staffOpen, setStaffOpen] = useState(false);
   const timeoutRef = useRef(null);
   const confettiRef = useRef(null);
@@ -132,7 +134,9 @@ const page = () => {
   }, []);
 
   const spin = useCallback(() => {
-    if (spinning || pool.length === 0) return;
+    // `revealed` guard: the popup must be dismissed before the next spin, no
+    // matter how the click or keypress got through
+    if (spinning || revealed || pool.length === 0) return;
 
     setSpinning(true);
     setHasSpun(true);
@@ -154,6 +158,7 @@ const page = () => {
 
       if (step >= totalSteps) {
         setSpinning(false);
+        setRevealed(winner);
         playWin();
         celebrate();
         return;
@@ -166,10 +171,17 @@ const page = () => {
     };
 
     tick();
-  }, [spinning, pool, index, playTick, playWin, celebrate]);
+  }, [spinning, revealed, pool, index, playTick, playWin, celebrate]);
 
   const current = merchandise[index];
   const outOfPrizes = loaded && pool.length === 0;
+
+  // The card only ever shows a real prize mid-spin and while the reveal popup
+  // is up. Idle — before the first spin and after each popup is dismissed — it
+  // falls back to the mystery mark so the next prize isn't sitting on screen.
+  const showingPrize = spinning || revealed !== null;
+  const cardImage = showingPrize ? current.src : MYSTERY_IMAGE;
+  const cardLabel = showingPrize ? current.name : MYSTERY_LABEL;
 
   return (
     <Box
@@ -331,14 +343,17 @@ const page = () => {
             overflow="hidden"
           >
             <Image
-              key={current.src}
-              src={current.src}
-              alt={current.name}
+              key={cardImage}
+              src={cardImage}
+              alt={showingPrize ? current.name : "Mystery prize"}
               fill
               sizes="(max-width: 768px) 60vw, 360px"
               priority
               style={{
+                // the mystery mark is a logo, so inset it rather than letting
+                // it fill the panel edge to edge like a product photo
                 objectFit: "contain",
+                padding: showingPrize ? 0 : "16%",
                 filter: spinning ? "blur(1.5px)" : "none",
                 transition: "filter 150ms ease",
               }}
@@ -363,7 +378,7 @@ const page = () => {
             textTransform="uppercase"
             lineHeight="1.3"
           >
-            {current.name}
+            {cardLabel}
           </Text>
         </Box>
 
@@ -508,6 +523,13 @@ const page = () => {
 
       {/* Preload every merch image so the spin never stalls on a fetch */}
       <Box position="absolute" w={0} h={0} overflow="hidden" aria-hidden>
+        <Image
+          src={MYSTERY_IMAGE}
+          alt=""
+          width={360}
+          height={360}
+          loading="eager"
+        />
         {merchandise.map((item) => (
           <Image
             key={item.src}
@@ -519,6 +541,10 @@ const page = () => {
           />
         ))}
       </Box>
+
+      {revealed && (
+        <PrizeReveal prize={revealed} onClose={() => setRevealed(null)} />
+      )}
 
       {staffOpen && (
         <StaffPanel
