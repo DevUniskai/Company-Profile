@@ -1,5 +1,9 @@
 export const MERCH_DIR = "/static/images/sqtf26/merch";
 
+/** Shown on the card whenever no prize is being revealed, so nothing leaks. */
+export const MYSTERY_IMAGE = "/static/images/sqtf26/assets/MYSTERY.png";
+export const MYSTERY_LABEL = "MYSTERY PRIZE";
+
 /**
  * Every prize on the poster. This list is the *reel* — all of it always spins
  * past, whether or not the item is still in stock, so customers can't tell
