@@ -4,14 +4,7 @@ import { merchandise } from "./prizes";
 
 const STORAGE_KEY = "bcasqtf26-spin:sold-out";
 
-/**
- * Which prizes are still winnable, persisted per device in localStorage so
- * staff can mark items sold out mid-event without a redeploy.
- *
- * State starts empty (everything available) so the server render and the first
- * client render agree; the saved list is applied immediately after mount, well
- * before anyone can press SPIN.
- */
+
 export function usePrizeStock() {
   const [soldOut, setSoldOut] = useState(() => new Set());
   const [loaded, setLoaded] = useState(false);
