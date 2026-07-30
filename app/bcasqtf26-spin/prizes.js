@@ -2,7 +2,6 @@ export const MERCH_DIR = "/static/images/sqtf26/merch";
 
 export const MYSTERY_IMAGE = "/static/images/sqtf26/assets/uniskai_orange.webp";
 
-
 export const merchandise = [
   { name: "TRAVEL TOILETRIES", file: "TOILETRIES.webp" },
   { name: "UNIVERSAL ADAPTER", file: "ADAPTOR.webp" },
@@ -15,7 +14,7 @@ export const merchandise = [
   { name: "PREMIUM UMBRELLA", file: "PAYUNG.webp" },
   { name: 'SUITCASE "UNISKAI" 16 INCH', file: "KOPER_KECIL.webp" },
   { name: "STYLISH EVERYDAY CAP", file: "CAP.webp" },
-  { name: "EXCLUSIVE STAINLESS TUMBLER", file: "TUMBLER.webp" },
+  { name: "EXCLUSIVE STAINLESS TUMBLER", file: "TUMBLER_WITH_LOGO.webp" },
   {
     name: "1 BIG DOUBLE ZIP TRAVEL ORGANIZER",
     file: "LARGE_DOUBLE_ZIPPER.webp",
