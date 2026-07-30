@@ -32,6 +32,47 @@ const Fonts = () => (
              url('/fonts/CircularStd-Medium.woff') format('woff');
       }
 
+      /*
+       * Circular Std as a real family with correct weights, so font-weight
+       * picks the matching file. The three faces above map different files to
+       * fixed names and are kept as-is for pages already using them.
+       */
+      @font-face {
+        font-family: 'CircularStd';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('/fonts/CircularStd-Book.woff2') format('woff2'),
+             url('/fonts/CircularStd-Book.woff') format('woff');
+      }
+
+      @font-face {
+        font-family: 'CircularStd';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url('/fonts/CircularStd-Medium.woff2') format('woff2'),
+             url('/fonts/CircularStd-Medium.woff') format('woff');
+      }
+
+      @font-face {
+        font-family: 'CircularStd';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url('/fonts/CircularStd-Bold.woff2') format('woff2'),
+             url('/fonts/CircularStd-Bold.woff') format('woff');
+      }
+
+      @font-face {
+        font-family: 'CircularStd';
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url('/fonts/CircularStd-Black.woff2') format('woff2'),
+             url('/fonts/CircularStd-Black.woff') format('woff');
+      }
+
       /* Sigvar */
       @font-face {
         font-family: 'Sigvar';

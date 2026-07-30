@@ -17,13 +17,7 @@ import {
 } from "@chakra-ui/react";
 import { merchandise } from "./prizes";
 
-/**
- * Staff-only stock control. Not linked from anywhere — opened by tapping the
- * BCA logo five times, or with ?staff=1 in the URL.
- *
- * Switching a prize off only stops the wheel landing on it; the item still
- * spins past in the reel, so customers can't see what has run out.
- */
+
 export default function StaffPanel({
   isOpen,
   onClose,
