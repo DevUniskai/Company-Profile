@@ -5,7 +5,6 @@ import { useToast } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { Analytics } from "@vercel/analytics/react";
-import BCASQTF26 from "@/components/sections/bca-sqtf26";
 
 const Home = () => {
   const toast = useToast();
@@ -25,8 +24,7 @@ const Home = () => {
 
   return (
     <Box w={"100%"} h={"100%"} backgroundColor="white">
-      {/* <Welcome /> */}
-      <BCASQTF26 />
+      <Welcome />
       <Analytics />
     </Box>
   );
