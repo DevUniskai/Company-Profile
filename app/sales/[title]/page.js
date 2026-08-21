@@ -1,11 +1,11 @@
 
 "use client";
-import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { Box, Flex, Text, Button, ButtonGroup} from '@chakra-ui/react';
+import { Box, Flex, Text} from '@chakra-ui/react';
 import Image from "next/image";
 import SalesContactList from "../../../components/sections/SalesContactList";
 import data from "../../../components/sections/SalesContactList/contact_list.json";
+import BackButton from "@/components/common/BackButton";
 import { usePathname } from 'next/navigation'
 import Footer from "@/components/sections/Footer";
 
@@ -33,7 +33,8 @@ const ContactByTitle = () => {
   
     return (
         <Box w={"100%"} minH={"100vh"} backgroundColor={"brown"} backgroundImage={"/static/images/backg.jpg"}>
-          <Flex pt={10} justifyContent={"center"}>
+          <Flex pt={10} justifyContent={"center"} position="relative">
+            <BackButton />
             <Image
               src={"/static/images/uniskai_header.png"}
               width={130}

@@ -91,14 +91,6 @@
       "description": "Passport, visa, and insurance — your travel documents, handled with care",
       "items": [
         {
-          "name": "Hengki",
-          "phone": "6285218418647"
-        },
-        {
-          "name": "Ima",
-          "phone": "6281283210688"
-        },        
-        {
           "name": "Mulia",
           "phone": "6282295998311"
         },        
@@ -107,19 +99,27 @@
           "phone": "6282276384763"
         },
         {
-          "name": "Wendy",
-          "phone": "6282320008886"
+          "name": "Hengki",
+          "phone": "6285218418647"
         },
         {
           "name": "Wisda",
           "phone": "6281257571231"
         },
         {
+          "name": "Wendy",
+          "phone": "6282320008886"
+        },
+        {
+          "name": "Ima",
+          "phone": "6281283210688"
+        },        
+        {
           "name": "Tubagus (Jakarta)",
           "phone": "6287761706656"
         },
         {
-          "name": "Rika (Paspor & Insurance)",
+          "name": "Rika (Insurance & Paspor)",
           "phone": "6282336841445"
         }
         
