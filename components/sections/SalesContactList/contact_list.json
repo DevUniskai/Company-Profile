@@ -168,6 +168,10 @@
         {
           "name": "Klaudia",
           "phone": "6285235912069"
+        },
+        {
+          "name": "Nathania",
+          "phone": "6281337667266"
         }
       ]
     },
@@ -177,6 +181,10 @@
       "description":"Book attractions, transport, and tickets to complete your travel experience.",
       "items": [
         {
+          "name": "Alya",
+          "phone": "6282230025460"        
+        },
+        {
           "name": "Felix",
           "phone": "6285207888188"
         },
@@ -185,8 +193,12 @@
           "phone": "6282315139543"
         },
         {
-          "name": "Alya",
-          "phone": "6282230025460"        
+          "name": "Jessica",
+          "phone": "6282191086840"
+        },
+        {
+          "name": "Theo",
+          "phone": "6282276384765"
         }
       ]
     }
