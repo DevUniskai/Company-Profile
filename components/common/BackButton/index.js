@@ -12,8 +12,8 @@ const BackButton = () => {
       onClick={() => router.push("/")}
       aria-label="Back"
       position="absolute"
-      left={{ base: "20px", md: "30px", lg: "40px" }}
-      top="50%"
+      left={{ base: "30px", md: "40px", lg: "50px" }}
+      top="70%"
       transform="translateY(-50%)"
       bg="transparent"
       _hover={{ bg: "transparent", opacity: 0.8 }}
@@ -23,8 +23,8 @@ const BackButton = () => {
     >
       <Box
         position="relative"
-        w={{ base: "30px", md: "50px", lg: "50px" }}
-        h={{ base: "30px", md: "50px", lg: "50px" }}
+        w={{ base: "40px", md: "50px", lg: "50px" }}
+        h={{ base: "40px", md: "50px", lg: "50px" }}
       >
         <Image
           src="/static/images/back.png"
