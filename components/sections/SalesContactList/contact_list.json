@@ -131,10 +131,6 @@
       "description": "We arrange private tours based on your desired travel experience.",
       "items": [
         {
-          "name": "Arwin",
-          "phone": "6281361455000"
-        },
-        {
           "name": "Louis",
           "phone": "628811906396"
         },
@@ -149,6 +145,10 @@
         {
           "name": "Vallen",
           "phone": "6285280886800"
+        },
+        {
+          "name": "Arwin",
+          "phone": "6281361455000"
         }
       ]
     },
